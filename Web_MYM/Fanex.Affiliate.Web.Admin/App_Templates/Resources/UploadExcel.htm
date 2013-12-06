@@ -1,0 +1,44 @@
+﻿<script type="text/javascript">
+    function IsValidFileExcel(objTag) 
+    {
+        var filename = objTag.value;
+        var isOK = true;
+        if (filename != "") 
+        {
+            var ext = filename.substring(filename.lastIndexOf('.')+1,filename.length).toLowerCase();
+            isOK = (ext == "xls" || ext == "xlsx");
+            if (!isOK) 
+            {
+                alert($('hdErrFileExtension').value);
+            }       
+        }
+        if ($('btnuploadbanner')) 
+        {      
+            $('btnuploadbanner').disabled = !isOK;
+        }
+        return isOK;   
+    }
+    function ExcelUpload() {
+        if ($("txtfile").value == "") {
+            alert(top.fMenu.Msg.SelectExcelUpload);
+            return;
+        }
+        else {
+            $("UploadExcel").submit();
+        }
+    }
+</script>
+
+<form method="post" action="../Handler/UploadExcel.ashx" enctype="multipart/form-data" onsubmit="return IsValidFileExcel(document.getElementById('txtfile'));" target="upload_target" id="UploadExcel" >
+    <div class="pcontent" style="width: 420px; text-align: center;">
+        {File}
+        <input id="txtfile" name="txtfile" size="40" style="width: 350px;" type="file" onchange="return IsValidFileExcel(this);" />
+        <input id="hdErrFileExtension" name="hdErrFileExtension" type="hidden" value="{ErrFileExtension}" />
+        <div style="text-align: left; margin-top: 5px;">
+            <input id="btnuploadbanner" class="buttonlogin" name="btnuploadbanner" type="button" value="Upload" onclick="ExcelUpload();"/>&nbsp;
+            <input id="btncancel" class="buttonlogin" name="btncancel" type="button" value="Cancel" onclick="Cancelfunction();" />
+        </div>
+    </div>
+</form>
+<iframe id="upload_target" name="upload_target" src="#" style="width: 0; height: 0;
+    border: 0px solid #fff;"></iframe>

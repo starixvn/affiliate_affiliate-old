@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    var paththeme = "{paththeme}";
+</script>
+
+<div class="padl0">
+    <div id="errMsg" style="display: none; margin: 3px 0; width:254px">
+        <div id="error_item">
+            <ul>
+                <li><a class="err-msg" id="error_msg"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="pcontent">
+        <table class="tblPass" bordercolor="#d4d0c8" width="100%">
+            <tr align="left">
+                <td style="width: 70px; padding-left: 20px;">
+                    {Domain}
+                </td>
+                <td class="left" id="td_pass">
+                    <input id="txtaffdomain" type="text" name="txtaffdomain" class="textbox" value="{AffDomainName}"
+                        onkeypress="return PreExec(event,{affdomainid});" />
+                </td>
+            </tr>               
+        </table>
+    </div>
+    <div class="l" style="height:20px; padding:3px 0px 0px 0px;">
+        <input type="button" name="btnSubmit" value="{Submit}" id="btnSubmit" class="buttonlogin"
+            onclick="EditAffDomain({affdomainid})" />&nbsp;
+        <input name="btnCancel" id="btnCancel" type="button" onclick="parent.CloseDiv();"
+            class="buttonlogin" value="{Cancel}" />
+    </div>
+</div>

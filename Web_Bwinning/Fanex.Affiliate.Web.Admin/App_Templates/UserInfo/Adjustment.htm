@@ -1,0 +1,49 @@
+﻿<form id="frmSearch" name="frmSearch" method="get" onsubmit="return Adjust();">
+{submenu}
+<div id="errMsg" style="display: none; width: 370px;">
+    <div id="error_item">
+        <ul>
+            <li><a id="error_msg" class="err-msg"></a></li>
+        </ul>
+    </div>
+</div>
+<div class="fieldset" style="width:400px;">
+    <div class="legend">{affiliate-val}</div>
+    <div class="clear"></div>
+    
+    <table class="ContentInput" cellspacing="0" id="noteForm">
+        <tr>
+            <td style="width: 150px;">
+                {BalanceForward}
+            </td>
+            <td>
+                {balforward-val}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                {Adjustment}
+            </td>
+            <td class="r">
+                <input type="text" id="txtAdjust" name="txtAdjust" style="width: 180px; text-align: right;" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                {Description}
+            </td>
+            <td>
+                <textarea id="txtDescript" name="txtDescript" rows="2" style="width: 180px;"></textarea>
+            </td>
+        </tr>
+    </table>
+    <div class="red">
+        {AdjustAmountUpTo}
+        {CurrencyNotifications}
+    </div>
+</div>
+<input type="submit" class="buttonlogin bottombutton" id="btnSubmit" name="btnSubmit" value="{submit}" />
+<input type="hidden" id="custid" name="custid" value="{custid}" />
+<input type="hidden" id="hdBF" name="hdBF" value="{bf-val}" />
+<input type="hidden" id="hdMaxAmount" name="hdMaxAmount" value="{maxamount-val}" />
+</form>

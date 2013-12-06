@@ -1,0 +1,78 @@
+﻿<script language="javascript" type="text/javascript">
+    function TextUpload() {
+        if ($("textvalue").value == "") {
+            alert("Please input text to upload.");
+            return;
+        }
+        else {
+            $("UploadText").submit();
+        }
+    }
+</script>
+<div class="padl0">
+    <div id="errMsg" style="display: none;width: 370px;" class="styleErrAddbanner">
+        <div id="error_item">
+            <ul>
+                <li><a class="err-msg" id="error_msg"></a></li>
+            </ul>
+        </div>
+    </div>
+    <form action="../Handler/AddNewBannerText.ashx" method="post" enctype="multipart/form-data"
+    target="upload_target" id="UploadText">
+    <div class="pcontent" style="width: 420px; text-align: center;">
+        <table cellspacing="5" cellpadding="0" width="100%">
+            <tr class="l" valign="middle">
+                <td colspan="2" style="padding-left: 50px; color: red">
+                </td>
+            </tr>
+            <tr class="l">
+                <td class="txt_addnew">
+                    {Text}
+                </td>
+                <td style="padding-bottom: 3px;">
+                    <textarea id="textvalue" name="textvalue" style="width: 350px; height: 100px;">{content}</textarea>
+                </td>
+            </tr>
+            <tr class="l">
+                <td class="txt_addnew">
+                    {Category}
+                </td>
+                <td style="padding-bottom: 3px;">
+                    {optioncate}
+                </td>
+            </tr>           
+            <tr class="l">
+                <td class="txt_addnew">
+                    {Language}
+                </td>
+                <td style="padding-bottom: 3px;">
+                    {optionlang}
+                </td>
+            </tr>
+            <tr class="l">
+                <td class="txt_addnew">
+                    {Currency}
+                </td>
+                <td style="padding-bottom: 3px;">
+                    {optioncurrency}
+                </td>
+            </tr>            
+            <tr>
+                <td colspan="2">
+                    &nbsp;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align: left; margin-top: 5px;">
+        <input id="btnuploadtext" class="buttonlogin" name="btnuploadtext"
+            type="button" value="{Submit}" onclick="TextUpload();"/>&nbsp;
+        <input id="btncancel" class="buttonlogin" name="btncancel" type="button" value="{Cancel}"
+            onclick="Cancelfunction();" />
+        <input id="bannerid" name="bannerid" type="hidden" value="{bannerid}" />
+    </div>
+    </form>
+</div>
+<iframe id="upload_target" name="upload_target" src="#" style="width: 0; height: 0;
+    border: 0px solid #fff;"></iframe>
+<input id="hdErrFileExtension" name="hdErrFileExtension" type="hidden" value="{ErrFileExtension}" />

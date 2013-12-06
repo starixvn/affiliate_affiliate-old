@@ -1,0 +1,45 @@
+<script type="text/javascript">
+  var paththeme = "{paththeme}";
+</script>
+
+<div class="pad7">
+  <form id="frmChangePass" name="frmChangePass" action="Handler/ChangePass.ashx" method="post" target="frChangePass" onsubmit="return CheckForm();">
+    <div id="errMsg" style="display:none; width:266px;">
+      <div id="error_item">
+        <ul>
+          <li>
+            <a class="err-msg" id="error_msg"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="pcontent">      
+      <div class="ContentBox">
+        <TABLE width="100%">
+          <tr>
+            <td class="r b">{password}:</td>
+            <td>
+              <input id="NewPassword" type="password" name="NewPassword" class="textbox" />
+            </td>
+          </tr>
+          <tr>
+            <td class="r b">{confirmpass}:</td>
+            <td>
+              <input id="ConfirmPassword" type="password" name="ConfirmPassword" class="textbox" />
+            </td>
+          </tr>          
+        </TABLE>
+      </div>
+    </div>
+    <iframe id="frChangePass" name="frChangePass" class="hidden" style="height: 0px; width: 0px;"></iframe>
+    <div class="bottombutton">
+      <input type="submit" name="btnSubmit" value="{submit}" id="btnSubmit" class="buttonlogin" />&nbsp;&nbsp;
+      <input name="btnCancel" id="btnCancel" type="button" onclick="closePopup();" class="buttonlogin" value="{cancel}" />
+    </div>
+    <INPUT type="hidden" name="custid" id="custid"  value="{custid}" />
+    <INPUT type="hidden" name="username" id="username"  value="{username}" />
+    <input id="hdPassRequire" name="hdPassRequire" type="hidden" value="{passrequire}"/>
+    <input id="hdPassConfirm" name="hdPassConfirm" type="hidden" value="{passconfirm}"/>
+    <input id="idAdmin" name="isAdmin" type="hidden" value="{isAdmin}"/>
+  </form>
+</div>

@@ -1,0 +1,88 @@
+﻿namespace Fanex.Web.Bwinning.Customer.Handler
+{
+    using System;
+    using System.Web;
+    using DNAide.Data;
+    using DNAide.Utils;
+    using DNAide.Core;
+    using System.Data;
+    using System.Web.Security;
+    using System.Web.SessionState;
+    using Fanex.Affiliate.DataObjects;
+    using System.Text;
+    using Fanex.Affiliate.Core.Customer;
+    using Fanex.Affiliate.DataObjects;
+    using Fanex.Affiliate.Resources;
+    using Fanex.Core.Culture;
+
+
+    public class GetMessageList : IHttpHandler, IRequiresSessionState
+    {
+
+        public void ProcessRequest(HttpContext context)
+        {
+
+            if (context.Request.UrlReferrer != null)
+            {
+                CultureHandler.InitializeCulture(HttpContext.Current);
+                context.Response.ContentType = "text/plain";
+                string[] param = context.Request.Params["params"].Split(";".ToCharArray());
+
+                int important = -1, curpage = 1;
+                object fromdate = null, todate = null;
+                StringBuilder result = ValidateData(param, ref important, ref fromdate, ref todate, ref curpage);
+                if (string.IsNullOrEmpty(result.ToString()))
+                {
+                    //result.Append(GenerateHTML.HotNews.GetHotNewsContentList(important,fromdate,todate,curpage));
+
+                }
+                context.Response.Write(result.ToString());
+
+
+            }
+
+        }
+
+        private StringBuilder ValidateData(string[] param, ref int important, ref object fromdate, ref object todate, ref int curPage)
+        {
+
+            StringBuilder err = new StringBuilder("");
+
+            try
+            {
+                if (param.Length == 4)
+                {
+                    important = Convert.ToInt32(param[0].Trim());
+                    if (param[1].Trim() != "")
+                    {
+                        fromdate = param[1].Trim();
+                    }
+                    if (param[2].Trim() != "")
+                    {
+                        todate = param[2].Trim();
+                    }
+                    curPage = Convert.ToInt32(param[3].Trim());
+
+                }
+
+            }
+            catch (Exception e)
+            {
+                return err.Append(e.Message);
+
+            }
+            return err;
+
+        }
+
+        public bool IsReusable
+        {
+            get
+            {
+                return false;
+            }
+        }
+
+
+    }
+}

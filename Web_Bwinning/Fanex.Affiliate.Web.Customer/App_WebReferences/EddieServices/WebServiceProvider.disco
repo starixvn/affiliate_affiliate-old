@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://122.147.239.67:36150/WebServiceProvider.asmx?wsdl" docRef="http://122.147.239.67:36150/WebServiceProvider.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://122.147.239.67:36150/WebServiceProvider.asmx" xmlns:q1="www.SunplusWebServiceProvider.com" binding="q1:WebServiceProviderSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://122.147.239.67:36150/WebServiceProvider.asmx" xmlns:q2="www.SunplusWebServiceProvider.com" binding="q2:WebServiceProviderSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

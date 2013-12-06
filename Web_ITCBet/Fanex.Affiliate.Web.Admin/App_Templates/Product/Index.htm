@@ -1,0 +1,192 @@
+﻿<style type="text/css">
+    .text_hotnews
+    {
+        color: #0079FF;
+        font-family: Verdana,Geneva,sans-serif;
+            font-size: 11px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    .text_hotnews_important
+    {
+        color: Red; /* #0099FF;*/
+        font-family: Verdana,Geneva,sans-serif;
+        font-size: 11px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    .link_hotnews
+    {
+        vertical-align: top;
+        display: block;
+        text-decoration: none;
+    }
+</style>
+
+<script type="text/javascript">
+    var curMsgID=-1;
+    window.onload = Init;
+    var addEditTpl;
+    var listChk;
+    function Init() {   
+        listChk = $$("div .chk");
+        for(var i = 0; i < listChk.length; i++)
+        {
+            listChk[i].observe('click', chkOnclick);
+        } 
+    }
+    function chkOnclick(event)
+    {
+        var element = Event.element(event);
+        if(element.hasClassName("ic-check"))
+            element.className = "chk ic-uncheck";
+        else
+            element.className = "chk ic-check";
+    }
+    
+    function checkAll(isCheckAll) {
+        listChk = $$("div .chk");
+        var i = 0;
+        if (isCheckAll)
+            for (i = 0; i < listChk.length; i++) {
+                if (listChk[i].id != "chkDate")
+                    listChk[i].className = "chk ic-check";
+            }
+        else
+            for (i = 0; i < listChk.length; i++) {
+                if (listChk[i].id != "chkDate")
+                    listChk[i].className = "chk ic-uncheck";
+            }
+    }
+    
+    function deleteProducts()
+    {
+        listChk = $$("div .chk");
+        var i = 0;
+        var ids = new Array();
+        for(i = 0; i < listChk.length; i++)
+        {
+            if (listChk[i].hasClassName("ic-check")) {
+                ids.push(listChk[i].id);
+            }
+        }
+        
+        if(ids.length > 0)
+        {
+            var answer = confirm("{ConfirmDelProduct}");
+            if(answer)
+            {
+                
+                var ajax = new Ajax.Request("../Handler/ProductHandler.ashx", {
+                    method: 'post',
+                    parameters: "action=delete&id=" + ids,
+                    onComplete: function(data) {
+                        if(data.responseText == 'True')
+                        {
+                            window.location.reload();
+                        }
+                        else
+                        {
+                            alert(data.responseText);
+                        }
+                    }
+                });
+                
+            }
+            else
+            {
+                return;
+            }
+        }
+        else
+        {
+            alert('{SelProduct}');
+        }
+        
+    }
+</script>
+
+<div class="padl0">
+    {submenu}    
+    <!-- Search -->
+    <form id="frmSearch" method="get">
+    <div id="search_cont">
+        <table cellspacing="0" cellpadding="3" border="0">
+            <tr>
+                <td>
+                    {SearchBy} {Name} &nbsp;
+                    <input type="text" id="query" name="query" size="13" value="{query}" />
+                </td>                
+                <td >
+                    <input type="submit" value="{Submit}" id="btnSubmit" name="{Submit}" class="buttonlogin"
+                        onclick="LoadData(1);" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <input type="hidden" id="timer" name="timer" value="{timer-val}" />
+    <input type="hidden" id="page" name="page" value="{page}" />
+    <input type="hidden" id="pagesize" name="pagesize" value="{pagesize}" />
+    </form>
+    <!-- /Search -->
+    {paging-top}
+    <table class="aff-table" cellspacing="1" cellpadding="3" width="1100px" id="tblResult">
+        <tr>
+            <th style="width:16px;">&nbsp;</th>
+            <th style="width:20px;">&nbsp;</th>
+            <th>
+                {Name}
+            </th>                       
+            <th>
+                {Description}
+            </th>
+             <th>
+                {Creator}
+            </th>
+            <th>
+                {CreatedDate}
+            </th>
+            <th>
+                {BettypeList}
+            </th>
+             <th>
+                {Update}
+            </th>
+        </tr>
+        <tbody id="result">
+            <!--Content-->
+            <tr bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'">
+                <td class="c">
+                    <div id="{ID-val}" class="chk ic-uncheck"/>
+                </td>
+                <td class="c">
+                    {No-val}
+                </td>
+                <td class="l">
+                    {Name-val}
+                </td>
+                <td class="l">
+                    {Description-val}
+                </td>
+                <td class="l">
+                    {Creator-val}
+                </td>
+                <td class="c">
+                    {CreatedDate-val}
+                </td>
+                <td class="c">
+                    {BettypeList-val}
+                </td>
+                <td class="c">
+                    <span class="icedit" onclick="DoCal('ProductUpdate.aspx?id={ID-val}','Update product', 630, 300);" title="{Update}"></span>
+                </td>
+            </tr>
+            <!--/Content-->
+        </tbody>
+    </table>
+    {paging-bottom}
+    <div style="margin-top:5px; height:20px;">
+        <a class="abutton" href="javascript:;" onclick="javascript:deleteProducts();"><span>{Delete}</span></a>
+        <a class="abutton" href="javascript:;" onclick="javascript:DoCal('ProductUpdate.aspx','Add product', 630, 300)"><span>{Add}</span></a>
+    </div>
+</div>

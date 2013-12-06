@@ -1,0 +1,107 @@
+﻿<form id="frmSearch" name="frmSearch" method="get">
+    {submenu}
+    <!--search form-->
+	<div id="search_cont">
+        <table cellspacing="1" cellpadding="3" border="0">
+            <tr>
+                <td class="r">
+                    {member}
+                </td>
+                <td>
+                    <select id="slType" name="slType">
+                        <option value="0">{Select}</option>
+                        <option value="1">{NonDeposited}</option>
+                        <option value="2">{Deposited}</option>
+                    </select>
+                </td>
+                <td class="r">
+                    {From}
+                </td>
+                <td>
+                    <input type="text" readonly name="fdate" size="13" value="{fdate}" class="txtdate-no-time"
+                        id="fdate" />&nbsp;
+                    <img width="16" height="16" src="../{themepath}/images/cal.gif" class="img-date-selector hand"
+                        style="margin-bottom: -3px;" title="Date selector" id="fdateTrigger" />
+
+                    <script type="text/javascript">
+                        Calendar.setup({
+                            inputField: "fdate",
+                            ifFormat: "%m/%d/%Y",
+                            button: "fdateTrigger",
+                            singleClick: true,
+                            showsTime: false,
+                            showOthers: true,
+                            step: 1
+                        });
+                    </script>
+
+                </td>
+                <td class="r">
+                    {To}
+                </td>
+                <td>
+                    <input type="text" readonly name="tdate" size="13" value="{tdate}" class="txtdate-no-time"
+                        id="tdate" />&nbsp;
+                    <img width="16" height="16" src="../{themepath}/images/cal.gif" class="img-date-selector hand"
+                        style="margin-bottom: -3px;" title="Date selector" id="tdateTrigger" />
+
+                    <script type="text/javascript">
+                        Calendar.setup({
+                            inputField: "tdate",
+                            ifFormat: "%m/%d/%Y",
+                            button: "tdateTrigger",
+                            singleClick: true,
+                            showsTime: false,
+                            showOthers: true,
+                            step: 1
+                        });
+                    </script>
+
+                </td>
+                <td class="nowrap">
+                    {GetAll}&nbsp;&nbsp;<span onclick="chkOnclick();" id="chkDate" class="{cssgetall}">&nbsp;</span>
+                    <input type="hidden" id="isGetAll" name="isGetAll" value="{cssgetall}" />
+                </td>
+                <td style="width: 100px">
+                    <input type="submit" value="{Submit}" id="btnSubmit" name="Submit" class="buttonlogin" onclick="LoadData(1);">
+
+                </td>
+            </tr>
+        </table>
+    </div>
+	<!--/search form-->
+	<!--content form-->
+    {paging-top}
+	<table class="aff-table" cellspacing="1" cellpadding="2" id="tblResult" style="width: {width}px;">
+			<!--header-->
+			<tr>
+				<th style="width: 20px;">&nbsp;</th>
+				<th class="nowrap">{username}</th>       
+				<th class="nowrap">{FirstName}</th>
+				<th class="nowrap">{LastName}</th>	
+				<th class="nowrap">{email}</th>	
+				 <th class="nowrap">{currency}</th>			
+				 <th class="nowrap">{registerdate}</th>	
+                 <th class="nowrap">{description}</th>	
+			</tr>
+			<!--/header-->
+        <tbody id="result">
+			<!--content-->
+            <tr bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'" class="nowrap">
+				<td class="c">{no}</td>
+				<td>{username-val}</td>
+				<td>{fname-val}</td>
+				<td>{lname-val}</td>                
+				<td>{email-val}</td>
+				<td class="c">{currency-val}</td>
+				<td class="c">{registerdate-val}</td>
+                <td class="c">{description-val}</td>
+			</tr>      
+			<!--/content-->
+        </tbody>
+	</table>
+	{paging-bottom}
+	<!--/content form-->
+    <input type="hidden" id="hdType" name="hdType" value="{type-val}" />
+    <input type="hidden" id="page" name="page" value="{page}" />
+</form>

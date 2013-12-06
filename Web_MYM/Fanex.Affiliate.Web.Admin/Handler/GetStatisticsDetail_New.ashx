@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" CodeBehind="GetStatisticsDetail_New.ashx.cs" Class="Fanex.Web.MYM.Admin.Handler.GetStatisticsDetail_New" %>

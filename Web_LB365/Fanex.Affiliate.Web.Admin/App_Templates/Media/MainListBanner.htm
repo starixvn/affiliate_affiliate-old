@@ -1,0 +1,203 @@
+<script language="javascript">
+     var minNo = {minNo};
+     var maxNo = {maxNo};
+
+     function AddBanner(){
+        var type = $("afftypeoption") ? $("afftypeoption").value : 1;
+        var caption = type==1 ? "Add Banner" : "Add Media Banner";
+        DoCal('AddMediaBanner.aspx?type=' + type, caption, 460, 450);
+     }
+
+</script>
+
+<div class="padl0">
+    <form method="post" name="frmSearch" id="frmSearch" 
+    target="upload_target" enctype="multipart/form-data" action="../Handler/UpBanner.ashx">
+    <div id="errMsg" style="display: none; width: 1100px;" class="styleErrAddbanner">
+        <div id="error_item">
+            <ul>
+                <li><a class="err-msg" id="error_msg"></a></li>
+            </ul>
+        </div>
+    </div>
+    {submenu}
+    
+    <div id="search_cont">
+        <table cellpadding="2" cellspacing="1">
+            <tr>
+                <td>
+                    {Category}
+                </td>
+                <td>
+                    {optioncate}
+                </td>
+                 <td id="tdSubCategory"  style="{subcateStyle}">
+                    {SubCategory}
+                </td>
+                <td id="tdOptSubCategory" style="{subcateStyle}">
+                    {optionsubcate}
+                </td>
+                <td>
+                    {Language}
+                </td>
+                <td> 
+                    {optionlang}                   
+                </td>
+                <td>
+                    {Currency}
+                </td>
+                <td>
+                    {optioncurrency}
+                </td>
+                <td>
+                    {Type}
+                </td>
+                <td>
+                    {optiontype}
+                </td>
+                <td>
+                    {Size}
+                </td>
+                <td>
+                    {optionsize}
+                </td>
+                <!--afftype-->
+                <td>
+                    {AffType}
+                </td>
+                <td>
+                    {optionafftype}
+                </td>
+                <!--/afftype-->
+                <td>
+                    <div onclick="SubmitSearchForm();" id="divsearch">&nbsp;</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    {paging-top}
+    <table border="0" class="aff-table" cellpadding="0" cellspacing="1" style="width: 1200px;"
+        id="tblResult">
+        <tr>
+            <th style="width: 8px;">&nbsp;</th>
+            <th style="width: 8px;">&nbsp;</th>
+            <th style="font-weight: bold;">
+                {Images}
+            </th>
+            <th style="width: 100px; font-weight: bold;">
+                {Filename}
+            </th>
+            <th style="width: 70px; font-weight: bold;">
+                {Category}
+            </th>
+            <th style="width: 70px; font-weight: bold;">
+                {Language}
+            </th>
+            <th style="width: 90px; font-weight: bold;">
+                {Currency}
+            </th>
+            <th style="width: 80px; font-weight: bold;">
+                {ImageType}
+            </th>
+            <th style="width: 50px; font-weight: bold;">
+                {Size}
+            </th>
+            <th class="c" style="width: 50px; font-weight: bold;">
+                {TotalRequest}
+            </th>
+            <th style="width: 100px; font-weight: bold;">
+                {LastRequest}
+            </th>
+            <th style="width: 40px; font-weight: bold;">
+                {Edit}
+            </th>
+        </tr>
+        <tbody id="result">
+            <!--Content-->
+            <tr class="{rowstyle}" onmouseout="javascript:this.className='{rowstyle}';this.style.backgroundColor='';"
+                onmouseover="this.style.backgroundColor='#fff5a5';" id="banner{bannerid}">
+                <td>
+                    <div class="chk ic-uncheck" id="{bannerid}">
+                    </div>
+                </td>
+                <td class="c">
+                    {order-val}
+                </td>
+                <td style="text-align: left; vertical-align: middle; height:{height};">
+                    <div class="{css-class}" style="overflow: auto; width: 527px; height: {height};" onclick="{viewfull}">
+                        &nbsp;
+                        <!--ViewMode1-->
+                        <!--limit-fls-->
+                        <object height="{height}" width="{width}" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"
+                            classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+                            <param value="{imagevalue}?id={version}" name="movie" />
+                            <param value="high" name="quality" />
+                            <param name="wmode" value="transparent" />
+                            <embed height="{height}" width="{width}" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"
+                                wmode="transparent" quality="high" src="{imagevalue}?id={version}" />
+                        </object>
+                        <!--/limit-fls-->
+                        <!--limit-img-->
+                        <img id="img{bannerid}" src="{imagevalue}?id={version}" alt="" height="{height}" width="{width}"/>
+                        <!--/limit-img-->
+                        <!--/ViewMode1-->
+                        <!--UpdateMode1-->
+                        <a name="myeditarea"></a>
+                        <input id="txtfile" name="txtfile" size="40" style="width: 350px;" type="file" onchange="return IsValidFileExtension();" />
+                        <!--/UpdateMode1-->
+                    </div>
+                </td>
+                <td id="file{bannerid}">
+                    {filenamevalue}
+                </td>
+                <td id="category{bannerid}">
+                    {catevalue}
+                </td>
+                <td id="langvalue{bannerid}">
+                    {langvalue}
+                </td>
+                <td id="currency{bannerid}">
+                    {currencyvalue}
+                </td>
+                <td id="imagetype{bannerid}">
+                    {imagetypevalue}
+                </td>
+                <td id="size{bannerid}">
+                    {sizevalue}
+                </td>
+                <td style="text-align: center">
+                    <!--ViewMode2-->
+                    <a href="javascript:ActiveEdit('{bannerid}','{No-val}');" id="edit{bannerid}"><span class="icedit">&nbsp;</span></a>
+                    <!--/ViewMode2-->
+                    <!--UpdateMode2-->
+                    &nbsp;
+                    <div>
+                    <input id="btnupdate{bannerid}" type="submit" class="buttonlogin" value="Update" />
+                    </div>
+                    <div style="margin-top:10px; padding:5px 0px 5px 0px">
+                    <input id="btncancel{bannerid}" type="button" class="buttonlogin" value="Cancel"
+                        onclick="CancelEdit();" /></div>
+                    <input type="hidden" id="hdOldFileName" name="hdOldFileName" value="{imagevalue}" />
+                    <input type="hidden" id="hdBannerID" name="hdBannerID" value="{bannerid}" />
+                    <!--/UpdateMode2-->
+                </td>
+            </tr>
+            <!--/Content-->
+        </tbody>
+    </table>
+    {paging-bottom}
+    <div style="margin-top: 5px; height: 20px;" >
+        <a href="javascript:DeleteSelectedMedia();" class="abutton" id="btnDelete">
+            <span>{Delete}</span>
+        </a>
+        <a href="javascript:AddBanner()" class="abutton">
+            <span>{Add}</span>
+        </a>
+    </div>
+    <input type="hidden" id="page" name="page" value="{page-val}" />
+    <input type="hidden" id="totalMedia" name="totalMedia" value="{totalMedia-val}" />
+    <input id="hdConfirmDelete" name="hdConfirmDelete" type="hidden" value="{ConfirmDelBanner}" />
+    <input id="hdErrFileExtension" name="hdErrFileExtension" type="hidden" value="{ErrFileExtension}" />
+    </form>
+</div>
+<iframe id="upload_target" name="upload_target" src="#" style="width: 0; height: 0; border: 0px solid #fff;"></iframe>

@@ -1,0 +1,121 @@
+<div class="padl0">
+  <div id="errMsg" style="display: none; width:413px;">
+	  <div id="error_item">
+	        <ul>
+		        <li>
+			        <a class="err-msg" id="error_msg"></a>
+		        </li>
+		    </ul>
+	  </div>
+  </div>  
+    <form id="form1" name="form1" action="../Handler/PaymentUpdate.ashx" target="frUpdate" method="post" onsubmit="return ValidForm();">
+        <div class="fieldset">
+            <div class="legend">Account Information</div>
+            <div class="clear"></div>
+            <table cellspacing="1" cellpadding="2" width="100%">
+                <tr>
+                    <td style="width: 130px;">{username}</td>
+                    <td class="b">{username-val}</td>
+                </tr>
+                <tr>
+                    <td>{daterequest}</td>
+                    <td class="b">{daterequest-val}</td>
+                </tr>
+                <tr>
+                    <td>{email}</td>
+                    <td>{email-val}</td>
+                </tr>
+                <tr>
+                    <td>{fname}</td>
+                    <td>{fname-val}</td>
+                </tr>
+                <tr>
+                    <td>{lname}</td>
+                    <td>{lname-val}</td>
+                </tr>
+            </table>
+        </div>
+         <div class="fieldset">
+            <div class="legend">Payment Information</div>
+            <div class="clear"></div>
+            <table cellspacing="1" cellpadding="2" width="100%">
+                <tr>
+                    <td style="width:130px;">{PaymentMethod}</td>
+                    <td class="b">{preferred-val}</td>
+                </tr>
+                <tr>
+                    <td>{Amount}</td>
+                    <td class="b">{amt-val}</td>
+                </tr>
+                <tr>
+                    <td>{status}</td>
+                    <td class="b">{status-val}</td>
+                </tr>                                          
+                <tr>
+                    <td>{transferto}</td>
+                    <td><strong>{12bet-val}</strong> ({transferto-val})</td>
+                </tr>
+                <tr>
+                    <td>{transfer-amount}</td>
+                    <td>{transfer-amount-val}</td>
+                </tr>                         
+                <!--/cheque-->
+                <!--pending-->               
+                <tr>
+                    <td colspan="2" valign="middle"><input type="radio" style="border:0;" name="rdApprove" value="1" {chkappoved} {disable-val} onclick="EnableUpdate(false);" /> {approve} <input type="radio" style="border:0;" name="rdApprove" value="0" {chkrejected} {disable-val} onclick="EnableUpdate(false);" /> {reject}</td>
+                </tr>
+                <!--/pending-->
+                <!--others-->                                      
+                <tr>
+                    <td>{completeddate}</td>
+                    <td class="b">{completeddate-val}</td>
+                </tr>
+                <tr>
+                    <td>{UpdatedBy}</td>
+                    <td>{creator-val}</td>
+                </tr>
+                <!--/others-->
+            </table>
+        </div>
+        <table cellspacing="1" cellpadding="0" width="100%">
+            <tr>
+                <td>
+                    <div class="fieldset" style="margin-right: 3px;">
+                        <div class="legend">Admin Note</div>
+                        <div class="clear"></div>
+                            Visible only to admin
+                            <br /><textarea id="txtAdminRemark" name="txtAdminRemark" style="width: 100%;height:55px;" {disable-val} maxlength=300>{AdminRemark-val}</textarea>
+                    </div>
+                </td>
+                <td>
+                    <div class="fieldset">
+                        <div class="legend">Affiliate Note</div>
+                        <div class="clear"></div>
+                            Visible also to affiliate
+                            <br />
+                            <textarea maxlength=300 id="txtAffRemark" name="txtAffRemark" style="width: 100%;height:55px;" {disable-val}>{AffRemark-val}</textarea>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="clear" style="height: 6px;"></div>
+        <input type="submit" class="{submitcss}" id="btnUpdate" name="btnUpdate" value="{update}" {disable-val} />
+        &nbsp;&nbsp;&nbsp;<input type="button" id="btnClose" class="buttonlogin" name="btnClose" value="{cancel}" onclick="parent.ibcWnd.close();" />
+        <input type="hidden" id="hdApprove" name="hdApprove" value="{status-val}" />
+        <input type="hidden" id="hdTransId" name="hdTransId" value="{transid-val}" />
+        <input type="hidden" id="hdRealAmt" name="hdRealAmt" value="{amt-val}" />
+        <input type="hidden" id="hdAmt" name="hdAmt" value="{hdamt-val}" />
+        <input type="hidden" id="hdCustId" name="hdCustId" value="{custid-val}" />
+        <input type="hidden" id="user" name="user" value="{username-val}" />
+        <input type="hidden" id="fname" name="fname" value="{fname-val}" />
+        <input type="hidden" id="lname" name="lname" value="{lname-val}" />
+        <input type="hidden" id="wldate" name="wldate" value="{daterequest-val}" />
+        <input type="hidden" id="hdEmail" name="hdEmail" value="{email-val}" />
+        <input type="hidden" id="AppErr" name="AppErr" value="{ApproveErr}" />
+        <input type="hidden" id="lang" name="lang" value="{lang}" />
+        <input type="hidden" id="hdPage" name="hdPage" value="{page}" />
+        <input type="hidden" id="hdCurrency" name="hdCurrency" value="{currency}" />
+    </form>
+    <iframe frameborder="0" src="" id="frUpdate" name="frUpdate" scrolling="no" class="hidden" style="width:0px; height:0px;"></iframe>
+        
+</div>

@@ -1,0 +1,212 @@
+﻿<script type="text/javascript">
+    var ctrInput = "{ServerDateTime}";
+    function EnableDisableSearchDate() {
+        /*Enable search by date */
+        var chkbox = $("chkDate");
+        if (chkbox.checked) {
+            
+            $("fdate").disabled = false;
+            $("tdate").disabled = false;
+            $("fdateTrigger").disabled = false;
+            $("tdateTrigger").disabled = false;   
+  
+           Calendar.setup({
+            inputField : "fdate",
+            ifFormat: "%m/%d/%Y",
+            showsTime : false, 
+            button : "fdateTrigger",
+            singleClick : true,
+            showOthers : true,
+            step : 1,
+            range:[{StartYear},{CurrentYear}]
+        });
+
+        Calendar.setup({
+            inputField: "tdate",
+            ifFormat: "%m/%d/%Y",
+            showsTime: false,
+            button: "tdateTrigger",
+            singleClick: true,
+            showOthers: true,
+            step: 1,
+            range:[{StartYear},{CurrentYear}]
+        });
+       
+        }
+        else {/*Disable search by date */
+            $("fdate").disabled = true;
+            $("tdate").disabled = true;
+            $("fdateTrigger").disabled = true;
+            $("tdateTrigger").disabled = true;
+            $("fdateTrigger").onclick = "";
+            $("tdateTrigger").onclick = "";            
+        }
+    }
+    function IsDate(str) {
+      try{
+         var myDate = new Date(dateString);
+         return true;
+      }catch(e)
+      {
+         return false;
+      }
+    }
+    function FixValidDate(obj) {
+        if (!IsDate(obj.value)) {
+            obj.value = ctrInput;
+        }
+    }
+    function NavigatePage(curPage) {
+        LoadMessageListData(curPage);
+    }
+    function LoadMessageListData(curPage) {
+        try {
+            var page = parseInt(curPage);
+         
+            var params, important, fromdate, todate;
+            important = $("slSearchOption").value;
+            fromdate = "";
+            todate = "";
+
+            if ($("chkDate").checked) {
+                fromdate = $("fdate").value;
+                todate = $("tdate").value; 
+            }
+            
+            params = "params=" + important + ";" + fromdate + ";" + todate + ";" + curPage;
+        
+            var ajax = new Ajax.Request("../Handler/GetMessageList.ashx", {
+                method: 'post',
+                parameters: params,
+                onComplete: function(data) {
+                    ProcessResult(data.responseText);
+                }
+            });
+
+        }
+        catch (e) {
+            alert(e);
+        }
+       
+
+    }
+    function ProcessResult(data) {
+        try {
+           
+            var sXmlBody = "<table><tbody id='result'>" + data + "</tbody></table>";
+            var tempDiv = document.createElement("DIV");
+            tempDiv.innerHTML = sXmlBody;
+            $("tblResult").removeChild($("result"));
+            $("tblResult").appendChild(tempDiv.firstChild.firstChild);
+            
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    function Search()
+    {
+        $("page").value = "1";
+        return true;
+    }
+</script>
+
+<form method="get" name="frmData" id="frmData" onsubmit="return Search();">
+<div id="contents">
+    <div id="box_insite">
+        <div class="header_in">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <td width="144" class="in_top">
+                        {MessageHistory}
+                    </td>
+                    <td class="in_right">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div class="in_conts">
+                <table class="aff-table" cellspacing="1" cellpadding="1">
+                    <tr>
+                        <td style="padding-left: 15px;">
+                            {Search}
+                        </td>
+                        <td>
+                            <select id="slSearchOption" name="slSearchOption">
+                                <option value="-1">{All}</option>
+                                <option value="0">{Normal}</option>
+                                <option value="1">{Important}</option>
+                            </select>
+                        </td>
+                        <td class="r">
+                            <input type="checkbox" name="chkDate" onclick="EnableDisableSearchDate(this);" id="chkDate" />
+                        </td>
+                        <td class="r">
+                            {From}:
+                        </td>
+                        <td class="r" style="width: 100px">
+                            <input type="text" id="fdate" name="fdate" size="13" value="{fdate}" disabled="disabled" />
+                        </td>
+                        <td>
+                            <img hspace="3" height="20" border="0" width="18" src="../App_Themes/Default/Images/cal.gif"
+                                id="fdateTrigger" disabled="disabled" />
+                        </td>
+                        <td class="r">
+                            {To}:
+                        </td>
+                        <td style="width: 100px" class="r">
+                            <input type="text" id="tdate" name="tdate" size="13" value="{tdate}" disabled="disabled" />
+                        </td>
+                        <td>
+                            <img hspace="3" height="20" border="0" width="18" src="../App_Themes/Default/Images/cal.gif"
+                                id="tdateTrigger" disabled="disabled" />
+                        </td>
+                        <td>
+                            <input type="button" value="{Submit}" onclick="LoadData(1);" id="btnSubmit" name="{Submit}" class="button" />
+                        </td>
+                        <td style="width: 50px;"></td>
+                    </tr>
+                </table>
+                        
+            <div style="height: 10;">&nbsp;</div>
+            {paging-top}
+            <div class="tbl-box">
+                <table class="aff-table" cellspacing="1" cellpadding="1" id="tblResult">
+                    <tr class="tblheader">
+                        <td width="5%">
+                        </td>
+                        <td width="8%">
+                            {ID}
+                        </td>
+                        <td width="21%">
+                            {PostDate}
+                        </td>
+                        <td width="66%">
+                            {Message}
+                        </td>
+                    </tr>
+                    <tbody id="result">
+                        <!--Content-->
+                        <tr class="{rowstyle}" onmouseout="this.className={onmouseoutstyle};" onmouseover="this.className=c;">
+                            <td class="c">
+                                {No-val}
+                            </td>
+                            <td class="c">
+                                {ID-val}
+                            </td>
+                            <td class="c">
+                                {Postdate-val}
+                            </td>
+                            <td class="l {hotnewsstyle}" style="padding: 0px 5px 0px 10px" >
+                                {Message-val}
+                            </td>
+                        </tr>
+                        <!--/Content-->
+                    </tbody>
+                </table>
+            </div>
+            {paging-bottom}
+        </div>
+    </div>
+</div>
+<input type="hidden" id="page" name="page" value="{page}" />
+</form>

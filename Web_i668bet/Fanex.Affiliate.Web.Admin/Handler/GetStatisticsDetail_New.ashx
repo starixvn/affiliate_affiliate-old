@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" CodeBehind="GetStatisticsDetail_New.ashx.cs" Class="Fanex.Web.i668bet.Admin.Handler.GetStatisticsDetail_New" %>

@@ -1,0 +1,102 @@
+﻿    <style type="text/css">        
+        #addsetting
+        {
+            margin-left:10px;
+        }
+        .vrow
+        {
+            margin-bottom:10px;
+        }
+        .vrow .label
+        {
+            margin-bottom:4px;
+        }
+        #key, #rvalue, #description, .input input
+        {
+            width:550px;
+        }
+        #key, #type
+        {
+            height:24px;
+        }
+        #rvalue
+        {
+            height:300px;
+        }
+        #description
+        {
+            height:40px;
+        }
+    </style>
+    <form id="addsetting">
+        <div class="vrow">
+            <div class="label">{ID}</div>
+            <div class="input">
+                <input id="id" type="text" disabled="disabled" value="{CountryID-val}" />
+            </div>
+        </div>
+        <div class="vrow">
+            <div class="label">{Name}</div>
+            <div class="input">
+                <input id="countryname" type="text" value="{CountryName-val}" />
+            </div>
+        </div>
+        <div class="vrow">        
+            <div class="label">{Description}</div>
+            <div class="input">
+                <textarea id="description">{Description-val}</textarea>
+            </div>
+        </div>      
+        <div class="vrow">
+            <div class="label">{Icon}</div>
+            <div class="input">
+                <input id="icon" type="text" value="{Icon-val}" />
+            </div>
+        </div> 
+        <div class="vrow">
+            <div class="label">{DisplayOrder}</div>
+            <div class="input">
+                <input id="displayorder" type="number" value="{DisplayOrder-val}" />
+            </div>
+        </div>   
+         <div class="vrow">
+            <label class="label">{IsEnabled}</label>            
+            <input id="isenabled" type="checkbox" {checked-val} />
+            
+        </div>   
+        <div class="vrow">
+            <a class="abutton" href="javascript:;" onclick="updateCountry();"><span id="submitText">{Action}</span></a>
+            <a class="abutton" href="javascript:;" onclick="ClosePopupNoReload();"><span id="Span1">{Cancel}</span></a>
+        </div>
+    </form>
+
+<script type="text/javascript">   
+    function updateCountry() 
+    {
+        var data = {
+            action: $("id").getAttribute("disabled") ? "update" : "add",
+            id: $F('id'),
+            name: $F('countryname'),
+            description: $F('description'),
+            icon: $F('icon'),
+            displayorder: $F('displayorder'),
+            isenabled: $('isenabled').checked ? 1: 0
+        };
+      
+
+        var ajax = new Ajax.Request("../Handler/CountryHandler.ashx", {
+            method: 'post',
+            parameters: data,
+            onComplete: function(data) {
+                if(data.responseText == 'True')
+                {
+                    ClosePopup();
+                }
+                else
+                {
+                    alert(data.responseText);
+                }
+            }
+        });
+    }
+</script>

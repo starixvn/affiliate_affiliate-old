@@ -1,0 +1,2622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccId" xml:space="preserve">
+    <value>หมายเลขบัญชี</value>
+  </data>
+  <data name="AccInfo" xml:space="preserve">
+    <value>ข้อมูลเกี่ยวกับบัญชี</value>
+  </data>
+  <data name="Account12bet" xml:space="preserve">
+    <value>บัญชีที่ใช้เล่นใน Affiliate</value>
+  </data>
+  <data name="AccOverview" xml:space="preserve">
+    <value>ข้อมูลโดยรวมเกี่ยวกับบัญชี</value>
+  </data>
+  <data name="ActiveAcc" xml:space="preserve">
+    <value>อีเมลล์นี้จะรวมถึงลิ๊งค์ ซึ่งคุณต้องการที่จะคลิ๊กเพื่อทำให้บัญชีของคุณสามารถใช้งานได้และเป็นการยืนยันอีเมลล์แอดเดรสของคุณที่ใช้ในการสมัครสมาชิก</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>ที่อยู่</value>
+  </data>
+  <data name="Affiliate" xml:space="preserve">
+    <value>พันธมิตร</value>
+  </data>
+  <data name="BankAccnumber" xml:space="preserve">
+    <value>หมายเลขบัญชีธนาคาร</value>
+  </data>
+  <data name="BankAddress" xml:space="preserve">
+    <value>ที่อยู่ธนาคาร</value>
+  </data>
+  <data name="BankCode" xml:space="preserve">
+    <value>ธนาคาร และ รหัสธนาคารในเครือ</value>
+  </data>
+  <data name="BankName" xml:space="preserve">
+    <value>ชื่อธนาคาร</value>
+  </data>
+  <data name="BankTransfer" xml:space="preserve">
+    <value>โอนเงินผ่านธนาคาร</value>
+  </data>
+  <data name="Bet12" xml:space="preserve">
+    <value>Affiliate</value>
+  </data>
+  <data name="CannotSendmail" xml:space="preserve">
+    <value>ไม่สามารถส่งอีเมลล์ได้ กรุณาลองใหม่อีกครั้ง</value>
+  </data>
+  <data name="Casino" xml:space="preserve">
+    <value>คาสิโน</value>
+  </data>
+  <data name="Cheque" xml:space="preserve">
+    <value>เชค</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>จังหวัด</value>
+  </data>
+  <data name="CompleteForm" xml:space="preserve">
+    <value>กรุณากรอกแบบฟอร์มนี้เพื่อสมัครสมาชิกกับโปรแกรม พันธมิตร Affiliate</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>ติดต่อเรา</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>รายละเอียดที่ใช้ในการติดต่อ</value>
+  </data>
+  <data name="ContactNumber" xml:space="preserve">
+    <value>หมายเลขโทรศัพท์ที่ใช้ติดต่อ</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>ประเทศ</value>
+  </data>
+  <data name="Deposit" xml:space="preserve">
+    <value>ฝากเงิน</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>อีเมลล์แอดเดรส</value>
+  </data>
+  <data name="Email1" xml:space="preserve">
+    <value>อีเมลล์</value>
+  </data>
+  <data name="EmailInvalid" xml:space="preserve">
+    <value>การใช้อีเมลล์ของคุณไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง</value>
+  </data>
+  <data name="Faqs" xml:space="preserve">
+    <value>คำถามที่พบบ่อย</value>
+  </data>
+  <data name="FName" xml:space="preserve">
+    <value>ชื่อ</value>
+  </data>
+  <data name="ForgetPassword" xml:space="preserve">
+    <value>ลืมพาสเวริ์ด</value>
+  </data>
+  <data name="Fullname" xml:space="preserve">
+    <value>ชื่อเต็ม</value>
+  </data>
+  <data name="HowToBet" xml:space="preserve">
+    <value>จะวางเดิมพันอย่างไร</value>
+  </data>
+  <data name="LName" xml:space="preserve">
+    <value>นามสกุล</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>ล๊อคอิน</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>ล๊อคเอ๊าท์</value>
+  </data>
+  <data name="MailingInfor" xml:space="preserve">
+    <value>รายละเอียดเกี่ยวกับการส่งเมลล์</value>
+  </data>
+  <data name="ManageAccount" xml:space="preserve">
+    <value>บริหาร บัญชี</value>
+  </data>
+  <data name="Media" xml:space="preserve">
+    <value>ที่รวบรวมสื่อโฆษณา</value>
+  </data>
+  <data name="MinWithdraw" xml:space="preserve">
+    <value>จำนวนเงินขั้นต่ำที่ขอถอนได้คือ</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>หมายเลขโทรศัพท์มือถือ</value>
+  </data>
+  <data name="MoneyBooker" xml:space="preserve">
+    <value>มันนี่บุคเกอร์</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>เพิ่มเติม</value>
+  </data>
+  <data name="MyAcc" xml:space="preserve">
+    <value>บัญชีของฉัน</value>
+  </data>
+  <data name="MyHome" xml:space="preserve">
+    <value>บ้านของฉัน</value>
+  </data>
+  <data name="Neteller" xml:space="preserve">
+    <value>โอนทาง Neteller</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>รหัสผ่าน</value>
+  </data>
+  <data name="PaymentInfor" xml:space="preserve">
+    <value>รายละเอียดการถอนเงิน</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>วิธีการจ่ายเงิน</value>
+  </data>
+  <data name="Poker" xml:space="preserve">
+    <value>โปกเกอร์</value>
+  </data>
+  <data name="PostCode" xml:space="preserve">
+    <value>รหัสไปรษณีย์</value>
+  </data>
+  <data name="PreferLang" xml:space="preserve">
+    <value>สิ่งที่ต้องการใช้</value>
+  </data>
+  <data name="ProgDetails" xml:space="preserve">
+    <value>รายละเอียดโปรแกรม</value>
+  </data>
+  <data name="ReEmail" xml:space="preserve">
+    <value>ตรวจสอบอีเมลล์แอดเดรส</value>
+  </data>
+  <data name="RegisForm" xml:space="preserve">
+    <value>แบบฟอร์มการสมัคร</value>
+  </data>
+  <data name="RegisSuccess" xml:space="preserve">
+    <value>ขอบคุณที่ส่งใบสมัครของคุณมายัง พันธมิตร Affiliate &lt;br/&gt;&lt;br/&gt; เมื่อทางเราได้พิจารณาเนื้อหาเวบไซด์และข้อมูล ว่าเหมาะสม เราจะทำการแจ้งคุณถึงสถานะ &lt;br/&gt;&lt;br/&gt; ภายใน 3 วันทำการ และคุณจะสามารถเข้าใช้ระบบพันธมิตรของเราได้คะ &lt;br/&gt;&lt;br/&gt; ด้วยความนับถือ &lt;br/&gt;&lt;br/&gt; ทีมงานพันธมิตร Affiliate</value>
+  </data>
+  <data name="RequireInfo" xml:space="preserve">
+    <value>กรุณากรอก &lt;font color="red"&gt;*&lt;/font&gt;  ทุกช่องที่ระบบแนะนำ คะ</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>สมัคร</value>
+  </data>
+  <data name="SiteInfor" xml:space="preserve">
+    <value>รายละเอียดเกี่ยวกับเวบไซค์</value>
+  </data>
+  <data name="SiteUrl" xml:space="preserve">
+    <value>ลิงค์เข้าเวบไซค์</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>จังหวัด</value>
+  </data>
+  <data name="SubjectForgetPass" xml:space="preserve">
+    <value>บัญชีพันธมิตร Affiliate รายละเอียดการล๊อคอินของคุณ</value>
+  </data>
+  <data name="SubjectNewPass" xml:space="preserve">
+    <value>พันธมิตร Affiliate - รหัสผ่านตัวใหม่ของคุณ</value>
+  </data>
+  <data name="TermCondition" xml:space="preserve">
+    <value>กติกาและเงื่อนไข</value>
+  </data>
+  <data name="UnderReview" xml:space="preserve">
+    <value>การสมัครของคุณอยู่ระหว่างการพิจารณา</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>ชื่อที่ใช้เข้าระบบ</value>
+  </data>
+  <data name="Validation" xml:space="preserve">
+    <value>หมายเลขตรวจสอบ</value>
+  </data>
+  <data name="ValidationCode" xml:space="preserve">
+    <value>คุณกรอกหมายเลขตรวจสอบที่ไม่ถูกต้อง</value>
+  </data>
+  <data name="ContactTitle" xml:space="preserve">
+    <value>กรุณาส่งความคิดเห็นหรือคำถามมาได้ที่{email} หรือใช้แบบฟอร์มทางด้านล่าง</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>ชื่อ</value>
+  </data>
+  <data name="AffiliateID" xml:space="preserve">
+    <value>พันธมิตร ID</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>เรื่อง</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>ส่งมอบ</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>ปรับเปลี่ยน</value>
+  </data>
+  <data name="MessageSent" xml:space="preserve">
+    <value>ข้อความถูกส่ง</value>
+  </data>
+  <data name="MessageSentReview" xml:space="preserve">
+    <value>
+       ขอบคุณที่ติดต่อเรา{br}
+        ข้อความของคุณได้ถูกส่งเรียบร้อยแล้ว เราจะตอบกลับหาคุณโดยเร็วที่สุด{br}{br}
+        ขอให้มีวันที่ดี{br}{br}
+        ขอแสดงความนับถือ, {br}{br}
+       ทีมงานพันธมิตร Affiliate
+    </value>
+  </data>
+  <data name="MessageSentFail" xml:space="preserve">
+    <value>ข้อความที่ถูกส่ง ล้มเหลว</value>
+  </data>
+  <data name="MessageSentFailContent" xml:space="preserve">
+    <value>เกิดปัญหาในขณะส่งอีเมลล์  {br} กรุณาติดต่อเราอีกครั้ง</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>ความคิดเห็น</value>
+  </data>
+  <data name="ErrMsgForgetPwFail" xml:space="preserve">
+    <value>แจ้งแก้ไขพาสเวิดไม่ถูกต้อง &lt;a href='ForgetPass.aspx'&gt;ลอง ใหม่ อีก ครั้ง&lt;/a&gt;</value>
+  </data>
+  <data name="UpdateAccSuccess" xml:space="preserve">
+    <value>รายละเอียดเกี่ยวกับบัญชีของคุณได้รับการอัพเดทสำเร็จเรียบร้อยแล้ว</value>
+  </data>
+  <data name="Dear" xml:space="preserve">
+    <value>สวัสดี</value>
+  </data>
+  <data name="RegisSubject" xml:space="preserve">
+    <value>พันธมิตร Affiliate - การสมัครของคุณ</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>ทั้งหมด</value>
+  </data>
+  <data name="CsdSubject" xml:space="preserve">
+    <value>บัญชีพันธมิตรใหม่กำลังรอการอนุมัติ</value>
+  </data>
+  <data name="Banner" xml:space="preserve">
+    <value>แบนเนอร์</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>หัวข้อ</value>
+  </data>
+  <data name="ImageType" xml:space="preserve">
+    <value>ชนิด</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>ภาษา</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>ขนาด</value>
+  </data>
+  <data name="TextLink" xml:space="preserve">
+    <value>ลิ้งค์ข้อความ</value>
+  </data>
+  <data name="ErrEmailInvalid" xml:space="preserve">
+    <value>อีเมลล์แอดเดรสไม่ถูกต้อง</value>
+  </data>
+  <data name="ErrEmailRequire" xml:space="preserve">
+    <value>อีเมลล์แอดเดรสจำเป็นต้องมี</value>
+  </data>
+  <data name="TitelForgetPass" xml:space="preserve">
+    <value>พาสเวิดใหม่จะถูกส่งไปยังอีเมลล์ของคุณ.&lt;br /&gt; </value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>อีเมลล์แอดเดรสของคุณ:</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>ย้อนกลับ</value>
+  </data>
+  <data name="ChangePass" xml:space="preserve">
+    <value>เปลี่ยนรหัสผ่าน</value>
+  </data>
+  <data name="ChangePassText" xml:space="preserve">
+    <value>ใช้แบบฟอร์มนี้เพื่อเปลี่ยนรหัสผ่านของคุณ  เมื่อคุณเปลี่ยนแล้ว พาสเวริ์ดใหม่ของคุณจะสามารถใช้ได้ในการล๊อกอินครั้งต่อไป</value>
+  </data>
+  <data name="NewPass" xml:space="preserve">
+    <value>รหัสผ่านใหม่</value>
+  </data>
+  <data name="RePass" xml:space="preserve">
+    <value>กรอกพาสเวริ์ดตัวใหม่อีกครั้ง</value>
+  </data>
+  <data name="ErrmsgEntryPassword" xml:space="preserve">
+    <value>กรุณากรอกรหัสผ่าน</value>
+  </data>
+  <data name="ErrmsgEntryUsername" xml:space="preserve">
+    <value>กรุณากรอกชื่อที่ใช้เข้าระบบ</value>
+  </data>
+  <data name="ErrmsgEntryValidCode" xml:space="preserve">
+    <value>กรุณากรอกเลขรหัสเพื่อความปลอดภัย</value>
+  </data>
+  <data name="ChangePassErr" xml:space="preserve">
+    <value>การเปลี่ยนรหัสผ่านมีข้อผิดพลาด</value>
+  </data>
+  <data name="OldPassErr" xml:space="preserve">
+    <value>พาสเวิร์ดเก่าไม่ถูกต้อง</value>
+  </data>
+  <data name="OldPass" xml:space="preserve">
+    <value>พาสเวริ์ดเก่า</value>
+  </data>
+  <data name="PassCheck" xml:space="preserve">
+    <value>รหัสผ่านต้องมีอย่างน้อย 6 ตัวขึ้นไป รวมถีงต้องมี 2 ตัวอักษรและอย่างน้อย 2 หลัก ตัวอย่างเช่น ( pass22 )</value>
+  </data>
+  <data name="Msgkickout" xml:space="preserve">
+    <value>มีคนเข้าระบบหรือว่าเวลาในระบบของคุณไม่ถูกต้อง  คุณถูกบังคับให้ออกจากระบบ</value>
+  </data>
+  <data name="BalForward" xml:space="preserve">
+    <value>ยอดคงเหลือยกไป</value>
+  </data>
+  <data name="Comm" xml:space="preserve">
+    <value>คอมมิชชั่น</value>
+  </data>
+  <data name="CommCurr" xml:space="preserve">
+    <value>คอมมิชชั่นที่ได้รับขณะนี้</value>
+  </data>
+  <data name="CommPercent" xml:space="preserve">
+    <value>เปอร์เซนต์ของการรับค่าคอมมิชชั่น</value>
+  </data>
+  <data name="CurrBal" xml:space="preserve">
+    <value>ยอดคงเหลือปัจจุบัน</value>
+  </data>
+  <data name="Last6Month" xml:space="preserve">
+    <value>รายได้ 6 เดือนที่ผ่านมา</value>
+  </data>
+  <data name="NewSignup" xml:space="preserve">
+    <value>สมัครสมาชิกใหม่</value>
+  </data>
+  <data name="SumPerform" xml:space="preserve">
+    <value>สรุปผลงานสำหรับ</value>
+  </data>
+  <data name="TotalPlay" xml:space="preserve">
+    <value>ยอดรวมของผู้เล่น</value>
+  </data>
+  <data name="Statistic" xml:space="preserve">
+    <value>สถิติ</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>หน้าหลัก</value>
+  </data>
+  <data name="ViewMore" xml:space="preserve">
+    <value>ดูรายละเอียด</value>
+  </data>
+  <data name="MakeYourTrafficDay" xml:space="preserve">
+    <value>ทำให้ธุรกิจของคุณได้รับเงิน</value>
+  </data>
+  <data name="MakeYourTrafficDayContent" xml:space="preserve">
+    <value>รับคอมมิชชั่นอย่างต่อเนื่องตลอดไปจากการที่คุณแนะนำลูกค้าให้ Affiliate ขอให้สนุกกับการที่ได้รับเงินจากผลกำไรอย่างต่อเนื่องในการร่วมธุรกิจกับเรา</value>
+  </data>
+  <data name="TitleLogin" xml:space="preserve">
+    <value>ล๊อคอินเข้าระบบบัญชีพันธมิตร</value>
+  </data>
+  <data name="hotnew" xml:space="preserve">
+    <value>การวางเดิมพันทางอินเตอร์เนต  การวางเดิมพันเกี่ยวกับกีฬาและฟุตบอล กับ Affiliate.com</value>
+  </data>
+  <data name="NoInfo" xml:space="preserve">
+    <value>ไม่มีข้อมูลในขณะนี้</value>
+  </data>
+  <data name="Err1" xml:space="preserve">
+    <value>ส่วนลดผิด</value>
+  </data>
+  <data name="Err100" xml:space="preserve">
+    <value>ขอโทษ ไม่สามารถสร้างตัวแทนได้</value>
+  </data>
+  <data name="Err1001" xml:space="preserve">
+    <value>ข้อมูลเกี่ยวกับบัญชีพันธมิตรของท่านไม่ถูกต้อง</value>
+  </data>
+  <data name="Err1002" xml:space="preserve">
+    <value>อีเมลล์แอดเดรสที่คุณได้กรอกได้ถูกใช้ในการลงทะเบียนแล้ว กรุณาเลือกอันใหม่</value>
+  </data>
+  <data name="Err1003" xml:space="preserve">
+    <value>ยูสเซอร์เนม Affiliate ไม่ถูกต้อง</value>
+  </data>
+  <data name="Err1004" xml:space="preserve">
+    <value>รายละเอียดเกี่ยวกับบัญชีของคุณไม่ถูกต้อง  การอัพเดทบัญชีของคุณสำเร็จแล้ว</value>
+  </data>
+  <data name="Err1005" xml:space="preserve">
+    <value>มีข้อมูลผิดพลาดเกิดขึ้น การทำการอัพเดทข้อมูลไม่สำเร็จ</value>
+  </data>
+  <data name="Err1006" xml:space="preserve">
+    <value>มีข้อมูลผิดพลาดเกิดขึ้น การทำการอัพเดทข้อมูลไม่สำเร็จ</value>
+  </data>
+  <data name="Err101" xml:space="preserve">
+    <value>ชื่อที่ใช้เข้าระบบไม่สามารถใช้ได้</value>
+  </data>
+  <data name="Err102" xml:space="preserve">
+    <value>ผิดตำแหน่งที่จะใช้ ( จำนวนเงินสูงสุดสำหรับตัวแทนหลักที่กำหนดโดยตัวแทนสูงสุด )</value>
+  </data>
+  <data name="Err103" xml:space="preserve">
+    <value>ขออภัย จำนวนเงินขั้นต่ำที่วางเดิมพันต้องน้อยกว่าจำนวนเงินสูงุดและจำนวนเงินสูงสุดต้องน้อยกว่าจำนวนเงินสูงสุดต่อแมตซ์คะ</value>
+  </data>
+  <data name="Err104" xml:space="preserve">
+    <value>ขออภัย การอัพเดทยอดเงินล่าสุดไม่สำเร็จ   ยอดที่คุณขอได้เกินกว่าเครดิตที่ตัวแทนหลักให้</value>
+  </data>
+  <data name="Err105" xml:space="preserve">
+    <value>ขออภัย การวางเดิมพันขั้นต่ำต้องเท่ากับหรือมากกว่าจำนวนเงินการวางเดิมพันขั้นต่ำของตัวแทนหลัก</value>
+  </data>
+  <data name="Err107" xml:space="preserve">
+    <value>ขออภัย จำนวนการวางเดิมพันสูงสุดต่อแมตซ์ต้องเท่ากับหรือน้อยกว่าจำนวนการวางเดิมพันขั้นต่ำของตัวแทนหลัก</value>
+  </data>
+  <data name="Err111" xml:space="preserve">
+    <value>การสร้างบัญชีของลูกค้าล้มเหลว กรุณารองใหม่อีกครั้ง</value>
+  </data>
+  <data name="Err112" xml:space="preserve">
+    <value>การสร้างบัญชีของลูกค้าล้มเหลว กรุณารองใหม่อีกครั้ง</value>
+  </data>
+  <data name="Err113" xml:space="preserve">
+    <value>การสร้างบัญชีของลูกค้าล้มเหลว กรุณารองใหม่อีกครั้ง</value>
+  </data>
+  <data name="Err114" xml:space="preserve">
+    <value>การสร้างบัญชีของลูกค้าล้มเหลว กรุณารองใหม่อีกครั้ง</value>
+  </data>
+  <data name="Err115" xml:space="preserve">
+    <value>การสร้างบัญชีของลูกค้าล้มเหลว กรุณารองใหม่อีกครั้ง</value>
+  </data>
+  <data name="Err116" xml:space="preserve">
+    <value>คุณไม่ได้รับการอนุญาติที่จะสร้างหรือแก้ไขข้อมูลนี้</value>
+  </data>
+  <data name="Err2" xml:space="preserve">
+    <value>มีข้อผิดพลาดจำนวนเงินขั้นต่ำต่อแมตซ์ที่วางเดิมพัน/จำนวนเงินขั้นสูงสุดที่วางเดิมพัน/จำนวนเงินขั้นสูงสุดต่อแมตซ์/ชื่อของตัวแทนหลัก กลุ่มบุคคลที่ใช้บัญชี</value>
+  </data>
+  <data name="Err3" xml:space="preserve">
+    <value>การใช้ผิดตำแหน่ง</value>
+  </data>
+  <data name="Err4" xml:space="preserve">
+    <value>การใช้งานผิดตำแหน่ง ( ขั้นต่ำสุด/สูงสุดที่ถูกกำหนดไว้โดยบริษัท )</value>
+  </data>
+  <data name="Err5" xml:space="preserve">
+    <value>การใช้งานผิดตำแหน่ง ( ขั้นสูงสุดที่ถูกกำหนดไว้โดยบริษัท )</value>
+  </data>
+  <data name="Err999" xml:space="preserve">
+    <value>สร้างรายละเอียดเกี่ยวกับพันธมิตรล้มเหลว กรุณาลองใหม่อีกครั้ง</value>
+  </data>
+  <data name="HowAffilliateWork" xml:space="preserve">
+    <value>เมื่อคุณได้เป็นสมาชิกพันธมิตรกับ Affiliate สิ่งที่คุณต้องทำคือการแนะนำลูกค้าเข้ามาเป็นสมาชิกกับ Affiliate โดยการใช้รหัสพิเศษซึ่งคุณสามารถนำไปวางไว้บนเวบไซค์ของคุณ</value>
+  </data>
+  <data name="EmailMatch" xml:space="preserve">
+    <value>อีเมลล์แอดเดรสที่คุณกรอกไม่สอดคล้องกัน</value>
+  </data>
+  <data name="IsInvalid" xml:space="preserve">
+    <value>ไม่ถูกต้องการใช้งาน</value>
+  </data>
+  <data name="IsRequired" xml:space="preserve">
+    <value>จำเป็น</value>
+  </data>
+  <data name="EmailRequire" xml:space="preserve">
+    <value>จำเป็นต้องมีอีเมลล์แอดเดรส</value>
+  </data>
+  <data name="TermErr" xml:space="preserve">
+    <value>กติกา และ เงื่อนไขที่ไม่เห็นด้วย  กรุณาตรวจสอบ</value>
+  </data>
+  <data name="ErrmsgEmailClose" xml:space="preserve">
+    <value>
+ อีเมลล์แอดเดรสนี้ได้ถูกใช้ในการสมัครเป็นพันธมิตรกับ Affiliate และได้ถูกปิดเรียบร้อยแล้ว กรุณาลองใหม่อีกครั้ง หรือคลิ๊กไปที่&lt;a href="ContactUs.aspx" class='err-msg'&gt;ติดต่อเรา&lt;/a&gt;.
+</value>
+  </data>
+  <data name="ErrmsgEmailNotApprove" xml:space="preserve">
+    <value>อีเมลล์แอดเดรสนี้ถูกใช้ในการการสมัครเป็นพันธมิตรเรียบร้อยแล้วและไม่ได้รับการอนุมัติ กรุณาลองใหม่อีกครั้งหรือ  &lt;a href="ContactUs.aspx" class='err-msg'&gt;ติดต่อเรา&lt;/a&gt;.
+</value>
+  </data>
+  <data name="ErrmsgNotExistsEmail" xml:space="preserve">
+    <value>คุณได้ระบุอีเมลล์ที่มีในระบบแล้ว กรุณาเปลี่ยนและลองอีกครั้ง หรือ &lt;a href="ContactUs.aspx" class='err-msg'&gt; ติดต่อเรา&lt;/a&gt;</value>
+  </data>
+  <data name="CountryErr" xml:space="preserve">
+    <value>กรุณาเลือกประเทศ</value>
+  </data>
+  <data name="PreferLangErr" xml:space="preserve">
+    <value>กรุณาเลือกภาษาที่คุณต้องการใช้</value>
+  </data>
+  <data name="PwdChanged" xml:space="preserve">
+    <value>การเปลี่ยนรหัสผ่านเสร็จสมบูรณ์เรียบร้อยแล้ว</value>
+  </data>
+  <data name="ExpectList" xml:space="preserve">
+    <value>&lt;ul&gt;
+        &lt;li&gt;รับค่าคอมมิชชั่นสูงถึง 50% ของยอดเล่นเสียของผู้เล่น &lt;/li&gt;
+        &lt;li&gt;รายละเอียดของระบบที่ใช้ในการตรวจสอบ&lt;/li&gt;
+        &lt;li&gt;ผลประโยชน์อื่นที่ได้จากการเล่นอย่างสม่ำเสมอของลูกค้า&lt;/li&gt;
+        &lt;li&gt;รายได้ที่จ่ายให้คุณทุกเดือน&lt;/li&gt;
+        &lt;li&gt;ระบบวิธีการจ่ายเงินที่หลากหลาย&lt;/li&gt;
+        &lt;li&gt;มีพนักงานคอยบริการลูกค้าตลอด 24 ชั่วโมงทุกวัน&lt;/li&gt;
+	&lt;/ul&gt;</value>
+  </data>
+  <data name="Earn30" xml:space="preserve">
+    <value>รับค่าคอมมิชชั่นสูงถึง 50% ของยอดเล่นเสียของผู้เล่น</value>
+  </data>
+  <data name="DetailedStas" xml:space="preserve">
+    <value>รายละเอียดของระบบที่ใช้ในการตรวจสอบ</value>
+  </data>
+  <data name="ExcellentPlayers" xml:space="preserve">
+    <value>ผลประโยชน์อื่นที่ได้จากการเล่นอย่างสม่ำเสมอของลูกค้า</value>
+  </data>
+  <data name="PromptMonthly" xml:space="preserve">
+    <value>Prompt monthly payouts</value>
+  </data>
+  <data name="WideRange" xml:space="preserve">
+    <value>ระบบวิธีการจ่ายเงินที่หลากหลาย</value>
+  </data>
+  <data name="OnlineSupport" xml:space="preserve">
+    <value>มีพนักงานคอยบริการลูกค้าตลอด 24 ชั่วโมงทุกวัน</value>
+  </data>
+  <data name="OnlineSupportDetail" xml:space="preserve">
+    <value>หากคุณมีคำถามใดๆ ทีมงานบริหารเราพร้อมบริการคุณทุกวัน (เกือบ จะ) 24/7 ชม. ไม่ว่าจะเป็นเรื่องแบนเนอร์ ข้อแนะนำด้านการตลาด หรือ วิธีเพิ่มยอดคอมมิชชั่น &lt;p&gt; เครื่อข่ายเราครอบคลุมและจะอยู่นี่คอยแนะนำคุณในทุกๆด้านคะ &lt;p&gt;</value>
+  </data>
+  <data name="ExpectTitle" xml:space="preserve">
+    <value>ผลตอบแทนที่เราให้</value>
+  </data>
+  <data name="HowAffilliateTitle" xml:space="preserve">
+    <value>ต้องทำอย่างไรบ้าง</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>© {now} Sunplus™ Holdings (IOM) Limited All Rights Reserved.</value>
+  </data>
+  <data name="TotalActive" xml:space="preserve">
+    <value>ยอดรวมของลูกค้าที่ยังคงเล่นอยู่</value>
+  </data>
+  <data name="TotalDeposit" xml:space="preserve">
+    <value>ยอดรวมของการฝากเงิน</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>อนุมัติ</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>ยกเลิกแล้ว</value>
+  </data>
+  <data name="DateRequest" xml:space="preserve">
+    <value>วันที่ที่ร้องขอ</value>
+  </data>
+  <data name="ErrBalance" xml:space="preserve">
+    <value>จำนวนเงินที่ร้องขอต้องน้อยกว่ายอดจำนวนเงินคงเหลือในบัญชีปัจจุบัน</value>
+  </data>
+  <data name="ErrMinAmt" xml:space="preserve">
+    <value>จำนวนเงินที่ร้องขอต้องมากกว่าจำนวนเงินขั้นต่ำที่จะขอถอน</value>
+  </data>
+  <data name="Proccessing" xml:space="preserve">
+    <value>กำลังดำเนินการ</value>
+  </data>
+  <data name="RecentPayment" xml:space="preserve">
+    <value>การจ่ายเงินยอดปัจจับัน</value>
+  </data>
+  <data name="RequestAmount" xml:space="preserve">
+    <value>จำนวนเงินที่ร้องขอ</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>สถานะ</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>ไม่ทราบแหล่งที่มา</value>
+  </data>
+  <data name="Balance0" xml:space="preserve">
+    <value>คุณไม่สามารถขอถอนเงินเพราะว่าคุณมียอดเงินคงเหลือไม่เพียงพอ</value>
+  </data>
+  <data name="PaymentRequest" xml:space="preserve">
+    <value>การขอการถอนเงิน</value>
+  </data>
+  <data name="PaymentErr1001" xml:space="preserve">
+    <value>เสียใจด้วย จำนวนไม่ถูกต้อง</value>
+  </data>
+  <data name="PaymentErr1002" xml:space="preserve">
+    <value>ยูสเซอร์เนมของท่านไม่ถูกต้อง</value>
+  </data>
+  <data name="PaymentErr1003" xml:space="preserve">
+    <value>ขออภัย บัญชีพันธมิตรนี้มียอดเงินไม่เพียงพอที่จะขอถอน</value>
+  </data>
+  <data name="PaymentErr1004" xml:space="preserve">
+    <value>ยอดเงินคงเหลือในบัญชีไม่ถูกต้อง หรือสกุลเงินที่เลือกไม่สามารถทำได้</value>
+  </data>
+  <data name="PaymentErr1005" xml:space="preserve">
+    <value>ขออภัย จำนวนเงินต้องเท่ากับหรือมากกว่า</value>
+  </data>
+  <data name="PaymentErr1006" xml:space="preserve">
+    <value>การทำรายการล้มเหลว</value>
+  </data>
+  <data name="PaymentErr1007" xml:space="preserve">
+    <value>การทำรายการล้มเหลว</value>
+  </data>
+  <data name="PayoutSuccess" xml:space="preserve">
+    <value>การขอถอนเงินของคุณได้ทำการเสนอเสร็จสมบูรณ์แล้ว</value>
+  </data>
+  <data name="CancelRequest" xml:space="preserve">
+    <value>การขอยกเลิก</value>
+  </data>
+  <data name="CompletedDate" xml:space="preserve">
+    <value>วันที่เสร็จสมบูรณ์</value>
+  </data>
+  <data name="PendingRequest" xml:space="preserve">
+    <value>การร้องขอของคุณอยู่ระหว่างการดำเนินการ</value>
+  </data>
+  <data name="CancelPayoutSucc" xml:space="preserve">
+    <value>การขอถอนเงินของคุณได้รับการยกเลิกแล้ว</value>
+  </data>
+  <data name="ErrDefault" xml:space="preserve">
+    <value>ไม่สามารถหาแหล่งที่มาได้  มีข้อผิดพลาด</value>
+  </data>
+  <data name="Err3006" xml:space="preserve">
+    <value>การขอทำรายการ ล้มเหลว</value>
+  </data>
+  <data name="Err4001" xml:space="preserve">
+    <value>บัญชีสมาชิกเลขที่ลูกค้าไม่ถูกต้อง</value>
+  </data>
+  <data name="Err4002" xml:space="preserve">
+    <value>รายการนี้ไม่ใช่การถอนเงิน</value>
+  </data>
+  <data name="Err4003" xml:space="preserve">
+    <value>รายการนี้ได้ถูกยกเลิกมาก่อน</value>
+  </data>
+  <data name="Err4004" xml:space="preserve">
+    <value>ยอดเงินคงเหลือในบัญชีไม่ถูกต้อง หรือสกุลเงินที่เลือกไม่สามารถทำได้.</value>
+  </data>
+  <data name="AmtErr" xml:space="preserve">
+    <value>จำนวนเงินที่ร้องขอไม่ถูกต้อง  จำนวนเงินต้องอยู่ระหว่าง</value>
+  </data>
+  <data name="Err3001" xml:space="preserve">
+    <value>คุณมีรายการที่ร้องขอ รอดำเนินการอยู่ เพื่อที่จะร้องขอทำรายการใหม่ กรุณายกเลิกรายการร้องขออันแรกที่รอดำเนินการหรือรอจนกว่ารายการร้องขออันแรกได้รับการอนุมัติก่อน</value>
+  </data>
+  <data name="Err3002" xml:space="preserve">
+    <value>ยูสเซอร์เนมของท่านไม่ถูกต้อง</value>
+  </data>
+  <data name="Err3003" xml:space="preserve">
+    <value>ขออภัย บัญชีพันธมิตรนี้มียอดเงินไม่เพียงพอที่จะขอถอน</value>
+  </data>
+  <data name="Err3004" xml:space="preserve">
+    <value>จำนวนเงินคงเหลือในบัญชีของท่านไม่ถูกต้อง หรือ ว่าสกุลเงินที่ท่านเลือกในการถอนเงินไม่สามารถทำได้</value>
+  </data>
+  <data name="Err3007" xml:space="preserve">
+    <value>ขอโทษ จำนวนไม่ถูกต้อง</value>
+  </data>
+  <data name="RefNo" xml:space="preserve">
+    <value>หมายเลขอ้างอิง</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>ถูกปฏิเสธแล้ว</value>
+  </data>
+  <data name="RequestPayoutSucc" xml:space="preserve">
+    <value>การขอจ่ายเงิน เสร็จสมบูรณ์แล้ว</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>ยอดรวม</value>
+  </data>
+  <data name="For" xml:space="preserve">
+    <value>สำหรับ</value>
+  </data>
+  <data name="Err4005" xml:space="preserve">
+    <value>รายการนี้ได้ถูกยกเลิกมาก่อน</value>
+  </data>
+  <data name="OldPassandNewPass" xml:space="preserve">
+    <value>พาสเวริ์ดเก่าและพาสเวริ์ดใหม่จำเป็นต้องมี</value>
+  </data>
+  <data name="January" xml:space="preserve">
+    <value>มกราคม</value>
+  </data>
+  <data name="April" xml:space="preserve">
+    <value>เมษายน</value>
+  </data>
+  <data name="August" xml:space="preserve">
+    <value>สิงหาคม</value>
+  </data>
+  <data name="December" xml:space="preserve">
+    <value>ธันวาคม</value>
+  </data>
+  <data name="February" xml:space="preserve">
+    <value>กุมภาพันธ์</value>
+  </data>
+  <data name="July" xml:space="preserve">
+    <value>กรกฏาคม</value>
+  </data>
+  <data name="June" xml:space="preserve">
+    <value>มิถุนายน</value>
+  </data>
+  <data name="March" xml:space="preserve">
+    <value>มีนาคม</value>
+  </data>
+  <data name="May" xml:space="preserve">
+    <value>พฤษภาคม</value>
+  </data>
+  <data name="November" xml:space="preserve">
+    <value>พฤศจิกายน</value>
+  </data>
+  <data name="October" xml:space="preserve">
+    <value>ตุลาคม</value>
+  </data>
+  <data name="September" xml:space="preserve">
+    <value>กันยายน</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>เปลี่ยน</value>
+  </data>
+  <data name="RequestAmt" xml:space="preserve">
+    <value>กรอกจำนวนเงินที่ต้องการร้องขอ</value>
+  </data>
+  <data name="ErrSendMail" xml:space="preserve">
+    <value>การส่งอีเมลล์มีข้อผิดพลาด</value>
+  </data>
+  <data name="AgreeTermNCondition" xml:space="preserve">
+    <value>ฉันยอมรับในกติกาและเงื่อนไขในโปรแกรม พันธมิตร Affiliate</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>ติดต่อเรา</value>
+  </data>
+  <data name="NameIsInvalid" xml:space="preserve">
+    <value>ชื่อไม่ถูกต้อง</value>
+  </data>
+  <data name="SubjectIsInvalid" xml:space="preserve">
+    <value>เรื่องไม่ถูกต้อง</value>
+  </data>
+  <data name="EmailAddressIsInvalid" xml:space="preserve">
+    <value>อีเมลล์แอดเดรสไม่ถูกต้อง</value>
+  </data>
+  <data name="CommentsIsInvalid" xml:space="preserve">
+    <value>ความคิดเห็นไม่ถูกต้อง</value>
+  </data>
+  <data name="As12BETAffiliates" xml:space="preserve">
+    <value>ตามนโยบายการเป็นพันธมิตรคุณจะได้รับคอมมิชชั่นจากทุกผู้เล่นทุกคนที่มาจากการแนะนำของคุณตราบใดที่ผู้เล่นผู้นั้นยังคงเล่นอยู่  ระบบการรายงานผลทางอินเตอร์เนตของเราจะบริการคุณตลอด 24 ชั่วโมง 7 วันต่อสัปดาห์</value>
+  </data>
+  <data name="HowMuchYouEarn" xml:space="preserve">
+    <value>รายได้จะมากน้อยขึ้นอยู่กับจำนวนลูกค้าที่สมัครกับเราผ่านทางเวบไซค์คุณ สำหรับหน้าที่อื่นในการแนะนำเกี่ยวกับการสมัคร การแนะนำการฝากเงิน และการให้โบนัสโปรโมชั่นกับลูกค้า จะเป็นหน้าที่ของเราทั้งหมด</value>
+  </data>
+  <data name="AffiliateEarnings" xml:space="preserve">
+    <value>ค่าตอบแทนจากโปรแกรมพันธมิตร</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>ด้านบน</value>
+  </data>
+  <data name="DontSettleFor2ndBest" xml:space="preserve">
+    <value>เราไม่เคยเป็นที่สอง เร่งมือทำยอดรับคอมมิชชั่นสูงถึง 50% กับยอดเล่นเสียของสมาชิกคุณ ในขณะที่คุ่แข่งรายการพันธมิตรที่อื่นจะให้คุณเพียงแค่ 25%  เราตระหนักถึงความพยายาม และพร้อมให้รางวัลคุณด้วยค่าตอบแทนสูงถึง 50%</value>
+  </data>
+  <data name="HowDoesItWork" xml:space="preserve">
+    <value>ทำอย่างไรถึงจะได้รับรายได้ ?  ตัวอย่าง</value>
+  </data>
+  <data name="IfYourTotal" xml:space="preserve">
+    <value>If your total net revenue for January is $3,500, you will earn 30% of your total net revenue for that month. There is no minimum active customer required to collect your commission</value>
+  </data>
+  <data name="IfYouHaveAnyQuestions" xml:space="preserve">
+    <value>ถ้าคุณมีคำถามเพิ่มเติมเกี่ยวกับการรับรายได้จากการเป็นเวบพันธมิตร สามารถส่งอีเมลล์มาได้ที่ {mail}</value>
+  </data>
+  <data name="NegativeBalance" xml:space="preserve">
+    <value>ยอดบัญชีติดลบ</value>
+  </data>
+  <data name="AnyNegativeBalance" xml:space="preserve">
+    <value>ยอดติดลบของเดือนที่ให้จะถูกยกยอดไป ตัวอย่างเช่น บัญชีพันธมิตรของเดือนมกราคมของคุณ มียอดติดลบที่ -$2,555 โดยจำนวนนี้จะถูกยกยอดไปไว้ในเดือนกุมภาพันธ์ และตอนสิ้นเดือนกุมภาพันธ์บัญชีคุณมียอดรายรับเข้ามาที่ $3,400 โดยบัญชีคุณจะมียอดคงเหลือที่ $845 (มาจาก $3,400 ลบด้วย -$2,555).  อย่างไรก็ตาม หากเดือนกุมภาพันธ์คุณยังมียอดติดลบอีก เช่น -$1,600 ทางเราจะนำยอดนี้ไปบวกเพิ่ม ในยอดติดลบก่อนหน้านี้ เพื่อยกยอดไปยังเดือนถัดไปคือ เดือนมีนาคม รวมเป็นยอดติดลบทั้งหมด  -$4,155.</value>
+  </data>
+  <data name="GettingPaid" xml:space="preserve">
+    <value>การได้รับเงิน</value>
+  </data>
+  <data name="YouCanRequestPayout" xml:space="preserve">
+    <value>คุณสามารถแจ้งถอนรายได้คุณโดยใช้สกุลเงินน USD อ้างอิงจากอัตราค่าแลกเปลี่ยนเงินตรา ของ GBP, EUR, RMB, MYR, THB, IDR และ  VND  จะขึ้นอยู่กับฝ่ายการจ่ายเงิน</value>
+  </data>
+  <data name="WeOfferSeveralMethods" xml:space="preserve">
+    <value>เราเสนอวิธีการถอนเงินที่หลากหลายให้แก่คุณ:</value>
+  </data>
+  <data name="ToYour12BET" xml:space="preserve">
+    <value>โอนรายได้ของพันธมิตรไปยังบัญชีเล่นของคุณในเวบ Affiliate</value>
+  </data>
+  <data name="Moneybookers" xml:space="preserve">
+    <value>โอนทาง Moneybookers</value>
+  </data>
+  <data name="WireTransfer" xml:space="preserve">
+    <value>โอนทาง Wire transfer</value>
+  </data>
+  <data name="AMaximumOfOneWithdrawal" xml:space="preserve">
+    <value>แจ้งถอนเงินได้มากสุด 1 ครั้งต่อเดือน หากสมาชิกมีความต้องการถอนครั้งที่สอง คำร้องนั้นจะขึ้นอยู่กับความเห็นชอบของ ผู้จัดการฝ่ายพันธมิตร  ขณะเดียวกันการแจ้งถอนกับเราไม่มีค่าบริการใดๆ เว้นเสียแต่ หน่วยงานกลางส่งเงินที่เกี่ยวข้อง หรือตัวแทนบริการด้านส่งเงินออนไลน์จะทำการเรียกเก็บค่าบริการจากคุณเป็นกรณีไป </value>
+  </data>
+  <data name="AffilatesAreOnlyAllowed" xml:space="preserve">
+    <value>สมาชิกพันธมิตรอนุญาติให้แจ้งถอนเงินได้ 1 ครั้งต่อเดือน หากสมาชิกมีความต้องการถอนครั้งที่สอง คำร้องนั้นจะขึ้นอยู่กับความเห็นชอบของ ผู้จัดการฝ่ายพันธมิตร  ขณะเดียวกันการแจ้งถอนกับเราไม่มีค่าบริการใดๆ เว้นเสียแต่ หน่วยงานกลางส่งเงินที่เกี่ยวข้อง หรือตัวแทนบริการด้านส่งเงินออนไลน์จะทำการเรียกเก็บค่าบริการจากคุณเป็นกรณีไป  </value>
+  </data>
+  <data name="TheMinimumWithdrawal" xml:space="preserve">
+    <value>ขั้นต่ำในการแจ้งถอนเงิน คือ USD$100.</value>
+  </data>
+  <data name="FrequentlyAskedQuestions" xml:space="preserve">
+    <value>คำถามคำตอบที่พบบ่อย</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>ทั่วไป</value>
+  </data>
+  <data name="WhatIs12BETAffiliates" xml:space="preserve">
+    <value>โปรแกรมAffiliate พันธมิตรคืออะไร ?</value>
+  </data>
+  <data name="BETAffiliatesProgram" xml:space="preserve">
+    <value>โปรแกรม Affiliate พันธมิตรคือ โปรแกรมการเป็นหุ้นส่วนที่ซึ่งคุณจะได้รับคอมมิชชั่นจากยอดเงินของคนที่คุณแนะนำเข้ามาเป็นสมาชิกและเล่นกับ Affiliate.com ผ่านทางเวบไซค์ของคุณหรือทางอื่นอื่น</value>
+  </data>
+  <data name="HowDoISignUp" xml:space="preserve">
+    <value>ฉันจะสมัครเข้ามาในโปรแกรม Affiliate พันธมิตรได้อย่างไร ?</value>
+  </data>
+  <data name="The12BETAffiliates" xml:space="preserve">
+    <value>การเป็นพันธมิตรกับ Affiliate สมัครฟรีไม่เสียค่าใช้จ่าย เพียงแค่คุณกรอก{AppForm} คุณจะได้รับการติดต่อกลับภายในเวลา 3 วันทำการเกี่ยวกับการเป็นสมาชิก ถ้าใบสมัครของคุณได้รับการอนุมัติ คุณจะได้รับอีเมลล์แจ้งระบุ ไอดีในการเป็นพันธมิตร และรหัสในการใช้แบนเนอร์  ลิ้งค์ที่เป็นข้อความและรายละเอียดอื่นในการทำการตลาด เพื่อที่จะนำไปวางในตัวเวบไซค์ของคุณ</value>
+  </data>
+  <data name="WhatIfIDontHave" xml:space="preserve">
+    <value>แล้วถ้าฉันไม่มีเวบไซค์  ฉันจะสามารถเข้าร่วมโปรแกรมนี้ได้หรือไม่ ?</value>
+  </data>
+  <data name="ToParticipateIn12BET" xml:space="preserve">
+    <value>เพื่อที่จะเข้าร่วมโปรแกรมพันธมิตรกับ Affiliate  คุณควรจะมีเวบไซค์ที่เกี่ยวกับการวางเดิมพัน อย่างไรก็ตามถ้าเวบไซค์ของคุณไม่เกี่ยวกับการวางเดิมพันออนไลน์  หรือ คุณไม่มีเวบไซค์ การได้รับการยกเว้นขึ้นอยู่กับ การพิจารณาของฝ่ายบริหาร  Affiliate.com กรุณาส่งอีเมลล์มาได้ที่  {mail} ถ้าคุณมีคำถามเพิ่มเติม</value>
+  </data>
+  <data name="MarketingTracking" xml:space="preserve">
+    <value>การตลาดและการตรวจสอบ</value>
+  </data>
+  <data name="WhereDoIGetBanners" xml:space="preserve">
+    <value>ฉันจะได้รับแบนเนอร์และข้อความจากที่ไหน ?</value>
+  </data>
+  <data name="ByAccessingOurMediaGallery" xml:space="preserve">
+    <value>เพียงแค่คุณเข้าไปในแผนกโฆษณาที่เราเก็บแบนเนอร์ไว้คุณก็จะสามารถเลือกแบนเนอร์ที่คุณชอบเช่นเดียวกับลิ้งค์ข้อความเพื่อใช้กับตัวเวบไซค์ของคุณ</value>
+  </data>
+  <data name="HowDoesTheSystem" xml:space="preserve">
+    <value>ระบบจะสามารถตรวจสอบลูกค้าที่ฉันแนะนำได้อย่างไร ?</value>
+  </data>
+  <data name="WeEmploys" xml:space="preserve">
+    <value>เราได้ว่าจ้างให้  ระบบ state-of-the-art technology เพื่อใช้ตรวจเช็คข้อมูลและมั่นใจได้ 100%ในการที่คุณแนะนำลูกค้าให้เป็นสมาชิกกับ Affiliate การที่พันธมิตรได้แนะนำลูกค้าให้เราโดยใช้ URL ซึ่งเราได้จัดเตรียมไว้ในแผนกโฆษณา ผ่านทางการใช้ระบบ คุ๊กกี้  ผู้ที่เข้าชมเวปไซค์ที่คลิ๊กผ่าน URL พันธมิตร ( แบนเนอร์ ลิ้งค์ข้อความ อีเมลล์ อื่นอื่น ) จะได้รับการบันทึกและเครดิตเข้าสู่บัญชีพันธมิตรของท่านโดยอัตโนมัติในทุกคนที่คุณแนะนำ</value>
+  </data>
+  <data name="WillYouTrackAndGiveMeCredit" xml:space="preserve">
+    <value>คุณจะสามารถตรวจสอบและให้เครดิตในบัญชีพันธมิตรของฉันได้หรือไม่ถ้าลูกค้าที่คลิ๊กลิ้งค์แล้วไม่สมัครในครั้งแรกแต่ได้กลับมาสมัครสมาชิกหลังจากนั้นกับทาง Affiliate ?</value>
+  </data>
+  <data name="WeAreAbleToTrackVisitors" xml:space="preserve">
+    <value>ใช่ เราสามารถที่จะตรวจสอบผู้คลิ๊กลิ้งค์พันธมิตรจากเวบไซค์ของท่านและไม่ได้สมัครสมาชิกในทันทีแต่ได้กลับมาสมัครกับทาง Affiliate.com หลังจากนั้นระบบเราจะนับให้ภายใน 90 วันหลังจากที่ผู้ที่คลิ๊กลิ้งค์พันธมิตรผ่านทางเวบไซค์ของท่าน เทคโนโลยีที่ใช้บริหารนี้อ้างอิงจากตัวคุ๊กกี้โปรแกรม</value>
+  </data>
+  <data name="WhatIsACookie" xml:space="preserve">
+    <value>คุ๊กกี้คืออะไร ?</value>
+  </data>
+  <data name="CookiesAreAGeneralMechanism" xml:space="preserve">
+    <value>คุ๊กกี้คือระบบทั่วไปที่ใช้ตรวจสอบการเชื่อมต่อในเรื่องของเซิฟเวอร์ สามารถใช้ในการเก็บข้อมูลและตรวจสอบข้อมูลในเกี่ยวกับการเชื่อมต่อในส่วนของลูกค้า ยิ่งไปกว่านั้นยังมีข้อมูลเล็กเล็กที่ถูกวางไว้ในระบบตัวเก็บข้อมูลจากผู้ที่คลื๊กหรือเยี่ยมชม Affiliate.com ผ่านทางเวปไซค์ของท่าน ข้อมูลตัวนี้จะรวบเก็บข้อมูลเกี่ยวกับ Affiliate.com ที่จะใช้ตรวจสอบและเครดิตในบัญชีพันธมิตรได้อย่างถูกต้องในทุกผู้เข้าชมเวบไซค์ การตรวจสอบสามารถทำได้โดยคุ๊กกี้ทั้งนี้จะไม่ได้ถูกกำหนดขอบเขต เกี่ยวกับ จำนวนหน้าของผู้เข้าชมเช่นเดียวกับวันที่และเวลาในขณะที่เปิดหน้านั้นนั้น</value>
+  </data>
+  <data name="DoYouRewardTheFirstAffiliate" xml:space="preserve">
+    <value>คุณต้องการได้รับประโยชน์จากการที่ลูกค้าเข้าคลิ๊กพันธมิตรครั้งแรก หรือ ครั้งสุดท้ายที่คุณได้แนะนำ ?</value>
+  </data>
+  <data name="TheCookiesAreOverwritten" xml:space="preserve">
+    <value>คุ๊กกี้ถูกเขียนขึ้นเพื่อให้ผู้แนะนำได้รับประโยชน์จากผู้ที่เข้าชมและคลิ๊กพันธมิตรครั้งสุดท้ายที่ลูกค้าได้ถูกแนะนำผ่านทางเวปไซค์ของคุณ</value>
+  </data>
+  <data name="HowCanICheck" xml:space="preserve">
+    <value>ฉันจะสามารถตรวจสอบได้หรือไม่ว่าฉันได้รับรายได้เท่าไหร่ ?</value>
+  </data>
+  <data name="YouCanLoginToYour12BET" xml:space="preserve">
+    <value>คุณสามารถล๊อคอินเข้าในบัญชี 12 bet เพื่อตรวจสอบยอดรายได้คอมมิชชั่นของคุณออนไลน์ได้ทันทีซึ่งสามารถทำได้ตลอด 24 ชั่วโมงทุกวัน 7 วันต่อหนึ่งสัปดาห์ และ 365 วันต่อปี</value>
+  </data>
+  <data name="WhatIsYourPolicy" xml:space="preserve">
+    <value>คุณมีนโยบายในการกำจัดขณะทางอีเมลล์ได้อย่างไร ?</value>
+  </data>
+  <data name="WeDoNotTolerateSpamming" xml:space="preserve">
+    <value>เราจะไม่ทนที่จะรับขยะที่ถูกส่งมาจากบัญชีของพันธมิตร  ถ้าหากว่ามีการส่งขยะมาจากอีเมลล์ของพันธมิตร เราจะมีจดหมายไปเตือนในกรณีเล็กน้อย แต่หากว่ายังไม่หยุดส่งมาอีก เราจะทำการหยุดการใช้งานบัญชีพันธมิตรบัญชีนั้นนั้นโดยทันที</value>
+  </data>
+  <data name="WhatAreTheWithdrawal" xml:space="preserve">
+    <value>ฉันจะถอนเงินวิธีไหนได้บ้าง</value>
+  </data>
+  <data name="YouCanRequestForAWithdrawal" xml:space="preserve">
+    <value>คุณสามารถแจ้งถอนโดย วิธี Moneybookers, Neteller, Wire Transfer หรือ ถอนเงินไปยังบัญชีเล่นของคุณในเวบ Affiliate</value>
+  </data>
+  <data name="CanIRequest" xml:space="preserve">
+    <value>ฉันสามารถแจ้งถอนสกุลเงินอื่นที่ไม่ใช่ USD ได้หรือไม่</value>
+  </data>
+  <data name="TheCurrenciesOfferedAre" xml:space="preserve">
+    <value>ได้ค่ะ โดยคุณสามารถแจ้งถอนรายได้คุณโดยจากสกุลเงินน USD อ้างอิงอัตราค่าแลกเปลี่ยนเงินตรา ของ GBP, EUR, RMB, MYR, THB, IDR และ VND จะขึ้นอยู่กับแผนกการจ่ายเงิน</value>
+  </data>
+  <data name="WhatIsTheMinimumWithdrawal" xml:space="preserve">
+    <value>จำนวนเงินต่ำสุดที่ฉันสามารถขอถอนได้คือเท่าไหร่ ?</value>
+  </data>
+  <data name="DoesNegativeBalance" xml:space="preserve">
+    <value>ยอดติดลบ สามารถยกยอดไปได้ไหม? </value>
+  </data>
+  <data name="WeRolloverNegative" xml:space="preserve">
+    <value>ได้ค่ะ เรายกยอดติดลบไปยังเดือนถัดไปในทุกสิ้นเดือน จนว่าจะมียอดหักลบให้ยอดนั้นๆ กลายเป็นยอดบวกให้คุณ </value>
+  </data>
+  <data name="HowOftenCanIRequest" xml:space="preserve">
+    <value>ฉันจะขอถอนเงินได้บ่อยแค่ไหน ?</value>
+  </data>
+  <data name="JoinThe12BetAffiliate" xml:space="preserve">
+    <value>ร่วมเป็นส่วนหนึ่งในโปรแกรมพันธมิตร Affiliate</value>
+  </data>
+  <data name="FirstNameIsRequired" xml:space="preserve">
+    <value>ชื่อจริง จำเป็นต้องมี</value>
+  </data>
+  <data name="LastNameIsRequired" xml:space="preserve">
+    <value>นามสกุลจำเป็น้</value>
+  </data>
+  <data name="EmailAddressIsRequired" xml:space="preserve">
+    <value>จำเป็นต้องมีอีเมลล์แอดเดรส</value>
+  </data>
+  <data name="AddressIsRequired" xml:space="preserve">
+    <value>ที่อยู่จำเป็นต้องกรอก</value>
+  </data>
+  <data name="CityIsRequired" xml:space="preserve">
+    <value>จำเป็นต้องกรอกจังหวัด</value>
+  </data>
+  <data name="StateIsRequired" xml:space="preserve">
+    <value>จังหวัดจำเป็นต้องมี</value>
+  </data>
+  <data name="PostcodeZiIsRequired" xml:space="preserve">
+    <value>รหัสไปรษณีย์จำเป็นต้องมี</value>
+  </data>
+  <data name="WebsiteURLIsRequired" xml:space="preserve">
+    <value>จำเป็นต้องมีลิ๊งค์ที่ใช้เข้าเวบไซค์</value>
+  </data>
+  <data name="BETUserNameIsRequired" xml:space="preserve">
+    <value>ยูสเซอร์เนม Affiliate จำเป็นต้องมี</value>
+  </data>
+  <data name="SelectOne" xml:space="preserve">
+    <value>เลือกอันใดอันหนึ่ง</value>
+  </data>
+  <data name="Albania" xml:space="preserve">
+    <value>อัลบาเนีย</value>
+  </data>
+  <data name="Algeria" xml:space="preserve">
+    <value>แอลจีเรีย</value>
+  </data>
+  <data name="Angola" xml:space="preserve">
+    <value>แองโกล่า</value>
+  </data>
+  <data name="Anguilla" xml:space="preserve">
+    <value>แอลจีเรีย</value>
+  </data>
+  <data name="Argentina" xml:space="preserve">
+    <value>อาเจนติน่า</value>
+  </data>
+  <data name="Armenia" xml:space="preserve">
+    <value>อาเมเนีย</value>
+  </data>
+  <data name="Aruba" xml:space="preserve">
+    <value>อารูบา</value>
+  </data>
+  <data name="Australia" xml:space="preserve">
+    <value>ออสเตรเลีย</value>
+  </data>
+  <data name="Austria" xml:space="preserve">
+    <value>ออสเตรีย</value>
+  </data>
+  <data name="Azerbaijan" xml:space="preserve">
+    <value>อาเซอร์ไบจัน</value>
+  </data>
+  <data name="Bahamas" xml:space="preserve">
+    <value>บาฮามาส</value>
+  </data>
+  <data name="Bahrain" xml:space="preserve">
+    <value>บาเรนทร์</value>
+  </data>
+  <data name="Bangladesh" xml:space="preserve">
+    <value>บังคลาเทศ</value>
+  </data>
+  <data name="Barbados" xml:space="preserve">
+    <value>บาร์บาดอส</value>
+  </data>
+  <data name="Belarus" xml:space="preserve">
+    <value>เบรารุส</value>
+  </data>
+  <data name="Belgium" xml:space="preserve">
+    <value>เบลเยี่ยม</value>
+  </data>
+  <data name="Belize" xml:space="preserve">
+    <value>เบลิส</value>
+  </data>
+  <data name="Benin" xml:space="preserve">
+    <value>เบนิน</value>
+  </data>
+  <data name="Bermuda" xml:space="preserve">
+    <value>เบอร์มิวด้า</value>
+  </data>
+  <data name="Bhutan" xml:space="preserve">
+    <value>ภูฐาน</value>
+  </data>
+  <data name="Bolivia" xml:space="preserve">
+    <value>โบลิเวีย</value>
+  </data>
+  <data name="BosniaandHerzegovina" xml:space="preserve">
+    <value>บอสเนียและเฮอซิโกวีนา</value>
+  </data>
+  <data name="Botswana" xml:space="preserve">
+    <value>บอสวานา</value>
+  </data>
+  <data name="Brazil" xml:space="preserve">
+    <value>บราซิล</value>
+  </data>
+  <data name="BruneiDarussalam" xml:space="preserve">
+    <value>บรูไน ดารัสซาเลม</value>
+  </data>
+  <data name="Bulgaria" xml:space="preserve">
+    <value>บัลกาเรีย</value>
+  </data>
+  <data name="BurkinaFaso" xml:space="preserve">
+    <value>เบอกินา ฟาโซ</value>
+  </data>
+  <data name="Burundi" xml:space="preserve">
+    <value>บูรันดี</value>
+  </data>
+  <data name="Cambodia" xml:space="preserve">
+    <value>กัมพูชา</value>
+  </data>
+  <data name="Cameroon" xml:space="preserve">
+    <value>แคมมารูน</value>
+  </data>
+  <data name="Canada" xml:space="preserve">
+    <value>แคนาดา</value>
+  </data>
+  <data name="CapeVerde" xml:space="preserve">
+    <value>เคพ เวิร์ด</value>
+  </data>
+  <data name="CaymanIslands" xml:space="preserve">
+    <value>เกาะ เคแมน</value>
+  </data>
+  <data name="CentralAfricanRep" xml:space="preserve">
+    <value>เซนทรัล แอฟริกัน</value>
+  </data>
+  <data name="Chad" xml:space="preserve">
+    <value>แชด</value>
+  </data>
+  <data name="Chile" xml:space="preserve">
+    <value>ชิลี</value>
+  </data>
+  <data name="ChinaPeoplesRep" xml:space="preserve">
+    <value>ชาวจีน</value>
+  </data>
+  <data name="Colombia" xml:space="preserve">
+    <value>กัมพูชา</value>
+  </data>
+  <data name="CongoRep" xml:space="preserve">
+    <value>คองโก</value>
+  </data>
+  <data name="CookIslands" xml:space="preserve">
+    <value>เกาะ คุ๊ก</value>
+  </data>
+  <data name="CostaRica" xml:space="preserve">
+    <value>คอสตาริกา</value>
+  </data>
+  <data name="CotedIvoireRep" xml:space="preserve">
+    <value>ไอวารี่โคสต์</value>
+  </data>
+  <data name="Croatia" xml:space="preserve">
+    <value>โครเอเชีย</value>
+  </data>
+  <data name="Cyprus" xml:space="preserve">
+    <value>ไซปรัส</value>
+  </data>
+  <data name="CzechRep" xml:space="preserve">
+    <value>เช็คริพับบลิค</value>
+  </data>
+  <data name="DemRepofCongo" xml:space="preserve">
+    <value>คองโก</value>
+  </data>
+  <data name="Denmark" xml:space="preserve">
+    <value>เดนมาร์ก</value>
+  </data>
+  <data name="DominicaCommonwealthof" xml:space="preserve">
+    <value>โดมินิกา</value>
+  </data>
+  <data name="DominicanRep" xml:space="preserve">
+    <value>โดมินิกัน</value>
+  </data>
+  <data name="Ecuador" xml:space="preserve">
+    <value>เอควาดอร์</value>
+  </data>
+  <data name="Egypt" xml:space="preserve">
+    <value>อียิปต์</value>
+  </data>
+  <data name="ElSalvador" xml:space="preserve">
+    <value>เอลซัลวาดอร์</value>
+  </data>
+  <data name="Eritrea" xml:space="preserve">
+    <value>อีรีทเทรีย</value>
+  </data>
+  <data name="Estonia" xml:space="preserve">
+    <value>เอสโตเนีย</value>
+  </data>
+  <data name="Ethiopia" xml:space="preserve">
+    <value>เอธิโอเปีย</value>
+  </data>
+  <data name="Fiji" xml:space="preserve">
+    <value>ฟิจิ</value>
+  </data>
+  <data name="Finland" xml:space="preserve">
+    <value>ฟินแลนด์</value>
+  </data>
+  <data name="FrenchPolynesia" xml:space="preserve">
+    <value>เฟร้นซ์โพลีนีเซีย</value>
+  </data>
+  <data name="Gabon" xml:space="preserve">
+    <value>การ์บอน</value>
+  </data>
+  <data name="Georgia" xml:space="preserve">
+    <value>จอร์เจีย</value>
+  </data>
+  <data name="Germany" xml:space="preserve">
+    <value>เยอรมันนี</value>
+  </data>
+  <data name="Ghana" xml:space="preserve">
+    <value>กานา</value>
+  </data>
+  <data name="Gibraltar" xml:space="preserve">
+    <value>กิลบัลต้า</value>
+  </data>
+  <data name="Greece" xml:space="preserve">
+    <value>กรีซ</value>
+  </data>
+  <data name="Grenada" xml:space="preserve">
+    <value>เกรนาดา</value>
+  </data>
+  <data name="Guatemala" xml:space="preserve">
+    <value>กัวเตมาลา</value>
+  </data>
+  <data name="Guinea" xml:space="preserve">
+    <value>กีเนีย</value>
+  </data>
+  <data name="Guyana" xml:space="preserve">
+    <value>กูยานา</value>
+  </data>
+  <data name="Haiti" xml:space="preserve">
+    <value>ฮาติ</value>
+  </data>
+  <data name="Honduras" xml:space="preserve">
+    <value>ฮอนดูรัส</value>
+  </data>
+  <data name="HongKong" xml:space="preserve">
+    <value>ฮ่องกง</value>
+  </data>
+  <data name="Hungary" xml:space="preserve">
+    <value>ฮังการี</value>
+  </data>
+  <data name="Iceland" xml:space="preserve">
+    <value>ไอซ์แลนด์</value>
+  </data>
+  <data name="India" xml:space="preserve">
+    <value>อินเดีย</value>
+  </data>
+  <data name="Indonesia" xml:space="preserve">
+    <value>อินโดนีเซีย</value>
+  </data>
+  <data name="Iran" xml:space="preserve">
+    <value>อิหร่าน</value>
+  </data>
+  <data name="Iraq" xml:space="preserve">
+    <value>อิรัก</value>
+  </data>
+  <data name="Ireland" xml:space="preserve">
+    <value>ไอแลนด์</value>
+  </data>
+  <data name="Israel" xml:space="preserve">
+    <value>อิสราเอล</value>
+  </data>
+  <data name="Italy" xml:space="preserve">
+    <value>อิตาลี่</value>
+  </data>
+  <data name="Jamaica" xml:space="preserve">
+    <value>จาไมก้า</value>
+  </data>
+  <data name="Japan" xml:space="preserve">
+    <value>ญี่ปุ่น</value>
+  </data>
+  <data name="Jordan" xml:space="preserve">
+    <value>จอร์แดน</value>
+  </data>
+  <data name="Kenya" xml:space="preserve">
+    <value>เคนยา</value>
+  </data>
+  <data name="KoreaRep" xml:space="preserve">
+    <value>เกาหลีใต้</value>
+  </data>
+  <data name="Kuwait" xml:space="preserve">
+    <value>คูเวต</value>
+  </data>
+  <data name="LaoPeoplesDemRep" xml:space="preserve">
+    <value>ประชาชนชาวลาว</value>
+  </data>
+  <data name="Latvia" xml:space="preserve">
+    <value>ลัตเวีย</value>
+  </data>
+  <data name="Lesotho" xml:space="preserve">
+    <value>เลสโซโท</value>
+  </data>
+  <data name="Liechtenstein" xml:space="preserve">
+    <value>ลิคเค่นสไตล์</value>
+  </data>
+  <data name="Luxembourg" xml:space="preserve">
+    <value>ลักแซมเบิก</value>
+  </data>
+  <data name="Macao" xml:space="preserve">
+    <value>มาเก๊า</value>
+  </data>
+  <data name="Macedonia" xml:space="preserve">
+    <value>มาซิโดเนีย</value>
+  </data>
+  <data name="Madagascar" xml:space="preserve">
+    <value>มาร์ดากัสการ์</value>
+  </data>
+  <data name="Malawi" xml:space="preserve">
+    <value>มาลาวี</value>
+  </data>
+  <data name="Malaysia" xml:space="preserve">
+    <value>มาเลเซีย</value>
+  </data>
+  <data name="Maldives" xml:space="preserve">
+    <value>มัลดีฟ</value>
+  </data>
+  <data name="Mali" xml:space="preserve">
+    <value>มาลี</value>
+  </data>
+  <data name="Malta" xml:space="preserve">
+    <value>มอลตา</value>
+  </data>
+  <data name="Mauritania" xml:space="preserve">
+    <value>มาริทาเนีย</value>
+  </data>
+  <data name="Mauritius" xml:space="preserve">
+    <value>มาริเทียส</value>
+  </data>
+  <data name="Mexico" xml:space="preserve">
+    <value>เม็กซิโก</value>
+  </data>
+  <data name="Moldova" xml:space="preserve">
+    <value>มอลโดวา</value>
+  </data>
+  <data name="Mongolia" xml:space="preserve">
+    <value>มองโกเลีย</value>
+  </data>
+  <data name="Morocco" xml:space="preserve">
+    <value>โมร๊อกโก</value>
+  </data>
+  <data name="Myanmar" xml:space="preserve">
+    <value>พม่า</value>
+  </data>
+  <data name="Namibia" xml:space="preserve">
+    <value>นามีเบีย</value>
+  </data>
+  <data name="Nauru" xml:space="preserve">
+    <value>นารู</value>
+  </data>
+  <data name="Nepal" xml:space="preserve">
+    <value>เนปาล</value>
+  </data>
+  <data name="Netherlands" xml:space="preserve">
+    <value>เนเธอแลนด์</value>
+  </data>
+  <data name="NewCaledonia" xml:space="preserve">
+    <value>คาเลโดเนีย ใหม่</value>
+  </data>
+  <data name="NewZealand" xml:space="preserve">
+    <value>นิวซีแลนด์</value>
+  </data>
+  <data name="Niger" xml:space="preserve">
+    <value>ชาวไนจีเรีย</value>
+  </data>
+  <data name="Nigeria" xml:space="preserve">
+    <value>ไนจีเรีย</value>
+  </data>
+  <data name="Norway" xml:space="preserve">
+    <value>นอร์เวย์</value>
+  </data>
+  <data name="Oman" xml:space="preserve">
+    <value>โอมาน</value>
+  </data>
+  <data name="Pakistan" xml:space="preserve">
+    <value>ปากีสถาน</value>
+  </data>
+  <data name="Panama" xml:space="preserve">
+    <value>ปานามา</value>
+  </data>
+  <data name="PapuaNewGuinea" xml:space="preserve">
+    <value>ปาปัวนิวกีนี</value>
+  </data>
+  <data name="Paraguay" xml:space="preserve">
+    <value>ปารากวัย</value>
+  </data>
+  <data name="Peru" xml:space="preserve">
+    <value>เปรู</value>
+  </data>
+  <data name="Philippines" xml:space="preserve">
+    <value>ฟิลิปปินส์</value>
+  </data>
+  <data name="Poland" xml:space="preserve">
+    <value>โปแลนด์</value>
+  </data>
+  <data name="Portugal" xml:space="preserve">
+    <value>โปรตุเกส</value>
+  </data>
+  <data name="Qatar" xml:space="preserve">
+    <value>การ์ต้า</value>
+  </data>
+  <data name="Romania" xml:space="preserve">
+    <value>โรมาเนีย</value>
+  </data>
+  <data name="RussianFederation" xml:space="preserve">
+    <value>รัสเซียน</value>
+  </data>
+  <data name="Rwanda" xml:space="preserve">
+    <value>เรวานด้า</value>
+  </data>
+  <data name="SaintChristopherStKittsandNevis" xml:space="preserve">
+    <value>เซนคริสโตเฟอร์ และ เนวิส</value>
+  </data>
+  <data name="SaintLucia" xml:space="preserve">
+    <value>เซนต์ลูเซีย</value>
+  </data>
+  <data name="SaintVincentandtheGrenadines" xml:space="preserve">
+    <value>เซนต์วินเซนต์และเกรนาดินซ์</value>
+  </data>
+  <data name="SaoTomeandPrincipe" xml:space="preserve">
+    <value>เซาท์โทมและปริ้นซิพี</value>
+  </data>
+  <data name="SaudiArabia" xml:space="preserve">
+    <value>ซาอุดิอาระเบีย</value>
+  </data>
+  <data name="Senegal" xml:space="preserve">
+    <value>ซินีกัล</value>
+  </data>
+  <data name="Seychelles" xml:space="preserve">
+    <value>Seychelles </value>
+  </data>
+  <data name="SierraLeone" xml:space="preserve">
+    <value>Sierra Leone </value>
+  </data>
+  <data name="Singapore" xml:space="preserve">
+    <value>สิงคโปร์</value>
+  </data>
+  <data name="Slovakia" xml:space="preserve">
+    <value>สโลวาเกีย</value>
+  </data>
+  <data name="Slovenia" xml:space="preserve">
+    <value>สโลวาเนีย</value>
+  </data>
+  <data name="SolomonIslands" xml:space="preserve">
+    <value>เกาะโซโลมอน</value>
+  </data>
+  <data name="Somalia" xml:space="preserve">
+    <value>โซมาเลีย</value>
+  </data>
+  <data name="SouthAfrica" xml:space="preserve">
+    <value>แอฟริกาใต้</value>
+  </data>
+  <data name="Spain" xml:space="preserve">
+    <value>สเปน</value>
+  </data>
+  <data name="SriLanka" xml:space="preserve">
+    <value>ศรีลังกา</value>
+  </data>
+  <data name="Sudan" xml:space="preserve">
+    <value>ซูดาน</value>
+  </data>
+  <data name="Suriname" xml:space="preserve">
+    <value>นามสกุล</value>
+  </data>
+  <data name="Swaziland" xml:space="preserve">
+    <value>ซวาซิแลนด์</value>
+  </data>
+  <data name="Sweden" xml:space="preserve">
+    <value>สวีเดน</value>
+  </data>
+  <data name="Switzerland" xml:space="preserve">
+    <value>สวิสเซอร์แลนด์</value>
+  </data>
+  <data name="Taiwan" xml:space="preserve">
+    <value>ไต้หวัน</value>
+  </data>
+  <data name="Tanzania" xml:space="preserve">
+    <value>แทนซาเนีย</value>
+  </data>
+  <data name="Thailand" xml:space="preserve">
+    <value>ประเทศไทย</value>
+  </data>
+  <data name="Togo" xml:space="preserve">
+    <value>ยอดรวม</value>
+  </data>
+  <data name="TrinidadandTobago" xml:space="preserve">
+    <value>ตรินิแดดแอนโทแบคโก</value>
+  </data>
+  <data name="Tunisia" xml:space="preserve">
+    <value>ตูนีเซีย</value>
+  </data>
+  <data name="Turkey" xml:space="preserve">
+    <value>ตุรกี</value>
+  </data>
+  <data name="Uganda" xml:space="preserve">
+    <value>อูกันดา</value>
+  </data>
+  <data name="Ukraine" xml:space="preserve">
+    <value>ยูเครน</value>
+  </data>
+  <data name="UnitedArabEmirates" xml:space="preserve">
+    <value>สหรัฐอาหรับเอมิเรตท์</value>
+  </data>
+  <data name="UnitedKingdomofGreatBritainandNorthernIreland" xml:space="preserve">
+    <value>ไอแลนด์เหนือ</value>
+  </data>
+  <data name="UnitedStatesofAmerica" xml:space="preserve">
+    <value>สหรัฐอเมริกา</value>
+  </data>
+  <data name="Uruguay" xml:space="preserve">
+    <value>อูรุกกวัย</value>
+  </data>
+  <data name="Venezuela" xml:space="preserve">
+    <value>เวเนซุเอล่า</value>
+  </data>
+  <data name="VietNam" xml:space="preserve">
+    <value>เวียดนาม</value>
+  </data>
+  <data name="WesternSamoa" xml:space="preserve">
+    <value>เวสเทริ์นซาโมอา</value>
+  </data>
+  <data name="Yemen" xml:space="preserve">
+    <value>เยเมน</value>
+  </data>
+  <data name="Yugoslavia" xml:space="preserve">
+    <value>ยูโกสลาเวีย</value>
+  </data>
+  <data name="Zambia" xml:space="preserve">
+    <value>แซมเบีย</value>
+  </data>
+  <data name="Zimbabwe" xml:space="preserve">
+    <value>ซิมบัฟเวย์</value>
+  </data>
+  <data name="Pleasecheckyour" xml:space="preserve">
+    <value>กรุณาตรวจสอบอีเมลล์แอดเดรสของคุณเพื่อที่จะค้นหารายละเอียดเกี่ยวกับชื่อที่ใช้เข้าระบบและรหัสผ่านของคุณ</value>
+  </data>
+  <data name="Foranyreasonyou" xml:space="preserve">
+    <value>หากคุณไม่ได้รับอีเมลล์ กรุณา &lt;a href='ContactUs.aspx'&gt; ติดต่อเรา &lt;/a&gt; เรายินดีช่วยเหลือ คะ</value>
+  </data>
+  <data name="Errorofsendmail" xml:space="preserve">
+    <value>มีข้อผิดพลาดในการส่งอีเมลล์</value>
+  </data>
+  <data name="AboutUs" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="_12BETPlayerAcc" xml:space="preserve">
+    <value>บัญชีที่ใช้เล่นใน Affiliate</value>
+  </data>
+  <data name="Thisemailwillin" xml:space="preserve">
+    <value>อีเมลล์จะรวมถึงลิ๊งค์ข้อความซึ่งคุณจำเป็นต้องคลิ๊ก เพื่อทำให้บัญชีของคุณใช้งานได้และยืนยันอีเมลล์แอดเดรสของคุณ ซึ่งทำให้การสมัครสมาชิกของคุณสมบูรณ์</value>
+  </data>
+  <data name="IagreetotheTerm" xml:space="preserve">
+    <value>ฉันยอมรับในกติกาและเงื่อนไขในโปรแกรม พันธมิตร Affiliate</value>
+  </data>
+  <data name="Invalidrequesta" xml:space="preserve">
+    <value>จำนวนเงินที่ร้องขอไม่ถูกต้อง  จำนวนเงินต้องอยู่ระหว่าง</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>และ</value>
+  </data>
+  <data name="BankAccountName" xml:space="preserve">
+    <value>ชื่อบัญชีธนาคาร</value>
+  </data>
+  <data name="BankAccountNumb" xml:space="preserve">
+    <value>หมายเลขบัญชีธนาคาร</value>
+  </data>
+  <data name="BankABA_Swift_S" xml:space="preserve">
+    <value>ธนาคาร และ รหัสธนาคารในเครือ</value>
+  </data>
+  <data name="_12BET" xml:space="preserve">
+    <value>Affiliate</value>
+  </data>
+  <data name="Yourpaymentrequ" xml:space="preserve">
+    <value>การขอถอนเงินจำนวน ${amount} ได้ถูกยกเลิกเรียบร้อยแล้ว</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>เปลี่ยนรหัสผ่าน</value>
+  </data>
+  <data name="Changepassworde" xml:space="preserve">
+    <value>การเปลี่ยนรหัสผ่านมีข้อผิดพลาด</value>
+  </data>
+  <data name="Usethisformtoch" xml:space="preserve">
+    <value>ใช้แบบฟอร์มนี้เพื่อเปลี่ยนรหัสผ่านของคุณ  เมื่อคุณเปลี่ยนแล้ว พาสเวริ์ดใหม่ของคุณจะสามารถใช้ได้ในการล๊อกอินครั้งต่อไป</value>
+  </data>
+  <data name="CurrentCommissi" xml:space="preserve">
+    <value>ค่าคอมมิชชั่นที่ได้รับปัจจุบัน</value>
+  </data>
+  <data name="Pleaseselectcou" xml:space="preserve">
+    <value>กรุณาเลือกประเทศ</value>
+  </data>
+  <data name="Youruseemailisi" xml:space="preserve">
+    <value>อีเมลล์แอดเดรสที่คุณใช้ไม่ถูกต้อง  กรุณาลองใหม่อีกครั้ง</value>
+  </data>
+  <data name="Emailaddressest" xml:space="preserve">
+    <value>อีเมลล์แอดเดรสที่คุณกรอกไม่สอดคล้องกัน</value>
+  </data>
+  <data name="Sorrycannotcrea" xml:space="preserve">
+    <value>ขออภัย ไม่สามารถสร้างตัวแทนได้</value>
+  </data>
+  <data name="Invalidaffiliat" xml:space="preserve">
+    <value>ข้อมูลเกี่ยวกับบัญชีพันธมิตรของท่านไม่ถูกต้อง</value>
+  </data>
+  <data name="Theemailaddress" xml:space="preserve">
+    <value>อีเมลล์แอดเดรสที่คุณกรอก ได้ถูกใช้ในการลงทะเบียนแล้ว กรุณาเลือกอันใหม่</value>
+  </data>
+  <data name="_12BETUserNamei" xml:space="preserve">
+    <value>บัญชีที่ใช้เล่นใน Affiliate ของคุณไม่ถูกต้อง</value>
+  </data>
+  <data name="Invaliduserinfo" xml:space="preserve">
+    <value>ยูสเซอร์เนมของท่านไม่ถูกต้อง การอัพเดทข้อมูลไม่สำเร็จ</value>
+  </data>
+  <data name="ErroroccursUpda" xml:space="preserve">
+    <value>มีข้อผิดพลาดเกิดขึ้น</value>
+  </data>
+  <data name="Thisusernameisn" xml:space="preserve">
+    <value>ชื่อที่ใช้เข้าระบบไม่สามารถใช้ได้</value>
+  </data>
+  <data name="Sorryminbetmust" xml:space="preserve">
+    <value>ขออภัย ยอดการวางเดิมพันขั้นต่ำต้องเท่ากับหรือมากกว่ายอดการเดิมพันขั้นต่ำของตัวแทนหลัก</value>
+  </data>
+  <data name="Sorrycreditupda" xml:space="preserve">
+    <value>ขออภัย อัพเดทยอดเครดิตปัจจุบันไม่สำเร็จ คุณได้มียอดเกินกว่าเครดิตในเอเย่นต์หลักคะ</value>
+  </data>
+  <data name="SorryMaxPerMatc" xml:space="preserve">
+    <value>ขออภัย จำนวนเงินสูงสุดต่อแมตซ์ต้องเท่ากับหรือน้อยกว่าจำนวนเงินสูงสุดของตัวแทนหลัก</value>
+  </data>
+  <data name="Createcustomerf" xml:space="preserve">
+    <value>สร้างลูกค้าล้มเหลว กรุณาลองใหม่อีกครั้ง</value>
+  </data>
+  <data name="Youarenotauthor" xml:space="preserve">
+    <value>คุณไม่มีอำนาจที่จะสร้างหรือแก้ไขข้อมูลเหล่านี้</value>
+  </data>
+  <data name="WrongMinbet_Max" xml:space="preserve">
+    <value>จำนวนเงินเดิมพันขั้นต่ำผิดพลาด/จำนวนเงินวางเดิมพันขั้นสูงสุด/จำนวนเงินวางเดิมพันขั้นสูงสุดต่อแมตซ์/เครดิต/ชื่อเอเย่นต์หลัก/กลุ่มของผู้ใช้</value>
+  </data>
+  <data name="Youhaveapending" xml:space="preserve">
+    <value>คุณมีรายการที่ร้องขอ รอดำเนินการอยู่ เพื่อที่จะร้องขอทำรายการใหม่ กรุณายกเลิกรายการร้องขออันแรกที่รอดำเนินการหรือรอจนกว่ารายการร้องขออันแรกได้รับการอนุมัติก่อน</value>
+  </data>
+  <data name="InvalidRoleID" xml:space="preserve">
+    <value>ยูสเซอร์เนมของท่านไม่ถูกต้อง</value>
+  </data>
+  <data name="SorrythisAffili" xml:space="preserve">
+    <value>ขออภัย บัญชีพันธมิตรนี้มียอดเงินไม่เพียงพอที่จะขอถอน</value>
+  </data>
+  <data name="Invalidbalancea" xml:space="preserve">
+    <value>ยอดคงเหลือในบัญชีของคุณไม่ถูกต้อง หรือว่าสกุลเงินที่คุณร้องขอถอนไม่สามารถทำได้</value>
+  </data>
+  <data name="Inserttransacti" xml:space="preserve">
+    <value>รายการที่ร้องขอ ล้มเหลว</value>
+  </data>
+  <data name="Sorryamountisin" xml:space="preserve">
+    <value>ขออภัย  จำนวนเงินไม่ถูกต้อง</value>
+  </data>
+  <data name="InvalidCustID" xml:space="preserve">
+    <value>รหัสที่ใช้เข้าระบบไม่ถูกต้อง</value>
+  </data>
+  <data name="Thistransaction" xml:space="preserve">
+    <value>รายการนี้ได้ถูกยกเลิกมาก่อน</value>
+  </data>
+  <data name="Requestamountmu" xml:space="preserve">
+    <value>จำนวนเงินที่ร้องขอจะต้องมากกว่าจำนวนเงินขั้นต่ำของการถอนเงินที่กำหนดไว้</value>
+  </data>
+  <data name="UnknownError" xml:space="preserve">
+    <value>ไม่ทราบแหล่งที่มา ผิดพลาด</value>
+  </data>
+  <data name="Thisemailaddres" xml:space="preserve">
+    <value>อีเมลล์แอดเดรสนี้ถูกใช้ในการการสมัครเป็นพันธมิตรเรียบร้อยแล้วและได้ถูกปิดแล้ว กรุณาลองใหม่อีกครั้งหรือติดต่อเรา</value>
+  </data>
+  <data name="Errorofsendingm" xml:space="preserve">
+    <value>มีข้อผิดพลาดในการส่งอีเมลล์</value>
+  </data>
+  <data name="Onlinebettingsp" xml:space="preserve">
+    <value>การวางเดิมพันทางอินเตอร์เนต  การวางเดิมพันเกี่ยวกับกีฬาและฟุตบอล กับ Affiliate.com</value>
+  </data>
+  <data name="Asa_12BetcomAff" xml:space="preserve">
+    <value>ตามนโยบายของการเป็นพันธมิตร สิ่งที่คุณต้องทำทั้งหมดคือการแนะนำผู้ที่เข้าชมเวบไซค์ของคุณให้เข้ามาสมัครสมาชิกกับเวบไซค์เราโดยใช้รหัสพิเศษซึ่งคุณสามารถนำไปวางไว้บนเวบไซค์ของคุณ</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>ชนิด</value>
+  </data>
+  <data name="Last6MonthsEarn" xml:space="preserve">
+    <value>รายได้ 6 เดือนที่ผ่านมา</value>
+  </data>
+  <data name="Haveproblemwhil" xml:space="preserve">
+    <value>ถ้าคุณมีปัญหาเกี่ยวกับการส่งอีเมลล์ กรุณาติดต่อเราได้คะ</value>
+  </data>
+  <data name="Oldpasswordandn" xml:space="preserve">
+    <value>พาสเวริ์ดเก่าและพาสเวริ์ดใหม่จำเป็นต้องมี</value>
+  </data>
+  <data name="Sorryamountmust" xml:space="preserve">
+    <value>ขออภัย  จำนวนเงินต้องเท่ากับหรือมากกว่า</value>
+  </data>
+  <data name="Preferredpaymen" xml:space="preserve">
+    <value>วิธีการถอนเงินที่คุณต้องการใช้</value>
+  </data>
+  <data name="Preference" xml:space="preserve">
+    <value>สิ่งที่ต้องการใช้</value>
+  </data>
+  <data name="Pleaseselectpre" xml:space="preserve">
+    <value>กรุณาเลือกภาษาที่คุณต้องการใช้</value>
+  </data>
+  <data name="Passwordchanged" xml:space="preserve">
+    <value>การเปลี่ยนรหัสผ่านเสร็จสมบูรณ์เรียบร้อยแล้ว</value>
+  </data>
+  <data name="ReenterNewPassw" xml:space="preserve">
+    <value>การกรอกพาสเวริ์ดใหม่ไม่ถูกต้อง</value>
+  </data>
+  <data name="InputRequestAmo" xml:space="preserve">
+    <value>กรอกจำนวนเงินที่ต้องการต้องขอ ( ดอลล่าสหรัฐ )</value>
+  </data>
+  <data name="WebsiteInformat" xml:space="preserve">
+    <value>รายละเอียดเกี่ยวกับเวบไซค์</value>
+  </data>
+  <data name="WebsiteURL" xml:space="preserve">
+    <value>ลิ้งค์ที่ใช้เข้าเวบไซค์</value>
+  </data>
+  <data name="WebsiteURLs" xml:space="preserve">
+    <value>ลิ้งค์ที่ใช้เข้าเวบไซค์</value>
+  </data>
+  <data name="YoumustagreeTer" xml:space="preserve">
+    <value>คุณจะต้องเห็นด้วยในกติกาและเงื่อนไขที่จะดำเนินการ</value>
+  </data>
+  <data name="Thanksforyourre" xml:space="preserve">
+    <value>ขอบคุณสำหรับการสมัครสมาชิกของคุณ!</value>
+  </data>
+  <data name="Anewpasswordwil" xml:space="preserve">
+    <value>รหัสผ่านตัวใหม่จะถูกส่งไปที่อีเมลล์ของคุณที่คุณให้ไว้กับเรา</value>
+  </data>
+  <data name="AffiliateLogin" xml:space="preserve">
+    <value>ล๊อคอินเข้าระบบบัญชีพันธมิตร</value>
+  </data>
+  <data name="ApplicationUnde" xml:space="preserve">
+    <value>ใบสมัครของคุณอย่ระหว่างการพิจารณา</value>
+  </data>
+  <data name="Youraccountinfo" xml:space="preserve">
+    <value>รายละเอียดเกี่ยวกับบัญชีของคุณได้ถุกอัพเดทอย่างสมบูรณ์แล้ว</value>
+  </data>
+  <data name="Youinputtedanin" xml:space="preserve">
+    <value>คุณกรอกรหัสตรวจสอบที่ไม่ถูกต้อง !</value>
+  </data>
+  <data name="Yourlogindetail" xml:space="preserve">
+    <value>รายละเอียดในการล๊อคอินของคุณได้ถูกส่งแล้ว.</value>
+  </data>
+  <data name="Ifyouareexperie" xml:space="preserve">
+    <value>ถ้าคุณพบกับความยุ่งยากหรือปัญหา กรุณาติดต่อเรา</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>ภาพลักษณ์</value>
+  </data>
+  <data name="Flash" xml:space="preserve">
+    <value>แฟรช</value>
+  </data>
+  <data name="DearFirstnameLa" xml:space="preserve">
+    <value>สวัสดี ชื่อ นามสกุล</value>
+  </data>
+  <data name="Youhaverequeste" xml:space="preserve">
+    <value>คุณได้ร้องขอที่จะรับชื่อและรหัสในการเข้าระบบใหม่ ถ้าคุณไม่ต้องการร้องขอกรุณาอย่าสนใจอีเมลล์นี้</value>
+  </data>
+  <data name="Otherwiseplease" xml:space="preserve">
+    <value>อย่างไรก็ตาม คุณสามารถเข้าเยี่ยมชม ตามลิ๊งค์ด้านล่าง และรหัสผ่านจะถูกส่งไปยังอีเมลล์ของคุณโดยเร็วที่สุด</value>
+  </data>
+  <data name="Yourusernameis" xml:space="preserve">
+    <value>ชื่อในการเข้าระบบคือ</value>
+  </data>
+  <data name="Duetosecurityr" xml:space="preserve">
+    <value>เนื่องจากเหตุผลในเรื่องของความปลอดภัย คุณจะต้องเปลี่ยนรหัสผ่านตัวใหม่ ( คุณสามารถเปลี่ยนรหัสผ่านตัวนี้ได้เมื่อคุณสะดวก )</value>
+  </data>
+  <data name="Theabovelinkwi" xml:space="preserve">
+    <value>ลิ๊งค์ด้านบนกำลังจะไม่ถูกต้องและไม่สามารถใช้งานได้ภายในเวลา 24 ชั่วโมง</value>
+  </data>
+  <data name="Haveagreatday" xml:space="preserve">
+    <value>ขอให้คุณมีความสุขในวันนี้</value>
+  </data>
+  <data name="BestRegards" xml:space="preserve">
+    <value>ขอแสดงความนับถือ,</value>
+  </data>
+  <data name="Thankyouforsubm" xml:space="preserve">
+    <value>ขอบคุณคะที่ส่งใบสมัครของคุณมา</value>
+  </data>
+  <data name="Yourwebsitesand" xml:space="preserve">
+    <value>เวบไซค์และใบสมัครของคุณจะถูกพิจารณาจากทีม Affiliate เพื่อทำให้แน่ใจว่าข้อมูลเนื้อหาในเวบไซค์ของคูณเหมาะสมที่จะทำการตลาดเพื่อโปรโมตเวบไซค์ของเรา</value>
+  </data>
+  <data name="Within5dayswesh" xml:space="preserve">
+    <value>ภายในเวลา 5 วันเราควรจะสามารถแจ้งให้คุณทราบเกี่ยวกับสถานะในการสมัครของคุณ ถ้าการสมัครของคุณได้รับการอนุมัติ คุณจะสามารถล๊อคอินเข้าไปในบัญชีของคุณอย่างเต็มที่</value>
+  </data>
+  <data name="Theteamat_12Bet" xml:space="preserve">
+    <value>ทีมงานพันธมิตร  Affiliate</value>
+  </data>
+  <data name="Yourrequestrefe" xml:space="preserve">
+    <value>หมายเลขอ้างอิงการถอนเงินคือ {transid}.</value>
+  </data>
+  <data name="Thisisasystemau" xml:space="preserve">
+    <value>อีเมลล์นี้ได้ถูกส่งโดยระบบ   กรุณาอย่าตอบกลับอีเมลล์นี้โดยตรง</value>
+  </data>
+  <data name="Donothesitateto" xml:space="preserve">
+    <value>อย่าลังเลที่จะติตต่อเรา ถ้าคุณมีคำถามหรือความคิดเห็นที่ Affiliates@12csd.com</value>
+  </data>
+  <data name="Requestreferenc" xml:space="preserve">
+    <value>ตามหมายเลขอ้างอิงการถอนเงิน เลขที่ {transid}, วันที่ {date}.</value>
+  </data>
+  <data name="Thankyouforappl" xml:space="preserve">
+    <value>ขอบคุณที่ได้สมัครเพื่อขอเป็นพันธมิตรกับทาง Affiliate&lt;br /&gt;&lt;br /&gt;
+ผู้จัดการฝ่ายพันธมิตรของเราจะติดต่อหาคุณ ภายในเวลา 3 วันทำการเพื่อแจ้งสถานะการสมัครของคุณ</value>
+  </data>
+  <data name="Ifyouhaveanyque" xml:space="preserve">
+    <value>ถ้าคุณมีคำถามเพิ่มเติมหรือต้องการความช่วยเหลือกรุณาอย่าลังเลที่จะ</value>
+  </data>
+  <data name="Sincerely" xml:space="preserve">
+    <value>ขอแสดงความจริงใจ</value>
+  </data>
+  <data name="NetellerAccount" xml:space="preserve">
+    <value>บัญชี Neteller จำเป็นต้องมี</value>
+  </data>
+  <data name="MoneybookersEma" xml:space="preserve">
+    <value>มันนี่บุคเกอร์ อีเมลล์ไม่ถูกต้อง</value>
+  </data>
+  <data name="BankNameisrequi" xml:space="preserve">
+    <value>จำเป็นต้องมีชื่อธนาคาร</value>
+  </data>
+  <data name="BankAddressisre" xml:space="preserve">
+    <value>ที่อยู่ของธนาคารจำเป็นต้องมี</value>
+  </data>
+  <data name="BankABA_Swift_SIsRequired" xml:space="preserve">
+    <value>ธนาคาร และ รหัสธนาคารในเครือ จำเป็นต้องมี</value>
+  </data>
+  <data name="BankAccountNameIsRequired" xml:space="preserve">
+    <value>ชื่อบัญชีธนาคารจำเป็นต้องมี</value>
+  </data>
+  <data name="BankAccountNumbIsRequired" xml:space="preserve">
+    <value>หมายเลขบัญชีธนาคารจำเป็นต้องมี</value>
+  </data>
+  <data name="ChequeFullNamei" xml:space="preserve">
+    <value>กรุณากรอก ชื่อเต็มของเชค</value>
+  </data>
+  <data name="ChequeAddressis" xml:space="preserve">
+    <value>กรุณากรอก ที่อยู่ที่ออกเชค</value>
+  </data>
+  <data name="ChequeCityisreq" xml:space="preserve">
+    <value>กรุณากรอก เมื่องที่ออกเชค</value>
+  </data>
+  <data name="ChequeStateisre" xml:space="preserve">
+    <value>กรุณากรอกชื่อพื้นที่ ที่ออกเชค</value>
+  </data>
+  <data name="ChequePostcode_" xml:space="preserve">
+    <value>กรุณากรอกรหัสไปรษณีย์ที่ออกเชค</value>
+  </data>
+  <data name="OldPasswordisre" xml:space="preserve">
+    <value>พาสเวริ์ดเดิมจำเป็นต้องมี</value>
+  </data>
+  <data name="NewPasswordisre" xml:space="preserve">
+    <value>จำเป็นต้องมีรหัสผ่านใหม่</value>
+  </data>
+  <data name="ChequeCountryis" xml:space="preserve">
+    <value>กรุณากรอก ประเทศที่ออกเชค</value>
+  </data>
+  <data name="Doyouhaveanyque" xml:space="preserve">
+    <value>คุณมีคำถามอะไรไหม คะ?</value>
+  </data>
+  <data name="ToBecomeAnAff" xml:space="preserve">
+    <value>เพื่อที่จะเข้าร่วมโปรแกรมพันธมิตรกับ Affiliate  คุณจะต้องสมัครโปรแกรมพันธมิตรโดยการกรอกใบสมัครผ่านแบบฟอร์มทางอินเตอร์เนต จากนั้นเมื่อการสมัครของคุณได้รับการอนุมัติคุณจะต้องดาวโหลดแบนเนอร์ของเราเพื่อที่จะนำไปวางไว้บนเวบไซค์ของคุณ อีเมลล์ของคุณ หรือในรูปแบบอื่น คุณได้เห็นด้วยทุกประการในกติกาและเงื่อนไขที่ระบุไว้ในเวบไซค์</value>
+  </data>
+  <data name="IfYouDecide" xml:space="preserve">
+    <value>ถ้าคุณตัดสินใจว่าจะไม่ยอมรับในกติกาและเงื่อนไขที่ทางเวบไซค์กำหนด กรุณาอย่าได้ดาวโหลดแบนเนอร์ หรือ ลิ้งค์ข้อความแล้วนำไปวางเพื่อทำการตลาดในเวบไซค์ของคุณ ในทุกข้อมูลที่เกี่ยวข้องกับ Affiliate</value>
+  </data>
+  <data name="WeReserveTheRight" xml:space="preserve">
+    <value>เราขอสงวนสิทธิ์ที่จะสิ้นสุดสัญญาฉบับนี้ ถ้าเราไตร่ตรองแล้วว่าเวบไซค์ของคุณไม่เหมาะสม  เวบไซค์ที่ไม่เหมาะสม อาจรวมถึงเวบไซค์ที่แสดงเกี่ยวกับเรื่องเพศ ที่มีลูกค้ากลุ่มเป้าหมายคือเด็กและเยาวชน  เวบไซค์ที่แสดงถึงความรุนแรง เวบไซค์ที่แบ่งแยกเชื้อชาติ เกี่ยวกับ เพศ ศาสนา หรือ สัญชาติ หรือคนพิการ หรือเวบไซค์ที่ส่งเสริมในเรื่องของกิจกรรมที่ผิดกฏหมาย หรือการละเมิดลิขสิทธิ์ เกี่ยวกับ ไอพี</value>
+  </data>
+  <data name="ThisAgreementDetailsAll" xml:space="preserve">
+    <value>รายละเอียดเกี่ยวกับสัญญาฉบับนี้เกี่ยวกับกติกาและเงื่อนไขการเป็นสมาชิกพันธมิตร Affiliate คุณ หมายถึง พันธมิตร อ้างอิงถึง บุคคลใดบุคคลหนึ่ง หรือ กลุ่มบุคคลที่ได้สมัครสมาชิกเข้ามาเป็นพันธมิตรกับเรา ภายใต้สัญญาฉบับนี้ ทั้งนี้จะรวมถึงลูกจ้าง พนักงานบริษัท ผู้อำนวยการ ผู้ถือหุ้น เจ้าของ ทั้งนี้ คำว่า ของท่านได้รวมถึงกลุ่มบุคคลเหล่านี้ด้วย</value>
+  </data>
+  <data name="ResponOfTheAff" xml:space="preserve">
+    <value>1. ความรับผิดชอบที่มีต่อโปรแกรมพันธมิตร</value>
+  </data>
+  <data name="AsAnAffiliate" xml:space="preserve">
+    <value>1.เมื่อคุณได้เป็นพันธมิตรกับทางเราแล้วสิ่งที่คุณต้องทำคือการโปรโมตเวบไซค์ Affiliate โดยการนำแบนเนอร์ และ ลิงค์ข้อความของเราไปวางไว้บนเวบไซค์ของคุณ หรือ อีเมลล์ของคุณ หรือวิธีการประชาสัมพันธ์อื่นอื่น</value>
+  </data>
+  <data name="YouWillAgreeToRegister" xml:space="preserve">
+    <value>2. คุณเห็นด้วยที่จะสมัครและให้ข้อมูลที่ถูกต้องและเชื่อถือได้ที่จะใช้ในการติดต่อกับเวบไซค์ Affiliate</value>
+  </data>
+  <data name="YouWillPresentOnlyContent" xml:space="preserve">
+    <value>3. คุณจะนำเสนอข้อความหรือหัวข้อที่ได้รับการอนุมัติเป็นลายลักษณ์อักษรจาก Affiliate บนเวบไซค์ของคุณ ข้อความที่ไม่เหมาะสมที่นำไปลงจะถูกพิจารณาจากทางเรา และอาจทำให้บัญชีของคุณสิ้นสุดลงได้ทันที</value>
+  </data>
+  <data name="YouWillBeSolelyResponsible" xml:space="preserve">
+    <value>4. คุณจะต้องรับผิดชอบทั้งหมด ในเรื่องของการพัฒนาระบบ ของเวบไซค์ การบำรุงรักษาเวบไซค์และสื่งอื่นอื่นที่ปรากฏอยู่บนเวปไซค์ของคุณโดยค่าใช้จ่ายส่วนนี้คุณต้องเป็นคนออกเอง ตัวอย่างเช่น คุณจะต้องรับผิดชอบทั้งหมดเกี่ยวกับเรื่องอุปกรณ์ที่ใช้โพสต์ลงบนเวบไซค์ของคุณ และข้อกำหนดต่างต่างที่เกี่ยวกับการทำผิดกฏหมายหรือการละเมิดลิขสิทธิ์ที่อาจจะเกิดกับบุคคลอื่น เพราะว่าทางเราไม่สามารถเข้าไปควบคุมดูแลเวบไซค์ของคุณได้ เราจึงไม่สามารถรับผิดชอบในส่วนนี้ได้ มากไปกว่านั้นคุณจะต้องรับผิดชอบในส่วนของความเสียหายและค่าใช้จ่ายในเรื่องของค่าธรรมเนียมเกี่ยวกับกฏหมายที่เกี่ยวเนื่องถึงการพัฒนา การปฏิบัติงาน การบำรุงรักษา และ ข้อมูลบนเวบไซค์ของคุณ ข้อกำหนดเกี่ยวกับการชดเชยเหล่านี้ได้แบ่งแยกความรับผิดชอบไว้อย่างชัดเจนที่บังคับใช้ภายใต้กฏหมาย</value>
+  </data>
+  <data name="AffiliationGuidelines" xml:space="preserve">
+    <value>2. การแนะนำเกี่ยวกับพันธมิตร</value>
+  </data>
+  <data name="OnlyApprovedAndProperly" xml:space="preserve">
+    <value>1. สื่อที่ใช้ในการโปรโมตเวบไซค์ที่ทางเวบไซค์ของเราได้จัดเตรียมให้กับลูกค้าพันธมิตรที่ได้รับสิทธิ์การเป็นพันธมิตรแล้ว จะถูกจัดเตรียมไว้ให้ท่านเรียบร้อยแล้ว อย่างไรก็ตามสื่ออื่นอื่นที่ไม่ได้รับการอนุญาติเป็นลายลักษณ์อักษรจากเวบไซค์ Affiliate ท่านจะไม่สามารถทำได้</value>
+  </data>
+  <data name="Youmaynotmodify" xml:space="preserve">
+    <value>2. คุณไม่สามารถที่จะแก้ไขหรือสิทธิ์ที่ใช้ไอพี แบนเนอร์ หรือการใช้สิ่งเหล่านี้เพื่อวัตถุประสงค์อื่นโดยปราศจากความยินยอมเป็นลายลักษณ์อักษรจาก Affiliate  ทุกข้อมูลที่เป็นลิขสิทธิ์ต่างต่างที่ได้รับการอนุมัติโดยเวปไซค์ Affiliate ไม่สามารถที่จะแก้ไขเปลี่ยนแปลงหรือลบออกส่วนหนึ่งส่วนใดได้</value>
+  </data>
+  <data name="Byagreeingtoparticipate" xml:space="preserve">
+    <value>3. โดยการเห็นพ้องต้องกันในการที่จะเข้ามาเป็นส่วนหนึ่งของโปรแกรมพันธมิตร คุณเห็นด้วยที่จะดาวโหลดแบนเนอร์ หรือ ลิ้งค์ข้อความที่จะใช้เป็นเครื่องมือในการทำการตลาดนำไปวางบนเวบไซค์ของคุณ การใช้ประโยชน์จากเครื่องมือเหล่านี้ส่งทางอีเมลล์ การใช้ลิ้งค์ข้อความ ต่างต่าง สิ่งเหล่านี้จะต้องได้รับการอนุมัติจากเวบไซค์เราก่อนเท่านั้น ก่อนใช้งาน</value>
+  </data>
+  <data name="Bannersandlinks" xml:space="preserve">
+    <value>4. แบนเนอร์และ ลิ๊งค์ข้อความไม่สามารถที่จะนำไปวางและส่งในอีเมลล์แบบแสปม หรือ นำไปโพสต์ลงบนเวบไซค์ที่ไม่ได้รับการอนุญาติ หรือ ห้องสนทนาสดโดยใช้ ระบบคอมพิวเตอร์อัตโนมัติในการแสดงข้อมูล สิ่งเหล่านี้ถ้าถูกทำโดยสมาชิก จะไม่สามารถนำมานับรวม และ จะเป็นเหตุให้บัญชีพันธมิตรของท่านถูกยกเลิก</value>
+  </data>
+  <data name="WewillterminatethisAgreement" xml:space="preserve">
+    <value>5. เราจะยกเลิกสัญญานี้ทันที ถ้ามีการส่งขยะทางอีเมลล์ในนามของคุณเพื่อเป็นการทำลายชื่อเสียงของ เวบไซค์ Affiliate ซึ่งเป็นการทำการตลาดที่ผิดวิธี โดยใช้ข้อความหรือคำพูด</value>
+  </data>
+  <data name="Youshallnotmake" xml:space="preserve">
+    <value>6. คุณจะไม่สามารถอ้างสิทธิ์ การขอเป็นตัวแทน หรือขอการรับประกัน ในการติดต่อกับเวบไซค์ Affiliate หรือ ไม่มีอำนาจที่จะบังคับ Affiliate ให้รับผิดชอบในเรื่องใดก็ตาม</value>
+  </data>
+  <data name="Withoutourpriorwritten" xml:space="preserve">
+    <value>7. ถ้าปราศจากการยินยอมเป็นลายลักษณ์อักษรคุณสามารถใช้แบนเนอร์ของเวบไซค์ Affiliate และลิ๊งค์ข้อความเพื่อใช้เครื่องมือในการโปรโมตเวบไซค์ Affiliate เท่านั้น ห้ามใช้เพื่อวัตถุประสงค์อื่น สัญลักษณ์ หรือ ลิ้งค์ข้อความเป็นลิขสิทธิ์ของเวบไซค์เราซึ่งมีไว้ให้สำหรับบุคคลที่ได้รับการอนุญาติจากเวบไซค์เราจึงจะสามารถใช้งานได้</value>
+  </data>
+  <data name="Youwillnotknowingly" xml:space="preserve">
+    <value>8. ถ้าเกิดมีกรณีที่การประชาสัมพันธ์ของคุณไม่ได้ถูกดำเนินการในรูปแบบที่เหมาะสมถูกต้องซึ่งอาจทำให้เกิดความเสียหายกับเวบไซค์ Affiliate ไม่ว่าจะเป็นกิจกรรมใดใดก็ตามที่ล่วงละเมิดผ่านทางเวบไซค์ของคุณ ทางบริษัทขอสงวนสิทธิ์ที่จะเรียกเก็บค่าคอมมิชชั่นที่ได้จ่ายให้แล้วคืนมา  การพิจารณาของทางเวบไซค์ถือว่าสามารถบังคับใช้ได้สูงสุด เราขอสงวนสิทธิ์ที่เรียกเก็บจำนวนค่าคอมมิชชั่นทั้งหมดที่ได้จ่ายไปในสัญญาฉบับนี้ ถ้ามีเหตุให้เราสามารถเชื่อได้ว่า กิจกรรมที่เกิดขึ้นเกิดจากความตั้งใจของท่านที่จะละเมิดกติกาพันธมิตรที่ทางเวบไซค์กำหนด แม้ว่าบางครั้งคุณอาจจะไม่ได้ตั้งใจ เราขอสงวนสิทธิ์ที่จะระงับการถอนเงินของคุณถ้ามีเหตุให้เชื่อว่ากิจกรรมที่ทำให้เกิดรายได้นั้นนั้นเกิดจากการกระทำของคุณเองหรือกลุ่มคณะบุคคลที่คุณรู้จักโดยตั้งใจ ทางเราขอสงวนสิทธิ์ที่จะระงับการจ่ายค่าคอมมิชชั่นชั่วคราว</value>
+  </data>
+  <data name="Affiliatesareprohibited" xml:space="preserve">
+    <value>9. พันธมิตรไม่ได้รับอนุญาติให้เล่นในรายการกีฬาที่อยู่ในเวบไซค์ของ Affiliate ผ่านช่องทางการแนะนำของตัวพันธมิตรเองหรือใช้ชื่อบุคคลอื่นในการมีส่วนร่วมรับคอมมิชชั่นในโปรแกรมพันธมิตรนี้ ทั้งนี้รวมถึงบุคคลใดบุคคลหนึ่งหรือคณะบุคคลจากซึ่งได้รับคอมมิชชั่นจากโปรแกรมนี้ ถ้าหากมีการตรวจพบว่ากลุ่มบุคคลดังกล่าวได้ทำการตามที่กล่าวมาข้างต้น ทางเวบไซค์ Affiliate ขอสงวนสิทธิ์ในการยกเลิกที่จะจ่ายค่าคอมมิชชั่นหรือทุกรายการที่เล่นเข้ามา และสิทธิ์ในการเป็นพันธมิตรกับทางเวบไซค์ Affiliate ถือว่าสิ้นสุดลง และกลุ่มบุคคลดังกล่าวจะไม่ได้รับอนุญาติให้ทำการเล่นกับ Affiliate ในอนาคต</value>
+  </data>
+  <data name="YouAreNotAllowed" xml:space="preserve">
+    <value>10. คุณไม่ได้รับอนุญาติที่จะเป็นทั้งผู้เล่นหรือผู้ถูกแนะนำและผู้ที่เป็นคนแนะนำในโปรแกรมพันธมิตรในเวลาเดียวกัน ถ้ามีเหตุดังกล่าวเกิดขึ้นหรือมีเหตุที่ทางเราสืบทราบว่ามีเหตุการณ์ดังกล่าวเกิดขึ้นเราขอสงวนสิทธิ์ที่จะสิ้นสุดการเป็นพันธมิตรในทันที  ผู้แนะนำในที่นี้มีความหมายเกี่ยวกับความสัมพันธ์ทีเกิดขึ้นระหว่างผู้ที่แนะนำและผู้เล่นหรือผู้ที่ถูกแนะนำ ตามรายการที่ได้แจ้งไว้ในโปรแกรมแนะนำเพื่อนที่ระบุไว้ในเวบไซค์</value>
+  </data>
+  <data name="AffiliateTagging" xml:space="preserve">
+    <value>3. หัวข้อต่างต่างเกี่ยวกับพันธมิตร</value>
+  </data>
+  <data name="Youareonlyresponsible" xml:space="preserve">
+    <value>1. คุณจะต้องรับผิดชอบสำหรับลูกค้าที่สมัครกับเวบไซค์ Affiliate เท่านั้น</value>
+  </data>
+  <data name="Onlyproperlytaggedcustomers" xml:space="preserve">
+    <value>2. ทรัพย์สินในการใช้โปรโมตเวบไซค์ ที่พันธมิตรได้รับจากเวบไซค์ Affiliate เท่านั้นที่ได้รับอนุญาติ ซึ่งสืออื่นที่ไม่ได้รับจาก เวบไซค์ Affiliate จะไม่ได้รับอนุญาติให้ใช้ เป็นหน้าที่ของสมาชิกพันธมิตรที่จะตรวจสอบว่าลิ๊งค์ที่ใช้โปรโมตเวบไซค์สามารถใช้งานได้อย่างมีประสิทธิภาพ</value>
+  </data>
+  <data name="RevenueSharing" xml:space="preserve">
+    <value>4. รายได้ ส่วนแบ่ง และ การจ่าย</value>
+  </data>
+  <data name="OneTwoBETwillpayout" xml:space="preserve">
+    <value>1. Affiliate จ่ายค่าคอมมิชชั่นให้สมาชิกแต่ละท่านอ้างอิงได้จาก โครงสร้าง การรับคอมมิชชั่น โดยรายการบัญชีพันธมิตรคุณ ต้องมีผู้เล่นที่เข้าเกณฑ์ อย่างน้อย 5 คนในเดือนนั้นๆ  </value>
+  </data>
+  <data name="ActiveWageringMembersRefers" xml:space="preserve">
+    <value>2. จำนวนเงินของบัญชีลูกค้าที่แอคทีคือ การที่ลูกค้าได้มียอดเทริ์นโอเวอร์ถึงขั้นต่ำของที่กำหนดไว้คือ 100 ดอลล่าห์สหรัฐในแต่ละเดือนนั้นนั้น</value>
+  </data>
+  <data name="CommissionableEarningsAreCalculated" xml:space="preserve">
+    <value>3. ผลกำไรค่าคอมมิชชั่นจะคำนวณเป็นผลกำไรของ Affiliate โดยหักค่าใช้จ่ายดังต่อไปนี้</value>
+  </data>
+  <data name="Chargeback" xml:space="preserve">
+    <value>a.	เิงินที่ถูกปฏิเสธการชำระ&lt;br /&gt;
+b.	โบนัส&lt;br /&gt;
+c.	รายได้ที่ไม่สามารถเก็บได้ รวมถึงธุรกรรมที่เรายกเลิกหรือยกเลิกหรือในนามของเรา&lt;br /&gt;
+d.	ค่าธรรมเนียมในการดำเนินการ&lt;br /&gt;
+e.	เงินที่มาจากการฉ้อเฉล&lt;br /&gt;
+f.	เงินที่จ่ายให้ลูกค้าที่เกี่ยวข้องเพื่อแก้ไขข้อพิพาท และ&lt;br /&gt;
+g.	รายได้ที่ไม่สามารถเก็บได้หรือจำนวนที่หักออกอื่นใดที่ Affiliate มีสิทธิที่จะเก็บได้ภายใต้ข้อกำหนดและเงื่อนไขมาตรฐาน</value>
+  </data>
+  <data name="Shouldtheplayer" xml:space="preserve">
+    <value>b. ผู้เล่นจะได้ต้องรับภาระค่าใช้จ่ายที่ถูกเรียกเก็บหรือไม่ , ข้อโต้แย้งหรือค่าใช้จ่ายที่เรียกเก็บที่ถูกทำโดยตัวท่านจะถูกหักออกจากยอดบัญชีของท่านในเดือนปัจจุบัน</value>
+  </data>
+  <data name="Shouldthisdeduction" xml:space="preserve">
+    <value>c. การหักลบเงินในบัญชีของท่านเกินกว่าจำนวนเงินปัจจุบันที่ท่านมีอยู่ ทำให้บัญชีของท่านติดลบ คุณจำเป็นจะต้องสร้างรายได้ให้บัญชีของท่านกลับมาเป็นบวกก่อนที่ท่านจะเริ่มรับรายได้อีกครั้ง</value>
+  </data>
+  <data name="Unlikewithaplayer" xml:space="preserve">
+    <value>d. ซึ่งต่างจาก การที่ผู้เล่นเล่นได้เงินจำนวนมากมาก ซึ่งในเดือนสุดท้ายเท่านั้น ค่าธรรมเนียมที่เรียกเก็บจะยังคงอยู่ จนกระทั่งรายได้ได้ถูกทำให้เกิดขึ้นจากผุ้เล่นคนอื่นอื่นซึ่งได้เข้าไปหักลบกับจำนวนเงินที่ครบกำหนด</value>
+  </data>
+  <data name="Weunderstandthat" xml:space="preserve">
+    <value>e. เราเข้าใจว่าสิ่งเหล่านี้อาจทำให้คุณเกิดความหงุดหงิดที่จะใช้โปรแกรมพันธมิตร แต่ทางเราต้องตรวจสอบให้แน่ชัดก่อนที่จะจ่ายเงินค่าคอมมิชชั่นให้กับคุณ เพื่อป้องกันการโกงที่อาจจะเกิดขึ้น</value>
+  </data>
+  <data name="ComplimentaryMoney" xml:space="preserve">
+    <value>f. เงินที่ให้ เงินที่ให้ฟรี และเงินพิเศษอื่นอื่น จำนวนเงินเหล่านั้นจะถูกโอนไปยังบัญชีของลูกค้า ถ้ายังไม่มีบัญชีหรือทำการร้องขอถอนเงิน เงินเหล่านี้จะไม่ถูกจ่ายออกไปจากโปรแกรมพันธมิตร Affiliate</value>
+  </data>
+  <data name="ShouldYouFailToBe" xml:space="preserve">
+    <value>4. ถ้าหากว่าคุณไม่สามารถรับค่าคอมมิชชั่นได้โดยสาเหตุตามข้อ 4.1, 4.2, และ 4.3 ด้านบน การล้มเหลวเนื่องจากว่าท่านไม่สามารถมีลูกค้าที่มีบัญชีการเล่นแอคทีพได้อย่างน้อย 10 ท่านในเดือนนั้นนั้น คุณจะได้รับสิทธิ์จากเวบไซค์ Affiliate ในเวลาอีก 2 เดือน เพื่อจะทำโปรโมตเวบไซค์ให้บัญชีของท่านสามารถรับค่าคอมมิชชั่นได้ และถ้าท่านสามารถกลับมาทำให้บัญชีของท่านมีลูกค้าที่แอคทีพตามที่เรากำหนดได้ ไม่เกิน 3 เดือนติดต่อกัน ท่านจะยังสามารถรับค่าคอมมิชชั่นกับทางเราได้ตามปกติ</value>
+  </data>
+  <data name="Commissionableearnings" xml:space="preserve">
+    <value>5. รายได้จากค่าคอมมิชชั่นจะอยู่ในเงื่อนไขของการคำนวณในโปรแกรมพันธมิตร Affiliate กรุณาตรวจสอบวิธีการคำนวณที่ระบุไว้ในโปรแกรมพันธมิตรอย่างสม่ำเสมอ</value>
+  </data>
+  <data name="Negativeearningsarecarried" xml:space="preserve">
+    <value>6. รายได้ติดลบจะถูกยกไปในเดือนถัดไป ถ้ารายได้ของท่านเป็นบวกในเดือนนั้นนั้น ท่านจะได้รับการจ่ายเงินถ้าค่าคอมมิชชั่นของท่านได้ตามขีดขั้นต่ำที่เรากำหนดขึ้น</value>
+  </data>
+  <data name="Thenetrevenueplan" xml:space="preserve">
+    <value>7. ค่าคอมมิชชั่นคำนวนอ้างอิงจาก ตารางโครงสร้างการรับคอมมิชชั่น ได้จากทุกรายการกำหนดของผู้เล่นที่ยังคงสถานะเล่นอย่างต่อเนื่องในนามผู้เล่นของสมาชิกพันธมิตร  </value>
+  </data>
+  <data name="PoliciesConfidentiality" xml:space="preserve">
+    <value>5. นโยบาย และ สิ่งที่เป็นความลับ</value>
+  </data>
+  <data name="OneTwoBETassumeownership" xml:space="preserve">
+    <value>1. Affiliate ได้ให้สิทธิ์กับสมาชิกพันธมิตรในสัญญาฉบับนี้ คุณในนามของพันธมิตร สามารถทำการประชาสัมพันธ์เวบไซค์ Affiliate  อย่างไรก็ตาม เราขอสงวนสิทธิ์ที่จะปฎิเสธลูกค้าหรือปิดบัญชีของลูกค้า ถ้ามีความจำเป็นเมื่อไรก็ได้</value>
+  </data>
+  <data name="Byopeninganaccount" xml:space="preserve">
+    <value>2. โดยการเปิดบัญชีในการเป็นสมาชิก บุคคลท่านนั้นจะได้รับสิทธิ์ในการเป็นลูกค้า สอดคล้องกับ กฏกติกาของการเป็นสมาชิก นโยบาย และ ขั้นตอนและกระบวนการต่างต่างจะถูกนำมาใช้กับบุคคลเหล่านี้</value>
+  </data>
+  <data name="Duringtheterm" xml:space="preserve">
+    <value>3. ในสัญญาฉบับนี้ คุณสามารถไว้วางใจได้ว่าข้อมูลที่เกี่ยวกับธุรกิจจะถูกเก็บไว้เป็นความลับ การใช้เทคโนโลยีในการโปรโมตโปรแกรมพันธมิตรของท่าน ( รวมถึงตัวอย่างเช่น ค่าแนะนำที่คุณได้รับจากการแนะนำลูกค้าเข้ามาเป็นสมาชิกภายใต้เครือข่ายของคุณ).  คุณเห็นด้วยที่จะไม่เปิดเผยข้อมูลที่เป็นความลับดังกล่าวให้กับบุคคลที่ 3 หรือบุคคลภายนอก นอกเสียจากว่าคุณได้รับความยินยอมเป็นลายลักษณ์อักษรว่าคุณสามารถใช้ข้อมูลที่เป็นความลับเหล่านี้เพื่อวัตถุประสงค์ที่จำเป็นในสัญญาฉบับนี้ คุณมีหน้าที่ที่จะเก็บข้อมูลเหล่านี้ไว้เป็นพันธมิตร เพื่อทำให้สัญญาฉบับนี้ไม่สิ้นสุดลง</value>
+  </data>
+  <data name="LimitedLicense" xml:space="preserve">
+    <value>6.ใบอนุญาติขับขี่</value>
+  </data>
+  <data name="Weherebygrant" xml:space="preserve">
+    <value>1. เราขอสงวนสิทธิ์ในการอนุญาติให้คุณใช้ แบนเนอร์ของเราในการประชาสัมพันธ์ ภายใต้เงื่อนไขข้อกำหนดในสัญญาฉบับนี้เท่านั้น ที่คุณจะสามารถนำแบนเนอร์ของเราไปวางบนเวปไซค์คุณเพื่อทำการประชาสัมพันธ์</value>
+  </data>
+  <data name="BythisAgreement" xml:space="preserve">
+    <value>2. โดยข้อตกลงเหล่านี้ เราให้สิทธิ์ท่านในการที่จะแนะนำลูกค้าให้มาใช้สินค้าและบริการในเวบไซค์ของเรา สอดคล้องกับกติกาและเงื่อนไขในการเป็นพันธมิตรในสัญญาฉบับนี้  อย่างไรก็ตามสัญญาฉบับนี้ไม่ได้ให้สิทธิ์กับคุณในการให้ความช่วยเหลือกับผู้ที่คุณแนะนำในกรณีอื่นอื่น และทางบริษัทขอสงวนสิทธิ์ในการที่จะรับข้อมูลจากคณะบุคคลอื่นเช่นเดียวกับคุณและบุคคลอื่นไม่สามารถได้รับค่าคอมมิชชั่นหรือเงินชดเชยในการทำธุรกิจในสัญญาฉบับนี้นอกจากตัวคุณเท่านั้น</value>
+  </data>
+  <data name="Thislicensecannot" xml:space="preserve">
+    <value>3. ใบอนุญาตินี้ ไม่สามารถทำให้เป็นใบอนุญาติเสริมให้กับคุณ อย่างไรก็ตามเป็นสิทธิ์ของท่านที่จะใช้เครื่องหมายการค้าซึ่งกำหนดให้สิทธิ์ท่านที่จะใช้แบนเนอร์ของเราในการโปรโมตเวบไซค์ คุณจะไม่สามารถนำสิ่งที่เราจัดเตรียมให้คุณไปใช้เพือวัตถุประสงค์อื่น เครื่องหมายการค้านี้เป็นลิขสิทธิ์ของเวบไซค์ Affiliate เท่านั้น</value>
+  </data>
+  <data name="Wereservetherighttorevoke" xml:space="preserve">
+    <value>4. เราขอสงวนสิทธิ์ที่จะยึดใบอนุญาตินี้เมื่อไรก็ตามและมันจะทำให้สัญญาฉบับนี้สิ้นสุดลงไม่ว่าด้วยเหตุผลใดก็ตาม</value>
+  </data>
+  <data name="LegalResponsibility" xml:space="preserve">
+    <value>7 ความรับผิดชอบเกี่ยวกับกฏหมาย</value>
+  </data>
+  <data name="Ownershipandcontent" xml:space="preserve">
+    <value>1. ความเป็นเจ้าของข้อความของเวบไซค์นี้ ยังคงเป็นทรัพย์สินของเราและจะไม่สามารถถูกถ่ายโอนไปยังผู้อื่นได้ ทั้งนี้ได้ถูกกำหนดไว้ในสัญญาพันธมิตรฉบับนี้เรียบร้อยแล้ว</value>
+  </data>
+  <data name="Ownershipcontentandliability" xml:space="preserve">
+    <value>2. ความเป็นเจ้าของ ข้อความ และ หนี้สินของเวบไซค์ Affiliate จะถูกกำหนดให้เป็นความรับผิดชอบของโปรแกรมพันธมิตร คุณมีหน้าที่เพียงแค่ ทำการส่งเสริมการตลาดและดูแลเวบไซค์ของคุณให้สามารถใช้งานได้อย่างมีประสิทธิ์ภาพ และค่าใช้จ่ายเหล่านี้คุณเป็นผู้รับผิดชอบเองทั้งหมด</value>
+  </data>
+  <data name="Youwillindemnify" xml:space="preserve">
+    <value>3.คุณจะต้องชดเชยและรับผิดชอบในความเสียหายถ้าหากมีผู้ร้องขอความรับผิดชอบ ค่าใช้จ่ายในส่วนนี้รวมถึงค่าธรรมเนียมในการจ้างนักกฏหมาย ที่เกี่ยวข้องกับการพัฒนา การปฏิบัติงาน การบำรุงรักษา และ เนื้อหาที่ลงบนเวบไซค์ของคุณ  ข้อกำหนดเกี่ยวกับการชดเชยเหล่านี้ได้แบ่งแยกความรับผิดชอบไว้อย่างชัดเจนที่บังคับใช้ภายใต้กฏหมาย</value>
+  </data>
+  <data name="Itistheaffiliates" xml:space="preserve">
+    <value>4. มันเป็นหน้าที่รับผิดชอบของทีมงานพันธมิตรที่จะติดตามและตรวจสอบขั้นตอนต่างต่างเพื่อให้แน่ใจว่าลูกค้าใหม่ได้รับการจ่ายเงินแล้ว</value>
+  </data>
+  <data name="Presentationofourbanners" xml:space="preserve">
+    <value>5. การนำแบนเนอร์ไปวาง หรือ ลิ๊งค์ข้อความการโปรโมตเวบไซค์ Affiliate เป็นหน้าที่รับผิดชอบของทีมงานพันธมิตร สมาชิกพันธมิตรต้องตรวจสอบให้แน่ใจว่า ข้อความที่นำไปวางเพื่อใช้โปรโมตนั้นถูกต้องและสามารถใช้งานได้อย่างมีประสิทธิภาพ</value>
+  </data>
+  <data name="Affiliatemustensure" xml:space="preserve">
+    <value>6. พันธมิตรต้องแน่ใจว่าข้อความที่โพสต์ในเวบไซค์ของท่านถูกกฏหมาย ที่ไม่ได้ละเมิดลิขสิทธิ์ หรือละเมิดสิทธิ์ผู้อื่น</value>
+  </data>
+  <data name="Wemaymodify" xml:space="preserve">
+    <value>7. เราอาจจะปรับเปลี่ยนในเรื่องของกติกาและเงื่อนไขซึ่งระบุไว้ในสัญญาฉบับนี้  ได้ทุกเมื่อและเรามีอิสระในการพิจารณา กติกาเงื่อนไขที่ปรับเปลี่ยนนี้จะถูกระบุอยู่ในเวบไซค์ของเรา  การปรับเปลี่ยนกติกานี้ จะรวมถึง ตัวอย่างเช่น  การเปลี่ยนกติกาในเรื่องขอค่าธรรมเนียมในการแนะนำ ค่าธรรมเนียมอื่นอื่น กำหนดการ  การจ่ายเงิน ขั้นตอนการดำเนินการ และกติกาที่ใช้เกี่ยวกับการแนะนำสมาชิก  ถ้ามีการปรับเปลี่ยนกติกาข้อใดที่ลูกค้าไม่สามารถยอมรับได้ เป็นหน้าที่ของลูกค้าที่จะต้องติดตามตรวจสอบเพื่อขอยุติสัญญา หากไม่มีการติดตาม ถือว่า ลูกค้ายอมรับในเงื่อนไขที่ได้ปรับเปลี่ยนและยอมรับในกติกาที่เปลี่ยนแปลงนี้ทุกประการ</value>
+  </data>
+  <data name="SpamWedonot" xml:space="preserve">
+    <value>8. แสปม เราไม่ยอมรับอีเมลล์ขยะ</value>
+  </data>
+  <data name="AnyformofSpam" xml:space="preserve">
+    <value>a. ในรูปแบบของอีเมลล์ที่เป็นสแปมอีเมลล์ที่ถูกใช้กับบัญชีของคุณ ทุกจำนวนเงินที่ถูกจ่ายออกไปในการสืบสวนเกี่ยวกับบัญชี ค่าใช้จ่ายเหล่านี้ที่ลูกค้าได้จ่ายไปในมูลค่าเท่ากันอาจจะถูกนำมาหักจากบัญชีของคุณ เพื่อความยุติธรรมกับลูกค้าและตัวสมาชิกพันธมิตรเอง ค่าใช้จ่ายเหล่านี้ท่านสมาชิกและลูกค้าได้เห็นด้วยที่จะยอมรับเมื่อท่านเป็นสมาชิกพันธมิตรกับ Affiliate</value>
+  </data>
+  <data name="Shouldtheseexpenses" xml:space="preserve">
+    <value>b. ค่าใช้จ่ายเหล่านี้จะไม่ได้รวมจำนวนเงินที่อยู่ในบัญชีของท่าน เราขอสงวนสิทธิ์ที่จะสืบสวนสอบสวน บัญชีพันธมิตรของท่าน ถ้าหากมีข้อสงสัยหรือมีเหตุบางประการ เราของสงวนสิทธิ์ในการพิจารณาการจ่ายค่าคอมมิชชั่นของท่าน จนกว่าทางเราจะสามารถหาข้อยุติได้ หรือในกรณีที่บัญชีพันธมิตรของท่านไม่สามารถแนะนำลูกค้าเพื่อสร้างรายได้ ทางเราจะขอปฏิเสธที่จะจ่ายเงินค่าคอมมิชชั่นดังกล่าวให้กับสมาชิกพันธมิตร</value>
+  </data>
+  <data name="Youandweareindependent" xml:space="preserve">
+    <value>9. คุณและเรามีอิสระในการติดต่อกัน และในสัญญาฉบับนี้จะไม่ได้กล่าวถึงการเป็นหุ้นส่วน การเป็นตัวแทน หรือร่วมหุ้น การขาย หรือสิทธิ์ในการเป็นตัวแทน หรือ ความสัมพันธ์เกี่ยวกับการจ้างงาน คุณไม่มีสิทธิ์ในการแสดงการเป็นตัวแทน คุณไม่สามารถที่จะนำข้อความที่แสดงถึงการเป็นตัวแทนไปวางไว้บนเวบไซค์ของคุณ</value>
+  </data>
+  <data name="Miscellaneous" xml:space="preserve">
+    <value>8. ที่ผสมกลมกลืนกัน</value>
+  </data>
+  <data name="Assignability" xml:space="preserve">
+    <value>มอบหมาย-ความสามารถ</value>
+  </data>
+  <data name="Youmaynotassign" xml:space="preserve">
+    <value>a. คุณอาจจะไม่ต้องปฏิบัติตามข้อกำหนดในสัญญาฉบับนี้ หากไม่มีการแจ้งการตอบรับการเป็นสมาชิกอย่างเป็นลายลักษณ์อักษรจากทางเรา ข้อกำหนดในสัญญาฉบับนี้จะไม่สามารถบังคับใช้กับคุณและทางเราได้</value>
+  </data>
+  <data name="NonWaiver" xml:space="preserve">
+    <value>2. ไม่มีเอกสารการสละสิทธิ์</value>
+  </data>
+  <data name="Ourfailuretoenforce" xml:space="preserve">
+    <value>a. การล้มเหลวของเราที่จะบังคับให้ท่านใช้สิ่งที่เราจัดหามาให้ ในสัญญาฉบับนี้ จะไม่ได้ประกอบไปด้วย การใช้สิ่งที่เราจัดเตรียมให้ท่านนั้น ท่านจะไม่สามารถปรับเปลี่ยน เพิ่มเติม ลบ หรือเปลี่ยนแปลงสิ่งที่มีอยู่ในสัญญาฉบับนี้  สิ่งเหล่านี้ได้ถูกยอมรับและบันทึกโดยทางเราเรียบร้อยแล้ว ลูกจ้าง พนักงานบริษัท หรือตัวแทน ไม่สามารถปรับเปลี่ยนแก้ไขสัญญาฉบับนี้ได้</value>
+  </data>
+  <data name="Remedies" xml:space="preserve">
+    <value>3. การแก้ไข</value>
+  </data>
+  <data name="Ourrightsandremedies" xml:space="preserve">
+    <value>a. เป็นสิทธิ์ของเราที่จะบังคับใช้ข้อกำหนดในสัญญาฉบับนี้  ท่านสมาชิกได้รับรู้ และ ยืนยันที่จะยอมรับข้อกำหนดที่ได้ระบุไว้ในสัญญาฉบับนี้ สมาชิกมีหน้าที่ที่จะต้องปฏิบัติตามเงื่อนไข ของสัญญาฉบับนี้ ถ้าหากมีข้อโต้แย้งในเรื่องของสิทธิเกิดขึ้น ไม่ว่าจะด้วยเหตุใดก็ตาม ทางบริษัทขอใช้สัญญาฉบับนี้ บังคับใช้ได้อย่างถูกต้องตามกฏหมาย สมาชิกทุกท่านยินยอม เข้าใจ และยืนยันที่จะปฏิบัติตามข้อตกลงในสัญญาฉบับนี้ทุกประการ และ กฏหมายสามารถบังคับใช้กับท่านได้ ถ้ามีเหตุเกิดขึ้นซึ่งต้องหาผู้รับผิดชอบ ข้อกำหนดของสัญญาฉบับนี้ได้กำหนดบทบาทหน้าที่ที่สมาชิกต้องปฏิบัติตามไว้อย่างชัดเจนแล้ว</value>
+  </data>
+  <data name="SeverabilityWaiver" xml:space="preserve">
+    <value>4. การดำรงอยู่ / การสละสิทธิ์</value>
+  </data>
+  <data name="Wheneverpossible" xml:space="preserve">
+    <value>a.เงื่อนไขในแต่ละข้อของสัญญาฉบับนี้ ได้ถูกแปลไว้เป็นภาษาต่างต่างเพื่อที่จะใช้บังคับตามกฏหมาย แต่ถ้ามีเงื่อนไขใดที่ไม่สอดคล้องกับสถานการณ์ปัจจุบันหรือผิดกฏหมาย เงื่อนไขนั้นนั้นจะถือว่ายกเลิกไปโดยปริยายไม่สามารถบังคับใช้ได้ การพิจารณาเงื่อนไขข้อบังคับในสัญญาฉบับนี้มีไว้เพื่อคุ้มครองและปกป้องสิทธิ์ของเวบไซค์เราเท่านั้น ทุกเงื่อนไขได้ถูกกำหนดไว้เป็นลายลักษณ์อักษรและผู้ใช้เวบไซค์ได้ยอมรับและเห็นด้วยในการใช้งานเรียบร้อยแล้ว</value>
+  </data>
+  <data name="TermTermination" xml:space="preserve">
+    <value>9.  กติกา และ การทำให้สิ้นสุด</value>
+  </data>
+  <data name="ThetermofthisAgreement" xml:space="preserve">
+    <value>1. กติกาของสัญญาฉบับนี้เริ่มต้นจากคุณได้ดาวโหลดลิ๊งค์แบนเนอร์และลิ้งค์ข้อความของเราแล้วนำไปวางบนเวปไซค์ของคุณ และดำเนินการเป็นพันธมิตรตามสัญญาฉบับนี้ไปจนกว่าจะมีข้อความแจ้งเป็นลายลักษณ์อักษรว่าสัญญาได้สิ้นสุดลงแจ้งไป ซึ่งจะทำให้สัญญาสิ้นสุดลงในทันที ถ้ามีการทำให้สัญญาสิ้นสุดลง คุณจะได้รับอีเมลล์เป็นลายลักษณ์อักษรจากทางเรา</value>
+  </data>
+  <data name="Intheeventoftermination" xml:space="preserve">
+    <value>2. ในกรณ๊ที่ทำให้สัญญาฉบับนี้สิ้นสุดลง</value>
+  </data>
+  <data name="Youmustremove12BET" xml:space="preserve">
+    <value>a. คุณต้องนำแบนเนอร์ของ Affiliate ออกจากเวบไซค์ของคุณและนำลิ๊งค์ข้อความที่จะเชื่อมโยงมาที่ Affiliate ออก</value>
+  </data>
+  <data name="Allrightsandlicenses" xml:space="preserve">
+    <value>b. ทุกลิขสิทธิ์และใบอนุญาติที่ให้ไว้ในสัญญาฉบับนี้ได้ถูกทำให้สิ้นสุดลงโดยทันที</value>
+  </data>
+  <data name="Youwillbeentitled" xml:space="preserve">
+    <value>c. คุณจะได้รับสิทธิ์ที่จะรับเงินค่าแนะนำสมาชิกให้กับเราในเดือนนั้นนั้น หากคุณยังเป็นสมาชิกพันธมิตรกับเราตามปกติและสามารถปฏิบัติตามข้อกำหนดของเราในสัญญาฉบับนี้ตามรายละเอียดข้อ 9.2 ด้านล่าง เราอาจจะระงับการถอนเงินของคุณชั่วคราวของคุณ</value>
+  </data>
+  <data name="Ifyouhavefailed" xml:space="preserve">
+    <value>d. ถ้าคุณได้ล้มเหลวในการทำหน้าที่ของคุณในการแนะนำสมาชิกให้กับเรา เราจะไม่จ่ายค่าแนะนำให้คุณหรือสัญญาการเป็นพันธมิตรของคุณจะถูกทำให้สิ้นสุดลง</value>
+  </data>
+  <data name="Wemaywithhold" xml:space="preserve">
+    <value>e. เราอาจจะเพิกถอนการจ่ายค่าคอมมิชชั่นล่าสุดเพื่อตรวจสอบจำนวนเงินที่จะทำการจ่ายว่าถูกต้องหรือไม่</value>
+  </data>
+  <data name="Ifwecontinue" xml:space="preserve">
+    <value>f. ถ้าเรายังอนูยาติให้เกิดกิจกรรม ซึ่งก่อให้เกิดรายได้ จากลูกค้าหลังจากสัญญาพันธมิตรได้ถูกทำให้สิ้นสุดแล้ว เรื่องดังกล่าวนี้จะไม่นับรวมถึงการสละสิทิ์หรือการต่อสัญญาฉบับใหม่ หรือ ความเห็นพ้องต้องกันในการเปลี่ยนแปลงขอสัญญาที่สิ้นสุดลง</value>
+  </data>
+  <data name="Youwillreturn" xml:space="preserve">
+    <value>g. คุณจะต้องส่งมอบคืนข้อมูลที่เป็นความลับ ทุกประเภทที่คุณได้รับไปจากทางเรา เพื่อหยุดผู้เล่นทุกท่านในเครือข่ายของคุณไม่ว่าจะเป็นชื่อ ลิขสิทธิ์ เครื่องหมายการให้บริการ เครื่องหมายอื่นที่เกี่ยวข้อกับการทำธุรกิจของเรา</value>
+  </data>
+  <data name="Youandwewill" xml:space="preserve">
+    <value>h.คุณและเรา จะถูกทำให้เป็นอิสระในภาระหนี้ความรับผิดชอบเกี่ยวกับหนี้สินหลังจากสิ้นสุดวันเวลาที่กำหนดในสัญญา ยกเว้นภาระหน้าที่เกิดขึ้นตามปกติโดยส่วนตัวซึ่งยังคงต้องรับผิดชอบ ตามที่ได้ระบุไว้ในสัญญาฉบับนี้ การสิ้นสุดของสัญญาฉบับนี้ จะไม่ทำให้คุณหมดความรับผิดชอบในเรื่องของหนี้สินหากคุณมีการทำผิดข้อตกลงในก่อนที่สัญญาจะสิ้นสุดลง</value>
+  </data>
+  <data name="WEMAYTERMINATE" xml:space="preserve">
+    <value>i. เราอาจจะสิ้นสุดสัญญาฉบับนี้ถ้าเราได้พิจารณณาแล้ว ( ขึ้นอยู่กับการพิจารณาอย่างอิสระของเรา ) ว่าเวบไซค์ของคุณไม่เหมาะสม เวบไซค์ที่ไม่เหมาะสมอาจรวมไปถึงเวบไซค์ที่ไม่เหมาะสมสำหรับเยาวชน เวบไซค์ที่โปรโมตสื่อเกี่ยวกับเรื่องเซกซ์ ส่งเสริมเกี่ยวกับเรื่องความรุนแรง ส่งเสริมเกี่ยวกับเรื่องการแบ่งแยกเชื้อชาติ เพศ ศาสนา สัญชาติ ความพิการ อายุ หรือส่งเสริมกิจกรรมที่ผิดกฏหมาย หรือละเมิดลิขสิทธิ์เกี่ยวกับทรัพย์สินทางปัญญา</value>
+  </data>
+  <data name="RelationshipofParties" xml:space="preserve">
+    <value>10. ความสัมพันธ์</value>
+  </data>
+  <data name="Youandweareindependentcontractors" xml:space="preserve">
+    <value> คุณและเรามีอิสระในการติดต่อกัน และในสัญญาฉบับนี้จะไม่ได้กล่าวถึงการเป็นหุ้นส่วน การเป็นตัวแทน หรือร่วมหุ้น การขาย หรือสิทธิ์ในการเป็นตัวแทน หรือ ความสัมพันธ์เกี่ยวกับการจ้างงาน คุณไม่มีสิทธิ์ในการแสดงการเป็นตัวแทน คุณไม่สามารถที่จะนำข้อความที่แสดงถึงการเป็นตัวแทนไปวางไว้บนเวบไซค์ของคุณ ( 10 )</value>
+  </data>
+  <data name="Indemnity" xml:space="preserve">
+    <value>11. ค่าปรับ</value>
+  </data>
+  <data name="Youherebyagreetoindemnify" xml:space="preserve">
+    <value>คุณได้เห็นด้วยที่จะชดเชยหรือรับผิดชอบในส่วนของความเสียหายที่อาจเกิดขึ้นจากการโปรโมตเวบไซค์ Affiliate ซึ่งคุณได้รับสิทธิ์ที่จะโปรโมตเวบไซค์ Affiliate ในโปรแกรมพันธมิตร ทั้งนี้รวมถึง ผู้อำนวยการ พนักงานออฟฟิต ลูกจ้าง ตัวแทน ผู้ถือหุ้น หุ้นส่วน หรือ เจ้าของอื่น ในการอ้างสิทธิ์ความรับผิดชอบ ในส่วนของการกระทำ หนี้สิน การสูญเสีย ความเสียหาย และค่าใช้จ่ายอื่นอื่น ( รวมถึงค่าธรรมเนียมที่ต้องจ้างนักกฏหมาย ) และต้นทุน ( ในที่นี้รวมถึงทุกเรื่องที่จะทำให้เกิดความสูญเสีย ) ถ้ามีความสูญเสียเกิดขึ้นดังกล่าวตามที่กล่าวข้างต้นเพื่อขอค่าชดเชยที่เกิดจากความเสียหาย เกี่ยวกับการละเมิดลิขสิทธิ์ ทั้งนี้จะอ้างอิง จาก 1.ทุกการอ้างสิทธิ์ของการได้ประโยชน์จากเครื่องหมายการค้าของเรา ชื่อบริษัทของเรา เครื่องหมายการให้บริการของเรา ลิขสิทธิ์  ใบอนุญาติ และทรัพย์สินทางปัญญา หรือ สิทธิ์ประโยชน์อื่นอื่น ทั้งนี้การละเมิดสิทธิ์ในสัญญาฉบับนี้อาจทำให้การเป็นสมาชิกของคุณสิ้นสุดลง และคุณต้องคอยดูแลในส่วนของการพัฒนา การบำรุงรักษา ในส่วนของข้อมูลเกี่ยวกับตัวเวบไซค์ของคุณ และ สินค้าและบริการที่เกิดจากเวบไซค์ของคุณ  ( 11 )</value>
+  </data>
+  <data name="Disclaimers" xml:space="preserve">
+    <value>12. การปฏิเสธความรับผิดชอบ</value>
+  </data>
+  <data name="Wemakenoexpress" xml:space="preserve">
+    <value>เราไม่ได้รับประกันในส่วนของการเป้นตัวแทนในโปรแกรมพันธมิตร ที่อ้างอิงถึงลูกค้าที่เข้ามาใช้เวบไซค์ ในส่วนของการจ่ายค่าธรรมเนียม การรับประกันในเรื่องของสัญญาณ หรือการใช้งานของลูกค้าแต่ละคน และ เราไม่ได้รับประกันว่าเวบไซค์ของเราจะไม่มีการขัดข้องหรือถูกรบกวนในเรื่องของการทำงานและผลที่ตามมาอันเกิดจากเวบไซค์ไม่สามารถทำงานได้อย่างมีประสิทธิภาพ  ( 12 )</value>
+  </data>
+  <data name="LimitationofLiability" xml:space="preserve">
+    <value>13. ข้อกำหนด ของหนี้สิน</value>
+  </data>
+  <data name="Wewillnotbeliable" xml:space="preserve">
+    <value>เราจะไม่รับผิดชอบในผลของความเสียหายที่อาจจะเกิดขึ้น ที่จะตามมา ในเรื่องของข้อมูลที่เกิดจากความผิดพลาดของการเชื่อมต่อของระบบที่จะเกิดกับลูกค้าที่ได้รับการแนะนำในสัญญาฉบับนี้ ถ้ามีความเสียหายที่เกิดขึ้น ทำให้เป็นที่มาของหนี้สินจะต้องไม่เกินกว่าจำนวนค่าคอมมิชชั่นที่ได้ถูกจ่ายให้ตามสัญญาฉบับนี้  อย่างไรก็ตามสัญญาฉบับนี้ไม่ได้มอบอำนาจ หรือ สิทธิ์ประโยชน์ให้กับบุคคลเป็นการส่วนตัวไม่ว่าจะเป็นผู้อำนวนการหรือ ผู้ถือหุ้น  ทุกหนี้สินหรือความเสียหายที่เกิดจากสัญญาฉบับนี้ไม่ว่าจะเป็นค่าธรรมเนียมในการแนะนำได้ถูกกำหนดความเสียหายไว้ในจำนวนที่กำหนดไว้เรียบร้อยแล้ว  ( 13 )</value>
+  </data>
+  <data name="IndependentInvestigation" xml:space="preserve">
+    <value>14. การสืบสวนสอบสวนโดยอิสระ</value>
+  </data>
+  <data name="YOUACKNOWLEDGETHATYOUHAVEREAD" xml:space="preserve">
+    <value>คุณได้ยอมรับและรับรู้เกี่ยวกับข้อกำหนดต่างต่างในสัญญาฉบับนี้เรียบร้อยแล้ว และคุณเห็นด้วยในกติกาและเงื่อนไขที่ระบุ คุณได้เข้าใจและรับรู้แล้ว ไม่ว่าจะ ทางตรงหรือทางอ้อม กติกาและข้อกำหนดอาจจะแตกต่างจากข้อกำหนดในตัวเวบไซค์ของคุณ คุณได้มีความอิสระที่จะตัดสินใจที่จะเข้าร่วมหรือไม่เข้าร่วมในสัญญาฉบับนี้ ทั้งนี้สัญญาฉบับนี้คุณได้สมัครใจในการเข้าร่วมโปรแกรมพันธมิตรโดยใช้ข้อบังคับตามที่เรากำหนดไว้  ( 14 )</value>
+  </data>
+  <data name="GoverningLawandArbitration" xml:space="preserve">
+    <value>15. ข้อกฏหมายที่ออกโดยรัฐบาล</value>
+  </data>
+  <data name="ThisAgreementshallbegoverned" xml:space="preserve">
+    <value>ข้อกำหนดในสัญญาฉบับนี้ได้ถูกยอมรับและสร้างขึ้นสอดคล้องกับกฎหมายของประเทศอังกฤษ ถ้ามีข้อโต้แย้งเกิดขึ้น การอ้างสิทธิ์จะได้รับการพิจารณาจากทีมงานกฏหมายของหน่วยงานที่รับผิดชอบ ที่สำหรับการพิจารณาจะอยุ๋ที่ประเทศอังกฤษ และ สถานที่ที่จะใช้ใน การพิจารณาจะอยู่ที่  Arbitration Centre  ภาษาที่ใช้ในการพิจารณาคือภาษาอังกฤษ และใช้กฏข้อบังคับของ  Arbitration Centre  การพิจารณาจะถูกทำอย่างบริสุทธิ์ยุติธรรมและ มีมารยาท การตัดสินการพิจารณาสุดท้ายที่นี่ จะถือว่าสิ้นสุด และสามารถใช้บังคับได้อย่างถูกต้องตามกฏหมาย ( 15 )</value>
+  </data>
+  <data name="INWITNESSWHEREOF" xml:space="preserve">
+    <value>16. ในการเป็นพยานที่ซึ่ง</value>
+  </data>
+  <data name="Byhavingread" xml:space="preserve">
+    <value>โดยการอ่านกติกาและเงื่อนไขในสัญญาฉบับนี้ คุณยอมรับว่าลูกค้าที่คุณได้แนะนำผ่านทางเวบไซค์ของคุณได้ยอมรับกติกาและเงื่อนไขที่กำหนดไว้ในเวบไซค์เรียบร้อยแล้ว เวบไซค์ Affiliate ขอสงวนสิทธิ์ที่จะเพิกถอนการจ่ายเงินให้กับบัญชีของคุณ ถ้าหากมีเหตุให้เราทราบว่าคุณได้ทำผิดกติกาและเงื่อนไขที่ระบุไว้ในเวบไซค์นี้</value>
+  </data>
+  <data name="BetAffNotification" xml:space="preserve">
+    <value>จดหมายตอบการแจ้งถอน  เรื่อง  จดหมายการขอแจ้งถอนเงินในบัญชีพันธมิตร</value>
+  </data>
+  <data name="DearName" xml:space="preserve">
+    <value>สวัสดี {fname} {lname},</value>
+  </data>
+  <data name="ThanksPayment" xml:space="preserve">
+    <value>ขอบคุณสำหรับการส่งเรื่องการแจ้งขอถอนเงิน วันที่ {winlostdate} จำนวน ${amount}.</value>
+  </data>
+  <data name="YourPayment" xml:space="preserve">
+    <value>การขอถอนเงินของคุณจะได้รับการพิจารณาภายใน 24 ชั่วโมง   ทุกการแจ้งขอถอนเงินจำเป็นต้องมีการพิจารณาเมื่อมีการร้องขอ</value>
+  </data>
+  <data name="ContactusComment" xml:space="preserve">
+    <value>หากมีข้อสงสัย กรุณาติดต่อเราสำหรับความคิดเห็นหรือคำถามเพิ่มเติม ที่</value>
+  </data>
+  <data name="TitleCancelledPayment" xml:space="preserve">
+    <value>พันธมิตร Affiliate - [{transid}] - รายการธุรกรรมการเงินของคุณถูกปฏิเสธ</value>
+  </data>
+  <data name="_12BetAffiliatesYourApplication" xml:space="preserve">
+    <value>เรื่อง   สถานะการสมัครของท่าน</value>
+  </data>
+  <data name="_12BETAffiliatesTeam" xml:space="preserve">
+    <value>ทีมงานพันธมิตร Affiliate</value>
+  </data>
+  <data name="PleaseNote" xml:space="preserve">
+    <value>กรุณา บันทึก</value>
+  </data>
+  <data name="Asyouhaverequested" xml:space="preserve">
+    <value>ตามที่คุณได้ร้องขอ เราได้จัดเตรียมพาสเวริ์ดตัวใหม่ให้คุณแล้ว รายละเอียดใหม่เกี่ยวกับบัญชีของคุณอยู่ด้านล่างนี้</value>
+  </data>
+  <data name="Howeveryoucanvisit" xml:space="preserve">
+    <value>อย่างไรก้อตาม คุณสามารถกลับเข้าสู่ {url} เพื่อเปลี่ยนพาสเวิดได้ตลอดคะ</value>
+  </data>
+  <data name="Bonus" xml:space="preserve">
+    <value>โบนัส</value>
+  </data>
+  <data name="Football" xml:space="preserve">
+    <value>ฟุตบอล</value>
+  </data>
+  <data name="RequestPayout" xml:space="preserve">
+    <value>การขอจ่ายเงิน</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>ยกเลิก</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>ค้นหา</value>
+  </data>
+  <data name="DailyEarnings" xml:space="preserve">
+    <value>รายได้แต่ละวัน</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>วันที่</value>
+  </data>
+  <data name="GrossEarnings" xml:space="preserve">
+    <value>รายได้รวม</value>
+  </data>
+  <data name="NetEarnings" xml:space="preserve">
+    <value>รายได้ที่ได้รับ</value>
+  </data>
+  <data name="ErrPaymentMethod" xml:space="preserve">
+    <value>ขออภัย! ธุรกรรณผ่าน {method} ไม่สามารถใช้ได้  หากต้องการทำธุรกรรมตอนนี้ต้องทำผ่าน บัญชีผู้เล่น Affiliate เท่านั้นคะ  กรุณา&lt;a href='MyAccount.aspx?ispay=1#payment'&gt; คลิ๊ก &lt;/a&gt; ที่นี่เพื่อเปลี่ยนวิธีการ</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>ตัวเลือกอัตโนมัติ</value>
+  </data>
+  <data name="errContactNumberEmpty" xml:space="preserve">
+    <value>หมายเลขที่ติดต่อวางเปล่า กรุณาตรวจสอบ</value>
+  </data>
+  <data name="errMobileNumberEmpty" xml:space="preserve">
+    <value>หมายเลขโทรศัพท์มือถือวางเปล่า  กรุณาตรวจสอบ !</value>
+  </data>
+  <data name="errSecQuestionEmpty" xml:space="preserve">
+    <value>คำถามคำตอบเพื่อความปลอดภัยว่างเปล่ กรุณาตรวจสอบ !</value>
+  </data>
+  <data name="errYourAnswer" xml:space="preserve">
+    <value>คำตอบของท่านว่างเปล่า กรุณาตรวจสอบ !</value>
+  </data>
+  <data name="lblSecureQuestion" xml:space="preserve">
+    <value>คำถามคำตอบเพื่อความปลอดภัย</value>
+  </data>
+  <data name="lblYourAnswer" xml:space="preserve">
+    <value>คำตอบของท่าน</value>
+  </data>
+  <data name="SecureQuestionGuide" xml:space="preserve">
+    <value>คำถามคำตอบเพื่อความปลอดภัยถูกใช้ที่จะตรวจสอบความเป็นเจ้าของบัญชี</value>
+  </data>
+  <data name="Turnover" xml:space="preserve">
+    <value>เทรินโอเวอร์</value>
+  </data>
+  <data name="UpToNow" xml:space="preserve">
+    <value>จนกระทั่งเดี๋ยวนี้</value>
+  </data>
+  <data name="UpdateSecurityQuestion" xml:space="preserve">
+    <value>การอัพเดทเหตุผลเกี่ยวกับความปลอดภัย</value>
+  </data>
+  <data name="UpdateSecurityQuestionRemind" xml:space="preserve">
+    <value>สำหรับเหตุผลในเรื่องของความปลอดภัย คุณจำเป็นต้องเลือกคำถามคำตอบเพื่อความปลอดภัยและจัดเตรียมสำหรับคำตอบ คุณจะถูกถามคำถามนี้ เพื่อทำการตรวจสอบในกรณีที่คุณลืมรหัสผ่าน หรือ จำเป็นต้องติดต่อเราเพื่อรับข้อมูลที่สำคัญที่เป็นความลับ</value>
+  </data>
+  <data name="SecurityQuestionUpdated" xml:space="preserve">
+    <value>คำถามคำตอบเพื่อความปลอดภัยของคุณได้ถูกอัพเดทแล้ว !</value>
+  </data>
+  <data name="Lithuania" xml:space="preserve">
+    <value>ลิทัวเนีย</value>
+  </data>
+  <data name="errDepositDBConnectFailed" xml:space="preserve">
+    <value>เกิดความผิดพลาดในการเข้าสู่ข้อมูลผู้เล่น Affiliate แนะนำติดต่อเจ้าหน้าที่บริการคะ !</value>
+  </data>
+  <data name="errExistAccount" xml:space="preserve">
+    <value>รหัสผู้ใช้ท่านนี้มีบัญชีกับเวบ IBC เรียบร้อยแล้ว</value>
+  </data>
+  <data name="errUserNotFound" xml:space="preserve">
+    <value>ไม่สามารถหายูสเซอร์พบ</value>
+  </data>
+  <data name="StatementHistory" xml:space="preserve">
+    <value>ประวัติเกี่ยวกับการทำธุรกรรมทางการเงิน</value>
+  </data>
+  <data name="PendingComm" xml:space="preserve">
+    <value>ค่าคอมมิชชั่นที่ได้รับแจ้ง</value>
+  </data>
+  <data name="ErrBalanceForward" xml:space="preserve">
+    <value>ส่งต่อไปยัง</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>จำนวนเงิน</value>
+  </data>
+  <data name="Creator" xml:space="preserve">
+    <value>ผู้สร้าง</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>รายละเอียด</value>
+  </data>
+  <data name="MonthlyWinlost" xml:space="preserve">
+    <value>ยอดได้เสียในแต่ละเดือน</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>รายการที่ได้รับแจ้ง</value>
+  </data>
+  <data name="Transaction" xml:space="preserve">
+    <value>รายการ</value>
+  </data>
+  <data name="QualifiedMember" xml:space="preserve">
+    <value>สมาชิกที่มีคุณสมบัติตามระเบียบที่กำหนด {num} ท่าน</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="TotalQualifiedMembers" xml:space="preserve">
+    <value>จำนวนผู้เล่นทั้งหมดที่มียอดเกินหนึ่งร้อยเหรียญ</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>จาก</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>สำคัญ</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>ข้อความ</value>
+  </data>
+  <data name="MessageHistory" xml:space="preserve">
+    <value>ข้อความย้อนหลัง</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>ปกติ</value>
+  </data>
+  <data name="PostDate" xml:space="preserve">
+    <value>วันที่ได้ลงรายการไว้</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>ถึง</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>เคอเรนซี่</value>
+  </data>
+  <data name="AUD" xml:space="preserve">
+    <value>AUD (Australia Dollar)</value>
+  </data>
+  <data name="Basketball" xml:space="preserve">
+    <value>บาสเก็ตบอล</value>
+  </data>
+  <data name="CHF" xml:space="preserve">
+    <value>CHF (Swiss Franc)</value>
+  </data>
+  <data name="EUR" xml:space="preserve">
+    <value>EUR (EURO)</value>
+  </data>
+  <data name="GBP" xml:space="preserve">
+    <value>GBP (Great Britain Pound)</value>
+  </data>
+  <data name="MYR" xml:space="preserve">
+    <value>MYR (Malaysia Ringgit)</value>
+  </data>
+  <data name="RMB" xml:space="preserve">
+    <value>RMB (Ren Min Bi)</value>
+  </data>
+  <data name="Tennis" xml:space="preserve">
+    <value>เทนนิส</value>
+  </data>
+  <data name="THB" xml:space="preserve">
+    <value>THB (Thai Baht)</value>
+  </data>
+  <data name="USD" xml:space="preserve">
+    <value>USD (United States Dollar)</value>
+  </data>
+  <data name="ErrAuthorized" xml:space="preserve">
+    <value>คุณไม่ได้รับอนุญาติให้ใช้ฟังก์ชั่นนี้</value>
+  </data>
+  <data name="CancelSubject" xml:space="preserve">
+    <value>จดหมายยกเลิก  เรื่อง   การแจ้งเรื่อง การขอถอนเงินในบัญชีพันธมิตร</value>
+  </data>
+  <data name="France" xml:space="preserve">
+    <value>ฝรั่งเศส</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>ผู้หญิง</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>เพศ</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>ผู้ชาย</value>
+  </data>
+  <data name="ErrGender" xml:space="preserve">
+    <value>เพศ ว่างเปล่า กรุณาตรวจสอบ</value>
+  </data>
+  <data name="ActivatedTrackingCode" xml:space="preserve">
+    <value>ทำให้ใช้ได้</value>
+  </data>
+  <data name="GenerateLink" xml:space="preserve">
+    <value>สร้างลิ๊งค์ใหม่</value>
+  </data>
+  <data name="NewTrackingCode" xml:space="preserve">
+    <value>ใหม่</value>
+  </data>
+  <data name="TrackingStatistics" xml:space="preserve">
+    <value>ตรวจสอบสถิติ</value>
+  </data>
+  <data name="TotalClick" xml:space="preserve">
+    <value>จำนวนรวมครั้งของการคลิ๊กทั้งหมด</value>
+  </data>
+  <data name="TotalIP" xml:space="preserve">
+    <value>Total IPs</value>
+  </data>
+  <data name="TotalUniqueClickByDate" xml:space="preserve">
+    <value>จำนวนคลิ๊กแต่ละวัน</value>
+  </data>
+  <data name="StatisticsDetail" xml:space="preserve">
+    <value>รายละเอียดสถิติ</value>
+  </data>
+  <data name="ClicksCount" xml:space="preserve">
+    <value>จำนวน คลิก</value>
+  </data>
+  <data name="IP" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>เดือน</value>
+  </data>
+  <data name="UniqueClick" xml:space="preserve">
+    <value>การคลิ๊กแต่ละครั้ง</value>
+  </data>
+  <data name="AffiliatesWillNotEarn" xml:space="preserve">
+    <value>8. สมาชิกพันธมิตรจะไม่ได้ รับค่าคอมจากการเล่นเสียของผู้เล่นในเกมส์ ม้าแข่ง และคาสิโนในเวบ Affiliate </value>
+  </data>
+  <data name="AsaPolicy12BETShallNo" xml:space="preserve">
+    <value>นโยบายของ Affiliate เราจะไม่ยอมรับการสมัครออนไลน์ในการเป็นพันธมิตรถ้าคุณได้ทำการโฆษณาผ่านทางคอมพิวเตอร์ที่มีเครื่องไอพีตั้งอยู่หรือดำรงอยู่ในขอบเขตตามกฏหมายของประเทศอังกฤษโดยเด็ดขาด</value>
+  </data>
+  <data name="NonDeposit" xml:space="preserve">
+    <value>บัญชีนี้ไม่สามารถใช้ฝากเงินได้</value>
+  </data>
+  <data name="TrackingCode" xml:space="preserve">
+    <value>รหัสที่ใช้ตรวจสอบ</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>ของ</value>
+  </data>
+  <data name="HotNews" xml:space="preserve">
+    <value>ข่าวด่วน</value>
+  </data>
+  <data name="BestView" xml:space="preserve">
+    <value>แนะนำใช้ </value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>หน้า</value>
+  </data>
+  <data name="PageSize" xml:space="preserve">
+    <value>ขนาดหน้า</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>เลือก</value>
+  </data>
+  <data name="none" xml:space="preserve">
+    <value>ไม่มี</value>
+  </data>
+  <data name="Adjustment" xml:space="preserve">
+    <value>Adjustment</value>
+  </data>
+  <data name="PSP" xml:space="preserve">
+    <value>PSP</value>
+  </data>
+  <data name="Winlost" xml:space="preserve">
+    <value>ได้เสีย</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>กีฬา</value>
+  </data>
+  <data name="Vietnamese" xml:space="preserve">
+    <value>Tiếng Việt</value>
+  </data>
+  <data name="AddUrl" xml:space="preserve">
+    <value>เพิ่ม Url</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>ลบ</value>
+  </data>
+  <data name="WebsiteUrli" xml:space="preserve">
+    <value>กรุณากรอกชื่อเวปไซค์ของคุณ {i}</value>
+  </data>
+  <data name="CurrentCommissiSetting" xml:space="preserve">
+    <value>จัดตั้งค่าคอมมิชชั่นปัจจุบัน</value>
+  </data>
+  <data name="CurrentCommissiSetting1" xml:space="preserve">
+    <value>จัดตั้งค่าคอมมิชชั่นปัจจุบัน</value>
+  </data>
+  <data name="Deductions" xml:space="preserve">
+    <value>ยอดหัก</value>
+  </data>
+  <data name="MaxAmt" xml:space="preserve">
+    <value>จำนวนสูงสุด</value>
+  </data>
+  <data name="MaxQM" xml:space="preserve">
+    <value>จำนวนผู้เล่นผ่านเกณฑ์สูงสุด</value>
+  </data>
+  <data name="MinAmt" xml:space="preserve">
+    <value>จำนวนขั้นต่ำ</value>
+  </data>
+  <data name="MinQM" xml:space="preserve">
+    <value>ขั้นต่ำจำนวนผู้เล่นผ่านเกณฑ์</value>
+  </data>
+  <data name="MaxAmt_explain" xml:space="preserve">
+    <value>ยอดเล่นได้เสียสุทธิสูงสุดของสมาชิก</value>
+  </data>
+  <data name="MaxQM_explain" xml:space="preserve">
+    <value>จำนวนผู้เล่นผ่านเกณฑ์สูงสุด</value>
+  </data>
+  <data name="MinAmt_explain" xml:space="preserve">
+    <value>ขั้นต่ำยอดเล่นได้เสียสุทธิของสมาชิก</value>
+  </data>
+  <data name="MinQM_explain" xml:space="preserve">
+    <value>ขั้นต่ำจำนวนผู้เล่นผ่านเกณฑ์</value>
+  </data>
+  <data name="Turnover_explain" xml:space="preserve">
+    <value>ขั้นต่ำเทรินโอเวอร์ของผู้เล่นผ่านเกณฑ์</value>
+  </data>
+  <data name="NetWinLoss" xml:space="preserve">
+    <value>ยอดเล่นเสียสุทธ</value>
+  </data>
+  <data name="QualifyingMem" xml:space="preserve">
+    <value>ผู้เล่นที่เข้าเกณฑ</value>
+  </data>
+  <data name="SpCommStruct" xml:space="preserve">
+    <value>โครงสร้าง การรับคอมมิชชั่นจากยอดเล่นกีฬา</value>
+  </data>
+  <data name="Tier" xml:space="preserve">
+    <value>ระดับ</value>
+  </data>
+  <data name="Marketing" xml:space="preserve">
+    <value>การซื้อขาย</value>
+  </data>
+  <data name="Apr" xml:space="preserve">
+    <value>Apr</value>
+  </data>
+  <data name="Aug" xml:space="preserve">
+    <value>Aug</value>
+  </data>
+  <data name="Dec" xml:space="preserve">
+    <value>Dec</value>
+  </data>
+  <data name="Dontshowit" xml:space="preserve">
+    <value>ไม่ต้องการให้แสดงอีกครั้ง</value>
+  </data>
+  <data name="Feb" xml:space="preserve">
+    <value>Feb</value>
+  </data>
+  <data name="Jan" xml:space="preserve">
+    <value>Jan</value>
+  </data>
+  <data name="Jul" xml:space="preserve">
+    <value>Jul</value>
+  </data>
+  <data name="Jun" xml:space="preserve">
+    <value>Jun</value>
+  </data>
+  <data name="Mar" xml:space="preserve">
+    <value>Mar</value>
+  </data>
+  <data name="May_short" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="Nov" xml:space="preserve">
+    <value>Nov</value>
+  </data>
+  <data name="Oct" xml:space="preserve">
+    <value>Oct</value>
+  </data>
+  <data name="Sept" xml:space="preserve">
+    <value>Sept</value>
+  </data>
+  <data name="EmailFormat" xml:space="preserve">
+    <value>รูปแบบอีเมล</value>
+  </data>
+  <data name="HtmlFormat" xml:space="preserve">
+    <value>รูปแบบ HTML</value>
+  </data>
+  <data name="PlainText" xml:space="preserve">
+    <value>เฉพาะข้อความเท่านั้น</value>
+  </data>
+  <data name="EnglishSupport" xml:space="preserve">
+    <value>ติดต่อบริการภาษาไทย</value>
+  </data>
+  <data name="ChineseSupport" xml:space="preserve">
+    <value>ติดต่อบริการภาษาจีน</value>
+  </data>
+  <data name="ThaiSupport" xml:space="preserve">
+    <value>ติดต่อบริการภาษาไทย</value>
+  </data>
+  <data name="Bet12Username" xml:space="preserve">
+    <value>ชื่อที่ใช้เข้าระบบ</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="EnglishEU" xml:space="preserve">
+    <value>English_Euro</value>
+  </data>
+  <data name="ChineseTraditio" xml:space="preserve">
+    <value>繁體中文</value>
+  </data>
+  <data name="ChineseSimplifi" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="Thai" xml:space="preserve">
+    <value>ภาษาไทย</value>
+  </data>
+  <data name="Indonesian" xml:space="preserve">
+    <value>Indonesian</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value>Español</value>
+  </data>
+  <data name="AfterChargeback" xml:space="preserve">
+    <value>&lt;p&gt;“ผลกำไรของ Affiliate” คือ จำนวนเงินทั้งหมดที่วางพนันโดยสมาชิกที่เดิมพันสม่ำเสมออย่างน้อยห้า (5) รายภายใต้บัญชีสมาชิกของคุณในเดือนใดๆ โดยหักจำนวนเงินทั้งหมดที่สมาชิกที่เดิมพันสม่ำเสมอของคุณชนะหรือถูกจ่ายให้ &lt;/p&gt;
+&lt;p&gt;“ “เงินที่ถูกปฏิเสธการชำระ” คือ จำนวนเงินที่ถูกหักออกเมื่อลูกค้าผู้ถือบัตรเครดิตพบว่า มีการปฏิเสธการชำระเงินที่ผิดปกติและไม่ได้รับอนุญาตในบัตรเครดิต/เดบิตของลูกค้า และผู้ถือบัตรเครดิตร้องขอให้ธนาคารยกเลิกการการชำระเงินเหล่านี้ เงินที่ถูกปฏิเสธการชำระอาจเกี่่ยวกับแต่ไ่ม่จำกัดเฉพาะการที่บุคคลภายนอกใช้บัตรหรือหมายเลขบัตรของผู้ถือบัตรเครดิตเพื่อการฉ้อฉล&lt;/p&gt;
+&lt;p&gt;“ิหากผู้เล่นปฎิเสธการชำระเงิน รายได้ที่มีข้อโต้แย้งหรือเป็นจำนวนที่ถูกปฏิเสธการชำระจะถูกริบ และถูกหักออกจากยอดเงินคงเหลือทั้งหมดที่ต้องชำระให้คุณในเดือนปัจจุบัน หากจำนวนที่หักออกจากรายได้สะสมเกินจำนวนที่ต้องชำระในปัจจุบันของคุณ ยอดเงินคงเหลือของคุณจะกลายเป็นยอดเงินติดลบและคุณจะต้องหารายได้เพื่อชดเชยจำนวนที่ถูกหักก่อนที่คุณจะเริ่มหารายได้ใหม่อีกครั้ง &lt;/p&gt;
+&lt;p&gt;“จำนวนเงินที่ถูกปฏิเสธการชำระจะค้างชำระจนกว่ารายได้ที่ผู้เล่นอื่นๆ ของคุณได้รับสามารถชดเชยจำนวนที่ค้างชำระดังกล่าวได้ คุณรับทราบว่า Affiliate สามารถจ่ายคืนเงินเป็นสัดส่วนหนึ่งจากผลกำไรจริงเท่านั้น ซึ่งไม่ใช่รายได้จากการฉ้อฉล 
+&lt;p&gt;“ “โบนัส” รวมถึง เงินสมนาคุณ ข้อเสนอเงินฟรี เครดิต โบนัส โบนัสแรกเข้า เงินโปรโมชั่น และสิ่งจูงใจอื่นๆ ที่เข้าบัญชีของลูกค้า เนื่องจากลูกค้าไม่ได้ซื้อจำนวนเงินเหล่านี้จริงๆ Affiliate ไม่สามารถจ่ายค่าคอมมิชชั่นในจำนวนที่เท่ากันได้ &lt;/p&gt;</value>
+  </data>
+  <data name="Nickname" xml:space="preserve">
+    <value>ชื่อเล่น</value>
+  </data>
+  <data name="ErrAccClosed" xml:space="preserve">
+    <value>Player Account has been closed. Please &lt;a href='../ContactUs.aspx'&gt;Contact administrator&lt;/a&gt;.</value>
+  </data>
+  <data name="ErrAccIsNotExisted" xml:space="preserve">
+    <value>Player Account does not exist.</value>
+  </data>
+  <data name="ErrInvalidPlayerInfo" xml:space="preserve">
+    <value>Invalid Player Account information.</value>
+  </data>
+  <data name="AffType" xml:space="preserve">
+    <value>Affiliate Type</value>
+  </data>
+</root>

@@ -1,0 +1,178 @@
+﻿{submenu}
+<div class="clear" style="height: 5px;">
+    &nbsp;</div>
+    <div id="mainmenu" style="padding-left: 15px;">
+        <ul>
+            <li>
+                <a href="MediaStatistics_New.aspx"><span>{Referrers}</span></a>
+            </li>
+            <li class="current">
+                <a href="MediaStatistics_LandingPage.aspx"><span>{LandingPages}</span></a>
+            </li>
+        </ul>
+    </div>
+<div class="clear" style="height: 5px;">
+    &nbsp;</div>
+<form id="frmSearch" name="frmSearch" method="get" style="margin: 7px 0;">
+<div id="search_cont">
+    <table cellspacing="1" cellpadding="3" border="0">
+        <tr>
+            <td>
+                {Page}
+            </td>
+            <td>
+                {slPage}
+            </td>
+            <td>
+                {Language}
+            </td>
+            <td>
+                {slLanguage}
+            </td>
+            <td class="r">
+                {From}
+            </td>
+            <td>
+                <input type="text" readonly name="fdate" size="13" value="{fdate}" class="txtdate-no-time"
+                    id="fdate" />&nbsp;
+                <img width="16" height="16" src="../{themepath}/images/cal.gif" class="img-date-selector hand"
+                    style="margin-bottom: -3px;" title="Date selector" id="fdateTrigger" />
+                <script type="text/javascript">
+                    Calendar.setup({
+                        inputField: "fdate",
+                        ifFormat: "%m/%d/%Y",
+                        button: "fdateTrigger",
+                        singleClick: true,
+                        showsTime: false,
+                        showOthers: true,
+                        step: 1
+                    });
+                </script>
+            </td>
+            <td class="r">
+                {To}
+            </td>
+            <td>
+                <input type="text" readonly name="tdate" size="13" value="{tdate}" class="txtdate-no-time"
+                    id="tdate" />&nbsp;
+                <img width="16" height="16" src="../{themepath}/images/cal.gif" class="img-date-selector hand"
+                    style="margin-bottom: -3px;" title="Date selector" id="tdateTrigger" />
+                <script type="text/javascript">
+                    Calendar.setup({
+                        inputField: "tdate",
+                        ifFormat: "%m/%d/%Y",
+                        button: "tdateTrigger",
+                        singleClick: true,
+                        showsTime: false,
+                        showOthers: true,
+                        step: 1
+                    });
+                </script>
+            </td>
+            <td style="width: 100px">
+                <input type="button" value="{Submit}" class="buttonlogin" onclick="searchData();" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="divContent" class="ContentBox">
+    <table class="aff-table" cellspacing="1" cellpadding="3" width="600px">
+        <!--header-->
+        <tr class="tblheader">
+            <th width="25%">
+                {Page}
+            </th>
+            <th width="25%">
+                {Language}
+            </th>
+            <th width="13%">
+                {TotalClicks}
+            </th>
+            <th width="13%">
+                {UniqueClicks}
+            </th>
+            <th width="12%">
+                {SignUp}
+            </th>
+            <th width="12%">
+                {FDM}
+            </th>
+        </tr>
+        <!--/header-->
+        <!--nodata-->
+        <!--content-->
+        <tr class="r" bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'">
+            <td class="l">
+                <a href="javascript:void(0);" onclick="ViewDetail('{fdate}', '{tdate}', '{Page-val}', '{LangCode-val}', 20, 1);">
+                    {Page-val}</a>
+            </td>
+            <td class="l">
+                {Language-val}
+            </td>
+            <td>
+                {TotalClick-val}
+            </td>
+            <td>
+                {UniqueClick-val}
+            </td>
+            <td>
+                {Signups-val}
+            </td>
+            <td>
+                {FDM-val}
+            </td>
+        </tr>
+        <!--/content-->
+        <!--/nodata-->
+    </table>
+</div>
+<div id="statisticsDetail" style="display: none;">
+    <!--StatisticsDetail-->
+    <table id="tblResultDetail" class="aff-table" width="600px" cellspacing="1" cellpadding="1">
+        <tr class="tblheader">
+            <th width="50%">
+                Website URL
+            </th>
+            <th width="13%">
+                Total Clicks
+            </th>
+            <th width="13%">
+                Unique Clicks
+            </th>
+            <th width="12%">
+                Sign up
+            </th>
+            <th width="12%">
+                FDM
+            </th>
+        </tr>
+        <tbody id="resultDetail">
+            <!--StatisticsDetailContent-->
+            <tr class="r" bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'">
+                <td class="l" style="white-space: normal;">
+                    {Site-val}
+                </td>
+                <td class="fu">
+                    {TotalClick-val}
+                </td>
+                <td>
+                    {UniqueClick-val}
+                </td>
+                <td>
+                    {Signups-val}
+                </td>
+                <td>
+                    {FDM-val}
+                </td>
+            </tr>
+            <!--/StatisticsDetailContent-->
+        </tbody>
+    </table>
+    <input type="hidden" id="page" name="page" value="{page}" />    
+    <!--/StatisticsDetail-->
+</div>
+    <input type="hidden" id="tmpFromDate" name="tmpFromDate" />    
+    <input type="hidden" id="tmpToDate" name="tmpToDate" />    
+    <input type="hidden" id="tmpProductCode" name="tmpProductCode" />  
+    <input type="hidden" id="tmpLanguageCode" name="tmpLanguageCode" />  
+</form>

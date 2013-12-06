@@ -1,0 +1,119 @@
+﻿/*Banner_Begin*/
+#banner
+{
+	width:100%;
+	min-width:1024px;
+	height:58px;
+	background: #f2f2f2;
+}
+#img_banner{
+	background:url(images/banner_top.jpg) no-repeat left;
+	height:32px;
+	padding-left:250px;
+	padding-top:6px;
+}
+
+#Amain_menu{
+	height:24px;
+	background:#fff url(images/bg_menu.jpg) repeat-x;
+	margin:0px 0px 0px 1px;
+	min-width:750px;
+}
+#mainmenu{
+	font-size:11px;
+	font-weight:bold;
+	line-height:16px;
+	min-width:850px;
+}
+#mainmenu ul{
+	font-size:11px;
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+#mainmenu li{
+	font-size:11px;
+	display:inline;
+}
+
+#mainmenu a{
+	font-size:11px;
+	float:left;
+	background:url(images/main_right.jpg) no-repeat left top;
+	margin-right:1px;
+	padding-left:2px;
+	text-decoration:none;
+}
+
+#mainmenu a span{
+	font-size:11px;
+	font-weight:bold;
+	color:#fff;
+	float:left;
+	display:block;
+	background:url(images/main_left.jpg) no-repeat right top;
+	padding: 2px 12px 2px 12px;
+	
+}
+#mainmenu a span {
+	float:none;
+}
+
+#mainmenu a:hover span {
+	color:#fff;
+}
+
+#mainmenu .current a{
+	background-position:0 -22px;
+}
+
+#mainmenu .current a span{
+	background-position:100% -22px;
+	color:#fff;
+}
+
+#mainmenu a:hover{
+	background-position:0% -22px;
+}
+
+#mainmenu a:hover span{
+	background-position:100% -22px;
+}
+#g_menuleft{
+	height:29px;
+	width:9px;
+	float:left;
+	background:url(images/g_menuleft.jpg) no-repeat;
+}
+#g_menucenter{
+	width:auto;
+}
+#lblDateTime
+{
+    background:transparent url(images/clock.gif) no-repeat scroll left 4px;    
+    float:right;	
+    color: #8D7156;
+	margin-right:42px;
+	text-align:right;
+	vertical-align:middle;	
+    height:20px;  
+    padding: 5px 5px 0 28px; 
+}
+.text_bold {
+color:#806142;
+font-weight:bold;
+}
+
+.text_redlink:hover  {
+color:#9f8871 !important;
+text-decoration:none;
+}
+.text_redlink {
+color:#8d7156 !important;
+padding-left:5px;
+text-decoration:none;
+}
+/*end_Banner_Begin*/
+
+

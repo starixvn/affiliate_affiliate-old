@@ -1,0 +1,28 @@
+﻿<table style="margin-top: 7px;" width="100%" bgcolor="#d0d0d0" border="0" cellpadding="0" cellspacing="1">
+      <tr class="tblheader nowrap">
+        <td style="border-right: 1px solid rgb(204, 204, 204);">{Product}</td>
+        <td>{Tier}</td>
+        <td  title="{MinAmount_Explain}">{ComNetWin}({Currency})</td>
+        <td  title="{MinQM_Explain}">{QM}</td>
+        <td>{Commission}</td>
+      </tr>
+       <!--Mainrow-->
+      <tr>
+            <td rowspan="{tierno-val}" class="{class-main}" style="border-right: 1px solid rgb(204, 204, 204);" align="center">{products-type}</td>
+            <!--TierRow-->
+            <td class="{class}" align="center">{tier-no1}</td>
+            <td class="{class}" align="right" >{minam-val1}{maxam-val1}</td>
+            <td class="{class}" align="right" >{minqm-val1}{maxqm-val1}</td>
+            <td class="{class}" align="right" >{Commission-val1}</td>
+            <!--/TierRow-->
+      </tr>
+      <!--subrow-->
+          <tr>
+                <td class="{class}" align="center" >{tier-no}</td>
+                <td class="{class}" align="right" >{minam-val}{maxam-val}</td>
+                <td class="{class}" align="right" >{minqm-val}{maxqm-val}</td>
+                <td class="{class}" align="right" >{Commission-val}</td>
+          </tr>
+      <!--/subrow-->
+      <!--/Mainrow-->
+</table>

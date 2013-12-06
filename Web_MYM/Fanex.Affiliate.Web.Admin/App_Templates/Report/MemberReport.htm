@@ -1,0 +1,331 @@
+<div id="{pagepadd}">
+    {submenu}
+    <form id="frmSearch" name="frmSearch" method="get" style="margin: 7px 0;">
+    <div id="search_cont">
+        <table cellspacing="1" cellpadding="3" border="0">
+            <tr>
+                <td class="r">
+                    {From}
+                </td>
+                <td>
+                    <input type="text" readonly name="fdate" size="13" value="{fdate}" class="txtdate-no-time"
+                        id="fdate" />&nbsp;
+                    <img width="16" height="16" src="../{themepath}/images/cal.gif" class="img-date-selector hand"
+                        style="margin-bottom: -3px;" title="Date selector" id="fdateTrigger" />
+
+                    <script type="text/javascript">
+                        Calendar.setup({
+                            inputField: "fdate",
+                            ifFormat: "%m/%d/%Y",
+                            button: "fdateTrigger",
+                            singleClick: true,
+                            showsTime: false,
+                            showOthers: true,
+                            step: 1
+                        });
+                    </script>
+
+                </td>
+                <td class="r">
+                    {To}
+                </td>
+                <td>
+                    <input type="text" readonly name="tdate" size="13" value="{tdate}" class="txtdate-no-time"
+                        id="tdate" />&nbsp;
+                    <img width="16" height="16" src="../{themepath}/images/cal.gif" class="img-date-selector hand"
+                        style="margin-bottom: -3px;" title="Date selector" id="tdateTrigger" />
+
+                    <script type="text/javascript">
+                        Calendar.setup({
+                            inputField: "tdate",
+                            ifFormat: "%m/%d/%Y",
+                            button: "tdateTrigger",
+                            singleClick: true,
+                            showsTime: false,
+                            showOthers: true,
+                            step: 1
+                        });
+                    </script>
+
+                </td>
+                 <!--afftype-->
+                <td class="r">
+                {afftype}
+                </td>
+                <td>
+                {afftypelist}</td>
+                 <!--/afftype-->
+                <td style="width: 100px">
+                <input type="submit" value="{Submit}" id="btnSubmit" name="Submit" class="buttonlogin" onclick="DelayReloadPage1();LoadData(1);">
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    <input type="hidden" id="custid" name="custid" value="{custid}" />
+    <input type="hidden" id="username" name="username" value="{username}" />
+    <input type="hidden" id="isaff" name="isaff" value="{isaff-val}" />
+    </form>
+    <div id="divContent" class="ContentBox" style="width: 1150px; overflow: visible;">
+        <table class="aff-table" cellspacing="1" cellpadding="3" width="100%">
+            <!--header-->
+            
+            <tr>
+                <th rowspan="2">
+                    {date}
+                </th>
+                 <!--afftype-->
+                <th rowspan="2">{afftype}</th>
+                 <!--/afftype-->
+                <th rowspan="2">
+                    {currency}
+                </th>
+                <th rowspan="2">
+                    {units}
+                </th>
+                <th colspan="2">
+                    {deposit}
+                </th>
+                <th colspan="2">
+                    {turnover}
+                </th>
+                <th colspan="2">
+                    {bonus}
+                </th>
+                <th colspan="2">
+                    {MemberWinlost}
+                </th>
+                <th colspan="2">
+                    {affwinlost}
+                </th>
+                <th colspan="2">
+                    {housewinlost}
+                </th>
+                <th colspan="2">
+                    {AffNetWinLoss}
+                </th>
+                <th colspan="2">
+                    {housenetwinlost}
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    {original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+            </tr>
+            <!--/header-->
+            <!--content-->
+            <tr class="nowrap" bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'">
+                <td rowspan="{numrow}" class="l b" style="width: 55px; background-color: {color}">
+                    {date-val}
+                </td>
+                
+                <!--currency-->
+                 <!--afftype-->
+                <td>{afftype-val}</td>
+                 <!--/afftype-->
+                <td>
+                    {currency-val}
+                </td>
+                <td class="r">
+                    {units-val}
+                </td>
+                <td class="r">
+                    {deposit-val}
+                </td>
+                <td class="r">
+                    {depositeqv-val}
+                </td>
+                <td class="r">
+                    {turnover-val}
+                </td>
+                <td class="r">
+                    {turnovereqv-val}
+                </td>
+                <td class="r">
+                    {bonus-val}
+                </td>
+                <td class="r">
+                    {bonuseqv-val}
+                </td>
+                <td class="r">
+                    {memwinloss-val}
+                </td>
+                <td class="r">
+                    {memwinlosseqv-val}
+                </td>
+                <td class="r">
+                    {affwinloss-val}
+                </td>
+                <td class="r">
+                    {affwinlosseqv-val}
+                </td>
+                <td class="r">
+                    {housewinloss-val}
+                </td>
+                <td class="r">
+                    {housewinlosseqv-val}
+                </td>
+                <td class="r">
+                    {AffNetWinLoss-val}
+                </td>
+                <td class="r">
+                    {AffNetWinLosseqv-val}
+                </td>
+                <td class="r">
+                    {housenetwinloss-val}
+                </td>
+                <td class="r">
+                    {housenetwinlosseqv-val}
+                </td>
+                <!--/currency-->
+            </tr>
+            <!--/content-->
+            <!--subtotal-->
+            <tr class="b" style="background-color: #CACACA">
+                <td colspan="{subtotal_colspan}" class="c">
+                    {subtotal}
+                </td>
+                <td colspan="2" class="r">
+                    {deposit-val}
+                </td>
+                <td colspan="2" class="r">
+                    {turnover-val}
+                </td>
+                <td colspan="2" class="r">
+                    {bonus-val}
+                </td>
+                <td colspan="2" class="r">
+                    {memwinloss-val}
+                </td>
+                <td colspan="2" class="r">
+                    {affwinloss-val}
+                </td>
+                <td colspan="2" class="r">
+                    {housewinloss-val}
+                </td>
+                <td colspan="2" class="r">
+                    {AffNetWinLoss-val}
+                </td>
+                <td colspan="2" class="r">
+                    {housenetwinloss-val}
+                </td>
+            </tr>
+            <!--/subtotal-->
+            <!--total-->
+            <tr class="nowrap" bgcolor="{colormonthly}" onmouseout="bgColor='{colormonthly}'"
+                onmouseover="bgColor='{over}'">
+                <!--monthly-->
+                <td class="b" rowspan="{numrow}" style="width: 55px;" colspan="{month_colspan}">
+                    {monthly-val}
+                </td>
+                <!--/monthly-->
+                <td colspan="2">
+                    {currency-val}
+                </td>
+                <td colspan="2" class="r">
+                    {deposit-val}
+                </td>
+                <td colspan="2" class="r">
+                    {turnover-val}
+                </td>
+                <td colspan="2" class="r">
+                    {bonus-val}
+                </td>
+                <td colspan="2" class="r">
+                    {memwinloss-val}
+                </td>
+                <td colspan="2" class="r">
+                    {affwinloss-val}
+                </td>
+                <td colspan="2" class="r">
+                    {housewinloss-val}
+                </td>
+                <td colspan="2" class="r">
+                    {AffNetWinLoss-val}
+                </td>
+                <td colspan="2" class="r">
+                    {housenetwinloss-val}
+                </td>
+            </tr>
+            <!--monthly-total-->
+            <tr>
+                <th colspan="{subtotal_colspan}" class="c" style="text-transform: uppercase;">
+                    {total}
+                </th>
+                <th colspan="2" class="r">
+                    {deposit-total}
+                </th>
+                <th colspan="2" class="r">
+                    {turnover-total}
+                </th>
+                <th colspan="2" class="r">
+                    {bonus-total}
+                </th>
+                <th colspan="2" class="r">
+                    {memwinloss-total}
+                </th>
+                <th colspan="2" class="r">
+                    {affwinloss-total}
+                </th>
+                <th colspan="2" class="r">
+                    {housewinloss-total}
+                </th>
+                <th colspan="2" class="r">
+                    {AffNetWinLoss-total}
+                </th>
+                <th colspan="2" class="r">
+                    {housenetwinloss-total}
+                </th>
+            </tr>
+            <!--/monthly-total-->
+            <!--/total-->
+        </table>
+    </div>
+    <input type="hidden" id="page" name="page" value="{page}" />
+</div>

@@ -1,0 +1,91 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="Fanex.Web.i668bet.Affiliate.Master" Codebehind="Master.master.cs" %>
+<%@ Register Src="~/Controls/Header.ascx" TagName="CHeader" TagPrefix="mod" %>
+<%@ Register Src="~/Controls/Footer.ascx" TagName="CFooter" TagPrefix="mod" %>
+<%@ Register Src="~/Controls/RightPanel.ascx" TagName="CRight" TagPrefix="mod" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>12BET Affiliates Program</title>
+    <script type="text/javascript">AC_FL_RunContent = 0;</script>
+    <script src="App_Js/AC_RunActiveContent.js" type="text/javascript"></script>
+    <style type="text/css">
+        .root-left{
+            width:216px;         
+            float:left;            
+        }
+        .root-mid{
+            width:380px;         
+            float:left;            
+        }
+        .root-right{
+            width:201px;           
+            float:right;
+        }
+        .clear{
+            clear:both;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div style="background-color:White;">
+        <script language="javascript" type="text/javascript" src="App_Js/prototype.js"></script>
+        <script language="javascript" type="text/javascript" src="App_Js/Common.js?vers=<%=AppSettings.JsVersion%>"></script>
+        <script language="javascript" type="text/javascript" src="App_Js/login.js?vers=<%=AppSettings.JsVersion%>"></script>
+    </div>
+    <div id="container">
+        <div id="topPan">
+            <mod:CHeader runat="server" ID="Header1" />
+        </div>
+        <div class="red_line"></div> 
+        <div class="root-left" style="margin-top:3px;">            
+            <asp:ContentPlaceHolder ID="LeftContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <br />
+            <div style="text-align:center;">
+            <script type="text/javascript">                
+                if (AC_FL_RunContent == 0) {
+                alert("This page requires AC_RunActiveContent.js");
+                } else {
+                AC_FL_RunContent(
+                'codebase', 'https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0',
+                'width', '176',
+                'height', '190',
+                'src', 'yourswffile',
+                'quality', 'high',
+                'pluginspage', 'https://www.macromedia.com/go/getflashplayer',
+                'align', 'middle',
+                'play', 'true',
+                'loop', 'false',
+                'scale', 'noscale',
+                'wmode', 'window',
+                'devicefont', 'false',
+                'id', 'flash-animations',
+                'bgcolor', '#eeeeee',
+                'name', 'yourswffile',
+                'menu', 'false',
+                'allowScriptAccess','sameDomain',
+                'movie', '<%=Fanex.Affiliate.Core.AppSettings.ThemeDir %>/images/176x190_<%=Fanex.Affiliate.Core.AppSession.Flag %>',
+                'salign', ''
+                );
+                }
+            </script>
+            </div>
+        </div>
+        <div class="root-mid" style="margin-top:3px;">
+            <asp:ContentPlaceHolder ID="MidContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="root-right" style="margin-top:5px;">
+            <mod:CRight runat="server" ID="Right1" />
+        </div>
+        <div class="clear">
+        </div>
+        <div style="background-color:White;">
+            <mod:CFooter runat="server" ID="Footer1" />
+        </div>
+    </div>
+
+</body>
+</html>

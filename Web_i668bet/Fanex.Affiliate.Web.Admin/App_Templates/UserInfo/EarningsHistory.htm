@@ -1,0 +1,143 @@
+﻿<form id="frmSearch" name="frmSearch" method="get">
+{submenu}
+<div id="search_cont">
+    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+            <td class="r" width="36" >
+                {From}
+            </td>
+            <td class="r" width="100" style="padding:3px 0px 0px 0px">
+                <input type="text" id="fdate" name="fdate" size="13" value="{fdate-val}" class="txtdate-no-time" />&nbsp;
+            </td>
+            <td class="l" width="38">
+                <img width="16" height="16" src="../{themepath}/images/cal.gif" class="img-date-selector hand"
+                    style="margin-bottom: -3px;" title="Date selector" id="fdateTrigger" />
+
+                <script type="text/javascript">
+                    Calendar.setup({
+                        inputField: "fdate",
+                        ifFormat: "mm/dd/y",
+                        button: "fdateTrigger",
+                        singleClick: true,
+                        showsTime: false
+                    });
+                </script>
+            </td>
+            <td class="r" width="36">
+                {To}
+            </td>
+            <td class="r" width="100" style="padding:3px 0px 0px 0px">
+                <input type="text" id="tdate" name="tdate" size="13" value="{tdate-val}" class="txtdate-no-time" />&nbsp;
+            </td>
+            <td class="l" width="38">
+                <img width="16" height="16" src="../{themepath}/images/cal.gif" class="img-date-selector hand"
+                    style="margin-bottom: -3px;" title="Date selector" id="tdateTrigger" />
+
+                <script type="text/javascript">
+                    Calendar.setup({
+                        inputField: "tdate",
+                        ifFormat: "mm/dd/y",
+                        button: "tdateTrigger",
+                        singleClick: true,
+                        showsTime: false                       
+                    });                
+                </script>
+
+            </td>
+            <td class="r" width="36">
+                {getall}
+            </td>
+            <td class="c" width="36">
+                <span class="chk ic-uncheck" id="chkDate">&nbsp;</span>               
+                <!--<input type="checkbox" id="chkAll" name="chkAll" {checked-val} onclick="getAll();" />&nbsp;-->
+            </td>
+            <td style="padding:3px 0px 0px 0px">
+            <input type="submit" value="{Submit}" id="btnSubmit" name="Submit" class="buttonlogin"
+             onclick=" $(todate).value = $(tdate).value;$(fromdate).value = $(fdate).value;$('page').value='1';$('frmSearch').submit();">                
+                <input type="submit" value="{search}" class="hide" />
+            </td>
+        </tr>
+    </table>
+</div>
+{paging-top}
+<table class="aff-table" cellspacing="1" cellpadding="3" width="750px">
+    <tr>
+        <!--
+            <input type="button" onclick="Transfer('{custid}','{username}');" value="{update}" class="buttonlogin" />
+            <br /><input type="checkbox" id="chkAll" name="chkAll" class="noborder" {disabled} onclick="CheckAll();" />
+            -->
+        <th style="width: 15px;">
+            &nbsp;
+        </th>
+        <th style="width: 70px;">
+            {Date}
+        </th>
+        <th style="width: 90px;">
+            {type}
+        </th>
+        <th style="width: 100px;">
+            {amount}
+        </th>
+        <th style="width: 60px;">
+            {status}
+        </th>
+        <th style="width: 60px;">
+            {creator}
+        </th>
+        <th>
+            {description}
+        </th>
+    </tr>
+    <!--content-->
+    <tr bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'">
+        <td class="c">
+            {no}
+        </td>
+        <td class="b l">
+            {monthdate-val}
+        </td>
+        <td class="l">
+            {bettype-val}
+        </td>
+        <td class="r">
+            <!--amount-val-->
+            <a href="DailyEarning.aspx?custid={custid}&monthdate={month-val}&user={username}">{amount-val}</a><!--/amount-val-->
+            <!--transid-val-->
+            <a href="javascript:ibcWnd.open('../Payment/PaymentUpdate.aspx?transid={transid-val}&lang=E&page=statement', '{transid} {transid-val}', 80, 0, 500, 510, 'class1', 'class2');">
+                {amount-val}</a><!--/transid-val-->
+        </td>
+        <td>
+            <!--status-val-->
+            <span class="popup" onclick="ibcWnd.open('../Payment/PaymentUpdate.aspx?transid={transid-val}&lang=E&page=statement', '{transid} {transid-val}', 80, 0, 500, 510, 'class1', 'class2');">
+                {status-val}</span><!--/status-val-->
+        </td>
+        <td>
+            {creator-val}
+        </td>
+        <td class="l">
+            {description-val}
+        </td>
+    </tr>
+    <!--/content-->
+    <!--total-->
+    <tr class="{style}">
+        <th colspan="3">
+            {total}
+        </th>
+        <th class="r">
+            {earning-val}
+        </th>
+        <th colspan="4">
+            &nbsp;
+        </th>
+    </tr>
+    <!--/total-->
+</table>
+{paging-bottom}
+<div class="bottombutton">
+</div>
+<input type="hidden" id="page" name="page" value="{page-val}" />
+<input type="hidden" id="getAll" name="getAll" value="{getAll-val}" />
+<input type="hidden" id="fromdate" name="fromdate" value="{fdate-val}" />
+<input type="hidden" id="todate" name="todate" value="{tdate-val}" />
+</form>

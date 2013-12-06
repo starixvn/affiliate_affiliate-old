@@ -1,0 +1,25 @@
+<div class="padl0">
+    <form method="get" onsubmit="return updateRate('{exid-val}');">
+    <div id="errMsg" class="done" style="display: none; width:198px; margin: 3px 0;">
+      <div id="error_item">
+      </div>
+    </div>
+    <div id="divContent" class="pcontent" style="width: 248px;">
+        <table class="tblPass" width="100%" bordercolor="#d4d0c8">
+            <tr>
+                <td style="width:80px;">
+                    {Currency}</td>
+                <td class="b">{curr-val}</td>
+            </tr>
+            <tr>
+                <td>{rate}</td>
+                <td>
+                    <input type="text" onkeypress="return isNumberKey(event)" id="txtRate" name="txtRate" value="{rate-val}" maxlength="20" /></td>
+            </tr>
+        </table>
+    </div>
+    <div style="margin-top:5px;text-align:left;">
+        <input class="buttonlogin" type="submit" value="{submit}" />
+    </div>
+    </form>
+</div>

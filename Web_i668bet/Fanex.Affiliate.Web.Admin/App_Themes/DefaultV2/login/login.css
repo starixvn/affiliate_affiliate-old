@@ -1,0 +1,409 @@
+/* Stylesheet / CSS */
+
+/* CSS Reset - Do not edit this line */
+html
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+article, aside, dialog, figure, footer, header, hgroup, nav, section
+{
+	display: block;
+}
+body
+{
+	line-height: 1.5;
+	background: white;
+}
+table
+{
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td
+{
+	text-align: left;
+	font-weight: normal;
+	float: none !important;
+}
+table, th, td
+{
+	vertical-align: middle;
+}
+blockquote:before, blockquote:after, q:before, q:after
+{
+	content: '';
+}
+blockquote, q
+{
+	quotes: "" "";
+}
+a img
+{
+	border: none;
+}
+:focus
+{
+	outline: 0;
+}
+
+
+/* General Styles
+----------------------------------------------------------------------------------------------------*/
+html
+{
+	min-height: 100%;
+}
+body
+{
+	height: 100%;
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #888;
+	font-size: 13px;
+	line-height: 20px;
+	min-width: 998px;
+	border-top: 3px solid #919191;
+	background: url(../images/BG.jpg) repeat;
+}
+
+#wrapper
+{
+	height: 404px;
+	line-height: 404px;
+	width: 304px;
+	margin: auto;
+	margin-top: 92px;
+	position: relative;
+	background: url("../images/login_page.png") no-repeat scroll 0 0 transparent;
+}
+
+#container
+{
+	line-height: normal;
+	margin: 0px 22px;
+}
+
+#header
+{
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	top: 105px;
+	color: #2586c6;
+	font-style: italic;
+	font-family: "arial";
+	font-size: 24px;
+	position: absolute;
+	width: 260px;
+}
+
+div.label
+{
+	height: 24px;
+	line-height: 24px;
+	font-size: 14px;
+	color: #03558b;
+	font-weight: bold;
+}
+
+#divun
+{
+	position: absolute;
+	top: 175px;
+}
+
+#divpw
+{
+	position: absolute;
+	top: 243px;
+}
+
+#wrappertop
+{
+	height: 22px;
+}
+
+#wrappermiddle
+{
+	height: 240px;
+}
+
+#wrapperbottom
+{
+	height: 22px;
+}
+
+#wrapper h2
+{
+	margin-left: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Myriad Pro;
+	text-transform: uppercase;
+	position: absolute;
+	text-shadow: #fff 2px 2px 2px;
+}
+
+#username_input
+{
+	position: absolute;
+	top: 205px;
+	left: 54px;
+}
+
+#username_inputleft
+{
+	float: left;
+	width: 12px;
+	height: 50px;
+}
+
+#username_inputmiddle
+{
+	float: left;
+	width: 248px;
+	height: 50px;
+	margin-top: 24px;
+}
+
+#username_inputright
+{
+	float: left;
+	width: 12px;
+	height: 50px;
+}
+
+input[type=text], input[type=password]
+{
+	display: block;
+	width: 220px;
+	height: 20px;
+	background: transparent;
+	border: 0;
+	font-family: helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: white;
+	font-style: normal;
+}
+
+::-webkit-input-placeholder
+{
+	/* WebKit browsers */
+	color: #0b5f96;
+	font-style: italic;
+}
+:-moz-placeholder
+{
+	/* Mozilla Firefox 4 to 18 */
+	color: #0b5f96;
+	font-style: italic;
+}
+::-moz-placeholder
+{
+	/* Mozilla Firefox 19+ */
+	color: #0b5f96;
+	font-style: italic;
+}
+:-ms-input-placeholder
+{
+	/* Internet Explorer 10+ */
+	color: #0b5f96;
+	font-style: italic;
+}
+
+#url_user
+{
+	position: absolute;
+	display: block;
+	margin-top: -28px;
+	float: left;
+	padding-right: 10px;
+}
+
+#password_input
+{
+	position: absolute;
+	top: 273px;
+	left: 54px;
+}
+.submit-button
+{
+	background: url(../images/admin_login_button.png) no-repeat;
+	z-index: 10;
+	border: 0;
+	cursor: pointer;
+	color: White;
+	font-size: 14px;
+	width: 98px;
+	height: 33px;
+	line-height: 33px;
+	float: right;
+}
+.submit-button:hover
+{
+	background: url(../images/admin_login_button-hover.png) no-repeat;
+}
+#password_inputleft
+{
+	float: left;
+	width: 12px;
+	height: 50px;
+}
+
+#password_inputmiddle
+{
+	float: left;
+	width: 248px;
+	height: 50px;
+	margin-top: 32px;
+}
+
+#password_inputright
+{
+	float: left;
+	width: 12px;
+	height: 50px;
+}
+
+#url_password
+{
+	display: block;
+	position: absolute;
+	margin-top: -32px;
+	float: left;
+	margin-left: 4px;
+}
+
+#submit-div
+{
+	position: absolute;
+	top: 323px;
+	width: 260px;
+}
+
+.arrUp {
+	background: url("images/arrowdown.png") no-repeat scroll center top transparent;
+}
+
+#language
+{
+	width: 116px;
+	float: left;
+	background-color: #a7cee8;
+	border: 1px solid #1d7ebd;
+	border-radius: 2px;
+	color: #03558b;
+	padding: 3px 0px 3px 10px;
+	cursor: pointer;
+	margin-top: 6px;
+}
+
+#langlist
+{
+	position: absolute;
+	width: 116px;
+	top: 28px;
+	background-color: #a7cee8;
+	border: 1px solid #1d7ebd;
+	border-radius: 2px;
+	color: #03558b;
+	padding: 0px 0px 3px 10px;
+}
+
+#langlist > div
+{
+	padding: 3px 0px;
+	border-bottom: 1px solid #1d7ebd;
+	margin-right: 10px;
+}
+
+#errMsg
+{
+	border-radius: 2px;
+	background: #a7cee8 url(../images/note_01.png) no-repeat scroll 10px 0px;
+	line-height: 10px;
+	position: absolute;
+	top: 390px;
+	width: 260px;
+	left: 0px;
+	padding: 5px 5px 5px 35px !important;
+}
+
+#links_left a
+{
+	color: #bbb;
+	font-size: 11px;
+	text-decoration: none;
+	transition: color 0.5s linear;
+	-moz-transition: color 0.5s linear;
+	-webkit-transition: color 0.5s linear;
+	-o-transition: color 0.5s linear;
+}
+
+#links_left a:hover
+{
+	color: #292929;
+}
+
+#links_right
+{
+	float: right;
+	position: relative;
+	padding-top: 5px;
+	margin-right: 25px;
+}
+
+#links_right a
+{
+	color: #bbb;
+	font-size: 11px;
+	text-decoration: none;
+	transition: color 0.5s linear;
+	-moz-transition: color 0.5s linear;
+	-webkit-transition: color 0.5s linear;
+	-o-transition: color 0.5s linear;
+}
+
+#links_right a:hover
+{
+	color: #292929;
+}
+
+#powered
+{
+	float: right;
+	position: relative;
+	padding-top: 3px;
+	font-size: 11px;
+	color: #656565;
+}
+
+#powered a
+{
+	color: #2f95d8;
+	font-size: 11px;
+	text-decoration: none;
+	transition: color 0.5s linear;
+	-moz-transition: color 0.5s linear;
+	-webkit-transition: color 0.5s linear;
+	-o-transition: color 0.5s linear;
+}
+
+#powered a:hover
+{
+	color: #292929;
+}

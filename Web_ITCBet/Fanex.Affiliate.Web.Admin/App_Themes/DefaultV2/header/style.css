@@ -1,0 +1,90 @@
+﻿
+.lang {
+    display: inline;
+    float: right;
+    height: 20px;    
+    margin-right: 20px;
+}
+.fen-US {
+    background: url("images/fEnglish.png") no-repeat scroll 0 0 transparent;
+    
+    padding-left: 30px;
+}
+.fes-ES {
+    background: url("images/fSpain.png") no-repeat scroll 0 0 transparent;
+    
+    padding-left: 30px;
+}
+.fzh-CN, .fzh-TW {
+    background: url("images/fChinese.png") no-repeat scroll 0 0 transparent;    
+    padding-left: 30px;
+}
+.fvn-VN {
+    background: url("images/fTV.png") no-repeat scroll 0 0 transparent;    
+    padding-left: 30px;
+}
+.fth-TH {
+    background: url("images/fThai.png") no-repeat scroll 0 0 transparent;    
+    padding-left: 30px;
+}
+.fid-ID {
+    background: url("images/fIndonesian.png") no-repeat scroll 0 0 transparent;    
+    padding-left: 30px;
+}
+#langList {
+    margin: 0;
+    position: fixed;
+    top: 26px;    
+    z-index: 102;
+}
+.langListTop {
+    height: 6px;
+}
+.langListRp {
+    background: #F2F2F2;
+    padding-bottom: 5px;
+    text-align: left;
+    padding: 4px;
+    border: 1px solid gray;
+}
+
+.langListBottom {
+    height: 5px;
+}
+.langListRp > a {
+    color: #000;
+    display: inline;    
+   padding-right:5px;
+    text-align: left;
+    
+}
+
+#langSelectLink {
+    height: 24px;
+    margin-bottom: 1px;
+    padding-bottom: 5px;
+    width: 136px;
+}
+#box {
+    background: url("images/ComboBox.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 24px;
+    padding: 4px 0 0 10px;
+}
+.arrUp {
+    background: url("images/arrUpDown.png") no-repeat scroll center top transparent;
+    cursor: pointer;
+    float: right;
+    height: 5px;
+    margin-top: 5px;
+    padding-right: 24px;
+}
+.arrDown {
+    background: url("images/arrUpDown.png") no-repeat scroll center bottom transparent;
+    cursor: pointer;
+    float: right;
+    height: 5px;
+    margin-top: 5px;
+    padding-right: 20px;
+    width: 7px;
+}

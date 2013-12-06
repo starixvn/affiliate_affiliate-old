@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	background: url(images/bg-Main.png) repeat-x #b7daed; 
+    font-family:"Tahoma", Tahoma, REZ, Arial;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+
+#top
+{
+	height: 62px;
+	background:url(images/logo-e.png) top center no-repeat;
+	margin: 7px 0px 0px 40px;
+	display: block;
+}
+
+#center
+{
+	width:960px;
+	height: 400px;
+	margin: 40px auto;
+}
+
+#title
+{
+	background:url(images/text.png) no-repeat 396px 0px;
+	height: 42px;
+	margin-bottom: 15px;
+}
+
+#seperator
+{
+	border-top: 1px solid #006aad;
+	height:1px;
+	margin:auto;
+}
+
+#icon
+{
+	background:url(images/icon2.png) no-repeat;
+	width: 256px;
+	height: 237px;
+	float:left;
+	margin-left:102px;
+}
+
+#content
+{
+	font-family:"Tahoma", Tahoma, REZ, Arial;
+	font-size:14px;
+	color:#055D94;
+	float:left;
+	padding-top: 40px;
+}
+
+.cont
+{
+	padding-left: 30px;
+	margin: 0px;
+}
+
+.cont li
+{
+	border-bottom: #006aad dotted 1px;
+	list-style-type: none;
+	padding:10px;
+		
+}
+
+.cont li.end
+{
+		border: 0;
+}

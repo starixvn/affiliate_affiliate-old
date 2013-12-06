@@ -1,0 +1,2613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUs" xml:space="preserve">
+    <value>Giới thiệu</value>
+  </data>
+  <data name="AccId" xml:space="preserve">
+    <value>Mã tài khoản</value>
+  </data>
+  <data name="AccInfo" xml:space="preserve">
+    <value>Thông tin tài khoản</value>
+  </data>
+  <data name="Account12bet" xml:space="preserve">
+    <value>Tài khoản người chơi Affiliate</value>
+  </data>
+  <data name="AccOverview" xml:space="preserve">
+    <value>Tổng quan về tài khoản</value>
+  </data>
+  <data name="ActivatedTrackingCode" xml:space="preserve">
+    <value>Đã kích hoạt</value>
+  </data>
+  <data name="ActiveAcc" xml:space="preserve">
+    <value>Email này sẽ có một liên kết mà bạn cần phải nhấp vào. Để kích hoạt tài khoản và xác nhận địa chỉ email của bạn cũng như kết thúc việc đăng ký.</value>
+  </data>
+  <data name="ActiveWageringMembersRefers" xml:space="preserve">
+    <value>2.  Thành viên đặt cược hoạt động tức là những khách hàng đạt được số tiền thu hồi đặt cược tối thiểu tương đương với một trăm đô la Mỹ (USD 100,00) một lần trong bất kỳ tháng dương lịch cho trước nào.</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="AddressIsRequired" xml:space="preserve">
+    <value>Địa chỉ là bắt buộc</value>
+  </data>
+  <data name="Affiliate" xml:space="preserve">
+    <value>Hội viên</value>
+  </data>
+  <data name="AffiliateEarnings" xml:space="preserve">
+    <value>Mức thu nhập của hội viên</value>
+  </data>
+  <data name="AffiliateID" xml:space="preserve">
+    <value>Mã hội viên</value>
+  </data>
+  <data name="Affiliatemustensure" xml:space="preserve">
+    <value>6. Hội viên phải đảm bảo rằng mọi tài liệu được đăng trên trang web của họ đều hợp pháp và không vi phạm bản quyền hay bất kỳ quyền nào khác.</value>
+  </data>
+  <data name="Affiliatesareprohibited" xml:space="preserve">
+    <value>9. Nghiêm cấm hội viên chơi ở bất kỳ sàn cược thể thao nào được Affiliate quảng bá qua liên kết hội viên riêng hoặc từ liên kết hội viên của một hội viên chia sẻ tất cả hoặc một phần hoa hồng với hội viên khác hoặc một bên thứ ba.  Hội viên này bao gồm bất kỳ cá nhân hoặc nhóm chơi nào mà phải thanh toán tiền đền bù hoặc tiền thưởng cho một hội viên khác dưới bất kỳ hình thức nào. Trong trường hợp vi phạm phần này, Affiliate và trang web tương ứng đã được chơi sẽ có quyền vô hiệu lực mọi lượt chơi và hủy bỏ mọi khoản hoa hồng đã kiếm được từ lượt chơi đó và xóa hội viên khỏi chương trình hội viên, chấm dứt thỏa thuận này và vô hiệu lực mọi lượt chơi trong tương lai tại Affiliate.</value>
+  </data>
+  <data name="AffiliatesWillNotEarn" xml:space="preserve">
+    <value>8. Hội viên sẽ không được hưởng mức hoa hồng từ số tiền cá cược hoặc kết quả thắng thua mà thành viên tuyến dưới của bạn cá cược vào đua ngựa và casino tại Affiliate.</value>
+  </data>
+  <data name="AffiliateTagging" xml:space="preserve">
+    <value>3. Gắn thẻ hội viên</value>
+  </data>
+  <data name="AffiliationGuidelines" xml:space="preserve">
+    <value>2. Nguyên tắc dành cho hội viên</value>
+  </data>
+  <data name="AgreeTermNCondition" xml:space="preserve">
+    <value>Tôi đồng ý với các điều khoản &amp; điều kiện của Affiliate Affiliate.</value>
+  </data>
+  <data name="Albania" xml:space="preserve">
+    <value>Albania</value>
+  </data>
+  <data name="Algeria" xml:space="preserve">
+    <value>Algeria </value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="Allrightsandlicenses" xml:space="preserve">
+    <value>b. Mọi quyền và giấy phép được cấp cho bạn trong thỏa thuận này sẽ bị chấm dứt ngay lập tức.</value>
+  </data>
+  <data name="AMaximumOfOneWithdrawal" xml:space="preserve">
+    <value>Hội viên chỉ có thể thực hiện rút tiền một lần vào mỗi tháng. Nhưng nếu được sự chấp thuận của giám đốc bộ phận kết nối, bạn cũng có thể trong vòng một tháng rút hai lần tiền hoa hồng. Hiện tại phục vụ rút tiền của chúng tôi hoàn toàn miễn phí, nhưng chúng tôi sẽ không chi trả bất kỳ phí thủ tục hoặc phí phát sinh nào khác.</value>
+  </data>
+  <data name="AffilatesAreOnlyAllowed" xml:space="preserve">
+    <value>Mỗi tháng hội viên tối đa chỉ có thể rút tiền 1 lần. Nếu được sự chấp thuận của cơ quan cấp trên, bạn cũng có thể yêu cầu rút 2 lần trong 1 tháng. Hiện tại phục vụ rút tiền của chúng tôi hoàn toàn miễn phí, nhưng chúng tôi sẽ không chi trả bất kỳ phí thủ tục hoặc phí phát sinh nào khác. </value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Số tiền</value>
+  </data>
+  <data name="AmtErr" xml:space="preserve">
+    <value>Số tiền yêu cầu không hợp lệ! Số tiền phải trong khoảng </value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>và</value>
+  </data>
+  <data name="Anewpasswordwil" xml:space="preserve">
+    <value>Mật khẩu mới sẽ được gửi tới địa chỉ email mà bạn đã cung cấp. </value>
+  </data>
+  <data name="Angola" xml:space="preserve">
+    <value>Angola </value>
+  </data>
+  <data name="Anguilla" xml:space="preserve">
+    <value>Anguilla </value>
+  </data>
+  <data name="AnyformofSpam" xml:space="preserve">
+    <value>a. Bất kỳ hình thức gửi thư rác nào sẽ dẫn đến việc tài khoản của bạn bị xem xét lại và tất cả quỹ tiền sẽ bị giữ lại để chờ điều tra tài khoản của bạn. Bạn cần phải biết rằng khách hàng của chúng tôi có khả năng gánh chịu chi phí xử lý thư được tạo do thư rác và những khoản chi phí tương tự sẽ được trừ khỏi tài khoản của bạn nếu khách hàng của chúng tôi cần sự trợ giúp. Trong trường hợp này, số tiền được xác định bởi khách hàng có liên quan sẽ là công bằng và được coi là số tiền cuối cùng và có thể chấp nhận được dựa trên thiện chí và số tiền đó có thể sẽ được thu hồi theo luật pháp và được coi là đã được bạn chấp nhận là công bằng và hợp lý và theo như sự đồng ý của bạn khi đăng ký là thành viên của Affiliate.</value>
+  </data>
+  <data name="AnyNegativeBalance" xml:space="preserve">
+    <value>Số tiền thưởng bằng âm bất kỳ trong 1 tháng sẽ được chuyển tiếp vào tháng sau. Ví dụ: nếu cuối tháng 1 sau khi tổng kết, số tiền trong tài khoản của hội viên là -$2,555, số tiền này sẽ chuyển tiếp vào tháng 2. Nếu tháng 2 số dư trong tài khoản là $3,400, thì số dư tài khoản sẽ là $845 ($3,400 trừ $2,555). Nhưng nếu tháng 2 số dư vẫn là số âm, ví dụ là -$1,600, thì sẽ tiếp tục tích lũy sổ âm của tháng trước đến tháng sau, vậy số tiền chuyển đến tháng 3 sẽ là -$4,155. Hội viên sẽ hưởng hoa hồng thu nhập tương ứng với cấp bậc tỷ lệ .</value>
+  </data>
+  <data name="ApplicationUnde" xml:space="preserve">
+    <value>Đơn đăng ký đang được xem xét</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Đã chấp thuận</value>
+  </data>
+  <data name="April" xml:space="preserve">
+    <value>Tháng 4</value>
+  </data>
+  <data name="Argentina" xml:space="preserve">
+    <value>Argentina </value>
+  </data>
+  <data name="Armenia" xml:space="preserve">
+    <value>Armenia </value>
+  </data>
+  <data name="Aruba" xml:space="preserve">
+    <value>Aruba </value>
+  </data>
+  <data name="As12BETAffiliates" xml:space="preserve">
+    <value>Là hội viên của Affiliate, bạn sẽ được thanh toán tiền hoa hồng cho mỗi người chơi mà bạn giới thiệu tới Affiliate trong thời gian tồn tại tài khoản của người chơi. Hệ thống báo cáo trực tuyến của chúng tôi sẽ hoạt động 24 giờ/ngày, 7 ngày/tuần để bạn có thể sử dụng.</value>
+  </data>
+  <data name="AsAnAffiliate" xml:space="preserve">
+    <value>1. Là hội viên, bạn có trách nhiệm quảng bá cho Affiliate bằng cách thực hiện việc quảng cáo, đặt biểu ngữ và theo dõi các URL trên trang web, email và các liên lạc khác của bạn.</value>
+  </data>
+  <data name="AsaPolicy12BETShallNo" xml:space="preserve">
+    <value>Một chính sách của Affiliate là không chấp nhận việc nộp đơn đăng ký hội viên trực tuyến nếu bạn quảng cáo với địa chỉ Internet Protocol (IP) đặt tại hoặc xuất phát từ trong phạm vi quyền hạn quản lý của Vương quốc Anh.</value>
+  </data>
+  <data name="Asa_12BetcomAff" xml:space="preserve">
+    <value>Là hội viên của Affiliate.com, tất cả những gì bạn cần làm là dẫn khách truy cập của bạn tới trang web của chúng tôi sử dụng đoạn mã theo dõi đặc biệt mà bạn có thể đặt vào trang web của mình</value>
+  </data>
+  <data name="Assignability" xml:space="preserve">
+    <value>1. Khả năng chuyển nhượng và làm quen</value>
+  </data>
+  <data name="Asyouhaverequested" xml:space="preserve">
+    <value>Theo yêu cầu của bạn, chúng tôi cung cấp cho bạn một mật khẩu mới. Thông tin tài khoản mới của bạn như sau:</value>
+  </data>
+  <data name="AUD" xml:space="preserve">
+    <value>AUD (Đô la Úc)</value>
+  </data>
+  <data name="August" xml:space="preserve">
+    <value>Tháng 8</value>
+  </data>
+  <data name="Australia" xml:space="preserve">
+    <value>Úc </value>
+  </data>
+  <data name="Austria" xml:space="preserve">
+    <value>Áo </value>
+  </data>
+  <data name="Azerbaijan" xml:space="preserve">
+    <value>Azerbaijan </value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Quay lại</value>
+  </data>
+  <data name="Bahamas" xml:space="preserve">
+    <value>Bahamas </value>
+  </data>
+  <data name="Bahrain" xml:space="preserve">
+    <value>Bahrain </value>
+  </data>
+  <data name="Balance0" xml:space="preserve">
+    <value>Bạn không thể yêu cầu thanh toán vì số dư không đủ.</value>
+  </data>
+  <data name="BalForward" xml:space="preserve">
+    <value>Số dư được rút</value>
+  </data>
+  <data name="Bangladesh" xml:space="preserve">
+    <value>Bangladesh </value>
+  </data>
+  <data name="BankABA_Swift_S" xml:space="preserve">
+    <value>Bank ABA/Mã Swift/Mã Ngân hàng</value>
+  </data>
+  <data name="BankABA_Swift_SIsRequired" xml:space="preserve">
+    <value>Bank ABA/Mã Swift/Mã Ngân hàng là bắt buộc</value>
+  </data>
+  <data name="BankAccnumber" xml:space="preserve">
+    <value>Số tài khoản ngân hàng</value>
+  </data>
+  <data name="BankAccountName" xml:space="preserve">
+    <value>Tên tài khoản ngân hàng</value>
+  </data>
+  <data name="BankAccountNameIsRequired" xml:space="preserve">
+    <value>Tên tài khoản ngân hàng là bắt buộc</value>
+  </data>
+  <data name="BankAccountNumb" xml:space="preserve">
+    <value>Số tài khoản ngân hàng</value>
+  </data>
+  <data name="BankAccountNumbIsRequired" xml:space="preserve">
+    <value>Số tài khoản ngân hàng là bắt buộc</value>
+  </data>
+  <data name="BankAddress" xml:space="preserve">
+    <value>Địa chỉ ngân hàng</value>
+  </data>
+  <data name="BankAddressisre" xml:space="preserve">
+    <value>Địa chỉ ngân hàng là bắt buộc</value>
+  </data>
+  <data name="BankCode" xml:space="preserve">
+    <value>Bank ABA/Mã Swift/Mã ngân hàng</value>
+  </data>
+  <data name="BankName" xml:space="preserve">
+    <value>Tên ngân hàng</value>
+  </data>
+  <data name="BankNameisrequi" xml:space="preserve">
+    <value>Tên ngân hàng là bắt buộc</value>
+  </data>
+  <data name="BankTransfer" xml:space="preserve">
+    <value>Chuyển khoản ngân hàng</value>
+  </data>
+  <data name="Banner" xml:space="preserve">
+    <value>Liên kết url bằng hình ảnh</value>
+  </data>
+  <data name="Bannersandlinks" xml:space="preserve">
+    <value>4. Các biểu ngữ và liên kết có thể không được đặt trong email tự gửi đi, các bài đăng trên nhóm tin không được phép hay các phòng trò chuyện hoặc qua việc sử dụng "bots". Lưu lượng được tạo trái phép sẽ không được tính và có thể dẫn đến việc chấm dứt tài khoản hội viên của bạn với chúng tôi.</value>
+  </data>
+  <data name="Barbados" xml:space="preserve">
+    <value>Barbados </value>
+  </data>
+  <data name="Basketball" xml:space="preserve">
+    <value>Bóng rổ</value>
+  </data>
+  <data name="Belarus" xml:space="preserve">
+    <value>Belarus </value>
+  </data>
+  <data name="Belgium" xml:space="preserve">
+    <value>Bỉ </value>
+  </data>
+  <data name="Belize" xml:space="preserve">
+    <value>Belize </value>
+  </data>
+  <data name="Benin" xml:space="preserve">
+    <value>Benin </value>
+  </data>
+  <data name="Bermuda" xml:space="preserve">
+    <value>Bermuda </value>
+  </data>
+  <data name="BestRegards" xml:space="preserve">
+    <value>Trân trọng!</value>
+  </data>
+  <data name="BestView" xml:space="preserve">
+    <value>Xem tốt nhất tại</value>
+  </data>
+  <data name="Bet12" xml:space="preserve">
+    <value>Affiliate</value>
+  </data>
+  <data name="BETAffiliatesProgram" xml:space="preserve">
+    <value>Chương trình hội viên Affiliate là một chương trình cộng tác nơi bạn có thể kiếm được hoa hồng dựa trên hoạt động cá cược của người chơi mà bạn giới thiệu tới Affiliate.com từ trang web của bạn thông qua hình thức giới thiệu trực tuyến hoặc ngoại tuyến. </value>
+  </data>
+  <data name="BetAffNotification" xml:space="preserve">
+    <value>Affiliate Affiliate - [{transid}] - Thông báo yêu cầu thanh toán  </value>
+  </data>
+  <data name="BETUserNameIsRequired" xml:space="preserve">
+    <value>Tên người dùng Affiliate là bắt buộc</value>
+  </data>
+  <data name="Bhutan" xml:space="preserve">
+    <value>Bhutan </value>
+  </data>
+  <data name="Bolivia" xml:space="preserve">
+    <value>Bolivia </value>
+  </data>
+  <data name="Bonus" xml:space="preserve">
+    <value>Tiền thưởng</value>
+  </data>
+  <data name="BosniaandHerzegovina" xml:space="preserve">
+    <value>Bosnia và Herzegovina </value>
+  </data>
+  <data name="Botswana" xml:space="preserve">
+    <value>Botswana </value>
+  </data>
+  <data name="Brazil" xml:space="preserve">
+    <value>Brazil </value>
+  </data>
+  <data name="BruneiDarussalam" xml:space="preserve">
+    <value>Vương quốc Brunei </value>
+  </data>
+  <data name="Bulgaria" xml:space="preserve">
+    <value>Bungary </value>
+  </data>
+  <data name="BurkinaFaso" xml:space="preserve">
+    <value>Burkina Faso </value>
+  </data>
+  <data name="Burundi" xml:space="preserve">
+    <value>Burundi </value>
+  </data>
+  <data name="ByAccessingOurMediaGallery" xml:space="preserve">
+    <value>Bằng cách truy cập phần "Thư viện media" của chúng tôi, bạn sẽ có thể lựa chọn biểu ngữ mà bạn thích cũng như các liên kết văn bản cho trang web của mình.</value>
+  </data>
+  <data name="Byagreeingtoparticipate" xml:space="preserve">
+    <value>3. Với việc đồng ý tham gia chương trình hội viên Affiliate, bạn đồng ý tải xuống các biểu ngữ, văn bản hoặc tài liệu quảng cáo và đặt chúng vào trang web của bạn, sử dụng chúng trong email, quản lý tiếp thị bằng URL hội viên hoặc in. Các phương pháp này là những phương pháp được chấp thuận duy nhất mà bạn có thể quảng cáo sản phẩm và dịch vụ của Affiliate.</value>
+  </data>
+  <data name="Byhavingread" xml:space="preserve">
+    <value>Bằng việc đọc và công nhận các điều khoản và điều kiện trong mẫu đăng ký hội viên, bạn đồng ý với tất cả điều khoản và điều kiện có trong tài liệu này. Affiliate bảo lưu quyền giữ lại thanh toán của bất kỳ hội viên nào vi phạm bất kỳ điều khoản và điều kiện nào có trong tài liệu này</value>
+  </data>
+  <data name="Byopeninganaccount" xml:space="preserve">
+    <value>2. Bằng cách mở tài khoản với khách hàng thì người đó hoặc tổ chức đó sẽ trở thành khách hàng của chúng tôi, và theo đó, tất cả quy định, chính sách và thủ tục hoạt động dành cho khách hàng sẽ được áp dụng cho họ.</value>
+  </data>
+  <data name="BythisAgreement" xml:space="preserve">
+    <value>2. Với thỏa thuận này, chúng tôi cấp cho bạn quyền không độc quyền được dẫn khách hàng tới trang web và dịch vụ của chúng tôi, tuân theo các điều khoản và điều kiện của thỏa thuận này. Thỏa thuận này không cấp cho bạn quyền độc quyền hay đặc quyền được trợ giúp chúng tôi trong việc cung cấp các dịch vụ phát sinh từ việc giới thiệu của bạn, và chúng tôi bảo lưu quyền ký kết hợp đồng với hoặc có được trợ giúp từ các bên khác vào bất kỳ thời điểm nào để thực hiện các dịch vụ có bản chất giống hoặc tương tự với dịch vụ của bạn. Bạn sẽ không được yêu cầu phí giới thiệu hoặc các khoản đền bù khác cho công việc đó hoặc thông qua những người hoặc tổ chức khác mà không phải là bạn bảo đảm.</value>
+  </data>
+  <data name="Cambodia" xml:space="preserve">
+    <value>Campuchia </value>
+  </data>
+  <data name="Cameroon" xml:space="preserve">
+    <value>Cameroon </value>
+  </data>
+  <data name="Canada" xml:space="preserve">
+    <value>Canada </value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Hủy</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Đã hủy</value>
+  </data>
+  <data name="CancelPayoutSucc" xml:space="preserve">
+    <value>Yêu cầu thanh toán của bạn đã bị hủy!</value>
+  </data>
+  <data name="CancelRequest" xml:space="preserve">
+    <value>Yêu cầu hủy</value>
+  </data>
+  <data name="CancelSubject" xml:space="preserve">
+    <value>Affiliate Affiliate - [{transid}] - Thông báo yêu cầu thanh toán</value>
+  </data>
+  <data name="CanIRequest" xml:space="preserve">
+    <value>Ngoài USD ra, tôi có thể yêu cầu rút tiền bằng tiền tệ khác không?</value>
+  </data>
+  <data name="CannotSendmail" xml:space="preserve">
+    <value>Không thể gửi thư. Vui lòng thử lại.</value>
+  </data>
+  <data name="CapeVerde" xml:space="preserve">
+    <value>Cape Verde </value>
+  </data>
+  <data name="Casino" xml:space="preserve">
+    <value>Sòng bạc</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Loại hình ảnh</value>
+  </data>
+  <data name="CaymanIslands" xml:space="preserve">
+    <value>Quần đảo Cayman </value>
+  </data>
+  <data name="CentralAfricanRep" xml:space="preserve">
+    <value>Cộng hòa Trung Phi </value>
+  </data>
+  <data name="Chad" xml:space="preserve">
+    <value>Chad </value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Thay đổi</value>
+  </data>
+  <data name="ChangePass" xml:space="preserve">
+    <value>Đổi mật khẩu</value>
+  </data>
+  <data name="ChangePassErr" xml:space="preserve">
+    <value>Lỗi đổi mật khẩu</value>
+  </data>
+  <data name="ChangePassText" xml:space="preserve">
+    <value>Sử dụng mẫu này để đổi mật khẩu của bạn. Sau khi đã thay đổi, mật khẩu mới sẽ có hiệu lực vào lần đăng nhập tiếp theo của bạn.</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Đổi mật khẩu</value>
+  </data>
+  <data name="Changepassworde" xml:space="preserve">
+    <value>Lỗi đổi mật khẩu</value>
+  </data>
+  <data name="Chargeback" xml:space="preserve">
+    <value>a.	Tiền trả lại; &lt;br /&gt;
+b.	Tiền thưởng; &lt;br /&gt;
+c.	Phần doanh thu không thể thu hồi, bao gồm các giao dịch bị hủy bỏ bởi chúng tôi hoặc nhân danh chúng tôi; &lt;br /&gt;
+d.	Phí xử lý; &lt;br /&gt;
+e.	Số tiền được quy là gian lận; &lt;br /&gt;
+f.	Số tiền được trả cho khách hàng có liên quan để giải quyết một vụ tranh chấp; và
+g.	Bất cứ khoản doanh thu hoặc khấu trừ  không thể thu hồi nào khác mà Affiliate được quyền thu hồi theo Điều khoản và Điều kiện của mình.</value>
+  </data>
+  <data name="Cheque" xml:space="preserve">
+    <value>Séc</value>
+  </data>
+  <data name="ChequeAddressis" xml:space="preserve">
+    <value>Địa chỉ trên Séc là bắt buộc</value>
+  </data>
+  <data name="ChequeCityisreq" xml:space="preserve">
+    <value>Thành phố trên Séc là bắt buộc</value>
+  </data>
+  <data name="ChequeCountryis" xml:space="preserve">
+    <value>Quốc gia trên Séc là bắt buộc</value>
+  </data>
+  <data name="ChequeFullNamei" xml:space="preserve">
+    <value>Tên Đầy đủ trên Séc là bắt buộc</value>
+  </data>
+  <data name="ChequePostcode_" xml:space="preserve">
+    <value>Mã Bưu điện/Mã zip trên Séc là bắt buộc</value>
+  </data>
+  <data name="ChequeStateisre" xml:space="preserve">
+    <value>Tiểu bang trên Séc là bắt buộc</value>
+  </data>
+  <data name="CHF" xml:space="preserve">
+    <value>CHF (Franc Thụy Sĩ)</value>
+  </data>
+  <data name="Chile" xml:space="preserve">
+    <value>Chi Lê </value>
+  </data>
+  <data name="ChinaPeoplesRep" xml:space="preserve">
+    <value>Cộng hòa Nhân dân Trung Hoa </value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Thành phố</value>
+  </data>
+  <data name="CityIsRequired" xml:space="preserve">
+    <value>Thành phố là bắt buộc</value>
+  </data>
+  <data name="ClicksCount" xml:space="preserve">
+    <value>Số lần nhấp chuột</value>
+  </data>
+  <data name="Colombia" xml:space="preserve">
+    <value>Colombia</value>
+  </data>
+  <data name="Comm" xml:space="preserve">
+    <value>Hoa hồng</value>
+  </data>
+  <data name="CommCurr" xml:space="preserve">
+    <value>Số tiền hoa hồng tháng này</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="CommentsIsInvalid" xml:space="preserve">
+    <value>Nhận xét không hợp lệ</value>
+  </data>
+  <data name="Commissionableearnings" xml:space="preserve">
+    <value>5. Lợi nhuận sẽ được cộng dồn dựa theo tỷ lệ kết cấu hoa hồng của Affiliate.</value>
+  </data>
+  <data name="CommissionableEarningsAreCalculated" xml:space="preserve">
+    <value>3. Thu nhập có Tính sẵn cả Hoa hồng được tính bằng Tổng Tiền cược Thắng của Affiliate, trừ đi các khoản sau:</value>
+  </data>
+  <data name="CommPercent" xml:space="preserve">
+    <value>Phần trăm hoa hồng</value>
+  </data>
+  <data name="CompletedDate" xml:space="preserve">
+    <value>Ngày hoàn thành</value>
+  </data>
+  <data name="CompleteForm" xml:space="preserve">
+    <value>Vui lòng hoàn thành mẫu này để đăng ký tài khoản hội viên Affiliate.</value>
+  </data>
+  <data name="ComplimentaryMoney" xml:space="preserve">
+    <value>f. Tiền tặng, tiền miễn phí đặt cược và các khoản khuyến khích khác tức là những số tiền được ghi có vào tài khoản của khách hàng. Vì khách hàng không mua những khoản tiền này nên Affiliate không thể trả hoa hồng cho chúng.</value>
+  </data>
+  <data name="CongoRep" xml:space="preserve">
+    <value>Cộng hòa Congo </value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Liên hệ</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>Thông tin liên hệ</value>
+  </data>
+  <data name="ContactNumber" xml:space="preserve">
+    <value>Số liên hệ</value>
+  </data>
+  <data name="ContactTitle" xml:space="preserve">
+    <value>Vui lòng chuyển mọi nhận xét hoặc câu hỏi tới 
+           {email}
+           hoặc sử dụng mẫu dưới đây.                   
+   </value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Liên hệ</value>
+  </data>
+  <data name="ContactusComment" xml:space="preserve">
+    <value>Vui lòng liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi hoặc nhận xét nào gửi đến</value>
+  </data>
+  <data name="CookiesAreAGeneralMechanism" xml:space="preserve">
+    <value>Cookie là một cơ chế chung mà các kết nối về phía máy chủ có thể sử dụng để lưu trữ và truy xuất thông tin từ các kết nối về phía khách hàng. Cụ thể hơn, chúng là những tệp dữ liệu nhỏ được đặt trên máy tính của khách truy cập Affiliate.com từ các trang web được liên kết. Các tệp dữ liệu này chứa thông tin mà Affiliate.com sử dụng để theo dõi và ghi có cho các hội viên của mình một cách chính xác cho lưu lượng mà họ gửi tới. Việc theo dõi thông qua cookie có thể bao gồm, nhưng không giới hạn đối với các trang được truy cập cũng như ngày và giờ mà các trang cụ thể đó được truy cập.</value>
+  </data>
+  <data name="CookIslands" xml:space="preserve">
+    <value>Quần đảo Cook </value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>© {now} Sunplus™ Holdings (IOM) Limited All Rights Reserved.</value>
+  </data>
+  <data name="CostaRica" xml:space="preserve">
+    <value>Costa Rica </value>
+  </data>
+  <data name="CotedIvoireRep" xml:space="preserve">
+    <value>Bờ biển Ngà </value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Quốc gia</value>
+  </data>
+  <data name="CountryErr" xml:space="preserve">
+    <value>Vui lòng chọn quốc gia</value>
+  </data>
+  <data name="Createcustomerf" xml:space="preserve">
+    <value>Tạo khách hàng không thành công. Vui lòng thử lại</value>
+  </data>
+  <data name="Creator" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="Croatia" xml:space="preserve">
+    <value>Croatia </value>
+  </data>
+  <data name="CsdSubject" xml:space="preserve">
+    <value>Affiliate Affiliate - Tài khoản mới đang chờ chấp thuận</value>
+  </data>
+  <data name="CurrBal" xml:space="preserve">
+    <value>Số dư hiện tại</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Tiền tệ</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>Hiện tại</value>
+  </data>
+  <data name="CurrentCommissi" xml:space="preserve">
+    <value>Số tiền hoa hồng bạn đang có</value>
+  </data>
+  <data name="Cyprus" xml:space="preserve">
+    <value>Cyprus </value>
+  </data>
+  <data name="CzechRep" xml:space="preserve">
+    <value>Cộng hòa Séc </value>
+  </data>
+  <data name="DailyEarnings" xml:space="preserve">
+    <value>Thu nhập hàng ngày</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Ngày</value>
+  </data>
+  <data name="DateRequest" xml:space="preserve">
+    <value>Ngày yêu cầu</value>
+  </data>
+  <data name="Dear" xml:space="preserve">
+    <value>Kính gửi</value>
+  </data>
+  <data name="DearName" xml:space="preserve">
+    <value>Kính gửi {fname} {lname},</value>
+  </data>
+  <data name="December" xml:space="preserve">
+    <value>Tháng 12</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="DemRepofCongo" xml:space="preserve">
+    <value>Cộng hòa Dân chủ Congo </value>
+  </data>
+  <data name="Denmark" xml:space="preserve">
+    <value>Đan Mạch </value>
+  </data>
+  <data name="Deposit" xml:space="preserve">
+    <value>Tiền nạp vào</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="DetailedStas" xml:space="preserve">
+    <value>Hệ thống theo dõi số liệu thống kê chi tiết</value>
+  </data>
+  <data name="Disclaimers" xml:space="preserve">
+    <value>12. Tuyên bố miễn trừ trách nhiệm</value>
+  </data>
+  <data name="DoesNegativeBalance" xml:space="preserve">
+    <value>Số dư bằng âm sẽ chuyển tiếp không?</value>
+  </data>
+  <data name="DominicaCommonwealthof" xml:space="preserve">
+    <value>Liên bang Dominica </value>
+  </data>
+  <data name="DominicanRep" xml:space="preserve">
+    <value>Cộng hòa Dominicana </value>
+  </data>
+  <data name="Donothesitateto" xml:space="preserve">
+    <value>Vui lòng liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi hoặc nhận xét nào gửi đến Affiliates@Affiliate.com.</value>
+  </data>
+  <data name="DontSettleFor2ndBest" xml:space="preserve">
+    <value>Đừng bao giờ thỏa mãn với hiện tại, hãy nhanh chóng kiếm 50% hoa hồng từ khách hàng của bạn. Trong khi các đối thủ cạnh tranh chỉ cung cấp 25% hoa hồng, thì Affiliate chúng tôi đã nhận thấy sự nỗ lực và tầm quan trọng của hội viên, nên đã tiên phong đi đầu nâng tỷ lệ hoa hồng lên tới 50%.</value>
+  </data>
+  <data name="Doyouhaveanyque" xml:space="preserve">
+    <value>Bạn có câu hỏi nào không?</value>
+  </data>
+  <data name="DoYouRewardTheFirstAffiliate" xml:space="preserve">
+    <value>Bạn có tặng thưởng cho hội viên đầu tiên hay hội viên cuối cùng vì đã giới thiệu khách hàng không?</value>
+  </data>
+  <data name="Duetosecurityr" xml:space="preserve">
+    <value>Vì lý do bảo mật, chúng tôi phải cung cấp cho bạn mật khẩu mới (bạn có thể thay đổi mật khẩu này vào bất kỳ lúc nào sau đó).</value>
+  </data>
+  <data name="Duringtheterm" xml:space="preserve">
+    <value>3. Theo điều khoản của thỏa thuận này, bạn có thể được giao phó một số thông tin mật liên quan đến công việc, hoạt động hay công nghệ cơ bản trong chương trình hội viên của chúng tôi (chẳng hạn như phí giới thiệu mà bạn kiếm được theo chương trình). Bạn đồng ý không tiết lộ hay sử dụng thông tin mật cho người thứ ba hoặc các bên khác trừ khi bạn có được sự đồng ý từ trước bằng văn bản và rằng bạn sẽ chỉ sử dụng thông tin mật cho những mục đích cần thiết nhằm xúc tiến các mục đích của thỏa thuận này. Nghĩa vụ của bạn liên quan đến thông tin mật sẽ là điều quyết định việc chúng tôi có chấm dứt thỏa thuận này hay không.</value>
+  </data>
+  <data name="Earn30" xml:space="preserve">
+    <value>Kiếm 50% từ tiền cược thực thua của khách hàng</value>
+  </data>
+  <data name="Ecuador" xml:space="preserve">
+    <value>Ecuador </value>
+  </data>
+  <data name="Egypt" xml:space="preserve">
+    <value>Ai Cập </value>
+  </data>
+  <data name="ElSalvador" xml:space="preserve">
+    <value>El Salvador </value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Địa chỉ email</value>
+  </data>
+  <data name="Email1" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Emailaddressest" xml:space="preserve">
+    <value>Địa chỉ email mà bạn nhập không khớp.</value>
+  </data>
+  <data name="EmailAddressIsInvalid" xml:space="preserve">
+    <value>Địa chỉ email không hợp lệ</value>
+  </data>
+  <data name="EmailAddressIsRequired" xml:space="preserve">
+    <value>Địa chỉ email là bắt buộc</value>
+  </data>
+  <data name="EmailInvalid" xml:space="preserve">
+    <value>Email bạn sử dụng không hợp lệ, vui lòng thử lại.</value>
+  </data>
+  <data name="EmailMatch" xml:space="preserve">
+    <value>Địa chỉ email mà bạn nhập không khớp.</value>
+  </data>
+  <data name="Eritrea" xml:space="preserve">
+    <value>Eritrea </value>
+  </data>
+  <data name="Err1" xml:space="preserve">
+    <value>Chiết khấu sai</value>
+  </data>
+  <data name="Err100" xml:space="preserve">
+    <value>Xin lỗi, không thể tạo người đại diện</value>
+  </data>
+  <data name="Err1001" xml:space="preserve">
+    <value>Thông tin hội viên không hợp lệ</value>
+  </data>
+  <data name="Err1002" xml:space="preserve">
+    <value>Địa chỉ email mà bạn nhập đã được sử dụng để đăng ký tài khoản. Vui lòng chọn địa chỉ khác!</value>
+  </data>
+  <data name="Err1003" xml:space="preserve">
+    <value>Tên người dùng Affiliate không hợp lệ</value>
+  </data>
+  <data name="Err1004" xml:space="preserve">
+    <value>Thông tin người dùng không hợp lệ. Quá trình cập nhật không thành công</value>
+  </data>
+  <data name="Err1005" xml:space="preserve">
+    <value>Xảy ra lỗi. Quá trình cập nhật không thành công</value>
+  </data>
+  <data name="Err101" xml:space="preserve">
+    <value>Tên người dùng này không khả dụng</value>
+  </data>
+  <data name="Err103" xml:space="preserve">
+    <value>Xin lỗi, đặt cược tối thiểu phải nhỏ hơn đặt cược tối đa và đặt cược tối đa phải nhỏ hơn đặt cược tối đa cho mỗi trận</value>
+  </data>
+  <data name="Err104" xml:space="preserve">
+    <value>Xin lỗi, cập nhật tín dụng không thành công. Bạn đã vượt quá số tiền trong thẻ tín dụng chính của mình</value>
+  </data>
+  <data name="Err105" xml:space="preserve">
+    <value>Xin lỗi, đặt cược tối thiểu phải bằng hoặc lớn hơn đặt cược tối thiếu của người đại diện chính</value>
+  </data>
+  <data name="Err111" xml:space="preserve">
+    <value>Tạo khách hàng không thành công. Vui lòng thử lại</value>
+  </data>
+  <data name="Err116" xml:space="preserve">
+    <value>Bạn không được phép tạo/chỉnh sửa thông tin này</value>
+  </data>
+  <data name="Err3001" xml:space="preserve">
+    <value>Bạn có một yêu cầu đang chờ xử lý. Để tạo yêu cầu mới, vui lòng hủy yêu cầu đang chờ hoặc đợi cho đến khi việc xử lý được hoàn tất.</value>
+  </data>
+  <data name="Err3002" xml:space="preserve">
+    <value>Mã roleID không hợp lệ.</value>
+  </data>
+  <data name="Err3003" xml:space="preserve">
+    <value>Xin lỗi, hội viên này không có đủ tiền để rút.</value>
+  </data>
+  <data name="Err3004" xml:space="preserve">
+    <value>Tài khoản số dư không hợp lệ hoặc loại tiền tệ hay phương thức thanh toán không được hỗ trợ.</value>
+  </data>
+  <data name="Err3006" xml:space="preserve">
+    <value>Chèn giao dịch không thành công.</value>
+  </data>
+  <data name="Err3007" xml:space="preserve">
+    <value>Xin lỗi, số tiền không hợp lệ.</value>
+  </data>
+  <data name="Err4001" xml:space="preserve">
+    <value>Mã khách hàng không hợp lệ.</value>
+  </data>
+  <data name="Err4002" xml:space="preserve">
+    <value>Giao dịch này không phải là giao dịch rút tiền.</value>
+  </data>
+  <data name="Err4003" xml:space="preserve">
+    <value>Giao dịch này đã bị hủy từ trước.</value>
+  </data>
+  <data name="Err4004" xml:space="preserve">
+    <value>Tài khoản số dư không hợp lệ hoặc loại tiền tệ không được hỗ trợ.</value>
+  </data>
+  <data name="Err4005" xml:space="preserve">
+    <value>Giao dịch này đã bị hủy từ trước.</value>
+  </data>
+  <data name="Err999" xml:space="preserve">
+    <value>Tạo thông tin hội viên không thành công. Vui lòng thử lại</value>
+  </data>
+  <data name="ErrAuthorized" xml:space="preserve">
+    <value>Bạn không được phép sử dụng chức năng này</value>
+  </data>
+  <data name="ErrBalance" xml:space="preserve">
+    <value>Số tiền yêu cầu phải nhỏ hơn số dư hiện tại</value>
+  </data>
+  <data name="ErrBalanceForward" xml:space="preserve">
+    <value>Số tiền yêu cầu phải nhỏ hơn hoặc bằng số dư được chuyển tiếp</value>
+  </data>
+  <data name="errContactNumberEmpty" xml:space="preserve">
+    <value>Số liên hệ trống. Vui lòng kiểm tra!</value>
+  </data>
+  <data name="ErrDefault" xml:space="preserve">
+    <value>Lỗi không xác định!</value>
+  </data>
+  <data name="errDepositDBConnectFailed" xml:space="preserve">
+    <value>Đã xảy ra lỗi khi lấy thông tin người chơi Affiliate. Vui lòng liên hệ với quản trị viên của bạn!</value>
+  </data>
+  <data name="ErrEmailInvalid" xml:space="preserve">
+    <value>Địa chỉ email không hợp lệ</value>
+  </data>
+  <data name="ErrEmailRequire" xml:space="preserve">
+    <value>Địa chỉ email là bắt buộc</value>
+  </data>
+  <data name="errExistAccount" xml:space="preserve">
+    <value>Người dùng đã có tài khoản IBC</value>
+  </data>
+  <data name="ErrGender" xml:space="preserve">
+    <value>Giới tính trống. Vui lòng kiểm tra!</value>
+  </data>
+  <data name="ErrMinAmt" xml:space="preserve">
+    <value>Số tiền yêu cầu phải lớn hơn hoặc bằng số tiền rút tối thiểu</value>
+  </data>
+  <data name="errMobileNumberEmpty" xml:space="preserve">
+    <value>Số di động trống. Vui lòng kiểm tra!  </value>
+  </data>
+  <data name="ErrmsgEmailClose" xml:space="preserve">
+    <value>Địa chỉ email này đang được sử dụng bởi một hội viên đã không còn hoạt động hoặc đã bị đóng tài khoản. Vui lòng thử lại hoặc&lt;a href="ContactUs.aspx" class='err-msg'&gt;liên hệ với chúng tôi&lt;/a&gt;.</value>
+  </data>
+  <data name="ErrmsgEmailNotApprove" xml:space="preserve">
+    <value>Địa chỉ email này đang được sử dụng bởi một hội viên đã không còn hoạt động hoặc chưa được chấp thuận. Vui lòng thử lại hoặc&lt;a href="ContactUs.aspx" class='err-msg'&gt;liên hệ với chúng tôi&lt;/a&gt;.</value>
+  </data>
+  <data name="ErrmsgEntryPassword" xml:space="preserve">
+    <value>Vui lòng nhập mật khẩu.</value>
+  </data>
+  <data name="ErrmsgEntryUsername" xml:space="preserve">
+    <value>Vui lòng nhập tên người dùng.</value>
+  </data>
+  <data name="ErrmsgEntryValidCode" xml:space="preserve">
+    <value>Vui lòng nhập mã xác thực.</value>
+  </data>
+  <data name="ErrMsgForgetPwFail" xml:space="preserve">
+    <value>Thông tin để đặt lại mật khẩu không hợp lệ, vui lòng &lt;a href='ForgetPass.aspx'&gt;thử lại&lt;/a&gt;.</value>
+  </data>
+  <data name="ErrmsgNotExistsEmail" xml:space="preserve">
+    <value>Bạn đã không nhập địa chỉ email mà chúng tôi ghi nhận. Vui lòng thử lại hoặc&lt;a href="ContactUs.aspx" class='err-msg'&gt;liên hệ với chúng tôi&lt;/a&gt;.</value>
+  </data>
+  <data name="ErroroccursUpda" xml:space="preserve">
+    <value>Xảy ra lỗi. Quá trình cập nhật không thành công</value>
+  </data>
+  <data name="Errorofsendingm" xml:space="preserve">
+    <value>Lỗi gửi thư</value>
+  </data>
+  <data name="Errorofsendmail" xml:space="preserve">
+    <value>Lỗi gửi thư</value>
+  </data>
+  <data name="ErrPaymentMethod" xml:space="preserve">
+    <value>Rất tiếc! Thanh toán qua {method} không hoạt động. Hiện tại, chỉ phương thức 'Tài khoản người chơi Affiliate' được hỗ trợ. Vui lòng &lt;a href='MyAccount.aspx?ispay=1#payment'&gt;nhấp vào đây&lt;/a&gt; để thực hiện thay đổi.</value>
+  </data>
+  <data name="errSecQuestionEmpty" xml:space="preserve">
+    <value>Câu hỏi bảo mật trống. Vui lòng kiểm tra!</value>
+  </data>
+  <data name="ErrSendMail" xml:space="preserve">
+    <value>Lỗi gửi thư</value>
+  </data>
+  <data name="errUserNotFound" xml:space="preserve">
+    <value>Không tìm thấy người dùng</value>
+  </data>
+  <data name="errYourAnswer" xml:space="preserve">
+    <value>Câu trả lời của bạn trống. Vui lòng kiểm tra!</value>
+  </data>
+  <data name="Estonia" xml:space="preserve">
+    <value>Estonia </value>
+  </data>
+  <data name="Ethiopia" xml:space="preserve">
+    <value>Ethiopia </value>
+  </data>
+  <data name="EUR" xml:space="preserve">
+    <value>EUR (Euro)</value>
+  </data>
+  <data name="ExcellentPlayers" xml:space="preserve">
+    <value>Tỷ lệ giữ chân và chuyển nhượng người chơi xuất sắc</value>
+  </data>
+  <data name="ExpectList" xml:space="preserve">
+    <value>&lt;ul&gt;
+       &lt;li&gt;Kiếm tiền từ 30% từ thua lỗ thực của người chơi &lt;/li&gt;
+       &lt;li&gt;Hệ thống theo dõi số liệu thống kê chi tiết&lt;/li&gt;
+       &lt;li&gt;Tỷ lệ giữ chân và chuyển nhượng người chơi xuất sắc&lt;/li&gt;
+       &lt;li&gt;Thanh toán hàng tháng nhanh chóng&lt;/li&gt;
+       &lt;li&gt;Phương thức thanh toán đa dạng&lt;/li&gt;
+       &lt;li&gt;Hỗ trợ trực tuyến 24/7 cho bạn và người chơi của bạn&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="ExpectTitle" xml:space="preserve">
+    <value>Chúng tôi mang lại những gì?</value>
+  </data>
+  <data name="Faqs" xml:space="preserve">
+    <value>Câu hỏi thường gặp</value>
+  </data>
+  <data name="February" xml:space="preserve">
+    <value>Tháng 2</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Nữ</value>
+  </data>
+  <data name="Fiji" xml:space="preserve">
+    <value>Fiji </value>
+  </data>
+  <data name="Finland" xml:space="preserve">
+    <value>Phần Lan </value>
+  </data>
+  <data name="FirstNameIsRequired" xml:space="preserve">
+    <value>Tên là bắt buộc</value>
+  </data>
+  <data name="Flash" xml:space="preserve">
+    <value>Flash  </value>
+  </data>
+  <data name="FName" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="Football" xml:space="preserve">
+    <value>Bóng đá</value>
+  </data>
+  <data name="For" xml:space="preserve">
+    <value>cho</value>
+  </data>
+  <data name="Foranyreasonyou" xml:space="preserve">
+    <value>Vì bất kỳ lý do gì mà bạn không nhận được email, vui lòng &lt;a href='ContactUs.aspx'&gt;liên hệ với chúng tôi&lt;/a&gt; và chúng tôi sẽ rất sẵn lòng được trợ giúp bạn.  </value>
+  </data>
+  <data name="ForgetPassword" xml:space="preserve">
+    <value>Bạn quên mật khẩu?</value>
+  </data>
+  <data name="France" xml:space="preserve">
+    <value>Pháp</value>
+  </data>
+  <data name="FrenchPolynesia" xml:space="preserve">
+    <value>Polynesia thuộc Pháp </value>
+  </data>
+  <data name="FrequentlyAskedQuestions" xml:space="preserve">
+    <value>Câu hỏi thường gặp</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Từ</value>
+  </data>
+  <data name="Fullname" xml:space="preserve">
+    <value>Tên đầy đủ</value>
+  </data>
+  <data name="Gabon" xml:space="preserve">
+    <value>Gabon </value>
+  </data>
+  <data name="GBP" xml:space="preserve">
+    <value>GBP (Bảng Anh)</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>Tổng quan</value>
+  </data>
+  <data name="GenerateLink" xml:space="preserve">
+    <value>Tạo liên kết</value>
+  </data>
+  <data name="Georgia" xml:space="preserve">
+    <value>Georgia </value>
+  </data>
+  <data name="Germany" xml:space="preserve">
+    <value>Đức </value>
+  </data>
+  <data name="GettingPaid" xml:space="preserve">
+    <value>Rút tiền hoa hồng</value>
+  </data>
+  <data name="Ghana" xml:space="preserve">
+    <value>Ghana </value>
+  </data>
+  <data name="Gibraltar" xml:space="preserve">
+    <value>Gibraltar </value>
+  </data>
+  <data name="GoverningLawandArbitration" xml:space="preserve">
+    <value>15. Luật và Cơ chế trọng tài chi phối</value>
+  </data>
+  <data name="Greece" xml:space="preserve">
+    <value>Hy Lạp </value>
+  </data>
+  <data name="Grenada" xml:space="preserve">
+    <value>Grenada </value>
+  </data>
+  <data name="GrossEarnings" xml:space="preserve">
+    <value>Tổng thu nhập</value>
+  </data>
+  <data name="Guatemala" xml:space="preserve">
+    <value>Guatemala </value>
+  </data>
+  <data name="Guinea" xml:space="preserve">
+    <value>Guinea </value>
+  </data>
+  <data name="Guyana" xml:space="preserve">
+    <value>Guyana </value>
+  </data>
+  <data name="Haiti" xml:space="preserve">
+    <value>Haiti </value>
+  </data>
+  <data name="Haveagreatday" xml:space="preserve">
+    <value>Chúc bạn một ngày tốt lành!</value>
+  </data>
+  <data name="Haveproblemwhil" xml:space="preserve">
+    <value>Gặp sự cố khi gửi email. Vui lòng liên hệ với chúng tôi sau.</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
+  <data name="Honduras" xml:space="preserve">
+    <value>Honduras </value>
+  </data>
+  <data name="HongKong" xml:space="preserve">
+    <value>Hồng Kông </value>
+  </data>
+  <data name="hotnew" xml:space="preserve">
+    <value>Đặt cược trực tuyến, đặt cược thể thao và đặt cược bóng đá tại Affiliate.com</value>
+  </data>
+  <data name="HotNews" xml:space="preserve">
+    <value>Tin nóng</value>
+  </data>
+  <data name="HowAffilliateTitle" xml:space="preserve">
+    <value>Cách thức hoạt động?</value>
+  </data>
+  <data name="HowAffilliateWork" xml:space="preserve">
+    <value>Là hội viên của Affiliate.com, tất cả những gì bạn cần làm là dẫn khách truy cập của bạn tới trang web của chúng tôi sử dụng đoạn mã theo dõi đặc biệt mà bạn có thể đặt vào trang web của mình</value>
+  </data>
+  <data name="HowCanICheck" xml:space="preserve">
+    <value>Làm thế nào tôi có thể kiểm tra số tiền mình đã kiếm được?</value>
+  </data>
+  <data name="HowDoesItWork" xml:space="preserve">
+    <value>Cách thức hoạt động? Ví dụ:</value>
+  </data>
+  <data name="HowDoesTheSystem" xml:space="preserve">
+    <value>Hệ thống theo dõi người chơi của tôi như thế nào?</value>
+  </data>
+  <data name="HowDoISignUp" xml:space="preserve">
+    <value>Tôi làm cách nào để đăng ký chương trình hội viên Affiliate?</value>
+  </data>
+  <data name="Howeveryoucanvisit" xml:space="preserve">
+    <value>Tuy nhiên, bạn có thể truy cập {url} để thay đổi mật khẩu bất cứ lúc nào</value>
+  </data>
+  <data name="HowMuchYouEarn" xml:space="preserve">
+    <value>Số tiền bạn kiếm được tùy thuộc vào lượng lưu lượng bạn có thể gửi tới từ trang web của mình. Công việc của chúng tôi là hướng dẫn họ qua quá trình đăng ký, để họ thực hiện lần gửi tiền đầu tiên và duy trì việc hợp tác của họ với những khoản tiền thưởng và tiền tặng hấp dẫn. </value>
+  </data>
+  <data name="HowOftenCanIRequest" xml:space="preserve">
+    <value>Tôi có thể bao lâu rút tiền một lần?</value>
+  </data>
+  <data name="HowToBet" xml:space="preserve">
+    <value>Cách đặt cược</value>
+  </data>
+  <data name="Hungary" xml:space="preserve">
+    <value>Hungary </value>
+  </data>
+  <data name="IagreetotheTerm" xml:space="preserve">
+    <value>Tôi đồng ý với các điều khoản &amp; điều kiện của Affiliate Affiliate.</value>
+  </data>
+  <data name="Iceland" xml:space="preserve">
+    <value>Iceland </value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Ifwecontinue" xml:space="preserve">
+    <value>f. Nếu chúng tôi tiếp tục cho phép hoạt động (tạo doanh thu) từ các khách hàng sau khi đã chấm dứt thì điều đó sẽ không cấu thành việc tiếp tục hay gia hạn cho thỏa thuận này hay sự từ bỏ việc chấm dứt.</value>
+  </data>
+  <data name="Ifyouareexperie" xml:space="preserve">
+    <value>Nếu bạn gặp phải khó khăn nào khác, vui lòng Liên hệ với chúng tôi. </value>
+  </data>
+  <data name="IfYouDecide" xml:space="preserve">
+    <value>NẾU BẠN QUYẾT ĐỊNH KHÔNG CHẤP NHẬN TẤT CẢ CÁC ĐIỀU KHOẢN VÀ ĐIỀU KIỆN CỦA THỎA THUẬN NÀY, VUI LÒNG KHÔNG TẢI XUỐNG ĐOẠN MÃ BIỂU NGỮ, ĐOẠN MÃ LIÊN KẾT VĂN BẢN, BẢN SAO QUẢNG CÁO HAY BẤT KỲ THÔNG TIN NÀO LIÊN QUAN ĐẾN Affiliate.</value>
+  </data>
+  <data name="Ifyouhaveanyque" xml:space="preserve">
+    <value>Nếu bạn có bất kỳ câu hỏi nào và yêu cầu bất kỳ trợ giúp nào, vui lòng liên hệ với chúng tôi.</value>
+  </data>
+  <data name="IfYouHaveAnyQuestions" xml:space="preserve">
+    <value>Nếu bạn có thắc mắc gì về cách tính hoa hồng trên,vui lòng gửi thư đến {mail} cho chúng tôi.</value>
+  </data>
+  <data name="Ifyouhavefailed" xml:space="preserve">
+    <value>d. Nếu bạn chưa thực hiện các nghĩa vụ và trách nhiệm của mình, chúng tôi sẽ không thanh toán cho bạn phí giới thiệu mà bạn sẽ được hưởng khi chấm dứt.</value>
+  </data>
+  <data name="IfYourTotal" xml:space="preserve">
+    <value>Nếu tổng doanh thu thực của bạn cho tháng 1 là $3.500 thì bạn sẽ kiếm được 30% tổng doanh thu thực của tháng đó. </value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="ImageType" xml:space="preserve">
+    <value>Thể loại</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>Quan trọng</value>
+  </data>
+  <data name="Indemnity" xml:space="preserve">
+    <value>11. Tiền bồi thường</value>
+  </data>
+  <data name="IndependentInvestigation" xml:space="preserve">
+    <value>14. Điều tra độc lập</value>
+  </data>
+  <data name="India" xml:space="preserve">
+    <value>Ấn Độ </value>
+  </data>
+  <data name="Indonesia" xml:space="preserve">
+    <value>Indonesia </value>
+  </data>
+  <data name="InputRequestAmo" xml:space="preserve">
+    <value>Nhập số tiền yêu cầu (USD)</value>
+  </data>
+  <data name="Inserttransacti" xml:space="preserve">
+    <value>Chèn giao dịch không thành công.</value>
+  </data>
+  <data name="Intheeventoftermination" xml:space="preserve">
+    <value>2. Trong trường hợp chấm dứt thỏa thuận này</value>
+  </data>
+  <data name="Invalidaffiliat" xml:space="preserve">
+    <value>Thông tin hội viên không hợp lệ</value>
+  </data>
+  <data name="Invalidbalancea" xml:space="preserve">
+    <value>Tài khoản số dư không hợp lệ hoặc loại tiền tệ hay phương thức thanh toán không được hỗ trợ.</value>
+  </data>
+  <data name="InvalidCustID" xml:space="preserve">
+    <value>Mã khách hàng không hợp lệ.</value>
+  </data>
+  <data name="Invalidrequesta" xml:space="preserve">
+    <value>Số tiền yêu cầu không hợp lệ! Số tiền phải trong khoảng </value>
+  </data>
+  <data name="InvalidRoleID" xml:space="preserve">
+    <value>Mã roleId không hợp lệ.</value>
+  </data>
+  <data name="Invaliduserinfo" xml:space="preserve">
+    <value>Thông tin người dùng không hợp lệ. Quá trình cập nhật không thành công</value>
+  </data>
+  <data name="INWITNESSWHEREOF" xml:space="preserve">
+    <value>16. TRƯỚC SỰ CHỨNG KIẾN CỦA CÁC BÊN</value>
+  </data>
+  <data name="IP" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="Iran" xml:space="preserve">
+    <value>Iran </value>
+  </data>
+  <data name="Iraq" xml:space="preserve">
+    <value>Iraq </value>
+  </data>
+  <data name="Ireland" xml:space="preserve">
+    <value>Ireland </value>
+  </data>
+  <data name="IsInvalid" xml:space="preserve">
+    <value>không hợp lệ</value>
+  </data>
+  <data name="Israel" xml:space="preserve">
+    <value>Israel </value>
+  </data>
+  <data name="IsRequired" xml:space="preserve">
+    <value>là bắt buộc</value>
+  </data>
+  <data name="Italy" xml:space="preserve">
+    <value>Ý </value>
+  </data>
+  <data name="Itistheaffiliates" xml:space="preserve">
+    <value>4. Hội viên có trách nhiệm làm theo đúng thủ tục gắn thẻ và liên kết để đảm bảo theo dõi và thanh toán cho khách hàng mới.</value>
+  </data>
+  <data name="Jamaica" xml:space="preserve">
+    <value>Jamaica </value>
+  </data>
+  <data name="January" xml:space="preserve">
+    <value>Tháng 1</value>
+  </data>
+  <data name="Japan" xml:space="preserve">
+    <value>Nhật Bản </value>
+  </data>
+  <data name="JoinThe12BetAffiliate" xml:space="preserve">
+    <value>Tham gia chương trình hội viên Affiliate</value>
+  </data>
+  <data name="Jordan" xml:space="preserve">
+    <value>Jordan </value>
+  </data>
+  <data name="July" xml:space="preserve">
+    <value>Tháng 7</value>
+  </data>
+  <data name="June" xml:space="preserve">
+    <value>Tháng 6</value>
+  </data>
+  <data name="Kenya" xml:space="preserve">
+    <value>Kenya </value>
+  </data>
+  <data name="KoreaRep" xml:space="preserve">
+    <value>Hàn Quốc </value>
+  </data>
+  <data name="Kuwait" xml:space="preserve">
+    <value>Kuwait </value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Ngôn ngữ</value>
+  </data>
+  <data name="LaoPeoplesDemRep" xml:space="preserve">
+    <value>Cộng hòa dân chủ nhân dân Lào </value>
+  </data>
+  <data name="Last6Month" xml:space="preserve">
+    <value>Thu nhập 6 tháng qua</value>
+  </data>
+  <data name="Last6MonthsEarn" xml:space="preserve">
+    <value>Thu nhập 6 tháng qua</value>
+  </data>
+  <data name="LastNameIsRequired" xml:space="preserve">
+    <value>Họ là bắt buộc</value>
+  </data>
+  <data name="Latvia" xml:space="preserve">
+    <value>Latvia </value>
+  </data>
+  <data name="lblSecureQuestion" xml:space="preserve">
+    <value>Câu hỏi bảo mật</value>
+  </data>
+  <data name="lblYourAnswer" xml:space="preserve">
+    <value>Câu trả lời của bạn</value>
+  </data>
+  <data name="LegalResponsibility" xml:space="preserve">
+    <value>7. Trách nhiệm pháp lý</value>
+  </data>
+  <data name="Lesotho" xml:space="preserve">
+    <value>Lesotho </value>
+  </data>
+  <data name="Liechtenstein" xml:space="preserve">
+    <value>Liechtenstein </value>
+  </data>
+  <data name="LimitationofLiability" xml:space="preserve">
+    <value>13. Phạm vi trách nhiệm</value>
+  </data>
+  <data name="LimitedLicense" xml:space="preserve">
+    <value>6. Giấy phép hạn chế</value>
+  </data>
+  <data name="Lithuania" xml:space="preserve">
+    <value>Lithuania</value>
+  </data>
+  <data name="LName" xml:space="preserve">
+    <value>Họ </value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="Luxembourg" xml:space="preserve">
+    <value>Luxembourg </value>
+  </data>
+  <data name="Macao" xml:space="preserve">
+    <value>Macao </value>
+  </data>
+  <data name="Macedonia" xml:space="preserve">
+    <value>Macedonia </value>
+  </data>
+  <data name="Madagascar" xml:space="preserve">
+    <value>Madagascar </value>
+  </data>
+  <data name="MailingInfor" xml:space="preserve">
+    <value>Thông tin gửi thư</value>
+  </data>
+  <data name="MakeYourTrafficDay" xml:space="preserve">
+    <value>KIẾM TIỀN TỪ LƯU LƯỢNG CỦA BẠN!</value>
+  </data>
+  <data name="MakeYourTrafficDayContent" xml:space="preserve">
+    <value>     Nhận tiền hoa hồng suốt đời cho mỗi người chơi mà bạn giới thiệu tới Affiliate. Hưởng tỷ lệ giữ chân và chuyển nhượng cầu thủ tốt nhất trên thị trường hiện nay nhờ vào sự phát triển không ngừng lợi thế cạnh tranh của chúng tôi. </value>
+  </data>
+  <data name="Malawi" xml:space="preserve">
+    <value>Malawi </value>
+  </data>
+  <data name="Malaysia" xml:space="preserve">
+    <value>Malaysia </value>
+  </data>
+  <data name="Maldives" xml:space="preserve">
+    <value>Maldives </value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Nam</value>
+  </data>
+  <data name="Mali" xml:space="preserve">
+    <value>Mali </value>
+  </data>
+  <data name="Malta" xml:space="preserve">
+    <value>Malta </value>
+  </data>
+  <data name="ManageAccount" xml:space="preserve">
+    <value>Quản lý tài khoản</value>
+  </data>
+  <data name="March" xml:space="preserve">
+    <value>Tháng 3</value>
+  </data>
+  <data name="MarketingTracking" xml:space="preserve">
+    <value>Tiếp thị &amp;amp; Theo dõi</value>
+  </data>
+  <data name="Mauritania" xml:space="preserve">
+    <value>Mauritania </value>
+  </data>
+  <data name="Mauritius" xml:space="preserve">
+    <value>Mauritius </value>
+  </data>
+  <data name="May" xml:space="preserve">
+    <value>Tháng 5</value>
+  </data>
+  <data name="Media" xml:space="preserve">
+    <value>Thư viện media</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Tin nhắn</value>
+  </data>
+  <data name="MessageHistory" xml:space="preserve">
+    <value>Nhật ký tin nhắn</value>
+  </data>
+  <data name="MessageSent" xml:space="preserve">
+    <value>Đã gửi tin nhắn</value>
+  </data>
+  <data name="MessageSentFail" xml:space="preserve">
+    <value>Gửi tin nhắn không thành công</value>
+  </data>
+  <data name="MessageSentFailContent" xml:space="preserve">
+    <value>Gặp sự cố khi gửi email. {br} Vui lòng liên hệ với chúng tôi sau.</value>
+  </data>
+  <data name="MessageSentReview" xml:space="preserve">
+    <value>       Cảm ơn bạn đã liên hệ với chúng tôi. {br}
+       Tin nhắn của bạn đã được gửi. Chúng tôi sẽ trả lời yêu cầu của bạn trong thời gian sớm nhất có thể. {br}{br}
+       Chúc bạn một ngày tốt lành! {br}{br}
+       Trân trọng, {br}{br}
+       Nhóm hỗ trợ hội viên Affiliate
+   </value>
+  </data>
+  <data name="Mexico" xml:space="preserve">
+    <value>Mexico </value>
+  </data>
+  <data name="MinWithdraw" xml:space="preserve">
+    <value>Số tiền rút tối thiểu</value>
+  </data>
+  <data name="Miscellaneous" xml:space="preserve">
+    <value>8. Thông tin khác</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Số di động</value>
+  </data>
+  <data name="Moldova" xml:space="preserve">
+    <value>Moldova </value>
+  </data>
+  <data name="MoneyBooker" xml:space="preserve">
+    <value>Moneybookers</value>
+  </data>
+  <data name="MoneybookersEma" xml:space="preserve">
+    <value>Email Moneybookers không hợp lệ</value>
+  </data>
+  <data name="Mongolia" xml:space="preserve">
+    <value>Mông Cổ </value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Tháng</value>
+  </data>
+  <data name="MonthlyWinlost" xml:space="preserve">
+    <value>Thắng/thua hàng tháng</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>Thông tin thêm</value>
+  </data>
+  <data name="Morocco" xml:space="preserve">
+    <value>Ma rốc </value>
+  </data>
+  <data name="Msgkickout" xml:space="preserve">
+    <value>Đã có phiên khác đăng nhập hoặc phiên của bạn đã hết hạn. Buộc phải đăng xuất!</value>
+  </data>
+  <data name="MyAcc" xml:space="preserve">
+    <value>Thông tin cá nhân</value>
+  </data>
+  <data name="Myanmar" xml:space="preserve">
+    <value>Myanmar </value>
+  </data>
+  <data name="MyHome" xml:space="preserve">
+    <value>Trang chủ của tôi</value>
+  </data>
+  <data name="MYR" xml:space="preserve">
+    <value>MYR (Đồng Ringgit của Malaysia)</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="NameIsInvalid" xml:space="preserve">
+    <value>Tên không hợp lệ</value>
+  </data>
+  <data name="Namibia" xml:space="preserve">
+    <value>Namibia </value>
+  </data>
+  <data name="Nauru" xml:space="preserve">
+    <value>Nauru </value>
+  </data>
+  <data name="NegativeBalance" xml:space="preserve">
+    <value>Số dư âm</value>
+  </data>
+  <data name="Negativeearningsarecarried" xml:space="preserve">
+    <value>6. Thu nhập âm sẽ được chuyển tiếp sang tháng tiếp theo. Nếu hội viên kết thúc tháng với số dư dương thì thanh toán sẽ được thực hiện nếu nó đáp ứng được yêu cầu tối thiểu và tiền hoa hồng sẽ được trả theo số dư dương.</value>
+  </data>
+  <data name="Nepal" xml:space="preserve">
+    <value>Nepal </value>
+  </data>
+  <data name="NetEarnings" xml:space="preserve">
+    <value>Thu nhập thực có</value>
+  </data>
+  <data name="Neteller" xml:space="preserve">
+    <value>Neteller</value>
+  </data>
+  <data name="NetellerAccount" xml:space="preserve">
+    <value>Mã tài khoản Neteller là bắt buộc</value>
+  </data>
+  <data name="Netherlands" xml:space="preserve">
+    <value>Hà Lan </value>
+  </data>
+  <data name="NewCaledonia" xml:space="preserve">
+    <value>New Caledonia </value>
+  </data>
+  <data name="NewPass" xml:space="preserve">
+    <value>Mật khẩu mới</value>
+  </data>
+  <data name="NewPasswordisre" xml:space="preserve">
+    <value>Mật khẩu mới là bắt buộc</value>
+  </data>
+  <data name="NewSignup" xml:space="preserve">
+    <value>Đăng ký mới</value>
+  </data>
+  <data name="NewTrackingCode" xml:space="preserve">
+    <value>Tạo mới</value>
+  </data>
+  <data name="NewZealand" xml:space="preserve">
+    <value>New Zealand </value>
+  </data>
+  <data name="Niger" xml:space="preserve">
+    <value>Niger </value>
+  </data>
+  <data name="Nigeria" xml:space="preserve">
+    <value>Nigeria </value>
+  </data>
+  <data name="NoInfo" xml:space="preserve">
+    <value>Không có thông tin nào</value>
+  </data>
+  <data name="NonDeposit" xml:space="preserve">
+    <value>Chỉ cho phép tài khoản không có tiền gửi</value>
+  </data>
+  <data name="none" xml:space="preserve">
+    <value>Không tên</value>
+  </data>
+  <data name="NonWaiver" xml:space="preserve">
+    <value>2. Không khước từ</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Bình thường</value>
+  </data>
+  <data name="Norway" xml:space="preserve">
+    <value>Na Uy </value>
+  </data>
+  <data name="November" xml:space="preserve">
+    <value>Tháng 11</value>
+  </data>
+  <data name="October" xml:space="preserve">
+    <value>Tháng 10</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>Của</value>
+  </data>
+  <data name="OldPass" xml:space="preserve">
+    <value>Mật khẩu cũ</value>
+  </data>
+  <data name="OldPassandNewPass" xml:space="preserve">
+    <value>Mật khẩu cũ và mật khẩu mới là bắt buộc!</value>
+  </data>
+  <data name="OldPassErr" xml:space="preserve">
+    <value>Mật khẩu cũ không đúng</value>
+  </data>
+  <data name="Oldpasswordandn" xml:space="preserve">
+    <value>Mật khẩu cũ và mật khẩu mới là bắt buộc!</value>
+  </data>
+  <data name="OldPasswordisre" xml:space="preserve">
+    <value>Mật khẩu cũ là bắt buộc</value>
+  </data>
+  <data name="Oman" xml:space="preserve">
+    <value>Oman </value>
+  </data>
+  <data name="OneTwoBETassumeownership" xml:space="preserve">
+    <value>1. Affiliate thừa nhận quyền sở hữu của khách hàng tại thời điểm thực hiện hợp đồng đầu tiên với khách hàng. Bạn, với tư cách là hội viên, có vai trò là người đại diện giới thiệu cho Affiliate. Chúng tôi bảo lưu quyền từ chối khách hàng (hoặc đóng tài khoản của khách hàng) nếu cần thiết để tuân theo mọi yêu cầu mà chúng tôi có thể thiết lập theo định kỳ.</value>
+  </data>
+  <data name="OneTwoBETwillpayout" xml:space="preserve">
+    <value>1. Affiliate sẽ căn cứ vào lợi nhuận thực mà bạn kiếm được từ thành viên tuyến dưới sau đó dựa vào quy định của tỷ lệ hoa hồng để tính và chuyển vào tài khoản Affiliate của bạn, mỗi tháng tổng kết bạn phải có ít nhất từ năm (5) thành viên cá cược hợp lệ.</value>
+  </data>
+  <data name="Onlinebettingsp" xml:space="preserve">
+    <value>Đặt cược trực tuyến, đặt cược thể thao và đặt cược bóng đá tại Affiliate.com</value>
+  </data>
+  <data name="OnlineSupport" xml:space="preserve">
+    <value>Hỗ trợ trực tuyến 24/7 cho bạn và người chơi của bạn </value>
+  </data>
+  <data name="OnlineSupportDetail" xml:space="preserve">
+    <value>Chúng tôi có một nhóm các nhà quản lý hội viên giàu kinh nghiệm trực điện thoại (hầu như) 24/7 để hỗ trợ mọi nhu cầu của bạn từ những thắc mắc về biểu ngữ tới các thủ thuật tiếp thị và lời khuyên về cách tối đa hóa thu nhập.
+     &lt;p&gt;Với những cuộc thi đấu trong nội bộ hội viên, các sự kiện giao lưu và chương trình khuyến khích, họ cam kết giúp bạn luôn dẫn đầu trong cuộc chơi.&lt;/p&gt;
+   </value>
+  </data>
+  <data name="OnlyApprovedAndProperly" xml:space="preserve">
+    <value>1. Chỉ được phép sử dụng những tài liệu sáng tạo được gắn thẻ hợp lý và đã được chấp thuận, đôi khi là do chúng tôi cung cấp, để quảng bá cho Affiliate. Được phép sử dụng quảng cáo thương mại và quảng cáo cá nhân nhưng tất cả những tài liệu không phải do Affiliate xây dựng đều cần phải được chấp thuận bằng văn bản; chấp thuận đó sẽ không bị thu hồi nếu không có lý do chính đáng.</value>
+  </data>
+  <data name="Onlyproperlytaggedcustomers" xml:space="preserve">
+    <value>2. Chỉ những khách hàng được gắn thẻ đúng mới có thể được chỉ định làm hội viên. Nếu thẻ hội viên được gắn không đúng vào trang web của hội viên hoặc không được máy chủ của Affiliate tiếp nhận đúng cách thì quá trình đăng ký của khách hàng sẽ không được gán cho hội viên. Do đó, hội viên có trách nhiệm đảm bảo rằng tất cả liên kết đều được gắn thẻ đúng cách.</value>
+  </data>
+  <data name="Otherwiseplease" xml:space="preserve">
+    <value>Nếu không, vui lòng truy cập liên kết sau, sau đó mật khẩu mới sẽ được gửi tới địa chỉ email của bạn ngay lập tức:</value>
+  </data>
+  <data name="Ourfailuretoenforce" xml:space="preserve">
+    <value>a. Việc chúng tôi không buộc bạn phải thực hiện nghiêm chỉnh bất kỳ điều khoản nào của thỏa thuận này không cấu thành việc từ bỏ quyền của chúng tôi trong việc buộc bạn thực hiện điều khoản đó hay bất kỳ điều khoản nào của thỏa thuận này về sau. CHÚNG TÔI KHÔNG CHO PHÉP VÀ SẼ KHÔNG CÔNG NHẬN BẤT KỲ SỬA ĐỔI, BỔ SUNG, XÓA BỚT HAY XEN VÀO NÀO ĐỐI VỚI THỎA THUẬN NÀY. Không nhân viên, viên chức hay người đại diện nào có thể thay đổi, sửa đổi hay khước từ bằng lời nói bất kỳ điều khoản nào của thỏa thuận này.</value>
+  </data>
+  <data name="Ourrightsandremedies" xml:space="preserve">
+    <value>a. Quyền và giải pháp của chúng tôi dưới đây sẽ không loại trừ lẫn nhau, tức là việc thực hiện một hoặc nhiều điều khoản của thỏa thuận này sẽ không ngăn cản việc thực hiện một điều khoản bất kỳ nào khác. Bạn thừa nhận, xác nhận và đồng ý rằng những thiệt hại có thể không tương xứng với vi phạm hoặc vi phạm có thể xảy ra đối với thỏa thuận này, và trong trường hợp có vi phạm hoặc vi phạm có thể xảy ra đối với bất kỳ điều khoản nào của thỏa thuận này thì các quyền và nghĩa vụ tương ứng của các bên có thể được thực thi bởi hoạt động, lệnh cụ thể hoặc phương pháp hợp lý khác. Không có điều nào trong thỏa thuận này sẽ giới hạn hay ảnh hưởng đến bất kỳ quyền nào của chúng tôi theo luật pháp, hay mặt khác, đối với vi phạm hay vi phạm có thể xảy ra đối với bất kỳ điều khoản nào của thỏa thuận này thì mục đích của điều khoản này là làm sáng rõ rằng các quyền và nghĩa vụ tương ứng của chúng tôi sẽ có thể được thực thi một cách hợp lý cũng như theo luật pháp hoặc cách khác.</value>
+  </data>
+  <data name="Ownershipandcontent" xml:space="preserve">
+    <value>1. Quyền sở hữu và nội dung trên các trang web của chúng tôi vẫn giữ nguyên là tài sản tương ứng của chúng tôi và sẽ không bị coi là đã được chuyển giao cho hội viên thông qua bất kỳ hành động hay thiếu sót nào liên quan đến thỏa thuận hội viên này.</value>
+  </data>
+  <data name="Ownershipcontentandliability" xml:space="preserve">
+    <value>2. Quyền sở hữu, nội dung và trách nhiệm pháp lý đối với các trang web của hội viên là trách nhiệm của riêng hội viên. Bạn sẽ là người duy nhất chịu trách nhiệm cho việc phát triển, điều hành và duy trì trang web của mình và tất cả các tài liệu xuất hiện trên trang web đó và bạn cũng là người phải chịu chi phí.</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Trang</value>
+  </data>
+  <data name="PageSize" xml:space="preserve">
+    <value>Kích thước trang</value>
+  </data>
+  <data name="Pakistan" xml:space="preserve">
+    <value>Pakistan</value>
+  </data>
+  <data name="Panama" xml:space="preserve">
+    <value>Panama </value>
+  </data>
+  <data name="PapuaNewGuinea" xml:space="preserve">
+    <value>Papua New Guinea </value>
+  </data>
+  <data name="Paraguay" xml:space="preserve">
+    <value>Paraguay </value>
+  </data>
+  <data name="PassCheck" xml:space="preserve">
+    <value>Mật khẩu phải có ít nhất 6 ký tự, bao gồm ít nhất 2 chữ cái và ít nhất 2 chữ số. (ví dụ: pass22)</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="Passwordchanged" xml:space="preserve">
+    <value>Đã thay đổi mật khẩu thành công</value>
+  </data>
+  <data name="PaymentErr1001" xml:space="preserve">
+    <value>Xin lỗi, số tiền không hợp lệ.</value>
+  </data>
+  <data name="PaymentErr1002" xml:space="preserve">
+    <value>Mã khách hàng không hợp lệ.</value>
+  </data>
+  <data name="PaymentErr1003" xml:space="preserve">
+    <value>Xin lỗi, hội viên này không có đủ tiền để rút.</value>
+  </data>
+  <data name="PaymentErr1004" xml:space="preserve">
+    <value>Tài khoản số dư không hợp lệ hoặc loại tiền tệ hay phương thức thanh toán không được hỗ trợ.</value>
+  </data>
+  <data name="PaymentErr1005" xml:space="preserve">
+    <value>Xin lỗi, số tiền phải bằng hoặc lớn hơn </value>
+  </data>
+  <data name="PaymentErr1006" xml:space="preserve">
+    <value>Chèn giao dịch không thành công.</value>
+  </data>
+  <data name="PaymentInfor" xml:space="preserve">
+    <value>Thông tin thanh toán</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>Phương thức thanh toán</value>
+  </data>
+  <data name="PaymentRequest" xml:space="preserve">
+    <value>Yêu cầu thanh toán</value>
+  </data>
+  <data name="PayoutSuccess" xml:space="preserve">
+    <value>Yêu cầu thanh toán của bạn đã được gửi thành công!</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>Đang chờ</value>
+  </data>
+  <data name="PendingComm" xml:space="preserve">
+    <value>Tiền hoa hồng đang xử lý</value>
+  </data>
+  <data name="PendingRequest" xml:space="preserve">
+    <value>Yêu cầu đang xử lý</value>
+  </data>
+  <data name="Peru" xml:space="preserve">
+    <value>Peru </value>
+  </data>
+  <data name="Philippines" xml:space="preserve">
+    <value>Philippines </value>
+  </data>
+  <data name="Pleasecheckyour" xml:space="preserve">
+    <value>Vui lòng kiểm tra địa chỉ email của bạn để tìm tên người dùng và thông tin chi tiết về mật khẩu của bạn.</value>
+  </data>
+  <data name="PleaseNote" xml:space="preserve">
+    <value>Xin lưu ý</value>
+  </data>
+  <data name="Pleaseselectcou" xml:space="preserve">
+    <value>Vui lòng chọn quốc gia</value>
+  </data>
+  <data name="Pleaseselectpre" xml:space="preserve">
+    <value>Vui lòng chọn ngôn ngữ bạn thích</value>
+  </data>
+  <data name="Poker" xml:space="preserve">
+    <value>Bài xì phé</value>
+  </data>
+  <data name="Poland" xml:space="preserve">
+    <value>Ba Lan </value>
+  </data>
+  <data name="PoliciesConfidentiality" xml:space="preserve">
+    <value>5. Chính sách &amp; Tính bí mật</value>
+  </data>
+  <data name="Portugal" xml:space="preserve">
+    <value>Bồ Đào Nha </value>
+  </data>
+  <data name="PostCode" xml:space="preserve">
+    <value>Mã bưu điện/Mã zip</value>
+  </data>
+  <data name="PostcodeZiIsRequired" xml:space="preserve">
+    <value>Mã bưu điện/Mã zip là bắt buộc</value>
+  </data>
+  <data name="PostDate" xml:space="preserve">
+    <value>Ngày đăng</value>
+  </data>
+  <data name="PreferLang" xml:space="preserve">
+    <value>Ngôn ngữ</value>
+  </data>
+  <data name="PreferLangErr" xml:space="preserve">
+    <value>Vui lòng chọn ngôn ngữ bạn thích</value>
+  </data>
+  <data name="Preferredpaymen" xml:space="preserve">
+    <value>Phương thức thanh toán ưu tiên</value>
+  </data>
+  <data name="Presentationofourbanners" xml:space="preserve">
+    <value>5. Việc thể hiện biểu ngữ &amp; nội dung của chúng tôi trên các trang web của hội viên là trách nhiệm của hội viên. Hội viên phải đảm bảo rằng nội dung của chúng tôi được thể hiện theo quy định của chúng tôi.</value>
+  </data>
+  <data name="Proccessing" xml:space="preserve">
+    <value>Đang xử lý</value>
+  </data>
+  <data name="ProgDetails" xml:space="preserve">
+    <value>Chi tiết chương trình</value>
+  </data>
+  <data name="PromptMonthly" xml:space="preserve">
+    <value>Thanh toán hàng tháng nhanh chóng</value>
+  </data>
+  <data name="PwdChanged" xml:space="preserve">
+    <value>Đã thay đổi mật khẩu thành công</value>
+  </data>
+  <data name="Qatar" xml:space="preserve">
+    <value>Qatar </value>
+  </data>
+  <data name="QualifiedMember" xml:space="preserve">
+    <value>{num} thành viên đủ tiêu chuẩn.</value>
+  </data>
+  <data name="RecentPayment" xml:space="preserve">
+    <value>Thanh toán gần đây</value>
+  </data>
+  <data name="ReEmail" xml:space="preserve">
+    <value>Nhập lại địa chỉ email</value>
+  </data>
+  <data name="ReenterNewPassw" xml:space="preserve">
+    <value>Mật khẩu mới được nhập lại không hợp lệ</value>
+  </data>
+  <data name="RefNo" xml:space="preserve">
+    <value>Số tham chiếu</value>
+  </data>
+  <data name="RegisForm" xml:space="preserve">
+    <value>Mẫu đơn</value>
+  </data>
+  <data name="RegisSubject" xml:space="preserve">
+    <value>Affiliate Affiliate - Đơn của bạn</value>
+  </data>
+  <data name="RegisSuccess" xml:space="preserve">
+    <value>Cảm ơn bạn đã gửi đơn.&lt;br/&gt;&lt;br/&gt;Các trang web và thông tin về đơn của bạn sẽ được nhóm Affiliate Affiliate xem xét để đảm bảo rằng nội dung là phù hợp để quảng cáo sản phẩm của chúng tôi.&lt;br/&gt;&lt;br/&gt;Trong vòng 3 ngày, chúng tôi sẽ có thể cung cấp cho bạn quyết định liên quan đến đơn của bạn. Nếu bạn được chấp thuận, bạn sẽ có toàn quyền truy cập vào chương trình hội viên của chúng tôi.&lt;br /&gt;&lt;br /&gt;Trân trọng!&lt;br /&gt;&lt;br /&gt;Nhóm quản lý hội viên Affiliate.</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Bị từ chối</value>
+  </data>
+  <data name="RelationshipofParties" xml:space="preserve">
+    <value>10. Quan hệ của các bên</value>
+  </data>
+  <data name="Remedies" xml:space="preserve">
+    <value>3. Phương pháp</value>
+  </data>
+  <data name="RePass" xml:space="preserve">
+    <value>Nhập lại mật khẩu mới</value>
+  </data>
+  <data name="RequestAmount" xml:space="preserve">
+    <value>Số tiền yêu cầu</value>
+  </data>
+  <data name="Requestamountmu" xml:space="preserve">
+    <value>Số tiền yêu cầu phải lớn hơn số tiền rút tối thiểu</value>
+  </data>
+  <data name="RequestAmt" xml:space="preserve">
+    <value>Nhập số tiền yêu cầu</value>
+  </data>
+  <data name="RequestPayout" xml:space="preserve">
+    <value>Yêu cầu thanh toán</value>
+  </data>
+  <data name="RequestPayoutSucc" xml:space="preserve">
+    <value>Yêu cầu thanh toán thành công!</value>
+  </data>
+  <data name="Requestreferenc" xml:space="preserve">
+    <value>Số tham chiếu yêu cầu là {transid}, vào ngày {date}.</value>
+  </data>
+  <data name="RequireInfo" xml:space="preserve">
+    <value>Các trường có dấu &lt;font color="red"&gt;*&lt;/font&gt; phải được hoàn tất</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Nhập lại</value>
+  </data>
+  <data name="ResponOfTheAff" xml:space="preserve">
+    <value>1. Trách nhiệm của hội viên</value>
+  </data>
+  <data name="RevenueSharing" xml:space="preserve">
+    <value>4. Chia sẻ doanh thu &amp; Thanh toán</value>
+  </data>
+  <data name="RMB" xml:space="preserve">
+    <value>RMB (Ren Min Bi)</value>
+  </data>
+  <data name="Romania" xml:space="preserve">
+    <value>Rumani </value>
+  </data>
+  <data name="RussianFederation" xml:space="preserve">
+    <value>Liên bang Nga </value>
+  </data>
+  <data name="Rwanda" xml:space="preserve">
+    <value>Rwanda </value>
+  </data>
+  <data name="SaintChristopherStKittsandNevis" xml:space="preserve">
+    <value>Saint Christopher (St. Kitts) và Nevis </value>
+  </data>
+  <data name="SaintLucia" xml:space="preserve">
+    <value>Saint Lucia </value>
+  </data>
+  <data name="SaintVincentandtheGrenadines" xml:space="preserve">
+    <value>Saint Vincent và Grenadines </value>
+  </data>
+  <data name="SaoTomeandPrincipe" xml:space="preserve">
+    <value>Sao Tome và Principe </value>
+  </data>
+  <data name="SaudiArabia" xml:space="preserve">
+    <value>Ả Rập Xê Út </value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="SecureQuestionGuide" xml:space="preserve">
+    <value>?Câu hỏi bảo mật và câu trả lời được dùng để xác minh nhận dạng của bạn.</value>
+  </data>
+  <data name="SecurityQuestionUpdated" xml:space="preserve">
+    <value>Câu hỏi bảo mật và câu trả lời của bạn đã được cập nhật!</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Chọn</value>
+  </data>
+  <data name="SelectOne" xml:space="preserve">
+    <value>Chọn một</value>
+  </data>
+  <data name="Senegal" xml:space="preserve">
+    <value>Senegal </value>
+  </data>
+  <data name="September" xml:space="preserve">
+    <value>Tháng 9</value>
+  </data>
+  <data name="SeverabilityWaiver" xml:space="preserve">
+    <value>4. Hiệu lực từng phần / Quyền khước từ</value>
+  </data>
+  <data name="Seychelles" xml:space="preserve">
+    <value>Seychelles </value>
+  </data>
+  <data name="Shouldtheplayer" xml:space="preserve">
+    <value>b. Nếu người chơi thực hiện thu tiền lại, thì doanh thu bị tranh chấp hoặc bị trả lại do bạn tạo ra sẽ bị tước bỏ và do đó sẽ bị trừ khỏi số dư tổng của bạn cho tháng hiện tại.</value>
+  </data>
+  <data name="Shouldtheseexpenses" xml:space="preserve">
+    <value>b. Nếu các chi phí này không được các quỹ trong tài khoản của bạn bao trả thì chúng tôi bảo lưu quyền được tìm hiểu các phương pháp thay thế khác để lấy được thanh toán, ví dụ: nếu tài khoản của bạn đã tạo ra các tài khoản mua thì chúng tôi sẽ giữ khoản thanh toán hoa hồng cho các tài khoản này cho tới khi tài khoản chịu thiệt hại được trả hết. Nếu tài khoản của bạn không hoạt động và đang sinh lợi thông qua các khoản thanh toán hoa hồng, chúng tôi có quyền yêu cầu chủ tài khoản thanh toán.</value>
+  </data>
+  <data name="Shouldthisdeduction" xml:space="preserve">
+    <value>c. Nếu khấu trừ doanh thu tích lũy này vượt quá số tiền phải trả hiện tại của bạn thì số dư sẽ trở về số dư âm và bạn sẽ phải kiếm đủ doanh thu để trả cho số tiền đòi lại đó trước khi có thể bắt đầu kiếm lại doanh thu.</value>
+  </data>
+  <data name="ShouldYouFailToBe" xml:space="preserve">
+    <value>4. Nếu trong một tháng bất kỳ bạn không đạt được quy định trong điều khoản 4.1,4.2 và 4.3 là mỗi tháng ít nhất phải có năm (5) thành viên cá cược hợp lệ, Affiliate sẽ tạm ngưng chi hoa hồng tháng đó. Trong vòng hai tháng tiếp theo (Affiliate.com sẽ có quyền đưa ra quyết định đối với tài khoản của bạn)bạn phải đạt được những đều khoản trên. Nói cách khác, hoa hồng trong vòng ba tháng liên tiếp của bạn sẽ cùng tổng kết một lần trong tháng nào bất kỳ khi đạt được yêu cầu thành viên cá cược hợp lệ (Affiliate.com sẽ có quyền đưa ra quyết định đối với tài khoản của bạn)</value>
+  </data>
+  <data name="SierraLeone" xml:space="preserve">
+    <value>Sierra Leone </value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Đăng ký</value>
+  </data>
+  <data name="Sincerely" xml:space="preserve">
+    <value>Kính thư!</value>
+  </data>
+  <data name="Singapore" xml:space="preserve">
+    <value>Singapore </value>
+  </data>
+  <data name="SiteInfor" xml:space="preserve">
+    <value>Thông tin trang web</value>
+  </data>
+  <data name="SiteUrl" xml:space="preserve">
+    <value>Địa chỉ trang web</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Kích thước</value>
+  </data>
+  <data name="Slovakia" xml:space="preserve">
+    <value>Slovakia </value>
+  </data>
+  <data name="Slovenia" xml:space="preserve">
+    <value>Slovenia </value>
+  </data>
+  <data name="SolomonIslands" xml:space="preserve">
+    <value>Quần đảo Solomon </value>
+  </data>
+  <data name="Somalia" xml:space="preserve">
+    <value>Somalia </value>
+  </data>
+  <data name="Sorryamountisin" xml:space="preserve">
+    <value>Xin lỗi, số tiền không hợp lệ.</value>
+  </data>
+  <data name="Sorryamountmust" xml:space="preserve">
+    <value>Xin lỗi, số tiền phải bằng hoặc lớn hơn </value>
+  </data>
+  <data name="Sorrycannotcrea" xml:space="preserve">
+    <value>Xin lỗi, không thể tạo người đại diện</value>
+  </data>
+  <data name="Sorrycreditupda" xml:space="preserve">
+    <value>Xin lỗi, cập nhật tín dụng không thành công. Bạn đã vượt quá số tiền trong thẻ tín dụng chính của mình</value>
+  </data>
+  <data name="SorryMaxPerMatc" xml:space="preserve">
+    <value>Rất tiếc, tối đa mỗi Trận phải bằng hoặc ít hơn tối đa mỗi trận của đại lý chính</value>
+  </data>
+  <data name="Sorryminbetmust" xml:space="preserve">
+    <value>Xin lỗi, đặt cược tối thiểu phải bằng hoặc lớn hơn đặt cược tối thiếu của người đại diện chính</value>
+  </data>
+  <data name="SorrythisAffili" xml:space="preserve">
+    <value>Xin lỗi, hội viên này không có đủ tiền để rút.</value>
+  </data>
+  <data name="SouthAfrica" xml:space="preserve">
+    <value>Nam Phi </value>
+  </data>
+  <data name="Spain" xml:space="preserve">
+    <value>Tây Ban Nha </value>
+  </data>
+  <data name="SpamWedonot" xml:space="preserve">
+    <value>8. Thư rác - Chúng tôi không bỏ qua thư rác.</value>
+  </data>
+  <data name="SriLanka" xml:space="preserve">
+    <value>Sri Lanka </value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Quận</value>
+  </data>
+  <data name="StateIsRequired" xml:space="preserve">
+    <value>Quận là bắt buộc</value>
+  </data>
+  <data name="StatementHistory" xml:space="preserve">
+    <value>Nhật ký lệnh giao dịch</value>
+  </data>
+  <data name="Statistic" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="StatisticsDetail" xml:space="preserve">
+    <value>Chi tiết thống kê</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="SubjectForgetPass" xml:space="preserve">
+    <value>Hội viên Affiliate - Chi tiết đăng nhập của bạn</value>
+  </data>
+  <data name="SubjectIsInvalid" xml:space="preserve">
+    <value>Chủ thể không hợp lệ</value>
+  </data>
+  <data name="SubjectNewPass" xml:space="preserve">
+    <value>Hội viên Affiliate - Mật khẩu mới của bạn</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Thực hiện</value>
+  </data>
+  <data name="Sudan" xml:space="preserve">
+    <value>Sudan </value>
+  </data>
+  <data name="SumPerform" xml:space="preserve">
+    <value>Thành tích tổng hợp của</value>
+  </data>
+  <data name="Suriname" xml:space="preserve">
+    <value>Suriname </value>
+  </data>
+  <data name="Swaziland" xml:space="preserve">
+    <value>Vương quốc Swaziland </value>
+  </data>
+  <data name="Sweden" xml:space="preserve">
+    <value>Thụy Điển </value>
+  </data>
+  <data name="Switzerland" xml:space="preserve">
+    <value>Thụy Sĩ </value>
+  </data>
+  <data name="Taiwan" xml:space="preserve">
+    <value>Đài Loan </value>
+  </data>
+  <data name="Tanzania" xml:space="preserve">
+    <value>Tanzania </value>
+  </data>
+  <data name="Tennis" xml:space="preserve">
+    <value>Quần vợt</value>
+  </data>
+  <data name="TermCondition" xml:space="preserve">
+    <value>Điều khoản &amp; Điều kiện</value>
+  </data>
+  <data name="TermErr" xml:space="preserve">
+    <value>Không đồng ý với Điều khoản &amp;amp; Điều kiện, Hãy kiểm tra!</value>
+  </data>
+  <data name="TermTermination" xml:space="preserve">
+    <value>9. Thời hạn &amp; Chấm dứt</value>
+  </data>
+  <data name="TextLink" xml:space="preserve">
+    <value>Liên kết url</value>
+  </data>
+  <data name="Thailand" xml:space="preserve">
+    <value>Thái Lan </value>
+  </data>
+  <data name="Thanksforyourre" xml:space="preserve">
+    <value>Cám ơn bạn đã đăng ký!</value>
+  </data>
+  <data name="ThanksPayment" xml:space="preserve">
+    <value>Cám ơn bạn đã ghi ngày yêu cầu thanh toán {winlostdate} với số tiền là ${amount}.</value>
+  </data>
+  <data name="Thankyouforappl" xml:space="preserve">
+    <value>Cám ơn bạn đã đăng ký trở thành hội viên của Affiliate! &lt;br /&gt;&lt;br /&gt;
+Một trong những người quản lý tài khoản hội viên của chúng tôi sẽ liên hệ với bạn qua email trong vòng 3 ngày làm việc để xác định trạng thái đơn đăng ký tham gia của bạn.</value>
+  </data>
+  <data name="Thankyouforsubm" xml:space="preserve">
+    <value>Cám ơn bạn đã gửi đơn đăng ký tham gia.</value>
+  </data>
+  <data name="THB" xml:space="preserve">
+    <value>THB (Đồng bạt Thái)</value>
+  </data>
+  <data name="The12BETAffiliates" xml:space="preserve">
+    <value>Miễn phí khi tham gia chương trình hội viên Affiliate. Chỉ cần điền vào {AppForm} của chúng tôi bạn sẽ được liên hệ để chấp nhận tham gia chương trình trong vòng 3 ngày làm việc. Nếu đơn của bạn được chấp nhận, bạn sẽ nhận được một email có chứa ID hội viên duy nhất cho phép bạn truy cập vào các biểu ngữ, liên kết văn bản và nội dung khác cũng như công cụ tiếp thị để thêm vào trang web của bạn</value>
+  </data>
+  <data name="Theabovelinkwi" xml:space="preserve">
+    <value>Liên kết ở trên sẽ hết hạn và không có tác dụng trong 24 giờ tới.</value>
+  </data>
+  <data name="TheCookiesAreOverwritten" xml:space="preserve">
+    <value>Các cookie được ghi đè để làm lợi cho hội viên cuối cùng khi một khách hàng được giới thiệu.</value>
+  </data>
+  <data name="TheCurrenciesOfferedAre" xml:space="preserve">
+    <value>Vâng. Chúng tôi có cung cấp tiền tệ như GBP, EUR, RMB, MYR,THB, IDR, VND. Tỷ lệ tiền tệ sẽ được quy đổi căn cứ vào tỷ lệ ngoại tệ ngày mà bạn rút tiền.</value>
+  </data>
+  <data name="Theemailaddress" xml:space="preserve">
+    <value>Địa chỉ email mà bạn nhập đã được sử dụng để đăng ký tài khoản. Vui lòng chọn địa chỉ khác!</value>
+  </data>
+  <data name="TheMinimumWithdrawal" xml:space="preserve">
+    <value>Số tiền yêu cầu rút tối thiểu là 100USD.</value>
+  </data>
+  <data name="Thenetrevenueplan" xml:space="preserve">
+    <value>7. Lợi nhuận để tính hoa hồng là căn cứ vào mức lợi nhuận trong mỗi lần giao dịch của thành viên tuyến dưới và bạn,rồi căn cứ vào cấu trúc hoa hồng để tính tỷ lệ,,chỉ cần bạn vẫn duy trì là Hội viện của chúng tôi, thì những giao dịch phát sinh từ khách hàng của bạn vẫn sẽ được cộng vào.</value>
+  </data>
+  <data name="Theteamat_12Bet" xml:space="preserve">
+    <value>Ban quản lý hội viên Affiliate</value>
+  </data>
+  <data name="ThetermofthisAgreement" xml:space="preserve">
+    <value>1. Thời hạn của thỏa thuận sẽ bắt đầu khi bạn tải mã liên kết về và liên kết mã này đến trang web của chúng tôi. Thời hạn sẽ tiếp tục trừ khi và cho đến khi một trong hai bên thông báo cho nhau bằng văn bản về việc muốn chấm dứt thỏa thuận, trong trường hợp đó thỏa thuận này có thể được chấm dứt ngay lập tức. CHẤM DỨT THEO Ý MUỐN, VÌ LÝ DO BẤT KỲ CỦA MỘT TRONG HAI BÊN. Với mục đích thông báo chấm dứt, thông báo qua email được coi là mẫu đơn thông báo trực tiếp và bằng văn bản.</value>
+  </data>
+  <data name="ThisAgreementDetailsAll" xml:space="preserve">
+    <value>Thỏa thuận này trình bày chi tiết toàn bộ điều khoản và điều kiện của tư cách thành viên đối với chương trình hội viên Affiliate. "Bạn", "hội viên" là thuật ngữ đề cập đến bạn, cá nhân, thực thể là nhóm hoặc tập đoàn đăng ký làm đại lý của chúng tôi theo thỏa thuận này và sẽ được coi là bao gồm mọi nhân viên, viên chức, quản lý, cổ đông, chủ sở hữu, các bên quản trị, các cá nhân và thực thể phụ thuộc (và "của bạn" mang nghĩa sở hữu tương ứng).</value>
+  </data>
+  <data name="ThisAgreementshallbegoverned" xml:space="preserve">
+    <value>Thỏa thuận này sẽ được xây dựng và quản lý theo luật pháp nước Anh. Bất kỳ tranh chấp, tranh luận hoặc khiếu nại phát sinh hoặc có liên quan đến thỏa thuận này sẽ được đưa ra tòa và được tòa án với một thẩm phán do trung tâm trọng tài chỉ định quyết định. Trụ sở phân xử sẽ ở Luân Đôn, Vương quốc Anh, địa điểm do trung tâm trọng tài quyết định, ngôn ngữ phân xử là tiếng Anh và các quy tắc do trung tâm trọng tài thiết lập sẽ điều khiển quá trình này. Tòa án phân xử có quyền phát lệnh và quyết định của tòa sẽ là cuối cùng, hoàn toàn bắt buộc và có tính chất cưỡng bách đối với các bên lần lượt từ bỏ bất kỳ quyền hạn xét xử hoặc địa điểm xét xử nào khác có thể áp dụng và đồng ý tuân theo quyết định phân xử, từ bỏ mọi kháng cáo dưới bất kỳ hình thức nào.</value>
+  </data>
+  <data name="Thisemailaddres" xml:space="preserve">
+    <value>Địa chỉ email này đang được sử dụng bởi một hội viên đã không còn hoạt động hoặc đã bị đóng tài khoản. Hãy thử lại hoặc liên hệ với chúng tôi.</value>
+  </data>
+  <data name="Thisemailwillin" xml:space="preserve">
+    <value>Email này sẽ có một liên kết mà bạn cần phải nhấp vào. Để kích hoạt tài khoản và xác nhận địa chỉ email của bạn cũng như kết thúc việc đăng ký.</value>
+  </data>
+  <data name="Thisisasystemau" xml:space="preserve">
+    <value>Đây là email do hệ thống tạo tự động, vui lòng không trả lời trực tiếp email này.</value>
+  </data>
+  <data name="Thislicensecannot" xml:space="preserve">
+    <value>3. Bạn không thể cấp phép bổ sung, ấn định hoặc theo cách khác, chuyển nhượng giấy phép này. Quyền sử dụng thương hiệu của bạn có giới hạn và chỉ thông qua các bảng biểu ngữ tuyên truyền quảng cáo. Bạn sẽ không xác nhận tính không hợp lệ, tính không hiệu lực, hoặc tranh cãi về quyền sở hữu các thương hiệu trong bất kỳ hành động hoặc tiến trình nào theo bất kỳ thể loại hoặc bản chất nào, và sẽ không thực hiện hành động có thể gây tổn hại đến các quyền của chúng tôi hoặc quyền của người cấp phép của chúng tôi trong các thương hiệu đó, cung cấp sản phẩm tương tự, hoặc theo cách khác làm suy yếu tính hợp lệ hoặc làm giảm thiện chí của họ.</value>
+  </data>
+  <data name="Thistransaction" xml:space="preserve">
+    <value>Giao dịch này đã bị hủy từ trước.</value>
+  </data>
+  <data name="Thisusernameisn" xml:space="preserve">
+    <value>Tên người dùng này không khả dụng</value>
+  </data>
+  <data name="TitelForgetPass" xml:space="preserve">
+    <value>
+      Mật khẩu mới sẽ được gửi tới địa chỉ email mà bạn đã cung cấp.               
+    </value>
+  </data>
+  <data name="TitleCancelledPayment" xml:space="preserve">
+    <value>Hội viên Affiliate - [{transid}] - Yêu cầu thanh toán của bạn đã bị hủy</value>
+  </data>
+  <data name="TitleLogin" xml:space="preserve">
+    <value>Đăng nhập hội viên</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>Tới</value>
+  </data>
+  <data name="ToBecomeAnAff" xml:space="preserve">
+    <value>Để trở thành hội viên của chương trình hội viên Affiliate, bạn phải đăng ký bằng cách hoàn thành mẫu đơn trực tuyến này. Bằng cách đăng ký làm hội viên của chương trình hội viên Affiliate hoặc tải về mã biểu ngữ và đưa mã này vào các trang web, thông báo email hoặc các định dạng khác của bạn, bạn được coi là đồng ý bị ràng buộc bởi toàn bộ điều khoản và điều kiện được nêu trong thỏa thuận này.</value>
+  </data>
+  <data name="Togo" xml:space="preserve">
+    <value>Togo </value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>Đầu trang </value>
+  </data>
+  <data name="ToParticipateIn12BET" xml:space="preserve">
+    <value>Để tham gia chương trình hội viên Affiliate, bạn phải sở hữu một trang web sống, có hoạt động đánh bạc trực tuyến làm chủ đề trung tâm. Nếu bạn không có trang web hoặc trang web của bạn không có hoạt động đánh bạc trực tuyến làm chủ đề trung tâm thì Affiliate.com có thể đưa ra một số ngoại lệ theo quyết định duy nhất của mình. Vui lòng gửi email cho chúng tôi theo địa chỉ {mail} nếu bạn có bất kỳ câu hỏi nào.</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Tổng cộng</value>
+  </data>
+  <data name="TotalActive" xml:space="preserve">
+    <value>Tổng số người chơi có giao dịch</value>
+  </data>
+  <data name="TotalClick" xml:space="preserve">
+    <value>Tổng số lần nhấp chuột</value>
+  </data>
+  <data name="TotalDeposit" xml:space="preserve">
+    <value>Tổng tiền nạp vào</value>
+  </data>
+  <data name="TotalIP" xml:space="preserve">
+    <value>Tổng số IP</value>
+  </data>
+  <data name="TotalPlay" xml:space="preserve">
+    <value>Tổng số người chơi</value>
+  </data>
+  <data name="TotalQualifiedMembers" xml:space="preserve">
+    <value>Tổng số người chơi đạt chuẩn</value>
+  </data>
+  <data name="TotalUniqueClickByDate" xml:space="preserve">
+    <value>Tổng số lần nhấp chuột duy nhất theo ngày</value>
+  </data>
+  <data name="ToYour12BET" xml:space="preserve">
+    <value>Thông qua tài khoản cá cược Affiliate</value>
+  </data>
+  <data name="TrackingCode" xml:space="preserve">
+    <value>Mã theo dõi</value>
+  </data>
+  <data name="TrackingStatistics" xml:space="preserve">
+    <value>Thống kê theo dõi</value>
+  </data>
+  <data name="Transaction" xml:space="preserve">
+    <value>Thắng/Thua chưa xử lý</value>
+  </data>
+  <data name="TrinidadandTobago" xml:space="preserve">
+    <value>Trinidad và Tobago </value>
+  </data>
+  <data name="Tunisia" xml:space="preserve">
+    <value>Tunisia </value>
+  </data>
+  <data name="Turkey" xml:space="preserve">
+    <value>Thổ Nhĩ Kỳ </value>
+  </data>
+  <data name="Turnover" xml:space="preserve">
+    <value>Tổng tiền đặt cược</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Loại giao dịch</value>
+  </data>
+  <data name="Uganda" xml:space="preserve">
+    <value>Uganda </value>
+  </data>
+  <data name="Ukraine" xml:space="preserve">
+    <value>Ukraine </value>
+  </data>
+  <data name="UnderReview" xml:space="preserve">
+    <value>Đơn đăng ký đang được xem xét</value>
+  </data>
+  <data name="UniqueClick" xml:space="preserve">
+    <value>Số lần nhấp chuột duy nhất</value>
+  </data>
+  <data name="UnitedArabEmirates" xml:space="preserve">
+    <value>Các Tiểu Vương Quốc Ả Rập Thống Nhất </value>
+  </data>
+  <data name="UnitedKingdomofGreatBritainandNorthernIreland" xml:space="preserve">
+    <value>Vương Quốc Anh</value>
+  </data>
+  <data name="UnitedStatesofAmerica" xml:space="preserve">
+    <value>Hợp Chủng Quốc Hoa Kỳ </value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Không xác định</value>
+  </data>
+  <data name="UnknownError" xml:space="preserve">
+    <value>Lỗi không xác định!</value>
+  </data>
+  <data name="Unlikewithaplayer" xml:space="preserve">
+    <value>d. Không giống như một người chơi thắng lớn, chỉ kéo dài một tháng, sự xóa số âm chỉ hết hạn khi doanh thu của bạn cộng vào được cân bằng.</value>
+  </data>
+  <data name="UpdateAccSuccess" xml:space="preserve">
+    <value>Thông tin tài khoản của bạn đã được cập nhật thành công.</value>
+  </data>
+  <data name="UpdateSecurityQuestion" xml:space="preserve">
+    <value>Cập nhật câu hỏi bảo mật</value>
+  </data>
+  <data name="UpdateSecurityQuestionRemind" xml:space="preserve">
+    <value>Vì lý do bảo mật, bạn được yêu cầu chọn câu hỏi bảo mật và cung cấp câu trả lời. Bạn sẽ được hỏi câu hỏi này để xác thực trong trường hợp bạn quên mật khẩu hoặc cần liên hệ với chúng tôi để biết thông tin nhạy cảm.</value>
+  </data>
+  <data name="UpToNow" xml:space="preserve">
+    <value>tất cả</value>
+  </data>
+  <data name="Uruguay" xml:space="preserve">
+    <value>Uruguay </value>
+  </data>
+  <data name="USD" xml:space="preserve">
+    <value>USD (Đô la Mỹ)</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Tên truy cập</value>
+  </data>
+  <data name="Usethisformtoch" xml:space="preserve">
+    <value>Sử dụng mẫu này để đổi mật khẩu của bạn. Sau khi đã thay đổi, mật khẩu mới sẽ có hiệu lực vào lần đăng nhập tiếp theo của bạn.</value>
+  </data>
+  <data name="Validation" xml:space="preserve">
+    <value>Xác thực</value>
+  </data>
+  <data name="ValidationCode" xml:space="preserve">
+    <value>Bạn đã nhập một mã xác thực không hợp lệ!</value>
+  </data>
+  <data name="Venezuela" xml:space="preserve">
+    <value>Venezuela </value>
+  </data>
+  <data name="VietNam" xml:space="preserve">
+    <value>Việt Nam </value>
+  </data>
+  <data name="ViewMore" xml:space="preserve">
+    <value>Xem thêm</value>
+  </data>
+  <data name="WeAreAbleToTrackVisitors" xml:space="preserve">
+    <value>Đúng. Chúng tôi có thể theo dõi khách truy cập không đăng ký ngay nhưng sau đó trở lại Affiliate.com &amp;amp; đăng ký từ trang web hội viên của chúng tôi. Chúng tôi đặt giai đoạn bảo vệ là 90 ngày để bảo vệ hội viên giới thiệu đầu tiên. Công nghệ được sử dụng để quản lý việc này dựa trên các cookie.</value>
+  </data>
+  <data name="WebsiteInformat" xml:space="preserve">
+    <value>Thông tin trang web</value>
+  </data>
+  <data name="WebsiteURL" xml:space="preserve">
+    <value>Địa chỉ trang web</value>
+  </data>
+  <data name="WebsiteURLIsRequired" xml:space="preserve">
+    <value>Địa chỉ trang web là bắt buộc</value>
+  </data>
+  <data name="WebsiteURLs" xml:space="preserve">
+    <value>Địa chỉ trang web</value>
+  </data>
+  <data name="WeDoNotTolerateSpamming" xml:space="preserve">
+    <value>Chúng tôi không cho phép các hội viên của mình gửi thư rác dưới bất kỳ hình thức nào. Nếu chúng tôi phát hiện ra một hội viên gửi thư rác, chúng tôi sẽ cảnh cáo hội viên đó (nếu xét thấy đó là trường hợp nhẹ). Nếu việc gửi thư rác vẫn tiếp tục, hội viên đó sẽ bị cấm tham gia chương trình hội viên Affiliate của chúng tôi vĩnh viễn. </value>
+  </data>
+  <data name="WeEmploys" xml:space="preserve">
+    <value>Chúng tôi sử dụng hệ thống theo dõi với công nghệ tiên tiến để đảm bảo bạn nhận được tín dụng cho 100% lưu lượng truy cập bạn gửi tới Affiliate.com. Các hội viên sử dụng URL duy nhất của mình được cung cấp trong khu vực "Thư viện media" để chỉ dẫn cho người chơi. Thông qua sử dụng cookie, khách truy cập nhấp vào URL duy nhất của một hội viên (biểu ngữ, liên kết văn bản, thông báo email, v.v...) được theo dõi và tín dụng tự động được cung cấp cho hội viên đó vì đã giới thiệu người chơi.</value>
+  </data>
+  <data name="Weherebygrant" xml:space="preserve">
+    <value>1. Chúng tôi cấp cho bạn giấy phép có giới hạn cá nhân,  không chuyển nhượng để bạn có thể một mình sử dụng thương hiệu của chúng tôi trong suốt thời hạn của thỏa thuận này (được cấp phép từ chủ sở hữu thông qua chúng tôi) có liên quan đến hiển thị biểu ngữ trên trang web của bạn.</value>
+  </data>
+  <data name="Wemakenoexpress" xml:space="preserve">
+    <value>Chúng tôi không biểu lộ hoặc hàm ý bảo đảm hoặc đại diện cho chương trình giới thiệu hoặc dàn xếp thanh toán phí giới thiệu (bao gồm, nhưng không giới hạn chức năng, giấy bảo đảm sự phù hợp, khả năng bán, tính hợp pháp, sự không vi phạm hoặc bất kỳ bảo đảm hàm ý nào phát sinh ngoài quá trình thực hiện, giao dịch hoặc sử dụng thương mại). Ngoài ra, chúng tôi không tuyên bố rằng quá trình hoạt động của trang web chúng tôi sẽ không bị gián đoạn hoặc gặp phải lỗi nào và sẽ không chịu trách nhiệm pháp lý đối với hậu quả của bất kỳ gián đoạn hay lỗi nào.</value>
+  </data>
+  <data name="Wemaymodify" xml:space="preserve">
+    <value>7. Chúng tôi có thể sửa đổi bất kỳ điều khoản và điều kiện nào có trong thỏa thuận này tại mọi thời điểm và theo quyết định duy nhất của chúng tôi, bằng cách đăng thông báo thay đổi hoặc thỏa thuận mới trên trang web của chúng tôi. Sửa đổi có thể bao gồm, ví dụ: thay đổi trong phạm vi phí giới thiệu hiện có, biểu phí, thủ tục thanh toán và các quy định của chương trình giới thiệu. NẾU BẠN KHÔNG ĐỒNG Ý VỚI BẤT KỲ SỬA ĐỔI NÀO, BẠN CÓ THỂ VIỆN ĐẾN QUYỀN TRUY ĐÒI DUY NHẤT CỦA MÌNH ĐỂ CHẤM DỨT THỎA THUẬN NÀY. SỰ THAM GIA LIÊN TỤC VÀO CHƯƠNG TRÌNH NÀY CỦA BẠN SAU KHI THÔNG BÁO THAY ĐỔI HOẶC THỎA THUẬN MỚI ĐƯỢC ĐĂNG TRÊN TRANG WEB CỦA CHÚNG TÔI SẼ ĐƯỢC COI LÀ CHẤP NHẬN THAY ĐỔI BẮT BUỘC.</value>
+  </data>
+  <data name="WEMAYTERMINATE" xml:space="preserve">
+    <value>i. CHÚNG TÔI CÓ THỂ CHẤM DỨT THỎA THUẬN NÀY NẾU ĐỊNH RÕ (THEO QUYẾT ĐỊNH DUY NHẤT CỦA CHÚNG TÔI) RẰNG TRANG WEB CỦA BẠN KHÔNG PHÙ HỢP. Trang web không phù hợp có thể bao gồm những trang: hướng vào trẻ em, quảng cáo các tài liệu khiêu dâm, cổ động bạo lực, cổ động nạn phân biệt chủng tộc, giới tính, tôn giáo, quốc tịch, tàn tật, định hướng giới tính hoặc tuổi tác, xúc tiến các hoạt động phi pháp hoặc vi phạm quyền sở hữu trí tuệ.</value>
+  </data>
+  <data name="Wemaywithhold" xml:space="preserve">
+    <value>e. Chúng tôi có thể khấu trừ khoản thanh toán cuối cùng của bạn trong một thời gian hợp lý để đảm bảo thanh toán đúng số tiền.</value>
+  </data>
+  <data name="WeOfferSeveralMethods" xml:space="preserve">
+    <value>Chúng tôi cung cấp những cách rút tiền sau:</value>
+  </data>
+  <data name="WeReserveTheRight" xml:space="preserve">
+    <value>Chúng tôi có quyền chấm dứt thỏa thuận này nếu định rõ rằng trang web của bạn không phù hợp. Trang web không phù hợp có thể bao gồm những trang: quảng cáo các tài liệu khiêu dâm, nhắm tới trẻ em hoặc trẻ vị thành niên, cổ động bạo lực, cổ động nạn phân biệt chủng tộc, giới tính, tôn giáo, quốc tịch, tàn tật, định hướng giới tính, xúc tiến các hoạt động phi pháp hoặc vi phạm quyền sở hữu trí tuệ ("Quyền IP").</value>
+  </data>
+  <data name="Wereservetherighttorevoke" xml:space="preserve">
+    <value>4. Chúng tôi có quyền thu hồi giấy phép này tại mọi thời điểm và giấy phép sẽ được coi là đã thu hồi khi chấm dứt thỏa thuận này với bất cứ lý do gì.</value>
+  </data>
+  <data name="WeRolloverNegative" xml:space="preserve">
+    <value>Vâng ,chúng tôi sẽ chuyển tiếp số dư bằng âm đã tổng kết. Ví dụ đến cuối tháng tổng kết số dư trong tài khoản của bạn là số âm, số tiền này sẽ chuyển tiếp đến tháng sau, cho đến khi tiền hoa hồng bạn kiếm được là số dương có thể làm cho số âm đó thành 0.</value>
+  </data>
+  <data name="WesternSamoa" xml:space="preserve">
+    <value>Tây Samoa </value>
+  </data>
+  <data name="Weunderstandthat" xml:space="preserve">
+    <value>e. Chúng tôi biết rằng điều này có thể làm cho các hội viên thất vọng nhưng cần phải hiểu rõ rằng Affiliate chỉ có thể thanh toán phần trăm lợi nhuận của họ chứ không phải là doanh thu gian lận.</value>
+  </data>
+  <data name="Wewillnotbeliable" xml:space="preserve">
+    <value>Chúng tôi sẽ không chịu trách nhiệm pháp lý cho những thiệt hại gián tiếp, riêng biệt hoặc do hậu quả (hoặc bất kỳ tổn thất doanh thu, lợi nhuận hoặc dữ liệu nào) phát sinh có liên quan đến thỏa thuận này hoặc chương trình giới thiệu, ngay cả khi chúng tôi đã được thông báo về khả năng xảy ra những thiệt hại đó. Hơn nữa, khoản nợ gộp chung của chúng tôi phát sinh có liên quan đến thỏa thuận và chương trình này sẽ không vượt quá tổng số tiền hoa hồng đã thanh toán hoặc phải thanh toán cho bạn theo thỏa thuận này. Không có điều nào trong thỏa thuận này được xây dựng để cấp quyền, biện pháp hoặc lợi ích cho bất kỳ cá nhân hoặc thực thể chứ không phải là một bên nào đối với thỏa thuận này. Nghĩa vụ của chúng tôi theo thỏa thuận này không hình thành nghĩa vụ cá nhân của những người quản lý, viên chức hoặc cổ đông của chúng tôi. Bất kỳ khoản nợ nào phát sinh theo thỏa thuận này sẽ chỉ được thanh toán bằng phí giới thiệu phát sinh và bị giới hạn đối với những thiệt hại trực tiếp.</value>
+  </data>
+  <data name="WewillterminatethisAgreement" xml:space="preserve">
+    <value>5. Chúng tôi sẽ chấm dứt thỏa thuận này ngay lập tức nếu có bất kỳ hình thức gửi thư rác nào nhân danh bạn hoặc nếu bạn làm mất uy tín của Affiliate thông qua việc quảng cáo không đúng sự thật hoặc sử dụng từ ngữ không chính xác khi nói miệng hoặc trình bày trong văn bản.</value>
+  </data>
+  <data name="WhatAreTheWithdrawal" xml:space="preserve">
+    <value>Tôi có thể sử dụng những phương thức nào rút tiền?</value>
+  </data>
+  <data name="WhatIfIDontHave" xml:space="preserve">
+    <value>Nếu tôi không có trang web, tôi có thể tham gia không?</value>
+  </data>
+  <data name="WhatIs12BETAffiliates" xml:space="preserve">
+    <value>Chương trình hội viên Affiliate là gì?</value>
+  </data>
+  <data name="WhatIsACookie" xml:space="preserve">
+    <value>Cookie là gì?</value>
+  </data>
+  <data name="WhatIsTheMinimumWithdrawal" xml:space="preserve">
+    <value>Mức hoa hồng thấp nhất có thể rút là bao nhiêu?</value>
+  </data>
+  <data name="WhatIsYourPolicy" xml:space="preserve">
+    <value>Chính sách gửi thư rác của bạn là như thế nào?</value>
+  </data>
+  <data name="Wheneverpossible" xml:space="preserve">
+    <value>a. Bất cứ khi nào có thể, từng điều khoản của thỏa thuận này sẽ được hiểu theo cách thức có hiệu lực và hợp lệ theo luật áp dụng, tuy nhiên nếu bất kỳ điều khoản nào của thỏa thuận này được coi là không hợp lệ, bất hợp pháp hoặc không thể thực thi được theo bất kỳ khía cạnh nào thì điều khoản đó sẽ không có hiệu lực chỉ đối với phạm vi không còn hiệu lực hoặc không thể thực thi mà không làm mất hiệu lực các điều còn lại của thỏa thuận này hoặc bất kỳ điều khoản nào về việc này. Không hàm ý khước từ thực hiện hoặc không thi hành mọi quyền và khước từ phải được thể hiện bằng văn bản mới có hiệu lực.</value>
+  </data>
+  <data name="WhereDoIGetBanners" xml:space="preserve">
+    <value>Tôi lấy biểu ngữ và nội dung ở đâu?</value>
+  </data>
+  <data name="WideRange" xml:space="preserve">
+    <value>Phạm vi phương thức thanh toán rộng</value>
+  </data>
+  <data name="WillYouTrackAndGiveMeCredit" xml:space="preserve">
+    <value>Bạn sẽ theo dõi và cung cấp tín dụng cho tôi khi tôi chưa phải là thành viên và đã không đăng ký vào lần truy cập đầu tiên thông qua liên kết hội viên của tôi nhưng sau đó trở lại Affiliate.com và trở thành thành viên chứ?</value>
+  </data>
+  <data name="WireTransfer" xml:space="preserve">
+    <value>Wire Transfer</value>
+  </data>
+  <data name="Within5dayswesh" xml:space="preserve">
+    <value>Chúng tôi có thể đưa ra quyết định liên quan đến đơn đăng ký của bạn trong vòng 5 ngày. Nếu bạn được chấp nhận, bạn có thể tiếp cận đầy đủ chương trình hội viên của chúng tôi.</value>
+  </data>
+  <data name="Withoutourpriorwritten" xml:space="preserve">
+    <value>7. Nếu không được chúng tôi phê chuẩn trước bằng văn bản, bạn sẽ chỉ sử dụng được các biểu ngữ và liên kết của chúng tôi và sẽ không thay đổi được giao diện của chúng hoặc giới thiệu bất kỳ tài liệu quảng cáo nào cho chúng tôi. Giao diện và cú pháp của các liên kết truyền siêu văn bản được chúng tôi thiết kế và chỉ định, đồng thời tạo thành đại diện được ủy quyền và thừa nhận duy nhất của Affiliate.</value>
+  </data>
+  <data name="WrongMinbet_Max" xml:space="preserve">
+    <value>Đặt cược tối thiểu/ Đặt cược tối đa/ Tối đa mỗi trận/ Tín dụng/ Tên Đại lý chính/ nhóm người dùng bị sai</value>
+  </data>
+  <data name="Yemen" xml:space="preserve">
+    <value>Yemen </value>
+  </data>
+  <data name="YOUACKNOWLEDGETHATYOUHAVEREAD" xml:space="preserve">
+    <value>BẠN THỪA NHẬN ĐÃ ĐỌC THỎA THUẬN NÀY VÀ ĐỒNG Ý VỚI MỌI ĐIỀU KHOẢN VÀ ĐIỀU KIỆN CỦA THỎA THUẬN. BẠN HIỂU RẰNG CHÚNG TÔI CÓ THỂ THU HÚT GIỚI THIỆU KHÁCH HÀNG TẠI BẤT KỲ THỜI ĐIỂM NÀO (TRỰC TIẾP HOẶC GIÁN TIẾP) THEO CÁC ĐIỀU KHOẢN CÓ THỂ KHÁC VỚI ĐIỀU KHOẢN CÓ TRONG THỎA THUẬN NÀY HOẶC ĐIỀU HÀNH CÁC TRANG WEB TƯƠNG TỰ HOẶC CẠNH TRANH VỚI TRANG WEB CỦA BẠN. BẠN ĐÃ ĐỘC LẬP ĐÁNH GIÁ MONG MUỐN THAM GIA CHƯƠNG TRÌNH HỘI VIÊN NÀY VÀ KHÔNG DỰA VÀO BẤT KỲ TUYÊN BỐ, BẢO ĐẢM HOẶC NHẬN ĐỊNH NÀO KHÁC VỚI NHỮNG ĐIỀU ĐƯỢC NÊU RÕ TRONG THỎA THUẬN NÀY</value>
+  </data>
+  <data name="Youandweareindependent" xml:space="preserve">
+    <value>9. Bạn và chúng tôi là những nhà thầu độc lập và không điều nào trong thỏa thuận này sẽ tạo ra bất kỳ hiệp hội, liên doanh, đại lý, công ty, đại diện bán hàng hoặc quan hệ công việc nào giữa các bên. Bạn sẽ không có quyền để thực hiện hoặc chấp nhận bất kỳ đề nghị hoặc tuyên bố nào nhân danh chúng tôi. Bạn sẽ không đưa ra bất kỳ nhận định nào, cho dù trên trang web của bạn hoặc theo cách khác, trái với mọi điều trong đoạn này.</value>
+  </data>
+  <data name="Youandweareindependentcontractors" xml:space="preserve">
+    <value>Bạn và chúng tôi là những nhà thầu độc lập và không điều nào trong thỏa thuận này sẽ tạo ra bất kỳ hiệp hội, liên doanh, đại lý, công ty, đại diện bán hàng hoặc quan hệ công việc nào giữa các bên. Bạn sẽ không có quyền để thực hiện hoặc chấp nhận bất kỳ đề nghị hoặc tuyên bố nào nhân danh chúng tôi. Bạn sẽ không đưa ra bất kỳ nhận định nào, cho dù trên trang web của bạn hoặc theo cách khác, trái với mọi điều trong đoạn này.</value>
+  </data>
+  <data name="Youandwewill" xml:space="preserve">
+    <value>h. Bạn và chúng tôi sẽ miễn trừ cho nhau mọi nghĩa vụ và trách nhiệm xảy ra hoặc phát sinh sau ngày chấm dứt thỏa thuận này, ngoại trừ các điều khoản có liên quan đến những nghĩa vụ, theo bản chất, được định rõ để luôn tồn tại và có hiệu lực ngay cả khi chấm dứt thỏa thuận, như đã trình bày trong thỏa thuận này. Chấm dứt thỏa thuận sẽ không giúp bạn tránh được bất kỳ trách nhiệm pháp lý nào phát sinh từ việc vi phạm thỏa thuận này, đã xảy ra trước khi chấm dứt thỏa thuận.</value>
+  </data>
+  <data name="YouAreNotAllowed" xml:space="preserve">
+    <value>10. Bạn không được phép duy trì đồng thời cả quan hệ hội viên và quan hệ giới thiệu với Affiliate.  Affiliate có quyền đơn phương chấm dứt một trong hai hoặc cả hai quan hệ hội viên và/hoặc giới thiệu nếu bạn vi phạm điều khoản này.  Quan hệ giới thiệu đề cập đến mối quan hệ với Affiliate tùy theo chương trình giới thiệu một người bạn của Affiliate (như trình bày và hiện đăng trên trang web). </value>
+  </data>
+  <data name="Youarenotauthor" xml:space="preserve">
+    <value>Bạn không được phép tạo/chỉnh sửa thông tin này</value>
+  </data>
+  <data name="Youareonlyresponsible" xml:space="preserve">
+    <value>1. Bạn chỉ chịu trách nhiệm hướng khách hàng vào trang web của Affiliate.</value>
+  </data>
+  <data name="YouCanLoginToYour12BET" xml:space="preserve">
+    <value>Bạn có thể đăng nhập vào tài khoản hội viên Affiliate để kiểm tra số liệu thống kê tiền hoa hồng theo thời gian thực hiện khả dụng với bạn trong vòng 24 giờ một ngày, 7 ngày một tuần và 365 ngày một năm.</value>
+  </data>
+  <data name="YouCanRequestForAWithdrawal" xml:space="preserve">
+    <value>Bạn có thể thông qua Moneybookers, Neteller, Wire Transfer để rút tiền,hoặc có thể trực tiếp chuyển tiền hoa hồng vào tài khoản cá cược Affiliate.</value>
+  </data>
+  <data name="YouCanRequestPayout" xml:space="preserve">
+    <value>Ngoài USD ra bạn có thể yêu cầu rút tiền bằng đơn vị tiền tệ khác, như GBP, EUR, RMB, MYR, THB, IDR, VND. Tỷ lệ ngoại tệ sẽ được đổi dựa vào tỷ lệ ngày rút tiền hôm đó.</value>
+  </data>
+  <data name="Youhaveapending" xml:space="preserve">
+    <value>Bạn có một yêu cầu đang chờ xử lý. Để tạo yêu cầu mới, vui lòng hủy yêu cầu đang chờ hoặc đợi cho đến khi việc xử lý được hoàn tất.</value>
+  </data>
+  <data name="Youhaverequeste" xml:space="preserve">
+    <value>Bạn đã yêu cầu khôi phục tên truy cập hoặc mật khẩu. Nếu bạn không yêu cầu khôi phục, hãy bỏ qua email này.</value>
+  </data>
+  <data name="Youherebyagreetoindemnify" xml:space="preserve">
+    <value>Tại đây bạn đồng ý bảo đảm và thừa nhận rằng Affiliate, các thực thể mà Affiliate đại diện và các hội viên, những người quản lý, viên chức, nhân viên, đại lý, cổ đông, đối tác, thành viên và những người chủ sở hữu khác của Affiliate sẽ không chịu trách nhiệm cho bất kỳ và toàn bộ khiếu nại, hành động, yêu cầu, tiền nợ, tổn thất, thiệt hại, phán quyết, hòa giải, phí tổn (kể cả phí luật sư trung bình), và chi phí (bất kỳ hoặc toàn bộ những sự việc đã nói ở trên hoặc dưới đây được quy là "tổn thất") trong phạm vi tổn thất được hiểu theo nghĩa thông thường (hoặc các hành động có liên quan đến những sự việc đó) phát sinh ngoài hoặc dựa trên (i) bất kỳ khiếu nại nào về việc sử dụng thương hiệu hội viên của chúng tôi có vi phạm bất kỳ thương hiệu, tên thương mại, nhãn hiệu dịch vụ, bản quyền, giấy phép, tài sản trí tuệ hoặc quyền sở hữu trí tuệ của bất kỳ bên thứ ba nào khác, (ii) bất kỳ việc dẫn nào sai về sự đại diện hoặc bảo đảm hoặc vi phạm điều khoản hoặc thỏa thuận của bạn ở đây, (iii) việc phát triển, hoạt động, duy trì và nội dung trên trang web của bạn, các sản phẩm và dịch vụ được cung cấp từ trang web của bạn, hoặc (iv) bất kỳ khiếu nại nào có liên quan đến trang web của bạn, bao gồm nhưng không giới hạn nội dung trong đó, không thể quy cho chúng tôi.</value>
+  </data>
+  <data name="Youinputtedanin" xml:space="preserve">
+    <value>Bạn đã nhập một mã xác thực không hợp lệ!</value>
+  </data>
+  <data name="Youmaynotassign" xml:space="preserve">
+    <value>a. Bạn không thể ấn định thỏa thuận này bằng hiệu lực của luật pháp hoặc bằng cách khác mà không có sự cho phép trước bằng văn bản của chúng tôi. Tùy theo hạn chế đó, thỏa thuận này sẽ ràng buộc, có hiệu lực đối với lợi ích, và có thể thi hành chống lại bạn, chúng tôi và người thừa hưởng, người kế quyền của chúng tôi.</value>
+  </data>
+  <data name="Youmaynotmodify" xml:space="preserve">
+    <value>2. Bạn không thể sửa đổi hoặc sử dụng bất kỳ quyền sở hữu trí tuệ, biểu ngữ hoặc tài liệu sáng tạo nào khác do chúng tôi cung cấp vì bất kỳ mục đích nào khác mà không có sự cho phép trước bằng văn bản của Affiliate. Mọi thông báo bản quyền hoặc quyền sở hữu trí tuệ trên bất kỳ tài liệu nào do Affiliate cung cấp và phê chuẩn phải giữ nguyên và không được sửa đổi hoặc loại bỏ.</value>
+  </data>
+  <data name="YoumustagreeTer" xml:space="preserve">
+    <value>Bạn phải đồng ý Điều khoản &amp; Điều kiện để tiếp tục!</value>
+  </data>
+  <data name="Youmustremove12BET" xml:space="preserve">
+    <value>a. Bạn phải gỡ bỏ (các) biểu ngữ của Affiliate ra khỏi trang web của mình và vô hiệu mọi liên kết từ trang web của bạn đến Affiliate.</value>
+  </data>
+  <data name="Youraccountinfo" xml:space="preserve">
+    <value>Thông tin tài khoản của bạn đã được cập nhật thành công.</value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>Email của bạn:</value>
+  </data>
+  <data name="Yourlogindetail" xml:space="preserve">
+    <value>Thông tin đăng nhập của bạn đã được gửi.</value>
+  </data>
+  <data name="YourPayment" xml:space="preserve">
+    <value>Yêu cầu thanh toán của bạn sẽ được xem xét trong 24 giờ tới. Mọi yêu cầu được xem xét theo thứ tự nhận được.</value>
+  </data>
+  <data name="Yourpaymentrequ" xml:space="preserve">
+    <value>Số tiền yêu cầu thanh toán của bạn là ${amount} đã bị hủy.</value>
+  </data>
+  <data name="Yourrequestrefe" xml:space="preserve">
+    <value>Số tham chiếu yêu cầu của bạn là {transid}.</value>
+  </data>
+  <data name="Youruseemailisi" xml:space="preserve">
+    <value>Email bạn sử dụng không hợp lệ, vui lòng thử lại.</value>
+  </data>
+  <data name="Yourusernameis" xml:space="preserve">
+    <value>Tên truy cập của bạn là</value>
+  </data>
+  <data name="Yourwebsitesand" xml:space="preserve">
+    <value>Trang web và các chi tiết trong đơn đăng ký của bạn sẽ được một nhóm tại hội viên Affiliate xem xét để đảm bảo nội dung phù hợp với việc quảng bá cho sản phẩm của chúng tôi.</value>
+  </data>
+  <data name="Youshallnotmake" xml:space="preserve">
+    <value>6. Bạn sẽ không được đưa ra bất kỳ khiếu nại, tuyên bố hoặc bảo đảm nào có liên quan đến Affiliate và bạn sẽ không có thẩm quyền đối với Affiliate và không ràng buộc Affiliate vào bất kỳ nghĩa vụ nào.</value>
+  </data>
+  <data name="YouWillAgreeToRegister" xml:space="preserve">
+    <value>2. Bạn đồng ý đăng ký và duy trì thông tin liên hệ với Affiliate chính xác và đúng sự thật.</value>
+  </data>
+  <data name="Youwillbeentitled" xml:space="preserve">
+    <value>c. Bạn sẽ chỉ được hưởng các phí giới thiệu chưa thanh toán (nếu có) do bạn kiếm được vào hoặc trước ngày chấm dứt thỏa thuận, được quyền bảo lưu khi việc chấm dứt thỏa thuận là kết quả của việc bạn vi phạm các điều khoản trong thỏa thuận này, như được trình bày chi tiết tại điều 9.2.d bên dưới. Chúng tôi có thể khấu trừ khoản thanh toán cuối cùng của bạn trong một thời gian hợp lý để đảm bảo thanh toán đúng số tiền.</value>
+  </data>
+  <data name="YouWillBeSolelyResponsible" xml:space="preserve">
+    <value>4. Bạn sẽ là người duy nhất chịu trách nhiệm cho việc phát triển, điều hành và duy trì trang web của mình và tất cả các tài liệu xuất hiện trên trang web đó và bạn cũng là người phải chịu chi phí. Ví dụ: bạn sẽ phải tự chịu trách nhiệm để đảm bảo rằng các tài liệu đăng trên trang web của bạn không phỉ báng hoặc bất hợp pháp hoặc vi phạm quyền sở hữu trí tuệ của các bên thứ ba. Vì chúng tôi không có quyền kiểm soát trang web riêng của bạn, do đó chúng tôi khước từ mọi trách nhiệm pháp lý đối với những vấn đề này. Hơn nữa, bạn phải đảm bảo mọi chi phí tranh chấp, khiếu nại vận hành trên trang web của bạn không ảnh hưởng đến chúng tôi (không chỉ giới hạn phí luật sư) có liên quan đến sự phát triển, hoạt động, duy trì và nội dung trong trang web của bạn. Điều khoản bồi thường này không tác động đến hành động riêng của chúng tôi hoặc khiếu nại chống lại bạn theo luật áp dụng.</value>
+  </data>
+  <data name="Youwillindemnify" xml:space="preserve">
+    <value>3. Hơn nữa, bạn phải đảm bảo mọi chi phí tranh chấp, khiếu nại vận hành trên trang web của bạn không ảnh hưởng đến chúng tôi (không chỉ giới hạn phí luật sư) có liên quan đến sự phát triển, hoạt động, duy trì và nội dung trong trang web của bạn. Điều khoản bồi thường này không tác động đến hành động riêng của chúng tôi hoặc khiếu nại chống lại bạn theo luật áp dụng.</value>
+  </data>
+  <data name="Youwillnotknowingly" xml:space="preserve">
+    <value>8. Bạn sẽ không cố ý làm lợi từ lưu lượng truy cập xác định hoặc đáng ngờ không được tạo ra theo thiện ý cho dù điều đó thực sự hoặc không thực sự gây thiệt hại cho Affiliate. Nếu xuất hiện hoạt động gian lận do một người được hướng vào một trang web thông qua liên kết của bạn, chúng tôi có quyền rút lại số tiền hoa hồng đã thanh toán cho bạn vào bất kỳ thời điểm nào. Quyết định của chúng tôi trong vấn đề này sẽ là quyết định cuối cùng và sẽ không giải quyết bất kỳ trường hợp nào tương tự. Chúng tôi có quyền giữ lại toàn bộ số tiền phải trả cho bạn theo thỏa thuận này nếu chúng tôi có lý do chính đáng để tin rằng lưu lượng truy cập đó đã được tạo ra do chủ ý của bạn. Ngay cả khi bạn chưa tạo ra lưu lượng truy cập đó theo chủ ý, chúng tôi vẫn có quyền khấu trừ tiền hoa hồng của hội viên có liên quan đến sự việc này.</value>
+  </data>
+  <data name="YouWillPresentOnlyContent" xml:space="preserve">
+    <value>3. Bạn sẽ chỉ trình bày nội dung và các chủ đề được Affiliate phê chuẩn trước bằng văn bản trên trang web của bạn. Nội dung được coi là không phù hợp theo quyết định duy nhất của Affiliate sẽ khiến thỏa thuận hội viên bị chấm dứt ngay lập tức.</value>
+  </data>
+  <data name="Youwillreturn" xml:space="preserve">
+    <value>g. Bạn sẽ trả lại cho chúng tôi bất kỳ thông tin bí mật nào và toàn bộ các bản sao thông tin mà bạn nắm giữ, bảo quản và kiểm soát và sẽ dừng toàn bộ việc sử dụng bất kỳ tên thương mại, thương hiệu, nhãn hiệu dịch vụ, biểu trưng và các tước hiệu buôn bán khác.</value>
+  </data>
+  <data name="Yugoslavia" xml:space="preserve">
+    <value>Nam Tư </value>
+  </data>
+  <data name="Zambia" xml:space="preserve">
+    <value>Zambia </value>
+  </data>
+  <data name="Zimbabwe" xml:space="preserve">
+    <value>Zimbabwe </value>
+  </data>
+  <data name="_12BET" xml:space="preserve">
+    <value>Affiliate</value>
+  </data>
+  <data name="_12BETAffiliatesTeam" xml:space="preserve">
+    <value>Nhóm Affiliate Affiliate</value>
+  </data>
+  <data name="_12BetAffiliatesYourApplication" xml:space="preserve">
+    <value>Affiliate Affiliate - Đơn của bạn</value>
+  </data>
+  <data name="_12BETPlayerAcc" xml:space="preserve">
+    <value>Tài khoản người chơi Affiliate</value>
+  </data>
+  <data name="_12BETUserNamei" xml:space="preserve">
+    <value>Tên người dùng Affiliate không hợp lệ</value>
+  </data>
+  <data name="Adjustment" xml:space="preserve">
+    <value>Điều chỉnh số dư</value>
+  </data>
+  <data name="PSP" xml:space="preserve">
+    <value>PSP</value>
+  </data>
+  <data name="Winlost" xml:space="preserve">
+    <value>Tiền thắng thua của thành viên</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Loại thể thao</value>
+  </data>
+  <data name="Err1006" xml:space="preserve">
+    <value>Xảy ra lỗi. Quá trình cập nhật không thành công</value>
+  </data>
+  <data name="Err102" xml:space="preserve">
+    <value>Wrong position taking (max for master set by super)</value>
+  </data>
+  <data name="Err107" xml:space="preserve">
+    <value>Sorry, Max Per Match must be equal to or less than master agent Max Per Match</value>
+  </data>
+  <data name="Err113" xml:space="preserve">
+    <value>Create customer failed. Please try again</value>
+  </data>
+  <data name="Err114" xml:space="preserve">
+    <value>Create customer failed. Please try again</value>
+  </data>
+  <data name="Err115" xml:space="preserve">
+    <value>Create customer failed. Please try again</value>
+  </data>
+  <data name="Err2" xml:space="preserve">
+    <value>Wrong Min bet/ Max bet/ Max per match/ Credit/ Master Agent name/ user group</value>
+  </data>
+  <data name="Err3" xml:space="preserve">
+    <value>Wrong position taking</value>
+  </data>
+  <data name="Err4" xml:space="preserve">
+    <value>Wrong position taking (min/max set by company)</value>
+  </data>
+  <data name="Err5" xml:space="preserve">
+    <value>Wrong position taking (max set by company)</value>
+  </data>
+  <data name="Moneybookers" xml:space="preserve">
+    <value>Moneybookers</value>
+  </data>
+  <data name="PaymentErr1007" xml:space="preserve">
+    <value>Chèn giao dịch không thành công.</value>
+  </data>
+  <data name="Preference" xml:space="preserve">
+    <value>Tham chiếu</value>
+  </data>
+  <data name="AddUrl" xml:space="preserve">
+    <value>Thêm trang web</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="WebsiteUrli" xml:space="preserve">
+    <value>Xin hãy nhập vào tên các trang web liên kết {i}</value>
+  </data>
+  <data name="CurrentCommissiSetting" xml:space="preserve">
+    <value>Thiết lập hoa hồng hiện tại</value>
+  </data>
+  <data name="CurrentCommissiSetting1" xml:space="preserve">
+    <value>Thiết lập hoa hồng hiện tại</value>
+  </data>
+  <data name="Deductions" xml:space="preserve">
+    <value>Khấu trừ</value>
+  </data>
+  <data name="MaxAmt" xml:space="preserve">
+    <value>Số tiền tối đa</value>
+  </data>
+  <data name="MaxQM" xml:space="preserve">
+    <value>Số hội viên hợp lệ tối đa</value>
+  </data>
+  <data name="MinAmt" xml:space="preserve">
+    <value>Số tiền tối thiểu</value>
+  </data>
+  <data name="MinQM" xml:space="preserve">
+    <value>Số hội viên hợp lệ tối thiểu</value>
+  </data>
+  <data name="MaxAmt_explain" xml:space="preserve">
+    <value>Số tiền tối đa của tổng hội viên thực thua</value>
+  </data>
+  <data name="MaxQM_explain" xml:space="preserve">
+    <value>Số hội viên hợp lệ nhiều nhất</value>
+  </data>
+  <data name="MinAmt_explain" xml:space="preserve">
+    <value>Số tiền tối thiểu của tổng hội viên thực thua</value>
+  </data>
+  <data name="MinQM_explain" xml:space="preserve">
+    <value>Số hội viên hợp lệ ít nhất</value>
+  </data>
+  <data name="Turnover_explain" xml:space="preserve">
+    <value>Tổng số tiền cược tối thiểu của hội viên hợp lệ</value>
+  </data>
+  <data name="NetWinLoss" xml:space="preserve">
+    <value>Tổng lợi nhuận thực trong tháng</value>
+  </data>
+  <data name="QualifyingMem" xml:space="preserve">
+    <value>Thành viên hợp lệ</value>
+  </data>
+  <data name="SpCommStruct" xml:space="preserve">
+    <value>Cấu trúc hoa hồng cá cược thể thao</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Loại hình</value>
+  </data>
+  <data name="Tier" xml:space="preserve">
+    <value>Tầng</value>
+  </data>
+  <data name="Marketing" xml:space="preserve">
+    <value>Marketing</value>
+  </data>
+  <data name="Apr" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Aug" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="Dec" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="Dontshowit" xml:space="preserve">
+    <value>Không hiển thị lần sau</value>
+  </data>
+  <data name="Feb" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Jan" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Jul" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Jun" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Mar" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="May_short" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Nov" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="Oct" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Sept" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="EmailFormat" xml:space="preserve">
+    <value>Định dạng email</value>
+  </data>
+  <data name="HtmlFormat" xml:space="preserve">
+    <value>Dạng HTML</value>
+  </data>
+  <data name="PlainText" xml:space="preserve">
+    <value>Dạng Text</value>
+  </data>
+  <data name="EnglishSupport" xml:space="preserve">
+    <value>Tiếng Anh</value>
+  </data>
+  <data name="ChineseSupport" xml:space="preserve">
+    <value>Tiếng Trung Quốc</value>
+  </data>
+  <data name="ThaiSupport" xml:space="preserve">
+    <value>Tiếng Thái</value>
+  </data>
+  <data name="Bet12Username" xml:space="preserve">
+    <value>Tên truy cập</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="EnglishEU" xml:space="preserve">
+    <value>English_Euro</value>
+  </data>
+  <data name="ChineseTraditio" xml:space="preserve">
+    <value>繁體中文</value>
+  </data>
+  <data name="ChineseSimplifi" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="Thai" xml:space="preserve">
+    <value>ภาษาไทย</value>
+  </data>
+  <data name="Indonesian" xml:space="preserve">
+    <value>Indonesian</value>
+  </data>
+  <data name="Vietnamese" xml:space="preserve">
+    <value>Tiếng Việt</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value>Español</value>
+  </data>
+  <data name="AfterChargeback" xml:space="preserve">
+    <value>&lt;p&gt;“Tổng Tiền cược Thắng của Affiliate” là tổng của toàn bộ các khoản đặt cược của ít nhất năm (5) Thành viên Đặt cược Hoạt động trong tài khoản hội viên của bạn trong một tháng dương lịch, trừ đi toàn bộ số tiền thắng bởi hoặc được trả cho các Thành viên Đặt cược Hoạt động của bạn. &lt;/p&gt;
+&lt;p&gt; “Tiền trả lại” là khoản tiền bị trừ khi một khách hàng là một chủ thẻ tín dụng phát hiện ra các khoản tiền trả lại bất thường và chưa được phép của họ được thực hiện trên Thẻ Tín dụng/Thẻ Ghi nợ của khách hàng và chủ thẻ tín dụng yêu cầu ngân hàng trả lại các khoản tiền đó. Tiền trả lại có thể liên quan đến,  nhưng không giới hạn ở, việc sử dụng phi pháp thẻ hoặc số thẻ của chủ thẻ tín dụng từ một bên thứ ba. &lt;/p&gt;
+&lt;p&gt;Nếu người chơi thực hiện thu tiền lại, thì doanh thu bị tranh chấp hoặc bị trả lại sẽ bị tước bỏ và do đó sẽ bị trừ khỏi số dư tổng của bạn cho tháng hiện tại. Nếu khấu trừ doanh thu tích lũy này vượt quá số tiền phải trả hiện tại của bạn thì số dư sẽ trở về số dư âm và bạn sẽ phải kiếm đủ doanh thu để trả cho số tiền đòi lại đó trước khi có thể bắt đầu kiếm lại doanh thu. &lt;/p&gt;
+&lt;p&gt;Tiền trả lại sẽ chỉ đến hạn cho đến khi doanh thu được những người chơi khác của bạn tạo ra đã trả hết số tiền phải trả. Bạn xác nhận rằng Affiliate chỉ có thể thanh toán một phần trăm lợi nhuận thực tế của họ chứ không phải là doanh thu gian lận. &lt;/p&gt;
+&lt;p&gt; “Tiền thưởng” bao gồm tiền tặng, tiền miễn phí, tín dụng, thưởng đăng ký, tiền khuyến mãi và các khoản khuyến khích khác được ghi có vào tài khoản của khách hàng. Vì khách hàng không thực sự mua những khoản tiền này nên Affiliate không thể trả hoa hồng cho chúng. &lt;/p&gt;</value>
+  </data>
+  <data name="Nickname" xml:space="preserve">
+    <value>Nickname</value>
+  </data>
+  <data name="ErrAccClosed" xml:space="preserve">
+    <value>Player Account has been closed. Please &lt;a href='../ContactUs.aspx'&gt;Contact administrator&lt;/a&gt;.</value>
+  </data>
+  <data name="ErrAccIsNotExisted" xml:space="preserve">
+    <value>Player Account does not exist.</value>
+  </data>
+  <data name="ErrInvalidPlayerInfo" xml:space="preserve">
+    <value>Invalid Player Account information.</value>
+  </data>
+</root>

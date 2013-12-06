@@ -1,0 +1,38 @@
+﻿<div style="width:{width}px;" class="pager {pagingcss}">
+    <!--pagesize-->
+    <div  >
+
+        <div class="pagesize">
+            Page size 
+            <select id="slPageSize" name="slPageSize" onchange="LoadData(1);" class="r">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+            </select>
+            <script type="text/javascript">$("slPageSize").value="{pagesize}";</script>
+        </div>
+
+        <div class="divpageleft">
+            <!--headbutton--> <a href="javascript:{buttonevent}" class="abutton"><span id="{txtheadbutton}">{txtheadbutton}</span></a><!--/headbutton-->
+            <!--excelbutton--><span class="excelexport"> </span><!--/excelbutton-->
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--/pagesize-->
+    <div class="header_01">
+        <!--selectall-->
+        <div id="header_link">Select: <a href="javascript:checkAll(true);" class="textlink_bold">All</a> <a href="javascript:checkAll(false);" class="textlink_bold">None</a></div>
+        <!--/selectall-->
+        <div id="next_page">
+            <span id="first" style="padding-top:2px;" onclick="GotoPage(1, {maxpage});">&nbsp;</span>
+            <span id="prev" style="padding-top:2px;" onclick="GotoPage({ppage}, {maxpage});">&nbsp;</span>
+            Page <a id="{aId}" href="javascript:PageNum('{aId}', '{txtID}', true);">{page}</a> 
+            <input type="text" onkeypress="ChangePage(event, '{txtID}', {maxpage});" onblur="PageNum('{aId}', '{txtID}', false);" onfocus="PageNum('{aId}', '{txtID}', true);" value="{page}" name="{txtID}" id="{txtID}" style="width: 30px; display: none;" />
+            {of} {all}
+            <span id="next" style="padding-top:2px;" onclick="GotoPage({npage}, {maxpage});">&nbsp;</span>
+            <span id="last" style="padding-top:2px;" onclick="GotoPage({lpage}, {maxpage});">&nbsp;</span>
+        </div>
+    </div>
+</div>

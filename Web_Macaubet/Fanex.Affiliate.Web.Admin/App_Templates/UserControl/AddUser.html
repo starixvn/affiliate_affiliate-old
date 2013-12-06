@@ -1,0 +1,71 @@
+<div class="padl0">
+    <div id="errMsg" style="display: none; width: 200px; margin-bottom: 10px;">
+        <div id="error_item">
+            <ul>
+                <li><a class="err-msg" id="error_msg"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="divContent" class="pcontent" style="width: 250px;">
+    
+        <table border="0" cellpadding="0" cellspacing="3" style="margin-top: 10px;">
+            <tr align="left">
+            <td style="width: 70px; padding-left: 20px;color: blue" colspan="2">{username-valitation}</td>
+            </tr>
+            <tr align="left">
+                <td style="width: 70px; padding-left: 20px; ">
+                    {username}
+                </td>
+                <td>
+                    <input type="text" id="username" name="username" 
+                    onblur="removeextra(this);"
+                    maxlength="18" onkeypress="return PreExec(event);"
+                        style="width: 100px; padding-left: 0" />
+                </td>
+            </tr>
+            <tr align="left">
+                <td style="padding-left: 20px;">
+                    {password}
+                </td>
+                <td>
+                    <input type="password" id="password" name="password" onkeypress="PreExec(event);"
+                        style="width: 118px;" maxlength="20" />
+                </td>
+            </tr>
+            <tr align="left">
+                <td style="padding-left: 20px;">
+                    {firstname}
+                </td>
+                <td>
+                    <input type="text" id="firstname" name="firstname" onkeypress="PreExec(event);" style="width: 148px;"
+                        maxlength="20" />
+                </td>
+            </tr>
+            <tr align="left">
+                <td style="padding-left: 20px;">
+                    {lastname}
+                </td>
+                <td>
+                    <input type="text" id="lastname" name="lastname" onkeypress="PreExec(event);" style="width: 148px;"
+                        maxlength="20" />
+                </td>
+            </tr>
+            <tr align="left">
+                <td style="padding-left: 20px;">
+                    {department}
+                </td>
+                <td>
+                    <select id="dep" name="dep">
+                        {option}
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="margin-top:5px;">
+        <input type="button" class="buttonlogin" value="{Add}" id="btnadd" name="btnadd"
+            style="cursor: pointer; width: 50px;" onclick="Exec_NewUser(0);" />&nbsp;
+        <input type="button" class="buttonlogin" value="{Cancel}" id="btncancel" name="btncancel"
+            style="cursor: pointer; width: 50px;" onclick="Reset();" />
+    </div>
+</div>

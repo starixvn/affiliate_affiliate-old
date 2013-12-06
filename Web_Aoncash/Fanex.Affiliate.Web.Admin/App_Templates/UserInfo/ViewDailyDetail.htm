@@ -1,0 +1,74 @@
+<div id="{divCss}">
+{submenu}
+<!--isreport-->
+<a href="javascript:history.go(-{step1})">{commission}</a> >>&nbsp;<a href="javascript:history.go(-{step2})">{StatementHistory} ({earningMonth})</a>
+<!--/isreport-->
+<!--notreport-->
+<a href="javascript:history.go(-{step1})">{StatementHistory}</a> >>&nbsp;<a href="javascript:history.go(-{step2})">{earningMonth}</a>
+<!--/notreport-->
+>> <span style="font-weight: bold">{date}</span>
+<!--search form-->
+<form id="frmSearch" name="frmSearch" method="get">
+    <div id="search_cont">
+        <div id="header_search">
+            {SearchBy}&nbsp;&nbsp;{slProduct}
+        </div>
+        <div id="spTime" style="float:right; vertical-align:middle; padding: 3px 10px 0 0;"></div>
+    </div>
+    <input type="hidden" id="monthdate" name="monthdate" value="{monthdate}" />
+    <input type="hidden" id="step1" name="step1" value="{step1}" />
+    <input type="hidden" id="step2" name="step2" value="{step2}" />
+    <input type="hidden" id="custid" name="custid" value="{custid}" />
+    <input type="hidden" id="isreport" name="isreport" value="{isreport}" />
+</form>
+<!--/search form-->
+
+<table class="aff-table" cellspacing="1" cellpadding="3" border="0" width="{width}px">
+    <!--header-->
+    <tr>
+        <th style="width: 15px;">&nbsp;</th>
+        <th>{username}</th>
+        
+        <th style="width: 110px">{winlost}</th>
+        <th style="width: 110px">{turnover}</th>        
+        <!--sportsbook-->
+        <th style="width: 110px">{deposit}</th>
+        <th style="width: 120px">{withdrawal}</th>
+        <th style="width: 100px">{bonus}</th>
+        <th style="width: 110px">{adjustment}</th>
+        <th style="width: 100px">{psp}</th>
+        <!--/sportsbook-->
+    </tr>
+    <!--/header-->
+    <!--content-->
+    <tr bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'">
+        <td class="c">{no}</td>
+        <td class="l">{username-val}</td>
+        
+        <td class="number">{winlost-val}</td>
+        <td class="number">{turnover-val}</td>
+        <!--sportsbook-->
+        <td class="number">{deposit-val}</td>
+        <td class="number">{withdrawal-val}</td>
+        <td class="number">{bonus-val}</td>
+        <td class="number">{adjustment-val}</td>
+        <td class="number">{psp-val}</td>
+        <!--/sportsbook-->
+    </tr>
+    <!--/content-->
+    <!--total-->
+    <tr>
+        <th class="c" colspan="2">{total}</th>
+        <th class="number">{totalwinlost}</th>
+        <th class="number">{totalturnover}</th>
+        <!--sportsbook-->
+        <th class="number">{totaldeposit}</th>
+        <th class="number">{totalwithdrawal}</th>
+        <th class="number">{totalbonus}</th>
+        <th class="number">{totaladjustment}</th>
+        <th class="number">{totalpsp}</th>
+        <!--/sportsbook-->
+    </tr>
+    <!--/total-->
+</table>
+</div>

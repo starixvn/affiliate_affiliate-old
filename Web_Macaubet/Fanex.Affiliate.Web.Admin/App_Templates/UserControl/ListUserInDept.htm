@@ -1,0 +1,142 @@
+﻿<div class="padl0">
+<form id="frmSearch" onsubmit="return LoadData(1);">
+    <div id="errMsg" style="display: none; width: 790px;">
+        <div id="error_item">
+            <ul>
+                <li><a class="err-msg" id="error_msg"></a></li>
+            </ul>
+        </div>
+    </div>
+    <table cellspacing="1" cellpadding="3" border="0" style="width: 845px;">
+        <!--lmt_chk-->
+        <tr>
+            <td>
+                <div id="search_cont">
+                    <div id="header_search">
+                        {keyword}&nbsp;&nbsp;<input type="text" id="Text1" onkeypress="PreSearch(event);"                            
+                            name="keyword" style="width: 150px;" value="{_Value}" />&nbsp;&nbsp; {firstletter}&nbsp;&nbsp;
+                            <select
+                                id="alp" name="alp">{alphabet}</select>&nbsp;&nbsp;
+                        &nbsp;&nbsp;<span id="divsearch" onclick="javascript:$('btnsearch').click();">&nbsp;</span>
+                    </div>
+                </div>                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="javascript:OpenUpdateMult({depid-val},'{Dep_value}',false);" class="abutton"
+                    id="btnUpdateTop"><span>{Update}</span> </a>&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="header_01" id="header_01_top">
+                    <div id="header_link">
+                        {Select}: <a href="javascript:checkAll(true);" class="textlink_bold">{All}</a> <a href="javascript:checkAll(false);"
+                            class="textlink_bold">{None}</a></div>
+                </div>
+            </td>
+        </tr>
+        <!--/lmt_chk-->
+    </table>
+    <table class="aff-table" cellspacing="1" cellpadding="3" border="0" style="width: 838px; margin-left: 3px">
+        <tr>
+            <!--lmt_chk-->
+            <th style="width: 20px">&nbsp;</th>
+            <!--/lmt_chk-->
+            <th>
+                &nbsp;
+            </th>
+            <th>
+                {UserName}
+            </th>
+            <th>
+                {FirstName}
+            </th>
+            <th>
+                {LastName}
+            </th>
+            <th style="width: 70px;">
+                {Status}
+            </th>
+            <th>
+                {Creator}
+            </th>
+            <th style="width: 110px;">
+                {CreatedDate}
+            </th>
+            <th>
+                {Policy}
+            </th>
+            <th style="width: 40px;">
+                {Password}
+            </th>
+        </tr>
+        <!--content-->
+        <tr class="nowrap {Class-val}" bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'">
+            <!--lmt_chk-->
+            <td class="c">
+                <span class="chk ic-uncheck" id="{custid}_{UserName_Value}">&nbsp;</span>
+            </td>
+            <!--/lmt_chk-->
+            <td class="c">
+                {No_Value}
+            </td>
+            <td>
+                <a href="#" onclick="DoCal('EditUser.aspx?custid={custid}&us={UserName_Value}&depid={depid}&isdep=1&deptname={Dep_value}', '{UserName_Value}',330,250);">
+                    {UserName_Value}</a>
+            </td>
+            <td>
+                {FirstName_Value}
+            </td>
+            <td>
+                {LastName_Value}
+            </td>
+            <td>
+                {Status_Value}&nbsp;<span class="{div-class}" id="{custid},{status}"></span>
+            </td>
+            <td>
+                {Creator_Value}
+            </td>
+            <td>
+                {CreatedDate_Value}
+            </td>
+            <td>
+                <a href="#" onclick="javascript:DoCal('EditAdminPolicy.aspx?custid={custid}&us={UserName_Value}&depid={Depid}&depname={Dep_value}','{UserName_Value}', 450, 340);">
+                    {RolePolicy}</a>
+            </td>
+            <td class="c">
+                <!--reset-->
+                <span class="icedit" onclick="DoCal('../ChangePass.aspx?custid={custid}&username={UserName_Value}&isAdmin={isAdmin}', 'Change Password');">
+                    &nbsp;</span>
+                <!--/reset-->
+            </td>
+        </tr>
+        <!--/content-->
+    </table>
+    <table cellspacing="1" cellpadding="3" border="0" style="width: 845px;">
+        <tr>
+            <td>
+                <div class="header_01" id="header_01_bottom">
+                    <div style="float: left; width: auto;">
+                        {Select}: <a href="javascript:checkAll(true);" class="textlink_bold">{All}</a> <a href="javascript:checkAll(false);"
+                            class="textlink_bold">{None}</a></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 3px;">
+                <a href="javascript:OpenUpdateMult({depid-val},'{Dep_value}',false);" class="abutton"
+                    id="btnUpdateBottom"><span>{Update}</span> </a>&nbsp;
+            </td>
+        </tr>
+    </table>
+    <input type="submit" id="btnsearch" name="btnsearch" value="" class="hide" />
+    <input type="hidden" id="isReload" name="isReload" value="{isReload}" />
+    <input type="hidden" id="depid" name="depid" value="{depid-val}" />
+    <input type="hidden" id="depname" name="depname" value="{Dep_value}" />
+    <input type="hidden" id="ChangeStatusMess" name="ChangeStatusMess" value="{ChangeStateMess}" />
+    <input type="hidden" id="totalAdmin" name="totalAdmin" value="{totalAdmin-val}" />
+    <input type="hidden" id="fletter" name="fletter" value="{fletter-val}" />
+</form>
+</div>

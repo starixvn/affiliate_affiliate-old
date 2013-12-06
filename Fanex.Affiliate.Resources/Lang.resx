@@ -1,0 +1,2706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccId" xml:space="preserve">
+    <value>Account ID</value>
+  </data>
+  <data name="AccInfo" xml:space="preserve">
+    <value>Account Information</value>
+  </data>
+  <data name="Account12bet" xml:space="preserve">
+    <value>Affiliate Player Account</value>
+  </data>
+  <data name="AccOverview" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="ActiveAcc" xml:space="preserve">
+    <value>This e-mail will include a link, which you need to click on. to activate your account and confirm your e-mail address and conclude your registration.</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Affiliate" xml:space="preserve">
+    <value>Affiliate</value>
+  </data>
+  <data name="BankAccnumber" xml:space="preserve">
+    <value>Bank Account Number</value>
+  </data>
+  <data name="BankAddress" xml:space="preserve">
+    <value>Bank Address</value>
+  </data>
+  <data name="BankCode" xml:space="preserve">
+    <value>Bank ABA/Swift/Sort Code</value>
+  </data>
+  <data name="BankName" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="BankTransfer" xml:space="preserve">
+    <value>Bank Transfer</value>
+  </data>
+  <data name="Bet12" xml:space="preserve">
+    <value>Affiliate</value>
+  </data>
+  <data name="CannotSendmail" xml:space="preserve">
+    <value>Cannot send mail.Please try again.</value>
+  </data>
+  <data name="Casino" xml:space="preserve">
+    <value>Casino</value>
+  </data>
+  <data name="Cheque" xml:space="preserve">
+    <value>Cheque</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="CompleteForm" xml:space="preserve">
+    <value>Please complete this form to register for your Affiliate affiliate account.</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>Contact Information</value>
+  </data>
+  <data name="ContactNumber" xml:space="preserve">
+    <value>Contact Number</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Deposit" xml:space="preserve">
+    <value>Deposit</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="Email1" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailInvalid" xml:space="preserve">
+    <value>Your use email is invalid, please try again.</value>
+  </data>
+  <data name="Faqs" xml:space="preserve">
+    <value>FAQs</value>
+  </data>
+  <data name="FName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="ForgetPassword" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="HowToBet" xml:space="preserve">
+    <value>How to bet</value>
+  </data>
+  <data name="LName" xml:space="preserve">
+    <value>Last Name </value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="MailingInfor" xml:space="preserve">
+    <value>Mailing Information</value>
+  </data>
+  <data name="ManageAccount" xml:space="preserve">
+    <value>Manage Account</value>
+  </data>
+  <data name="Media" xml:space="preserve">
+    <value>Media Gallery</value>
+  </data>
+  <data name="MinWithdraw" xml:space="preserve">
+    <value>Minimum Withdrawal Amount</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="MoneyBooker" xml:space="preserve">
+    <value>Moneybookers</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="MyAcc" xml:space="preserve">
+    <value>Account Info</value>
+  </data>
+  <data name="MyHome" xml:space="preserve">
+    <value>My Home</value>
+  </data>
+  <data name="Neteller" xml:space="preserve">
+    <value>Neteller</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PaymentInfor" xml:space="preserve">
+    <value>Payment Information</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>Payment Method</value>
+  </data>
+  <data name="Poker" xml:space="preserve">
+    <value>Poker</value>
+  </data>
+  <data name="PostCode" xml:space="preserve">
+    <value>Postcode/Zip</value>
+  </data>
+  <data name="PreferLang" xml:space="preserve">
+    <value>Preference</value>
+  </data>
+  <data name="ProgDetails" xml:space="preserve">
+    <value>Program Details</value>
+  </data>
+  <data name="ReEmail" xml:space="preserve">
+    <value>Verify Email Address</value>
+  </data>
+  <data name="RegisForm" xml:space="preserve">
+    <value>Application Form</value>
+  </data>
+  <data name="RegisSuccess" xml:space="preserve">
+    <value>Thank you for submitting your application.&lt;br/&gt;&lt;br/&gt;Your websites and application details will be reviewed by the team at Affiliate Affiliates to ensure that content is suitable for promoting our products.&lt;br/&gt;&lt;br/&gt;Within 3 days we should be able to provide you with a decision in regard to your application. If you are approved, you will be able to enjoy full access to our affiliate program.&lt;br /&gt;&lt;br /&gt;Best Regards,&lt;br /&gt;&lt;br /&gt;The team at Affiliate Affiliates</value>
+  </data>
+  <data name="RequireInfo" xml:space="preserve">
+    <value>Fields marked &lt;font color="red"&gt;*&lt;/font&gt; must be completed</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Sign up</value>
+  </data>
+  <data name="SiteInfor" xml:space="preserve">
+    <value>Website Information</value>
+  </data>
+  <data name="SiteUrl" xml:space="preserve">
+    <value>Website URL</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="SubjectForgetPass" xml:space="preserve">
+    <value>Affiliate Affiliates - Your login detail</value>
+  </data>
+  <data name="SubjectNewPass" xml:space="preserve">
+    <value>Affiliate Affiliates - Your new password</value>
+  </data>
+  <data name="TermCondition" xml:space="preserve">
+    <value>Terms &amp; Conditions</value>
+  </data>
+  <data name="UnderReview" xml:space="preserve">
+    <value>Application Under Review</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="Validation" xml:space="preserve">
+    <value>Validation</value>
+  </data>
+  <data name="ValidationCode" xml:space="preserve">
+    <value>You inputted an invalid validation code!</value>
+  </data>
+  <data name="ContactTitle" xml:space="preserve">
+    <value>Please direct any comments or questions to 
+            {email}
+            or using the form below.                   
+    </value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="AffiliateID" xml:space="preserve">
+    <value>Affiliate ID</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="MessageSent" xml:space="preserve">
+    <value>Message Sent</value>
+  </data>
+  <data name="MessageSentReview" xml:space="preserve">
+    <value>
+        Thank you for contacting us. {br}
+        Your message has been sent. We will respond to your request as soon as possible. {br}{br}
+        Have a great day! {br}{br}
+        Best regards, {br}{br}
+        Affiliate Affiliate Support Team
+    </value>
+  </data>
+  <data name="MessageSentFail" xml:space="preserve">
+    <value>Message sent fail</value>
+  </data>
+  <data name="MessageSentFailContent" xml:space="preserve">
+    <value>Have problem while sending email. {br} Please contact us later.</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="ErrMsgForgetPwFail" xml:space="preserve">
+    <value>The information to reset password is not valid, please &lt;a href='ForgetPass.aspx'&gt;try again&lt;/a&gt;.</value>
+  </data>
+  <data name="UpdateAccSuccess" xml:space="preserve">
+    <value> Your account information has been updated successfully.</value>
+  </data>
+  <data name="Dear" xml:space="preserve">
+    <value>Dear</value>
+  </data>
+  <data name="RegisSubject" xml:space="preserve">
+    <value>Affiliate Affiliate - Your Application</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="CsdSubject" xml:space="preserve">
+    <value>Affiliate Affiliate – New account awaiting approval</value>
+  </data>
+  <data name="Banner" xml:space="preserve">
+    <value>Banner</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="ImageType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="TextLink" xml:space="preserve">
+    <value>Text Link</value>
+  </data>
+  <data name="ErrEmailInvalid" xml:space="preserve">
+    <value>Email address is invalid.</value>
+  </data>
+  <data name="ErrEmailRequire" xml:space="preserve">
+    <value>Your Email is required.</value>
+  </data>
+  <data name="TitelForgetPass" xml:space="preserve">
+    <value>A new password will be sent to the email address that you provided.</value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>Your Email:</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="ChangePass" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ChangePassText" xml:space="preserve">
+    <value>Use this form to change your password. Once changed, your new password will be in effect next time you login.</value>
+  </data>
+  <data name="NewPass" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="RePass" xml:space="preserve">
+    <value>Re-enter New Password</value>
+  </data>
+  <data name="ErrmsgEntryPassword" xml:space="preserve">
+    <value>Please enter password.</value>
+  </data>
+  <data name="ErrmsgEntryUsername" xml:space="preserve">
+    <value>Please enter username.</value>
+  </data>
+  <data name="ErrmsgEntryValidCode" xml:space="preserve">
+    <value>Please enter validation code.</value>
+  </data>
+  <data name="ChangePassErr" xml:space="preserve">
+    <value>Change password error</value>
+  </data>
+  <data name="OldPassErr" xml:space="preserve">
+    <value>Old password is incorrect.</value>
+  </data>
+  <data name="OldPass" xml:space="preserve">
+    <value>Old Password</value>
+  </data>
+  <data name="PassCheck" xml:space="preserve">
+    <value>Password must have at least 6 charecters, including at least 2 letters and at least 2 digits. (e.g:pass22)</value>
+  </data>
+  <data name="Msgkickout" xml:space="preserve">
+    <value>Another session has logged in or your session is expired. Forced to logout!</value>
+  </data>
+  <data name="BalForward" xml:space="preserve">
+    <value>Balance Brought Forward</value>
+  </data>
+  <data name="Comm" xml:space="preserve">
+    <value>Commission</value>
+  </data>
+  <data name="CommCurr" xml:space="preserve">
+    <value>Current Commission Earning</value>
+  </data>
+  <data name="CommPercent" xml:space="preserve">
+    <value>Commission Percentage</value>
+  </data>
+  <data name="CurrBal" xml:space="preserve">
+    <value>Current Balance</value>
+  </data>
+  <data name="Last6Month" xml:space="preserve">
+    <value>Last 6 Months Earnings</value>
+  </data>
+  <data name="NewSignup" xml:space="preserve">
+    <value>New Signups</value>
+  </data>
+  <data name="SumPerform" xml:space="preserve">
+    <value>Summary Performance for</value>
+  </data>
+  <data name="TotalPlay" xml:space="preserve">
+    <value>Total Players</value>
+  </data>
+  <data name="Statistic" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="ViewMore" xml:space="preserve">
+    <value>View more</value>
+  </data>
+  <data name="MakeYourTrafficDay" xml:space="preserve">
+    <value>MAKE YOUR TRAFFIC PAY!</value>
+  </data>
+  <data name="MakeYourTrafficDayContent" xml:space="preserve">
+    <value>
+      Receive lifetime commission on every player you refer to Affiliate. Enjoy the best player conversion and retention in the market today thanks to our competitive point spread. </value>
+  </data>
+  <data name="TitleLogin" xml:space="preserve">
+    <value>Affiliate Login</value>
+  </data>
+  <data name="hotnew" xml:space="preserve">
+    <value>Online betting, product betting and football betting at spondemo.com</value>
+  </data>
+  <data name="NoInfo" xml:space="preserve">
+    <value>No information is available</value>
+  </data>
+  <data name="Err1" xml:space="preserve">
+    <value>Wrong discount</value>
+  </data>
+  <data name="Err100" xml:space="preserve">
+    <value>Sorry, cannot create agent</value>
+  </data>
+  <data name="Err1001" xml:space="preserve">
+    <value>Invalid affiliate information</value>
+  </data>
+  <data name="Err1002" xml:space="preserve">
+    <value>The email address you've typed had been used to register account. Please choose another one!</value>
+  </data>
+  <data name="Err1003" xml:space="preserve">
+    <value>Player Username is invalid.</value>
+  </data>
+  <data name="Err1004" xml:space="preserve">
+    <value>Invalid user information. Update process is unsuccessful</value>
+  </data>
+  <data name="Err1005" xml:space="preserve">
+    <value>Error occurs. Update process is unsuccessful</value>
+  </data>
+  <data name="Err1006" xml:space="preserve">
+    <value>Error occurs. Update process is unsuccessful</value>
+  </data>
+  <data name="Err101" xml:space="preserve">
+    <value>This username is not available</value>
+  </data>
+  <data name="Err102" xml:space="preserve">
+    <value>Wrong position taking (max for master set by super)</value>
+  </data>
+  <data name="Err103" xml:space="preserve">
+    <value>Sorry, min bet must be less than max bet and max bet must be less than max bet per match</value>
+  </data>
+  <data name="Err104" xml:space="preserve">
+    <value>Sorry, credit update is not successful, You have exceeded your master credit</value>
+  </data>
+  <data name="Err105" xml:space="preserve">
+    <value>Sorry, min bet must be equal to or greater than master agent min bet</value>
+  </data>
+  <data name="Err107" xml:space="preserve">
+    <value>Sorry, Max Per Match must be equal to or less than master agent Max Per Match</value>
+  </data>
+  <data name="Err111" xml:space="preserve">
+    <value>Create customer failed. Please try again</value>
+  </data>
+  <data name="Err112" xml:space="preserve">
+    <value>Create customer failed. Please try again</value>
+  </data>
+  <data name="Err113" xml:space="preserve">
+    <value>Create customer failed. Please try again</value>
+  </data>
+  <data name="Err114" xml:space="preserve">
+    <value>Create customer failed. Please try again</value>
+  </data>
+  <data name="Err115" xml:space="preserve">
+    <value>Create customer failed. Please try again</value>
+  </data>
+  <data name="Err116" xml:space="preserve">
+    <value>You are not authorized to create/edit this information</value>
+  </data>
+  <data name="Err2" xml:space="preserve">
+    <value>Wrong Min bet/ Max bet/ Max per match/ Credit/ Master Agent name/ user group</value>
+  </data>
+  <data name="Err3" xml:space="preserve">
+    <value>Wrong position taking</value>
+  </data>
+  <data name="Err4" xml:space="preserve">
+    <value>Wrong position taking (min/max set by company)</value>
+  </data>
+  <data name="Err5" xml:space="preserve">
+    <value>Wrong position taking (max set by company)</value>
+  </data>
+  <data name="Err999" xml:space="preserve">
+    <value>Create Affiliate Info failed. Please try again</value>
+  </data>
+  <data name="HowAffilliateWork" xml:space="preserve">
+    <value>As a spondemo.com Affiliate, all you have to do is direct your visitors to our website using special tracking code that you can place on your website</value>
+  </data>
+  <data name="EmailMatch" xml:space="preserve">
+    <value>Email addresses that you entered do not match.</value>
+  </data>
+  <data name="IsInvalid" xml:space="preserve">
+    <value>is invalid.</value>
+  </data>
+  <data name="IsRequired" xml:space="preserve">
+    <value>is required.</value>
+  </data>
+  <data name="EmailRequire" xml:space="preserve">
+    <value>Email Address is required.</value>
+  </data>
+  <data name="TermErr" xml:space="preserve">
+    <value>Terms &amp;amp; Conditions not agree, Please check!</value>
+  </data>
+  <data name="ErrmsgEmailClose" xml:space="preserve">
+    <value>This email address is being used by an affliliate that's inactive or has been closed. Please try again or &lt;a href="ContactUs.aspx" class='err-msg'&gt;Contact us&lt;/a&gt;.
+</value>
+  </data>
+  <data name="ErrmsgEmailNotApprove" xml:space="preserve">
+    <value>This email address is being used by an affliliate that's inactive or has not been approved. Please try again or  &lt;a href="ContactUs.aspx" class='err-msg'&gt;Contact us&lt;/a&gt;.
+</value>
+  </data>
+  <data name="ErrmsgNotExistsEmail" xml:space="preserve">
+    <value>You have not entered an email address that we recognise. Please try again or  &lt;a href="ContactUs.aspx" class='err-msg'&gt;Contact us&lt;/a&gt;.</value>
+  </data>
+  <data name="CountryErr" xml:space="preserve">
+    <value>Please select country</value>
+  </data>
+  <data name="PreferLangErr" xml:space="preserve">
+    <value>Please select preferred language.</value>
+  </data>
+  <data name="PwdChanged" xml:space="preserve">
+    <value>Password changed successfully</value>
+  </data>
+  <data name="ExpectList" xml:space="preserve">
+    <value>&lt;ul&gt;
+        &lt;li&gt;Earn 30% of players net losses for life &lt;/li&gt;
+        &lt;li&gt;Detailed stats tracking system&lt;/li&gt;
+        &lt;li&gt;Excellent players conversion and retention rates&lt;/li&gt;
+        &lt;li&gt;Prompt monthly payouts&lt;/li&gt;
+        &lt;li&gt;Wide range of payment methods&lt;/li&gt;
+        &lt;li&gt;1.24/7 online support for you and your players&lt;/li&gt;
+	&lt;/ul&gt;</value>
+  </data>
+  <data name="Earn30" xml:space="preserve">
+    <value>Earn as high as 50% of players net losses for life</value>
+  </data>
+  <data name="DetailedStas" xml:space="preserve">
+    <value>Detailed stats tracking system</value>
+  </data>
+  <data name="ExcellentPlayers" xml:space="preserve">
+    <value>Excellent players conversion and retention rates</value>
+  </data>
+  <data name="PromptMonthly" xml:space="preserve">
+    <value>Prompt monthly payouts</value>
+  </data>
+  <data name="WideRange" xml:space="preserve">
+    <value>Wide range of payment methods</value>
+  </data>
+  <data name="OnlineSupport" xml:space="preserve">
+    <value>24/7 online support for you and your players </value>
+  </data>
+  <data name="OnlineSupportDetail" xml:space="preserve">
+    <value>We have a team of experienced affiliate managers on call (almost) 24/7 to support all your needs from banner queries through to marketing tips and advice on how to maximize your earnings.
+      &lt;p&gt;With intra-affiliate competitions, networking events and incentives, they're committed to helping you stay ahead of the game.&lt;/p&gt;
+    </value>
+  </data>
+  <data name="ExpectTitle" xml:space="preserve">
+    <value>What we offer?</value>
+  </data>
+  <data name="HowAffilliateTitle" xml:space="preserve">
+    <value>How does it work?</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>© {now} Sunplus™ Holdings (IOM) Limited All Rights Reserved.</value>
+  </data>
+  <data name="TotalActive" xml:space="preserve">
+    <value>Total Active Players</value>
+  </data>
+  <data name="TotalDeposit" xml:space="preserve">
+    <value>Total Deposits</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="DateRequest" xml:space="preserve">
+    <value>Request Date</value>
+  </data>
+  <data name="ErrBalance" xml:space="preserve">
+    <value>Request amount must be less than current balance</value>
+  </data>
+  <data name="ErrMinAmt" xml:space="preserve">
+    <value>Request amount must be greater than or equal to minimum withdrawal amount</value>
+  </data>
+  <data name="Proccessing" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="RecentPayment" xml:space="preserve">
+    <value>Recent Payment</value>
+  </data>
+  <data name="RequestAmount" xml:space="preserve">
+    <value>Request Amount</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="Balance0" xml:space="preserve">
+    <value>You cannot request payout because of insufficient balance.</value>
+  </data>
+  <data name="PaymentRequest" xml:space="preserve">
+    <value>Payout</value>
+  </data>
+  <data name="PaymentErr1001" xml:space="preserve">
+    <value>Sorry, amount is invalid.</value>
+  </data>
+  <data name="PaymentErr1002" xml:space="preserve">
+    <value>Invalid Role ID.</value>
+  </data>
+  <data name="PaymentErr1003" xml:space="preserve">
+    <value>Sorry, this Affiliate does not have enough money to withdraw.</value>
+  </data>
+  <data name="PaymentErr1004" xml:space="preserve">
+    <value>Invalid balance account or either the currency or payment method is not supported.</value>
+  </data>
+  <data name="PaymentErr1005" xml:space="preserve">
+    <value>Sorry, amount must be equal to or greater than </value>
+  </data>
+  <data name="PaymentErr1006" xml:space="preserve">
+    <value>Insert transaction failed.</value>
+  </data>
+  <data name="PaymentErr1007" xml:space="preserve">
+    <value>Insert transaction failed.</value>
+  </data>
+  <data name="PayoutSuccess" xml:space="preserve">
+    <value>Your payment request has been submitted successfully!</value>
+  </data>
+  <data name="CancelRequest" xml:space="preserve">
+    <value>Cancel Request</value>
+  </data>
+  <data name="CompletedDate" xml:space="preserve">
+    <value>Completed Date</value>
+  </data>
+  <data name="PendingRequest" xml:space="preserve">
+    <value>Pending Request</value>
+  </data>
+  <data name="CancelPayoutSucc" xml:space="preserve">
+    <value>Your payment request has been cancelled!</value>
+  </data>
+  <data name="ErrDefault" xml:space="preserve">
+    <value>Unknown Error!</value>
+  </data>
+  <data name="Err3006" xml:space="preserve">
+    <value>Insert transaction failed.</value>
+  </data>
+  <data name="Err4001" xml:space="preserve">
+    <value>Invalid CustID.</value>
+  </data>
+  <data name="Err4002" xml:space="preserve">
+    <value>This transaction is not a withdrawal.</value>
+  </data>
+  <data name="Err4003" xml:space="preserve">
+    <value>This transaction has been cancelled before.</value>
+  </data>
+  <data name="Err4004" xml:space="preserve">
+    <value>Invalid balance account or the currency is not supported.</value>
+  </data>
+  <data name="AmtErr" xml:space="preserve">
+    <value>Invalid request amount! Amount must be between </value>
+  </data>
+  <data name="Err3001" xml:space="preserve">
+    <value>You have a pending request. In order to create a new request, please cancel the pending one or wait till the processing gets completed.</value>
+  </data>
+  <data name="Err3002" xml:space="preserve">
+    <value>Invalid Role ID.</value>
+  </data>
+  <data name="Err3003" xml:space="preserve">
+    <value>Sorry, this Affiliate does not have enough money to withdraw.</value>
+  </data>
+  <data name="Err3004" xml:space="preserve">
+    <value>Invalid balance account or either the currency or payment method is not supported.</value>
+  </data>
+  <data name="Err3007" xml:space="preserve">
+    <value>Sorry, amount is invalid.</value>
+  </data>
+  <data name="RefNo" xml:space="preserve">
+    <value>Ref.No</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="RequestPayoutSucc" xml:space="preserve">
+    <value>Request Payout Successfully!</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="For" xml:space="preserve">
+    <value>For</value>
+  </data>
+  <data name="Err4005" xml:space="preserve">
+    <value>This transaction has been cancelled before.</value>
+  </data>
+  <data name="OldPassandNewPass" xml:space="preserve">
+    <value>Old password and new password are required!</value>
+  </data>
+  <data name="January" xml:space="preserve">
+    <value>January</value>
+  </data>
+  <data name="April" xml:space="preserve">
+    <value>April</value>
+  </data>
+  <data name="August" xml:space="preserve">
+    <value>August</value>
+  </data>
+  <data name="December" xml:space="preserve">
+    <value>December</value>
+  </data>
+  <data name="February" xml:space="preserve">
+    <value>February</value>
+  </data>
+  <data name="July" xml:space="preserve">
+    <value>July</value>
+  </data>
+  <data name="June" xml:space="preserve">
+    <value>June</value>
+  </data>
+  <data name="March" xml:space="preserve">
+    <value>March</value>
+  </data>
+  <data name="May" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="November" xml:space="preserve">
+    <value>November</value>
+  </data>
+  <data name="October" xml:space="preserve">
+    <value>October</value>
+  </data>
+  <data name="September" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="RequestAmt" xml:space="preserve">
+    <value>Input Request Amount</value>
+  </data>
+  <data name="ErrSendMail" xml:space="preserve">
+    <value>Error of send mail</value>
+  </data>
+  <data name="AgreeTermNCondition" xml:space="preserve">
+    <value>I agree to the Terms &amp; Conditions of Affiliate Affiliate.</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="NameIsInvalid" xml:space="preserve">
+    <value>Name is invalid.</value>
+  </data>
+  <data name="SubjectIsInvalid" xml:space="preserve">
+    <value>Subject is invalid.</value>
+  </data>
+  <data name="EmailAddressIsInvalid" xml:space="preserve">
+    <value>Email Address is invalid.</value>
+  </data>
+  <data name="CommentsIsInvalid" xml:space="preserve">
+    <value>Comment is invalid.</value>
+  </data>
+  <data name="As12BETAffiliates" xml:space="preserve">
+    <value>
+		As a Affiliate Affiliates you will be paid commission on every player you referred to
+        Affiliate over the course of the player's account life. Our online reporting system
+        will be available 24 hours a day 7 days a week for your usage.
+	</value>
+  </data>
+  <data name="HowMuchYouEarn" xml:space="preserve">
+    <value>
+		How much you earn will depend on how much traffic you can send over from your website. It is our job to guide them through the registration process, having them make their first deposit, and retain their business with our attractive bonuses and offerings. 
+	</value>
+  </data>
+  <data name="AffiliateEarnings" xml:space="preserve">
+    <value> Affiliate Earning</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>Top </value>
+  </data>
+  <data name="DontSettleFor2ndBest" xml:space="preserve">
+    <value>Don't settle for second best, start earning up to 50% of the net losses of your customers.  While other competitors offer a low 25% we at Affiliate recognize the hard work of our affiliates and reward them with our industry high 50% commission.</value>
+  </data>
+  <data name="HowDoesItWork" xml:space="preserve">
+    <value>How does it work?</value>
+  </data>
+  <data name="IfYourTotal" xml:space="preserve">
+    <value>If your total net revenue for January is $3,500, you will earn 30% of your total net revenue for that month. </value>
+  </data>
+  <data name="IfYouHaveAnyQuestions" xml:space="preserve">
+    <value>If you have any questions concerning affiliate earning please do not hesitate to contact us at {mail} </value>
+  </data>
+  <data name="NegativeBalance" xml:space="preserve">
+    <value>Negative Balance</value>
+  </data>
+  <data name="AnyNegativeBalance" xml:space="preserve">
+    <value>Any negative balance for a given month will be carried forward to the next. For example if for the month of January your affiliate account ends with -$2,555, this amount will be carried forward to February. If at the end of February your affiliate account earns $3,400, the total balance will be $845 ($3,400 deduct -$2,555). However if your account is still making a loss at the end of February, for example -$1,600, then it will be added to the previous negative balance and be carried forward to March resulting in your March balance brought forward to be -$4,155. The commission earned shall then be paid according to the tier scale.</value>
+  </data>
+  <data name="GettingPaid" xml:space="preserve">
+    <value>Getting Paid</value>
+  </data>
+  <data name="YouCanRequestPayout" xml:space="preserve">
+    <value>You can request payout in other currencies other than USD. The currencies offered are GBP, EUR, RMB and MYR, THB, IDR. Respective exchange rate on the payout date will be applied. </value>
+  </data>
+  <data name="WeOfferSeveralMethods" xml:space="preserve">
+    <value>We offer several methods of withdrawal:</value>
+  </data>
+  <data name="ToYour12BET" xml:space="preserve">
+    <value>Through your Affiliate player account</value>
+  </data>
+  <data name="Moneybookers" xml:space="preserve">
+    <value>Moneybookers</value>
+  </data>
+  <data name="WireTransfer" xml:space="preserve">
+    <value>Wire Transfer</value>
+  </data>
+  <data name="AMaximumOfOneWithdrawal" xml:space="preserve">
+    <value>A maximum of one withdrawal request can be made for each calendar month. Affiliates can request for a second settlement in a month subject to Affiliate Manager's approval. While we offer free withdrawal request however we will not be held responsible if the receiving financial institution or electronic wallets impose a fee of any kind at their end. </value>
+  </data>
+  <data name="AffilatesAreOnlyAllowed" xml:space="preserve">
+    <value>Affiliates are only allowed to have one withdrawal request for each calendar month. Should the Affiliates intend to request for a second withdrawal in any  month, such request shall be subject to Affiliate Manager's approval.  While we offer free withdrawal request however we will not be held responsible if the receiving financial institution or electronic wallets impose a fee of any kind at their end. </value>
+  </data>
+  <data name="TheMinimumWithdrawal" xml:space="preserve">
+    <value>The minimum amount of withdrawal request is USD$100. </value>
+  </data>
+  <data name="FrequentlyAskedQuestions" xml:space="preserve">
+    <value>Frequently Asked Questions</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="WhatIs12BETAffiliates" xml:space="preserve">
+    <value>What is Affiliate Affiliate Program?</value>
+  </data>
+  <data name="BETAffiliatesProgram" xml:space="preserve">
+    <value>Affiliate Affiliate Program is a partnership program where you will earn commissions based on the wagering activity of players that you refer to spondemo.com from your Website via online or offline via referrals. </value>
+  </data>
+  <data name="HowDoISignUp" xml:space="preserve">
+    <value>How do I sign up with Affiliate Affiliate Program? </value>
+  </data>
+  <data name="The12BETAffiliates" xml:space="preserve">
+    <value>The Affiliate Affiliate Program is free to join. Simply fill out our {AppForm} and you will be contacted within 3 business days regarding your acceptance into the program. If your application is accepted, you will receive an email containing your unique affiliate ID, giving you access to banners, text links, and other content and marketing tools to add to your website</value>
+  </data>
+  <data name="WhatIfIDontHave" xml:space="preserve">
+    <value>What if I don't have a Website, can I still join? </value>
+  </data>
+  <data name="ToParticipateIn12BET" xml:space="preserve">
+    <value>To participate in Affiliate Affiliate Program, you should have a live Website that has online gambling as its central theme. If your Website does not have online gambling as its central theme or don't have a website, some exceptions may be made at the sole discretion of spondemo.com. Please drop us an email at {mail} if you have any questions.</value>
+  </data>
+  <data name="MarketingTracking" xml:space="preserve">
+    <value>Marketing &amp;amp; Tracking</value>
+  </data>
+  <data name="WhereDoIGetBanners" xml:space="preserve">
+    <value>Where do I get banners and content?  </value>
+  </data>
+  <data name="ByAccessingOurMediaGallery" xml:space="preserve">
+    <value>By accessing our Media Gallery section you will be available to choose your preferred banners as well as text link for your Website.</value>
+  </data>
+  <data name="HowDoesTheSystem" xml:space="preserve">
+    <value>How does the system keep track of my players? </value>
+  </data>
+  <data name="WeEmploys" xml:space="preserve">
+    <value>We employs state-of-the-art technology in our tracking system to ensure you receive credit for 100% of the traffic you send spondemo.com. Affiliates refer players by using their unique URL that is provided in the Media Gallery area. Through the use of cookies, visitors that click through an affiliate unique URL (banner, text link, email message etc) are tracked and credit is automatically given to the affiliate for players referred.</value>
+  </data>
+  <data name="WillYouTrackAndGiveMeCredit" xml:space="preserve">
+    <value>Will you track and give me credit for non-members that did not sign up on the first visit through my affiliate link but return to spondemo.com later and become a member?</value>
+  </data>
+  <data name="WeAreAbleToTrackVisitors" xml:space="preserve">
+    <value>Yes. We are able to track visitors from our affiliate's website that don't sign up right away but, return to spondemo.com at a later date &amp;amp; sign-up. We set our protection period for 90 days to cover the first referring affiliate. The technology used to manage this is based on cookies.</value>
+  </data>
+  <data name="WhatIsACookie" xml:space="preserve">
+    <value>What is a cookie?</value>
+  </data>
+  <data name="CookiesAreAGeneralMechanism" xml:space="preserve">
+    <value>Cookies are a general mechanism which server-side connections can use to both store and retrieve information on the client side of the connection. More specifically, they are small data files placed on the computers of visitors to spondemo.com from affiliated websites. These data files contain information spondemo.com use to track and credit its affiliates accurately for the traffic they send. Tracking via cookies can include, but is not limited to, lists of pages visited as well as date and time when certain pages were looked at.</value>
+  </data>
+  <data name="DoYouRewardTheFirstAffiliate" xml:space="preserve">
+    <value>Do you reward the First Affiliate or Last Affiliate for referring a customer?</value>
+  </data>
+  <data name="TheCookiesAreOverwritten" xml:space="preserve">
+    <value>The cookies are overwritten to benefit the Last Affiliate when a Customer is referred.</value>
+  </data>
+  <data name="HowCanICheck" xml:space="preserve">
+    <value>How can I check how much I have earned? </value>
+  </data>
+  <data name="YouCanLoginToYour12BET" xml:space="preserve">
+    <value>You can login to your Affiliate affiliate account to check your commission stats in real-time which is available to you 24 hours a day, 7 days a week and 365 days per year.</value>
+  </data>
+  <data name="WhatIsYourPolicy" xml:space="preserve">
+    <value>What is your policy on spamming?</value>
+  </data>
+  <data name="WeDoNotTolerateSpamming" xml:space="preserve">
+    <value>We do not tolerate spamming of any kind by our affiliate partners. If spamming by an affiliate is brought to our attention we will give the affiliate one warning (if judged to be a minor case). If the spamming does not stop the affiliate partner will be permanently banned from our Affiliate Affiliate Program. </value>
+  </data>
+  <data name="WhatAreTheWithdrawal" xml:space="preserve">
+    <value>What are the withdrawal methods available to me?</value>
+  </data>
+  <data name="YouCanRequestForAWithdrawal" xml:space="preserve">
+    <value>You can request for a withdrawal through Moneybookers, Neteller, Wire Transfer or directly into your Affiliate player account.</value>
+  </data>
+  <data name="CanIRequest" xml:space="preserve">
+    <value>Can I request for currency other than USD when withdrawing? </value>
+  </data>
+  <data name="TheCurrenciesOfferedAre" xml:space="preserve">
+    <value>Yes, the currencies offered are GBP, EUR, RMB, MYR, THB, IDR and VND. Respective exchange rate on payout date will be applied.</value>
+  </data>
+  <data name="WhatIsTheMinimumWithdrawal" xml:space="preserve">
+    <value>What is the minimum withdrawal request amount? </value>
+  </data>
+  <data name="DoesNegativeBalance" xml:space="preserve">
+    <value>Does negative balance carry over?</value>
+  </data>
+  <data name="WeRolloverNegative" xml:space="preserve">
+    <value>Yes, we rollover negative commission balances. In the event that you carry a negative commission balance at the end of a month, it will rollover until you have enough positive earnings to zero that balance out.</value>
+  </data>
+  <data name="HowOftenCanIRequest" xml:space="preserve">
+    <value>How often can I request for withdrawal?</value>
+  </data>
+  <data name="JoinThe12BetAffiliate" xml:space="preserve">
+    <value>Join the Affiliate Affiliate Program</value>
+  </data>
+  <data name="FirstNameIsRequired" xml:space="preserve">
+    <value>First Name is required.</value>
+  </data>
+  <data name="LastNameIsRequired" xml:space="preserve">
+    <value>Last Name is required.</value>
+  </data>
+  <data name="EmailAddressIsRequired" xml:space="preserve">
+    <value>Email Address is required.</value>
+  </data>
+  <data name="AddressIsRequired" xml:space="preserve">
+    <value>Address is required.</value>
+  </data>
+  <data name="CityIsRequired" xml:space="preserve">
+    <value>City is required.</value>
+  </data>
+  <data name="StateIsRequired" xml:space="preserve">
+    <value>State is required.</value>
+  </data>
+  <data name="PostcodeZiIsRequired" xml:space="preserve">
+    <value>Postcode/Zip is required.</value>
+  </data>
+  <data name="WebsiteURLIsRequired" xml:space="preserve">
+    <value>Website URL is required.</value>
+  </data>
+  <data name="BETUserNameIsRequired" xml:space="preserve">
+    <value>Player Username is required.</value>
+  </data>
+  <data name="SelectOne" xml:space="preserve">
+    <value>Select One</value>
+  </data>
+  <data name="Albania" xml:space="preserve">
+    <value>Albania</value>
+  </data>
+  <data name="Algeria" xml:space="preserve">
+    <value>Algeria </value>
+  </data>
+  <data name="Angola" xml:space="preserve">
+    <value>Angola </value>
+  </data>
+  <data name="Anguilla" xml:space="preserve">
+    <value>Anguilla </value>
+  </data>
+  <data name="Argentina" xml:space="preserve">
+    <value>Argentina </value>
+  </data>
+  <data name="Armenia" xml:space="preserve">
+    <value>Armenia </value>
+  </data>
+  <data name="Aruba" xml:space="preserve">
+    <value>Aruba </value>
+  </data>
+  <data name="Australia" xml:space="preserve">
+    <value>Australia </value>
+  </data>
+  <data name="Austria" xml:space="preserve">
+    <value>Austria </value>
+  </data>
+  <data name="Azerbaijan" xml:space="preserve">
+    <value>Azerbaijan </value>
+  </data>
+  <data name="Bahamas" xml:space="preserve">
+    <value>Bahamas </value>
+  </data>
+  <data name="Bahrain" xml:space="preserve">
+    <value>Bahrain </value>
+  </data>
+  <data name="Bangladesh" xml:space="preserve">
+    <value>Bangladesh </value>
+  </data>
+  <data name="Barbados" xml:space="preserve">
+    <value>Barbados </value>
+  </data>
+  <data name="Belarus" xml:space="preserve">
+    <value>Belarus </value>
+  </data>
+  <data name="Belgium" xml:space="preserve">
+    <value>Belgium </value>
+  </data>
+  <data name="Belize" xml:space="preserve">
+    <value>Belize </value>
+  </data>
+  <data name="Benin" xml:space="preserve">
+    <value>Benin </value>
+  </data>
+  <data name="Bermuda" xml:space="preserve">
+    <value>Bermuda </value>
+  </data>
+  <data name="Bhutan" xml:space="preserve">
+    <value>Bhutan </value>
+  </data>
+  <data name="Bolivia" xml:space="preserve">
+    <value>Bolivia </value>
+  </data>
+  <data name="BosniaandHerzegovina" xml:space="preserve">
+    <value>Bosnia and Herzegovina </value>
+  </data>
+  <data name="Botswana" xml:space="preserve">
+    <value>Botswana </value>
+  </data>
+  <data name="Brazil" xml:space="preserve">
+    <value>Brazil </value>
+  </data>
+  <data name="BruneiDarussalam" xml:space="preserve">
+    <value>Brunei Darussalam </value>
+  </data>
+  <data name="Bulgaria" xml:space="preserve">
+    <value>Bulgaria </value>
+  </data>
+  <data name="BurkinaFaso" xml:space="preserve">
+    <value>Burkina Faso </value>
+  </data>
+  <data name="Burundi" xml:space="preserve">
+    <value>Burundi </value>
+  </data>
+  <data name="Cambodia" xml:space="preserve">
+    <value>Cambodia </value>
+  </data>
+  <data name="Cameroon" xml:space="preserve">
+    <value>Cameroon </value>
+  </data>
+  <data name="Canada" xml:space="preserve">
+    <value>Canada </value>
+  </data>
+  <data name="CapeVerde" xml:space="preserve">
+    <value>Cape Verde </value>
+  </data>
+  <data name="CaymanIslands" xml:space="preserve">
+    <value>Cayman Islands </value>
+  </data>
+  <data name="CentralAfricanRep" xml:space="preserve">
+    <value>Central African Rep </value>
+  </data>
+  <data name="Chad" xml:space="preserve">
+    <value>Chad </value>
+  </data>
+  <data name="Chile" xml:space="preserve">
+    <value>Chile </value>
+  </data>
+  <data name="ChinaPeoplesRep" xml:space="preserve">
+    <value>China (People's Rep) </value>
+  </data>
+  <data name="Colombia" xml:space="preserve">
+    <value>Colombia</value>
+  </data>
+  <data name="CongoRep" xml:space="preserve">
+    <value>Congo(Rep) </value>
+  </data>
+  <data name="CookIslands" xml:space="preserve">
+    <value>Cook Islands </value>
+  </data>
+  <data name="CostaRica" xml:space="preserve">
+    <value>Costa Rica </value>
+  </data>
+  <data name="CotedIvoireRep" xml:space="preserve">
+    <value>Cote d'Ivoire (Rep) </value>
+  </data>
+  <data name="Croatia" xml:space="preserve">
+    <value>Croatia </value>
+  </data>
+  <data name="Cyprus" xml:space="preserve">
+    <value>Cyprus </value>
+  </data>
+  <data name="CzechRep" xml:space="preserve">
+    <value>Czech (Rep) </value>
+  </data>
+  <data name="DemRepofCongo" xml:space="preserve">
+    <value>Dem Rep of Congo </value>
+  </data>
+  <data name="Denmark" xml:space="preserve">
+    <value>Denmark </value>
+  </data>
+  <data name="DominicaCommonwealthof" xml:space="preserve">
+    <value>Dominica (Commonwealth of) </value>
+  </data>
+  <data name="DominicanRep" xml:space="preserve">
+    <value>Dominican Rep. </value>
+  </data>
+  <data name="Ecuador" xml:space="preserve">
+    <value>Ecuador </value>
+  </data>
+  <data name="Egypt" xml:space="preserve">
+    <value>Egypt </value>
+  </data>
+  <data name="ElSalvador" xml:space="preserve">
+    <value>El Salvador </value>
+  </data>
+  <data name="Eritrea" xml:space="preserve">
+    <value>Eritrea </value>
+  </data>
+  <data name="Estonia" xml:space="preserve">
+    <value>Estonia </value>
+  </data>
+  <data name="Ethiopia" xml:space="preserve">
+    <value>Ethiopia </value>
+  </data>
+  <data name="Fiji" xml:space="preserve">
+    <value>Fiji </value>
+  </data>
+  <data name="Finland" xml:space="preserve">
+    <value>Finland </value>
+  </data>
+  <data name="FrenchPolynesia" xml:space="preserve">
+    <value>French Polynesia </value>
+  </data>
+  <data name="Gabon" xml:space="preserve">
+    <value>Gabon </value>
+  </data>
+  <data name="Georgia" xml:space="preserve">
+    <value>Georgia </value>
+  </data>
+  <data name="Germany" xml:space="preserve">
+    <value>Germany </value>
+  </data>
+  <data name="Ghana" xml:space="preserve">
+    <value>Ghana </value>
+  </data>
+  <data name="Gibraltar" xml:space="preserve">
+    <value>Gibraltar </value>
+  </data>
+  <data name="Greece" xml:space="preserve">
+    <value>Greece </value>
+  </data>
+  <data name="Grenada" xml:space="preserve">
+    <value>Grenada </value>
+  </data>
+  <data name="Guatemala" xml:space="preserve">
+    <value>Guatemala </value>
+  </data>
+  <data name="Guinea" xml:space="preserve">
+    <value>Guinea </value>
+  </data>
+  <data name="Guyana" xml:space="preserve">
+    <value>Guyana </value>
+  </data>
+  <data name="Haiti" xml:space="preserve">
+    <value>Haiti </value>
+  </data>
+  <data name="Honduras" xml:space="preserve">
+    <value>Honduras </value>
+  </data>
+  <data name="HongKong" xml:space="preserve">
+    <value>Hong Kong </value>
+  </data>
+  <data name="Hungary" xml:space="preserve">
+    <value>Hungary </value>
+  </data>
+  <data name="Iceland" xml:space="preserve">
+    <value>Iceland </value>
+  </data>
+  <data name="India" xml:space="preserve">
+    <value>India </value>
+  </data>
+  <data name="Indonesia" xml:space="preserve">
+    <value>Indonesia </value>
+  </data>
+  <data name="Iran" xml:space="preserve">
+    <value>Iran </value>
+  </data>
+  <data name="Iraq" xml:space="preserve">
+    <value>Iraq </value>
+  </data>
+  <data name="Ireland" xml:space="preserve">
+    <value>Ireland </value>
+  </data>
+  <data name="Israel" xml:space="preserve">
+    <value>Israel </value>
+  </data>
+  <data name="Italy" xml:space="preserve">
+    <value>Italy </value>
+  </data>
+  <data name="Jamaica" xml:space="preserve">
+    <value>Jamaica </value>
+  </data>
+  <data name="Japan" xml:space="preserve">
+    <value>Japan </value>
+  </data>
+  <data name="Jordan" xml:space="preserve">
+    <value>Jordan </value>
+  </data>
+  <data name="Kenya" xml:space="preserve">
+    <value>Kenya </value>
+  </data>
+  <data name="KoreaRep" xml:space="preserve">
+    <value>Korea (Rep) </value>
+  </data>
+  <data name="Kuwait" xml:space="preserve">
+    <value>Kuwait </value>
+  </data>
+  <data name="LaoPeoplesDemRep" xml:space="preserve">
+    <value>Lao People's Dem Rep </value>
+  </data>
+  <data name="Latvia" xml:space="preserve">
+    <value>Latvia </value>
+  </data>
+  <data name="Lesotho" xml:space="preserve">
+    <value>Lesotho </value>
+  </data>
+  <data name="Liechtenstein" xml:space="preserve">
+    <value>Liechtenstein </value>
+  </data>
+  <data name="Luxembourg" xml:space="preserve">
+    <value>Luxembourg </value>
+  </data>
+  <data name="Macao" xml:space="preserve">
+    <value>Macao </value>
+  </data>
+  <data name="Macedonia" xml:space="preserve">
+    <value>Macedonia </value>
+  </data>
+  <data name="Madagascar" xml:space="preserve">
+    <value>Madagascar </value>
+  </data>
+  <data name="Malawi" xml:space="preserve">
+    <value>Malawi </value>
+  </data>
+  <data name="Malaysia" xml:space="preserve">
+    <value>Malaysia </value>
+  </data>
+  <data name="Maldives" xml:space="preserve">
+    <value>Maldives </value>
+  </data>
+  <data name="Mali" xml:space="preserve">
+    <value>Mali </value>
+  </data>
+  <data name="Malta" xml:space="preserve">
+    <value>Malta </value>
+  </data>
+  <data name="Mauritania" xml:space="preserve">
+    <value>Mauritania </value>
+  </data>
+  <data name="Mauritius" xml:space="preserve">
+    <value>Mauritius </value>
+  </data>
+  <data name="Mexico" xml:space="preserve">
+    <value>Mexico </value>
+  </data>
+  <data name="Moldova" xml:space="preserve">
+    <value>Moldova </value>
+  </data>
+  <data name="Mongolia" xml:space="preserve">
+    <value>Mongolia </value>
+  </data>
+  <data name="Morocco" xml:space="preserve">
+    <value>Morocco </value>
+  </data>
+  <data name="Myanmar" xml:space="preserve">
+    <value>Myanmar </value>
+  </data>
+  <data name="Namibia" xml:space="preserve">
+    <value>Namibia </value>
+  </data>
+  <data name="Nauru" xml:space="preserve">
+    <value>Nauru </value>
+  </data>
+  <data name="Nepal" xml:space="preserve">
+    <value>Nepal </value>
+  </data>
+  <data name="Netherlands" xml:space="preserve">
+    <value>Netherlands </value>
+  </data>
+  <data name="NewCaledonia" xml:space="preserve">
+    <value>New Caledonia </value>
+  </data>
+  <data name="NewZealand" xml:space="preserve">
+    <value>New Zealand </value>
+  </data>
+  <data name="Niger" xml:space="preserve">
+    <value>Niger </value>
+  </data>
+  <data name="Nigeria" xml:space="preserve">
+    <value>Nigeria </value>
+  </data>
+  <data name="Norway" xml:space="preserve">
+    <value>Norway </value>
+  </data>
+  <data name="Oman" xml:space="preserve">
+    <value>Oman </value>
+  </data>
+  <data name="Pakistan" xml:space="preserve">
+    <value>Pakistan</value>
+  </data>
+  <data name="Panama" xml:space="preserve">
+    <value>Panama </value>
+  </data>
+  <data name="PapuaNewGuinea" xml:space="preserve">
+    <value>Papua New Guinea </value>
+  </data>
+  <data name="Paraguay" xml:space="preserve">
+    <value>Paraguay </value>
+  </data>
+  <data name="Peru" xml:space="preserve">
+    <value>Peru </value>
+  </data>
+  <data name="Philippines" xml:space="preserve">
+    <value>Philippines </value>
+  </data>
+  <data name="Poland" xml:space="preserve">
+    <value>Poland </value>
+  </data>
+  <data name="Portugal" xml:space="preserve">
+    <value>Portugal </value>
+  </data>
+  <data name="Qatar" xml:space="preserve">
+    <value>Qatar </value>
+  </data>
+  <data name="Romania" xml:space="preserve">
+    <value>Romania </value>
+  </data>
+  <data name="RussianFederation" xml:space="preserve">
+    <value>Russian Federation </value>
+  </data>
+  <data name="Rwanda" xml:space="preserve">
+    <value>Rwanda </value>
+  </data>
+  <data name="SaintChristopherStKittsandNevis" xml:space="preserve">
+    <value>Saint Christopher (St. Kitts) and Nevis </value>
+  </data>
+  <data name="SaintLucia" xml:space="preserve">
+    <value>Saint Lucia </value>
+  </data>
+  <data name="SaintVincentandtheGrenadines" xml:space="preserve">
+    <value>Saint Vincent and the Grenadines </value>
+  </data>
+  <data name="SaoTomeandPrincipe" xml:space="preserve">
+    <value>Sao Tome and Principe </value>
+  </data>
+  <data name="SaudiArabia" xml:space="preserve">
+    <value>Saudi Arabia </value>
+  </data>
+  <data name="Senegal" xml:space="preserve">
+    <value>Senegal </value>
+  </data>
+  <data name="Seychelles" xml:space="preserve">
+    <value>Seychelles </value>
+  </data>
+  <data name="SierraLeone" xml:space="preserve">
+    <value>Sierra Leone </value>
+  </data>
+  <data name="Singapore" xml:space="preserve">
+    <value>Singapore </value>
+  </data>
+  <data name="Slovakia" xml:space="preserve">
+    <value>Slovakia </value>
+  </data>
+  <data name="Slovenia" xml:space="preserve">
+    <value>Slovenia </value>
+  </data>
+  <data name="SolomonIslands" xml:space="preserve">
+    <value>Solomon Islands </value>
+  </data>
+  <data name="Somalia" xml:space="preserve">
+    <value>Somalia </value>
+  </data>
+  <data name="SouthAfrica" xml:space="preserve">
+    <value>South Africa </value>
+  </data>
+  <data name="Spain" xml:space="preserve">
+    <value>Spain </value>
+  </data>
+  <data name="SriLanka" xml:space="preserve">
+    <value>Sri Lanka </value>
+  </data>
+  <data name="Sudan" xml:space="preserve">
+    <value>Sudan </value>
+  </data>
+  <data name="Suriname" xml:space="preserve">
+    <value>Suriname </value>
+  </data>
+  <data name="Swaziland" xml:space="preserve">
+    <value>Swaziland </value>
+  </data>
+  <data name="Sweden" xml:space="preserve">
+    <value>Sweden </value>
+  </data>
+  <data name="Switzerland" xml:space="preserve">
+    <value>Switzerland </value>
+  </data>
+  <data name="Taiwan" xml:space="preserve">
+    <value>Taiwan </value>
+  </data>
+  <data name="Tanzania" xml:space="preserve">
+    <value>Tanzania </value>
+  </data>
+  <data name="Thailand" xml:space="preserve">
+    <value>Thailand </value>
+  </data>
+  <data name="Togo" xml:space="preserve">
+    <value>Togo </value>
+  </data>
+  <data name="TrinidadandTobago" xml:space="preserve">
+    <value>Trinidad and Tobago </value>
+  </data>
+  <data name="Tunisia" xml:space="preserve">
+    <value>Tunisia </value>
+  </data>
+  <data name="Turkey" xml:space="preserve">
+    <value>Turkey </value>
+  </data>
+  <data name="Uganda" xml:space="preserve">
+    <value>Uganda </value>
+  </data>
+  <data name="Ukraine" xml:space="preserve">
+    <value>Ukraine </value>
+  </data>
+  <data name="UnitedArabEmirates" xml:space="preserve">
+    <value>United Arab Emirates </value>
+  </data>
+  <data name="UnitedKingdomofGreatBritainandNorthernIreland" xml:space="preserve">
+    <value>United Kingdom of Great Britain</value>
+  </data>
+  <data name="UnitedStatesofAmerica" xml:space="preserve">
+    <value>United States of America </value>
+  </data>
+  <data name="Uruguay" xml:space="preserve">
+    <value>Uruguay </value>
+  </data>
+  <data name="Venezuela" xml:space="preserve">
+    <value>Venezuela </value>
+  </data>
+  <data name="VietNam" xml:space="preserve">
+    <value>Viet Nam </value>
+  </data>
+  <data name="WesternSamoa" xml:space="preserve">
+    <value>Western Samoa </value>
+  </data>
+  <data name="Yemen" xml:space="preserve">
+    <value>Yemen </value>
+  </data>
+  <data name="Yugoslavia" xml:space="preserve">
+    <value>Yugoslavia </value>
+  </data>
+  <data name="Zambia" xml:space="preserve">
+    <value>Zambia </value>
+  </data>
+  <data name="Zimbabwe" xml:space="preserve">
+    <value>Zimbabwe </value>
+  </data>
+  <data name="Pleasecheckyour" xml:space="preserve">
+    <value>Please check your email address to find out your username and details about your password.</value>
+  </data>
+  <data name="Foranyreasonyou" xml:space="preserve">
+    <value>For any reason you do not receive the email, please &lt;a href='ContactUs.aspx'&gt;contact us&lt;/a&gt; and we will be glad to assist you.  </value>
+  </data>
+  <data name="Errorofsendmail" xml:space="preserve">
+    <value>Error of send mail</value>
+  </data>
+  <data name="AboutUs" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="PlayerAcc" xml:space="preserve">
+    <value>Player Account</value>
+  </data>
+  <data name="Thisemailwillin" xml:space="preserve">
+    <value>This e-mail will include a link, which you need to click on. to activate your account and confirm your e-mail address and conclude your registration.</value>
+  </data>
+  <data name="IagreetotheTerm" xml:space="preserve">
+    <value>I agree to the Terms &amp; Conditions of Affiliate Affiliate.</value>
+  </data>
+  <data name="Invalidrequesta" xml:space="preserve">
+    <value>Invalid request amount! Amount must be between </value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="BankAccountName" xml:space="preserve">
+    <value>Bank Account Name</value>
+  </data>
+  <data name="BankAccountNumb" xml:space="preserve">
+    <value>Bank Account Number</value>
+  </data>
+  <data name="BankABA_Swift_S" xml:space="preserve">
+    <value>Bank ABA/Swift/Sort Code</value>
+  </data>
+  <data name="_12BET" xml:space="preserve">
+    <value>Affiliate</value>
+  </data>
+  <data name="Yourpaymentrequ" xml:space="preserve">
+    <value>Your payment request amount of ${amount} has been cancelled.</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="Changepassworde" xml:space="preserve">
+    <value>Change password error</value>
+  </data>
+  <data name="Usethisformtoch" xml:space="preserve">
+    <value>Use this form to change your password. Once changed, your new password will be in effect next time you login.</value>
+  </data>
+  <data name="CurrentCommissi" xml:space="preserve">
+    <value>Current Commission Earning</value>
+  </data>
+  <data name="Pleaseselectcou" xml:space="preserve">
+    <value>Please select country.</value>
+  </data>
+  <data name="Youruseemailisi" xml:space="preserve">
+    <value>Your use email is invalid, please try again.</value>
+  </data>
+  <data name="Emailaddressest" xml:space="preserve">
+    <value>Email addresses that you entered do not match.</value>
+  </data>
+  <data name="Sorrycannotcrea" xml:space="preserve">
+    <value>Sorry, cannot create agent</value>
+  </data>
+  <data name="Invalidaffiliat" xml:space="preserve">
+    <value>Invalid affiliate information</value>
+  </data>
+  <data name="Theemailaddress" xml:space="preserve">
+    <value>The email address you've typed had been used to register account. Please choose another one!</value>
+  </data>
+  <data name="_12BETUserNamei" xml:space="preserve">
+    <value>Player Username is invalid.</value>
+  </data>
+  <data name="Invaliduserinfo" xml:space="preserve">
+    <value>Invalid user information. Update process is unsuccessful</value>
+  </data>
+  <data name="ErroroccursUpda" xml:space="preserve">
+    <value>Error occurs. Update process is unsuccessful</value>
+  </data>
+  <data name="Thisusernameisn" xml:space="preserve">
+    <value>This username is not available</value>
+  </data>
+  <data name="Sorryminbetmust" xml:space="preserve">
+    <value>Sorry, min bet must be equal to or greater than master agent min bet</value>
+  </data>
+  <data name="Sorrycreditupda" xml:space="preserve">
+    <value>Sorry, credit update is not successful, You have exceeded your master credit</value>
+  </data>
+  <data name="SorryMaxPerMatc" xml:space="preserve">
+    <value>Sorry, Max Per Match must be equal to or less than master agent Max Per Match</value>
+  </data>
+  <data name="Createcustomerf" xml:space="preserve">
+    <value>Create customer failed. Please try again</value>
+  </data>
+  <data name="Youarenotauthor" xml:space="preserve">
+    <value>You are not authorized to create/edit this information</value>
+  </data>
+  <data name="WrongMinbet_Max" xml:space="preserve">
+    <value>Wrong Min bet/ Max bet/ Max per match/ Credit/ Master Agent name/ user group</value>
+  </data>
+  <data name="Youhaveapending" xml:space="preserve">
+    <value>You have a pending request. In order to create a new request, please cancel the pending one or wait till the processing gets completed.</value>
+  </data>
+  <data name="InvalidRoleID" xml:space="preserve">
+    <value>Invalid Role ID.</value>
+  </data>
+  <data name="SorrythisAffili" xml:space="preserve">
+    <value>Sorry, this Affiliate does not have enough money to withdraw.</value>
+  </data>
+  <data name="Invalidbalancea" xml:space="preserve">
+    <value>Invalid balance account or either the currency or payment method is not supported.</value>
+  </data>
+  <data name="Inserttransacti" xml:space="preserve">
+    <value>Insert transaction failed.</value>
+  </data>
+  <data name="Sorryamountisin" xml:space="preserve">
+    <value>Sorry, amount is invalid.</value>
+  </data>
+  <data name="InvalidCustID" xml:space="preserve">
+    <value>Invalid CustID.</value>
+  </data>
+  <data name="Thistransaction" xml:space="preserve">
+    <value>This transaction has been cancelled before.</value>
+  </data>
+  <data name="Requestamountmu" xml:space="preserve">
+    <value>Request amount must be greater than minimum withdraw amount</value>
+  </data>
+  <data name="UnknownError" xml:space="preserve">
+    <value>Unknown Error!</value>
+  </data>
+  <data name="Thisemailaddres" xml:space="preserve">
+    <value>This email address is being used by an affliliate that's inactive or has been closed. Please try again or  Contact us.</value>
+  </data>
+  <data name="Errorofsendingm" xml:space="preserve">
+    <value>Error of sending mail</value>
+  </data>
+  <data name="Onlinebettingsp" xml:space="preserve">
+    <value>Online betting, product betting and football betting at spondemo.com</value>
+  </data>
+  <data name="Asa_12BetcomAff" xml:space="preserve">
+    <value>As a spondemo.com Affiliate, all you have to do is direct your visitors to our website using special tracking code that you can place on your website</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Last6MonthsEarn" xml:space="preserve">
+    <value>Last 6 Months Earnings</value>
+  </data>
+  <data name="Haveproblemwhil" xml:space="preserve">
+    <value>Have problem while sending email. Please contact us later.</value>
+  </data>
+  <data name="Oldpasswordandn" xml:space="preserve">
+    <value>Old password and new password are required!</value>
+  </data>
+  <data name="Sorryamountmust" xml:space="preserve">
+    <value>Sorry, amount must be equal to or greater than </value>
+  </data>
+  <data name="Preferredpaymen" xml:space="preserve">
+    <value>Preferred payment method</value>
+  </data>
+  <data name="Preference" xml:space="preserve">
+    <value>Preference</value>
+  </data>
+  <data name="Pleaseselectpre" xml:space="preserve">
+    <value>Please select preferred language.</value>
+  </data>
+  <data name="Passwordchanged" xml:space="preserve">
+    <value>Password changed successfully</value>
+  </data>
+  <data name="ReenterNewPassw" xml:space="preserve">
+    <value>Re-enter New Password is invalid.</value>
+  </data>
+  <data name="InputRequestAmo" xml:space="preserve">
+    <value>Input Request Amount (USD)</value>
+  </data>
+  <data name="WebsiteInformat" xml:space="preserve">
+    <value>Website Information</value>
+  </data>
+  <data name="WebsiteURL" xml:space="preserve">
+    <value>Website URL</value>
+  </data>
+  <data name="WebsiteURLs" xml:space="preserve">
+    <value>Website URLs</value>
+  </data>
+  <data name="YoumustagreeTer" xml:space="preserve">
+    <value>You must agree Terms &amp; Conditions to proceed!</value>
+  </data>
+  <data name="Thanksforyourre" xml:space="preserve">
+    <value>Thanks for your registration!</value>
+  </data>
+  <data name="Anewpasswordwil" xml:space="preserve">
+    <value>A new password will be sent to the email address that you provided. </value>
+  </data>
+  <data name="ApplicationUnde" xml:space="preserve">
+    <value>Application Under Review</value>
+  </data>
+  <data name="Youraccountinfo" xml:space="preserve">
+    <value>Your account information has been updated successfully.</value>
+  </data>
+  <data name="Youinputtedanin" xml:space="preserve">
+    <value>You inputted an invalid validation code!</value>
+  </data>
+  <data name="Yourlogindetail" xml:space="preserve">
+    <value>Your login details have been sent.</value>
+  </data>
+  <data name="Ifyouareexperie" xml:space="preserve">
+    <value>If you are experiencing any further difficulties, please Contact us. </value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="Flash" xml:space="preserve">
+    <value>Flash  </value>
+  </data>
+  <data name="DearFirstnameLa" xml:space="preserve">
+    <value>Dear Firstname LastName,</value>
+  </data>
+  <data name="Youhaverequeste" xml:space="preserve">
+    <value>You have requested to recover your username or password. If you did not request it, please ignore this email.</value>
+  </data>
+  <data name="Otherwiseplease" xml:space="preserve">
+    <value>Otherwise please visit the following link, then your new password will be emailed to you shortly:</value>
+  </data>
+  <data name="Yourusernameis" xml:space="preserve">
+    <value>Your username is</value>
+  </data>
+  <data name="Duetosecurityr" xml:space="preserve">
+    <value>Due to security reason, we must provide you a new password (you can change this at anytime later).</value>
+  </data>
+  <data name="Theabovelinkwi" xml:space="preserve">
+    <value>The above link will be expired and become useless in 24 hour time.</value>
+  </data>
+  <data name="Haveagreatday" xml:space="preserve">
+    <value>Have a great day!</value>
+  </data>
+  <data name="BestRegards" xml:space="preserve">
+    <value>Best regards,</value>
+  </data>
+  <data name="Thankyouforsubm" xml:space="preserve">
+    <value>Thank you for submitting your application.</value>
+  </data>
+  <data name="Yourwebsitesand" xml:space="preserve">
+    <value>Your websites and application details will be reviewed by the team at Affiliate Affiliates to ensure that content is suitable for promoting our products.</value>
+  </data>
+  <data name="Within5dayswesh" xml:space="preserve">
+    <value>Within 5 days we should be able to provide you with a decision in regard to your application. If you are approved, you will be able to enjoy full access to our affiliate program.</value>
+  </data>
+  <data name="Theteamat_12Bet" xml:space="preserve">
+    <value>The team at Affiliate Affiliates</value>
+  </data>
+  <data name="Yourrequestrefe" xml:space="preserve">
+    <value>Your request reference number is {transid}.</value>
+  </data>
+  <data name="Thisisasystemau" xml:space="preserve">
+    <value>This is a system auto generated email, please do not reply to this email directly.</value>
+  </data>
+  <data name="Donothesitateto" xml:space="preserve">
+    <value>Do not hesitate to contact us if you have any questions or comments at Affiliates@spondemo.com.</value>
+  </data>
+  <data name="Requestreferenc" xml:space="preserve">
+    <value>Request reference number is {transid}, dated {date}.</value>
+  </data>
+  <data name="Thankyouforappl" xml:space="preserve">
+    <value>Thank you for applying to become a Affiliate affiliate! &lt;br /&gt;&lt;br /&gt;
+One of our Affiliate Accounts Manager will be contacting you by email within 3 business days to determine the status of your application.</value>
+  </data>
+  <data name="Ifyouhaveanyque" xml:space="preserve">
+    <value>If you have any questions and require any help please do not hesitate to contact me.</value>
+  </data>
+  <data name="Sincerely" xml:space="preserve">
+    <value>Sincerely,</value>
+  </data>
+  <data name="NetellerAccount" xml:space="preserve">
+    <value>Neteller Account ID is required.</value>
+  </data>
+  <data name="MoneybookersEma" xml:space="preserve">
+    <value>Moneybookers Email is invalid.</value>
+  </data>
+  <data name="BankNameisrequi" xml:space="preserve">
+    <value>Bank Name is required.</value>
+  </data>
+  <data name="BankAddressisre" xml:space="preserve">
+    <value>Bank Address is required.</value>
+  </data>
+  <data name="BankABA_Swift_SIsRequired" xml:space="preserve">
+    <value>Bank ABA/Swift/Sort Code is required.</value>
+  </data>
+  <data name="BankAccountNameIsRequired" xml:space="preserve">
+    <value>Bank Account Name is required.</value>
+  </data>
+  <data name="BankAccountNumbIsRequired" xml:space="preserve">
+    <value>Bank Account Number is required.</value>
+  </data>
+  <data name="ChequeFullNamei" xml:space="preserve">
+    <value>Cheque Full Name is required.</value>
+  </data>
+  <data name="ChequeAddressis" xml:space="preserve">
+    <value>Cheque Address is required.</value>
+  </data>
+  <data name="ChequeCityisreq" xml:space="preserve">
+    <value>Cheque City is required.</value>
+  </data>
+  <data name="ChequeStateisre" xml:space="preserve">
+    <value>Cheque State is required.</value>
+  </data>
+  <data name="ChequePostcode_" xml:space="preserve">
+    <value>Cheque Postcode/Zip is required.</value>
+  </data>
+  <data name="OldPasswordisre" xml:space="preserve">
+    <value>Old Password is required.</value>
+  </data>
+  <data name="NewPasswordisre" xml:space="preserve">
+    <value>New Password is required.</value>
+  </data>
+  <data name="ChequeCountryis" xml:space="preserve">
+    <value>Cheque Country is required.</value>
+  </data>
+  <data name="Doyouhaveanyque" xml:space="preserve">
+    <value>Do you have any question?</value>
+  </data>
+  <data name="ToBecomeAnAff" xml:space="preserve">
+    <value>To become an affiliate of the Affiliate Affiliate Program you must register as an affiliate by completing the online form. By registering as an affiliate of the Affiliate Affiliate Program or downloading banner code and placing it on your website or websites, email messages or other formats, you are deemed to have agreed to be bound by all the terms and conditions set out in this agreement.</value>
+  </data>
+  <data name="IfYouDecide" xml:space="preserve">
+    <value>IF YOU DECIDE NOT TO ACCEPT ALL OF THE TERMS AND CONDITIONS OF THIS AGREEMENT, PLEASE DO NOT DOWNLOAD BANNER CODE, TEXT LINK CODE, PROMOTIONAL COPY OR ANY INFORMATION PERTAINING TO Affiliate.</value>
+  </data>
+  <data name="WeReserveTheRight" xml:space="preserve">
+    <value>We reserve the right to terminate this Agreement if we determine that your site is unsuitable. Unsuitable sites may include those that: promote sexually explicit materials, are targeted towards children or minors, promote violence, promote discrimination based on race, sex, religion, nationality, disability, sexual orientation, promote illegal activities, or violate intellectual property rights ("IP rights").</value>
+  </data>
+  <data name="ThisAgreementDetailsAll" xml:space="preserve">
+    <value>This Agreement details all the terms and conditions of membership to the Affiliate Affiliate Program. "You", the "affiliate" refers to you, the individual, group or corporate entity registering with us as an affiliate under this Agreement, and shall be deemed to include any employees, officers, directors, shareholders, owners, controlling parties and affiliated individuals and entities (and "your" has a corresponding meaning).</value>
+  </data>
+  <data name="ResponOfTheAff" xml:space="preserve">
+    <value>1. Responsibilities of the Affiliate</value>
+  </data>
+  <data name="AsAnAffiliate" xml:space="preserve">
+    <value>1. As an Affiliate you are responsible for promoting Affiliate by implementing the advertising, banners and tracking URL's on your websites, e-mails or other communications.</value>
+  </data>
+  <data name="YouWillAgreeToRegister" xml:space="preserve">
+    <value>2. You will agree to register and maintain correct and truthful contact information with Affiliate.</value>
+  </data>
+  <data name="YouWillPresentOnlyContent" xml:space="preserve">
+    <value>3. You will present only content and topics on your site which are pre-approved in writing by Affiliate. Content that is deemed unsuitable in Affiliate's sole discretion will result in the affiliate Agreement being terminated immediately.</value>
+  </data>
+  <data name="YouWillBeSolelyResponsible" xml:space="preserve">
+    <value>4. You will be solely responsible for the development, operation, and maintenance of your site and for all materials that appear on your site and at your own cost. For example, you will be solely responsible for ensuring that materials posted on your site are not libelous or otherwise illegal or shall infringe the IP rights of third parties. Since we do not have control over your own site, we disclaim all liability for these matters. Further, you will indemnify and hold us harmless from all claims, damages, and expenses (including, without limitation, attorney's fees) relating to the development, operation, maintenance, and contents of your site. This provision on indemnification is without prejudice to our separate action or claim against you under applicable laws.</value>
+  </data>
+  <data name="AffiliationGuidelines" xml:space="preserve">
+    <value>2. Affiliation Guidelines</value>
+  </data>
+  <data name="OnlyApprovedAndProperly" xml:space="preserve">
+    <value>1. Only approved and properly tagged creative materials, supplied by us from time to time, may be used to promote Affiliate. Advertorials and personal endorsements are allowed but all materials not designed by Affiliate need to be approved in writing; such approval shall not be unreasonably withheld.</value>
+  </data>
+  <data name="Youmaynotmodify" xml:space="preserve">
+    <value>2. You may not modify or use for any other purpose any IP rights, banners or other creative material supplied by us without the written prior consent of Affiliate. All copyright or IP rights notices on any material supplied or approved by Affiliate must remain and not be modified or eliminated.</value>
+  </data>
+  <data name="Byagreeingtoparticipate" xml:space="preserve">
+    <value>3. By agreeing to participate in the Affiliate Affiliate Program, you are agreeing to download banners, text or promotional material and place it on your site, utilize it within e-mail, direct marketing using your affiliate URL or print. These methods are the only approved methods by which you may advertise Affiliate's products and services.</value>
+  </data>
+  <data name="Bannersandlinks" xml:space="preserve">
+    <value>4. Banners and links may not be placed within unsolicited e-mail, unauthorized newsgroup postings, or chat rooms or through the use of "bots". Traffic generated illegally will not be counted and may result in the termination of your affiliate account with us.</value>
+  </data>
+  <data name="WewillterminatethisAgreement" xml:space="preserve">
+    <value>5. We will terminate this Agreement immediately if there is any form of spamming on your behalf or if you discredit Affiliate through false advertising, written or uttered words.</value>
+  </data>
+  <data name="Youshallnotmake" xml:space="preserve">
+    <value>6. You shall not make any claims, representations, or warranties in connection with Affiliate and you shall have no authority to and shall not bind Affiliate to any obligations.</value>
+  </data>
+  <data name="Withoutourpriorwritten" xml:space="preserve">
+    <value>7. Without our prior written approval, you will only use our approved banners and links and will not alter their appearance nor refer to us in any promotional materials. The appearance and syntax of the hypertext transfer links are designed and designated by us and constitute the only authorized and permitted representation of Affiliate.</value>
+  </data>
+  <data name="Youwillnotknowingly" xml:space="preserve">
+    <value>8. You will not knowingly benefit from known or suspected traffic not generated in good faith whether or not it actually causes Affiliate damage. Should fraudulent activity arise through a person directed to a site via your link, we retain the right to retract the commissions paid to you at any time. Our decision in this regard will be final and no correspondence will be entered into. We reserve the right to retain all amounts due to you under this Agreement if we have reasonable cause to believe that such traffic has been caused with your knowledge. Even if you have not knowingly generated such traffic, we reserve the right to withhold affiliate commissions with respect to such.</value>
+  </data>
+  <data name="Affiliatesareprohibited" xml:space="preserve">
+    <value>9. Affiliates are prohibited from playing at any of the sportsbooks promoted by Affiliate through their own affiliate link or from the affiliate link of an associate who shares all or part of the commission with the affiliate or a third party. This shall include any individuals or playing groups from which an Affiliate receives compensation or remuneration from of any kind. In the event of violation of this section, Affiliate and the respective website that has been played with shall have the right to void all play and eliminate any earned commissions applicable from such play and eliminate the affiliate from our Affiliate Program terminating this Agreement and void any future play at Affiliate.</value>
+  </data>
+  <data name="YouAreNotAllowed" xml:space="preserve">
+    <value>10. You are not allowed to concurrently maintain both affiliate and referral relationships with Affiliate.  Violation of this provision grants Affiliate the right to unilaterally terminate either or both affiliate and/or referral relationships.  A referral relationship refers to a relationship with Affiliate pursuant to Affiliate’s Refer-A-Friend Program (as setout and available in the Website). </value>
+  </data>
+  <data name="AffiliateTagging" xml:space="preserve">
+    <value>3. Affiliate Tagging</value>
+  </data>
+  <data name="Youareonlyresponsible" xml:space="preserve">
+    <value>1. You are only responsible for directing customers to the Affiliate website.</value>
+  </data>
+  <data name="Onlyproperlytaggedcustomers" xml:space="preserve">
+    <value>2. Only properly tagged customers can be assigned to an affiliate. Should an affiliate tag be improperly inserted into the affiliate site or not properly received by the Affiliate web server the resulting customer registration and purchases will not be assigned to the affiliate. Therefore it is the responsibility of the affiliate to ensure that all links are properly tagged.</value>
+  </data>
+  <data name="RevenueSharing" xml:space="preserve">
+    <value>4. Revenue Sharing &amp; Payment</value>
+  </data>
+  <data name="OneTwoBETwillpayout" xml:space="preserve">
+    <value>1. Affiliate will pay out a revenue share on the Commissionable Earnings generated by each customer, as defined by Affiliate Affiliate Program commission structure, provided that you maintain in your account as an affiliate, at least five (5) Active Wagering Members in any given calendar month.</value>
+  </data>
+  <data name="ActiveWageringMembersRefers" xml:space="preserve">
+    <value>2. Active Wagering Members refers to customers that reach a minimum wagering turnover amount equivalent to One Hundred Dollars (USD100.00) each in any given calendar month.</value>
+  </data>
+  <data name="CommissionableEarningsAreCalculated" xml:space="preserve">
+    <value>3. Commissionable Earnings are calculated as Affiliate Gross Win, less the following:</value>
+  </data>
+  <data name="Chargeback" xml:space="preserve">
+    <value>a. Charge-backs;&lt;br /&gt;
+b. Bonuses;&lt;br /&gt;
+c. Uncollectable revenue, including transactions that are reversed by us or on our behalf;&lt;br /&gt;
+d. Processing charges;&lt;br /&gt;
+e. Monies attributed to fraud;&lt;br /&gt;
+f. Sums paid to the concerned customer to resolve a dispute; and&lt;br /&gt;
+g. Any other un-collectable revenue or deductions that Affiliate is entitled to collect under its Standard Terms and Conditions.</value>
+  </data>
+  <data name="Shouldtheplayer" xml:space="preserve">
+    <value>b. Should the player process a charge back, the disputed or charged-back revenue generated by yourself will be forfeited and therefore deducted from the total balance due to you for the current month.</value>
+  </data>
+  <data name="Shouldthisdeduction" xml:space="preserve">
+    <value>c. Should this deduction of the accumulated revenue exceed your current amount due, your balance will then revert to a negative balance, and you will have to earn revenue to cover the charge-back before you can start earning revenue again.</value>
+  </data>
+  <data name="Unlikewithaplayer" xml:space="preserve">
+    <value>d. Unlike with a player making a big winning, which only lasts one month, a charge back will stay due untill the revenue generated by your other players has covered the amount due.</value>
+  </data>
+  <data name="Weunderstandthat" xml:space="preserve">
+    <value>e. We understand that this might be frustrating to the affiliates, but it has to be made clear that Affiliate can only pay out a percentage of their profits, not fraudulent revenue.</value>
+  </data>
+  <data name="ComplimentaryMoney" xml:space="preserve">
+    <value>f. Complimentary Money, Free Money and Other incentives refer to those amounts credited to the account of customers. As they have not purchased these amounts Affiliate cannot pay commissions on these amounts.</value>
+  </data>
+  <data name="ShouldYouFailToBe" xml:space="preserve">
+    <value>4. Should you fail to be entitled to the Commissionable Earnings in accordance with Clauses 4.1, 4.2, and 4.3 above for failure to maintain at least five (5) Active Wagering Members in a given month, you may be given (at Affiliate’s sole discretion) a grace period of two (2) months within which to comply. Upon compliance, your commission for the subject period not exceeding three (3) consecutive months will be consolidated to constitute your Commissionable Earnings for the same period. (at Affiliate’s sole discretion)</value>
+  </data>
+  <data name="Commissionableearnings" xml:space="preserve">
+    <value>5. Commissionable earnings will be subject to commissions as calculated using the Affiliate Affiliate Program commission structure in force from time to time.</value>
+  </data>
+  <data name="Negativeearningsarecarried" xml:space="preserve">
+    <value>6. Negative earnings are carried forward to the next month. Should the affiliate close the month with a positive balance, payment will be issued if it meets the minimum requirements and commissions will be paid on the positive balance.</value>
+  </data>
+  <data name="Thenetrevenueplan" xml:space="preserve">
+    <value>7. The Commissionable Earnings of the affiliate calculated based on commission structure will be earned on all transactions that the customer undertakes with the merchant, as long as the affiliate remains a member of this affiliate program.</value>
+  </data>
+  <data name="PoliciesConfidentiality" xml:space="preserve">
+    <value>5. Policies &amp; Confidentiality</value>
+  </data>
+  <data name="OneTwoBETassumeownership" xml:space="preserve">
+    <value>1. Affiliate assume ownership of the customer at point of first contact with the customer. You, as affiliate, act as a referring agent for Affiliate. We reserve the right to refuse customers (or to close their accounts) if necessary to comply with any requirements we may periodically establish.</value>
+  </data>
+  <data name="Byopeninganaccount" xml:space="preserve">
+    <value>2. By opening an account with a customer, that person or entity will become our Customers and, accordingly, all Client rules, policies, and operating procedures will apply to them.</value>
+  </data>
+  <data name="Duringtheterm" xml:space="preserve">
+    <value>3. During the term of this Agreement, you may be entrusted with confidential information relating to the business, operations, or underlying technology of our affiliate program (including, for example, referral fees earned by you under the program). You agree not to disclose or use the confidential information to third persons or outside parties unless you have our prior written consent and that you will use the confidential information only for purposes necessary to further the purposes of this Agreement. Your obligations with respect to confidential information shall survive the termination of this Agreement.</value>
+  </data>
+  <data name="LimitedLicense" xml:space="preserve">
+    <value>6. Limited License</value>
+  </data>
+  <data name="Weherebygrant" xml:space="preserve">
+    <value>1. We hereby grant to you a personal, non-exclusive, non-transferable limited license, during the term of this Agreement, to use our trademarks (licensed, in turn by us, from their owner) solely in connection with the display of the banners on your site.</value>
+  </data>
+  <data name="BythisAgreement" xml:space="preserve">
+    <value>2. By this Agreement, we grant you the non-exclusive right to direct customers to our sites and services, in accordance with the terms and conditions of this Agreement. This Agreement does not grant you an exclusive right or privilege to assist us in the provision of services arising from your referrals, and we reserve the right to contract with and obtain the assistance from other parties at any time to perform services of the same or similar nature as yours. You shall have no claims to referral fees or other compensation on business secured by or through persons or entities other than you.</value>
+  </data>
+  <data name="Thislicensecannot" xml:space="preserve">
+    <value>3. This license cannot be sub-licensed, assigned or otherwise transferred by you. Your right to use the trademarks is limited to and arises only out of this license to use the banners. You shall not assert the invalidity, unenforceability, or contest the ownership of the trademarks in any action or proceeding of whatever kind or nature, and shall not take any action that may prejudice our or our licensor's rights in the trademarks, render the same generic, or otherwise weaken their validity or diminish their associated goodwill.</value>
+  </data>
+  <data name="Wereservetherighttorevoke" xml:space="preserve">
+    <value>4. We reserve the right to revoke this license at any time and it shall have been deemed revoked at the termination of this Agreement, for whatsoever reason.</value>
+  </data>
+  <data name="LegalResponsibility" xml:space="preserve">
+    <value>7. Legal Responsibility</value>
+  </data>
+  <data name="Ownershipandcontent" xml:space="preserve">
+    <value>1. Ownership and content of our sites remain our respective properties and shall not be deemed to have been transferred to the affiliate through any act or omission in respect of the affiliation Agreement.</value>
+  </data>
+  <data name="Ownershipcontentandliability" xml:space="preserve">
+    <value>2. Ownership, content and liability for affiliate sites are the sole responsibility of the affiliate. You will be solely responsible for the development, operation, and maintenance of your site and for all materials that appear on your site and at your own cost.</value>
+  </data>
+  <data name="Youwillindemnify" xml:space="preserve">
+    <value>3. You will indemnify and hold us harmless from all claims, damages, and expenses (including, without limitation, attorneys' fees) relating to the development, operation, maintenance, and contents of your site. This provision on indemnification is without prejudice to our separate action or claim against you under applicable laws.</value>
+  </data>
+  <data name="Itistheaffiliates" xml:space="preserve">
+    <value>4. It is the affiliates' responsibility to follow the correct linking and tagging procedure to ensure new customer tracking and payment.</value>
+  </data>
+  <data name="Presentationofourbanners" xml:space="preserve">
+    <value>5. Presentation of our banners &amp; content on affiliate's site is the responsibility of affiliate. The affiliate must ensure that our content is presented in accordance with our prescriptions.</value>
+  </data>
+  <data name="Affiliatemustensure" xml:space="preserve">
+    <value>6. Affiliate must ensure that any material posted on their site is legal and does not infringe copyright or violate any rights.</value>
+  </data>
+  <data name="Wemaymodify" xml:space="preserve">
+    <value>7. We may modify any of the terms and conditions contained in this Agreement, at any time and in our sole discretion, by posting a change notice or a new agreement on our site. Modifications may include, for example, changes in the scope of available referral fees, fee schedules, payment procedures, and referral program rules. IF ANY MODIFICATION IS UNACCEPTABLE TO YOU, YOUR ONLY RECOURSE IS TO TERMINATE THIS AGREEMENT. YOUR CONTINUED PARTICIPATION IN THE PROGRAM FOLLOWING OUR POSTING OF A CHANGE NOTICE OR NEW AGREEMENT ON OUR SITE WILL CONSTITUTE BINDING ACCEPTANCE OF THE CHANGE.</value>
+  </data>
+  <data name="SpamWedonot" xml:space="preserve">
+    <value>8. Spam - We do not condone Spam.</value>
+  </data>
+  <data name="AnyformofSpam" xml:space="preserve">
+    <value>a. Any form of Spam will result in your account being placed under review and all funds due being withheld pending an investigation into your account. You need to be aware that our clients are liable to incur expenses in dealing with Spam generated mail and these same expenses will be deducted from your account should our client seek recourse. In this instance the amount determined by the relative client will be fair and deemed final and acceptable based on good faith and such amount will be collectable by law and deemed to have been accepted by yourself as fair and reasonable and as agreed to by registration as an affiliate of Affiliate.</value>
+  </data>
+  <data name="Shouldtheseexpenses" xml:space="preserve">
+    <value>b. Should these expenses not be covered by funds in your account we reserve the right to investigate other alternative means for obtaining payment for example: should your account have generated purchasing accounts we will hold payment of commission for these accounts until such a time as the account for damages has been cleared. Should your account not be active and be generating profit through commission payments we reserve the right to demand payment from the account holder.</value>
+  </data>
+  <data name="Youandweareindependent" xml:space="preserve">
+    <value>9. You and we are independent contractors, and nothing in this Agreement will create any partnership, joint venture, agency, franchise, sales representative, or employment relationship between the parties. You will have no authority to make or accept any offers or representations on our behalf. You will not make any statement, whether on your site or otherwise, that reasonably would contradict anything in this paragraph.</value>
+  </data>
+  <data name="Miscellaneous" xml:space="preserve">
+    <value>8. Miscellaneous</value>
+  </data>
+  <data name="Assignability" xml:space="preserve">
+    <value>1. Assign-ability and Inurement</value>
+  </data>
+  <data name="Youmaynotassign" xml:space="preserve">
+    <value>a. You may not assign this Agreement, by operation of law or otherwise, without our prior written consent. Subject to that restriction, this Agreement will be binding on, inure to the benefit of, and enforceable against you and us and our respective successors and assigns.</value>
+  </data>
+  <data name="NonWaiver" xml:space="preserve">
+    <value>2. Non-Waiver</value>
+  </data>
+  <data name="Ourfailuretoenforce" xml:space="preserve">
+    <value>a. Our failure to enforce your strict performance of any provision of this Agreement will not constitute a waiver of our right to subsequently enforce such provision or any other provision of this Agreement. NO MODIFICATIONS, ADDITIONS, DELETIONS OR INTERLINEATIONS OF THIS AGREEMENT ARE PERMITTED OR WILL BE RECOGNIZED BY US. None of our employees, officers or agents may verbally alter, modify or waive any provision of this Agreement.</value>
+  </data>
+  <data name="Remedies" xml:space="preserve">
+    <value>3. Remedies</value>
+  </data>
+  <data name="Ourrightsandremedies" xml:space="preserve">
+    <value>a. Our rights and remedies hereunder shall not be mutually exclusive, i.e., the exercise of one or more of the provisions of this Agreement shall not preclude the exercise of any other provision. You acknowledge, confirm, and agree that damages may be inadequate for a breach or a threatened breach of this Agreement and, in the event of a breach or threatened breach of any provision of this Agreement, the respective rights and obligations of the parties may be enforceable by specific performance, injunction, or other equitable remedy. Nothing contained in this Agreement shall limit or affect any of our rights at law, or otherwise, for a breach or threatened breach of any provision of this Agreement, it being the intent of this provision to make clear that our respective rights and obligations shall be enforceable in equity as well as at law or otherwise.</value>
+  </data>
+  <data name="SeverabilityWaiver" xml:space="preserve">
+    <value>4. Severability / Waiver</value>
+  </data>
+  <data name="Wheneverpossible" xml:space="preserve">
+    <value>a. Whenever possible, each provision of this Agreement shall be interpreted in such a manner as to be effective and valid under applicable law but, if any provision of this Agreement is held to be invalid, illegal or unenforceable in any respect, such provision will be ineffective only to the extent of such invalidity, or unenforceability, without invalidating the remainder of this Agreement or any provision hereof. No waiver will be implied from conduct or failure to enforce any rights and must be in writing to be effective.</value>
+  </data>
+  <data name="TermTermination" xml:space="preserve">
+    <value>9. Term &amp; Termination</value>
+  </data>
+  <data name="ThetermofthisAgreement" xml:space="preserve">
+    <value>1. The term of this Agreement will begin when you download linking code and link it to our site and will be continuous unless and until either party notifies the other in writing that it wishes to terminate the Agreement, in which case this Agreement may be terminated immediately. TERMINATION IS AT WILL, FOR ANY REASON, BY EITHER PARTY. For purposes of notification of termination, delivery via e-mail is considered a written and immediate form of notification.</value>
+  </data>
+  <data name="Intheeventoftermination" xml:space="preserve">
+    <value>2. In the event of termination of this Agreement</value>
+  </data>
+  <data name="Youmustremove12BET" xml:space="preserve">
+    <value>a. You must remove Affiliate's banner/s from your site and disable any links from your site to Affiliate.</value>
+  </data>
+  <data name="Allrightsandlicenses" xml:space="preserve">
+    <value>b. All rights and licenses given to you in this Agreement shall immediately terminate.</value>
+  </data>
+  <data name="Youwillbeentitled" xml:space="preserve">
+    <value>c. You will be entitled only to those unpaid referral fees if any earned by You on or prior to the date of termination, save where termination is as a result of Your breach of terms of this Agreement, as detailed at 9.2.d below. We may withhold your final payment for a reasonable time to ensure that the correct amount is paid.</value>
+  </data>
+  <data name="Ifyouhavefailed" xml:space="preserve">
+    <value>d. If you have failed to fulfill your obligations and responsibilities, we will not pay you the referral fees otherwise owing to you on termination.</value>
+  </data>
+  <data name="Wemaywithhold" xml:space="preserve">
+    <value>e. We may withhold your final payment for a reasonable time to ensure that the correct amount is paid.</value>
+  </data>
+  <data name="Ifwecontinue" xml:space="preserve">
+    <value>f. If we continue to permit activity (generation of revenue) from customers after termination, this will not constitute a continuation or renewal of this Agreement or a waiver of termination.</value>
+  </data>
+  <data name="Youwillreturn" xml:space="preserve">
+    <value>g. You will return to us any confidential information and all copies of it in your possession, custody and control and will cease all uses of any trade names, trademarks, service marks, logos and other designations of the merchants.</value>
+  </data>
+  <data name="Youandwewill" xml:space="preserve">
+    <value>h. You and we will be released from all obligations and liabilities to each other occurring or arising after the date of such termination, except with respect to those obligations that by their nature are designed to survive termination, as set out in this Agreement. Termination will not relieve you from any liability arising from any breach of this Agreement, which occurred prior to termination.</value>
+  </data>
+  <data name="WEMAYTERMINATE" xml:space="preserve">
+    <value>i. WE MAY TERMINATE THIS AGREEMENT IF WE DETERMINE (IN OUR SOLE DISCRETION) THAT YOUR SITE IS UNSUITABLE. Unsuitable sites may include those that: are aimed at children, promote sexually explicit materials, promote violence, promote discrimination based on race, sex, religion, nationality, disability, sexual orientation, or age, promote illegal activities, or violate intellectual property rights.</value>
+  </data>
+  <data name="RelationshipofParties" xml:space="preserve">
+    <value>10. Relationship of Parties</value>
+  </data>
+  <data name="Youandweareindependentcontractors" xml:space="preserve">
+    <value>You and we are independent contractors, and nothing in this agreement will create any partnership, joint venture, agency, franchise, sales representative, or employment relationship between the parties. You will have no authority to make or accept any offers or representations on our behalf. You will not make any statement, whether on your site or otherwise, to contradict anything in this paragraph or be reasonably deemed to contradict this paragraph.</value>
+  </data>
+  <data name="Indemnity" xml:space="preserve">
+    <value>11. Indemnity</value>
+  </data>
+  <data name="Youherebyagreetoindemnify" xml:space="preserve">
+    <value>You hereby agree to indemnify and hold harmless Affiliate , the entities it represents and affiliates, and Affiliate directors, officers, employees, agents, shareholders, partners, members and other owners, against any and all claims, actions, demands, liabilities, losses, damages, judgments, settlements, expenses (including reasonable attorneys' fees), and costs (any or all of the foregoing hereinafter referred to as "Losses") insofar as such Losses (or actions in respect thereof) arise out of or are based on (i) any claim that our use of the Affiliate Trademarks infringes on any trademark, trade name, service mark, copyright, license, intellectual property, or other proprietary right of any third party, (ii) any misrepresentation of a representation or warranty or breach of a covenant and agreement made by you herein, (iii) the development, operation, maintenance and content of Your Site and products and services offered from Your Site, or (iv) any claim related to Your Site, including, without limitation, content therein not attributable to us.</value>
+  </data>
+  <data name="Disclaimers" xml:space="preserve">
+    <value>12. Disclaimers</value>
+  </data>
+  <data name="Wemakenoexpress" xml:space="preserve">
+    <value>We make no express or implied warranties or representations with respect to the referral program or referral fee payment arrangements (including, without limitation, their functionality, warranties of fitness, merchantability, legality, non-infringement, or any implied warranties arising out of a course of performance, dealing, or trade usage). In addition, we make no representation that the operation of our site will be uninterrupted or error-free and will not be liable for the consequences of any interruptions or errors.</value>
+  </data>
+  <data name="LimitationofLiability" xml:space="preserve">
+    <value>13. Limitation of Liability</value>
+  </data>
+  <data name="Wewillnotbeliable" xml:space="preserve">
+    <value>We will not be liable for indirect, special, or consequential damages (or any loss of revenue, profits, or data) arising in connection with this Agreement or the referral program, even if we have been advised of the possibility of such damages. Further, our aggregate liability arising with respect to this Agreement and the Program will not exceed the total commissions paid or payable to you under this Agreement. Nothing in this Agreement shall be construed to provide any rights, remedies or benefits to any person or entity not a party to this Agreement. Our obligations under this Agreement do not constitute personal obligations of our directors, officers or shareholders. Any liability arising under this Agreement shall be satisfied solely from the referral fee generated and is limited to direct damages.</value>
+  </data>
+  <data name="IndependentInvestigation" xml:space="preserve">
+    <value>14. Independent Investigation</value>
+  </data>
+  <data name="YOUACKNOWLEDGETHATYOUHAVEREAD" xml:space="preserve">
+    <value>YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT AND AGREE TO ALL ITS TERMS AND CONDITIONS. YOU UNDERSTAND THAT WE MAY AT ANY TIME (DIRECTLY OR INDIRECTLY) SOLICIT CUSTOMER REFERRALS ON TERMS THAT MAY DIFFER FROM THOSE CONTAINED IN THIS AGREEMENT OR OPERATE WEB SITES THAT ARE SIMILAR TO OR COMPETE WITH YOUR WEB SITE. YOU HAVE INDEPENDENTLY EVALUATED THE DESIRABILITY OF PARTICIPATING IN THIS AFFILIATE PROGRAM AND ARE NOT RELYING ON ANY REPRESENTATION, GUARANTEE, OR STATEMENT OTHER THAN AS SET FORTH IN THIS AGREEMENT</value>
+  </data>
+  <data name="GoverningLawandArbitration" xml:space="preserve">
+    <value>15. Governing Law and Arbitration</value>
+  </data>
+  <data name="ThisAgreementshallbegoverned" xml:space="preserve">
+    <value>This Agreement shall be governed by and construed in accordance with English law. Any dispute, controversy or claim arising out of or in connection with this Agreement shall be referred to and determined by a tribunal comprised of one arbitrator to be appointed by the Arbitration Centre. The seat of arbitration will be London, United Kingdom, the location determined by the Arbitration Centre, the language of the arbitration will be English and the regulations established by the Arbitration Centre shall govern the process. The arbitration tribunal will have the right to issue injunctions and its decision will be compulsory, final and strictly mandatory to the Parties who in turn waive any other jurisdiction or venue that may apply and agree to be subject to the arbitral decision waiving any appeals of any type.</value>
+  </data>
+  <data name="INWITNESSWHEREOF" xml:space="preserve">
+    <value>16. IN WITNESS WHEREOF</value>
+  </data>
+  <data name="Byhavingread" xml:space="preserve">
+    <value>By having read, the terms and conditions, and acknowledging such in the affiliate sign-up form you agree to all the terms and conditions contained herein. Affiliate reserves the right to withhold payment from any affiliate that violates any of the terms and conditions contained herein</value>
+  </data>
+  <data name="BetAffNotification" xml:space="preserve">
+    <value>Affiliate Affiliates - [{transid}] - Payment Request Notification  </value>
+  </data>
+  <data name="DearName" xml:space="preserve">
+    <value>Dear {fname} {lname},</value>
+  </data>
+  <data name="ThanksPayment" xml:space="preserve">
+    <value>Thank you for your payment request dated {winlostdate} for the amount of ${amount}.</value>
+  </data>
+  <data name="YourPayment" xml:space="preserve">
+    <value>Your payment request will be reviewed in the next 24 hours. All requests are reviewed in the order in which they are received.</value>
+  </data>
+  <data name="ContactusComment" xml:space="preserve">
+    <value>Do not hesitate to contact us if you have any questions or comments at</value>
+  </data>
+  <data name="TitleCancelledPayment" xml:space="preserve">
+    <value>Affiliate Affiliates - [{transid}] - Your payment request has been cancelled</value>
+  </data>
+  <data name="_12BetAffiliatesYourApplication" xml:space="preserve">
+    <value>Affiliate Affiliates - Your Application</value>
+  </data>
+  <data name="_12BETAffiliatesTeam" xml:space="preserve">
+    <value>Affiliate Affiliates Team</value>
+  </data>
+  <data name="PleaseNote" xml:space="preserve">
+    <value>Please note</value>
+  </data>
+  <data name="Asyouhaverequested" xml:space="preserve">
+    <value>As you have requested, we provide you a new password. You new account information is as below:</value>
+  </data>
+  <data name="Howeveryoucanvisit" xml:space="preserve">
+    <value>However, you can visit {url} to change your password at anytime</value>
+  </data>
+  <data name="Bonus" xml:space="preserve">
+    <value>Bonus</value>
+  </data>
+  <data name="Football" xml:space="preserve">
+    <value>Football</value>
+  </data>
+  <data name="RequestPayout" xml:space="preserve">
+    <value>Request Payout</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="DailyEarnings" xml:space="preserve">
+    <value>Daily Earnings</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="GrossEarnings" xml:space="preserve">
+    <value>Gross Earnings</value>
+  </data>
+  <data name="NetEarnings" xml:space="preserve">
+    <value>Net Earnings</value>
+  </data>
+  <data name="ErrPaymentMethod" xml:space="preserve">
+    <value>Sorry! The payment via {method} is not available. At the moment, only 'Affiliate Player Account' method is supported. Please &lt;a href='MyAccount.aspx?ispay=1#payment'&gt;click here&lt;/a&gt; to make a change.</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="errContactNumberEmpty" xml:space="preserve">
+    <value>Contact Number is empty. Please check !</value>
+  </data>
+  <data name="errMobileNumberEmpty" xml:space="preserve">
+    <value>Mobile Number is empty. Please check !  </value>
+  </data>
+  <data name="errSecQuestionEmpty" xml:space="preserve">
+    <value>Security Question is empty. Please check !</value>
+  </data>
+  <data name="errYourAnswer" xml:space="preserve">
+    <value>Your Answer is empty. Please check !</value>
+  </data>
+  <data name="lblSecureQuestion" xml:space="preserve">
+    <value>Security Question</value>
+  </data>
+  <data name="lblYourAnswer" xml:space="preserve">
+    <value>Your Answer</value>
+  </data>
+  <data name="SecureQuestionGuide" xml:space="preserve">
+    <value>※Security question and answer is used to verify your identity.</value>
+  </data>
+  <data name="Turnover" xml:space="preserve">
+    <value>Turnover</value>
+  </data>
+  <data name="UpToNow" xml:space="preserve">
+    <value>Up To Now</value>
+  </data>
+  <data name="UpdateSecurityQuestion" xml:space="preserve">
+    <value>Update Security Question</value>
+  </data>
+  <data name="UpdateSecurityQuestionRemind" xml:space="preserve">
+    <value>For security reason, you are required to select a security question and provide your answer. You'll be asked this question for authentication in case you forget your password, or need to contact us for sensitive information.</value>
+  </data>
+  <data name="SecurityQuestionUpdated" xml:space="preserve">
+    <value>Your security question and answer have been updated!</value>
+  </data>
+  <data name="Lithuania" xml:space="preserve">
+    <value>Lithuania</value>
+  </data>
+  <data name="errDepositDBConnectFailed" xml:space="preserve">
+    <value>There was an error when getting Player Username information. Please contact your administrator!</value>
+  </data>
+  <data name="errExistAccount" xml:space="preserve">
+    <value>User already has IBC account</value>
+  </data>
+  <data name="errUserNotFound" xml:space="preserve">
+    <value>User not found</value>
+  </data>
+  <data name="StatementHistory" xml:space="preserve">
+    <value>Statement</value>
+  </data>
+  <data name="PendingComm" xml:space="preserve">
+    <value>Pending Commission</value>
+  </data>
+  <data name="ErrBalanceForward" xml:space="preserve">
+    <value>Request amount must be less than or equal to balance brought forward</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Creator" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="MonthlyWinlost" xml:space="preserve">
+    <value>Monthly Winlost</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="Transaction" xml:space="preserve">
+    <value>Transaction</value>
+  </data>
+  <data name="QualifiedMember" xml:space="preserve">
+    <value>{num} qualified member(s).</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="TotalQualifiedMembers" xml:space="preserve">
+    <value>Total Qualified Active Players</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>Important</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="MessageHistory" xml:space="preserve">
+    <value>Message History</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="PostDate" xml:space="preserve">
+    <value>Posted Date</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="AUD" xml:space="preserve">
+    <value>AUD (Australia Dollar)</value>
+  </data>
+  <data name="Basketball" xml:space="preserve">
+    <value>Basketball</value>
+  </data>
+  <data name="CHF" xml:space="preserve">
+    <value>CHF (Swiss Franc)</value>
+  </data>
+  <data name="EUR" xml:space="preserve">
+    <value>EUR (Euro)</value>
+  </data>
+  <data name="GBP" xml:space="preserve">
+    <value>GBP (Great Britain Pound)</value>
+  </data>
+  <data name="MYR" xml:space="preserve">
+    <value>MYR (Malaysia Ringgit)</value>
+  </data>
+  <data name="RMB" xml:space="preserve">
+    <value>RMB (Ren Min Bi)</value>
+  </data>
+  <data name="Tennis" xml:space="preserve">
+    <value>Tennis</value>
+  </data>
+  <data name="THB" xml:space="preserve">
+    <value>THB (Thai Baht)</value>
+  </data>
+  <data name="USD" xml:space="preserve">
+    <value>USD (United States Dollar)</value>
+  </data>
+  <data name="ErrAuthorized" xml:space="preserve">
+    <value>You are not authorized on this function</value>
+  </data>
+  <data name="CancelSubject" xml:space="preserve">
+    <value>Affiliate Affiliates - [{transid}] - Payment Request Notification</value>
+  </data>
+  <data name="France" xml:space="preserve">
+    <value>France</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="ErrGender" xml:space="preserve">
+    <value>Gender is empty. Please Check !</value>
+  </data>
+  <data name="ActivatedTrackingCode" xml:space="preserve">
+    <value>Activated</value>
+  </data>
+  <data name="GenerateLink" xml:space="preserve">
+    <value>Generate Link</value>
+  </data>
+  <data name="NewTrackingCode" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="TrackingCode" xml:space="preserve">
+    <value>Tracking Code</value>
+  </data>
+  <data name="TrackingStatistics" xml:space="preserve">
+    <value>Tracking Statistics</value>
+  </data>
+  <data name="TotalClick" xml:space="preserve">
+    <value>Total Clicks</value>
+  </data>
+  <data name="TotalIP" xml:space="preserve">
+    <value>Total IPs</value>
+  </data>
+  <data name="TotalUniqueClickByDate" xml:space="preserve">
+    <value>Total Unique Clicks By Date</value>
+  </data>
+  <data name="StatisticsDetail" xml:space="preserve">
+    <value>Statistics Detail</value>
+  </data>
+  <data name="ClicksCount" xml:space="preserve">
+    <value>Clicks Count</value>
+  </data>
+  <data name="IP" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="UniqueClick" xml:space="preserve">
+    <value>Unique Clicks</value>
+  </data>
+  <data name="AsaPolicy12BETShallNo" xml:space="preserve">
+    <value>As a policy, Affiliate shall not accept an online application for registration as an affiliate if you advertise with Internet Protocol (IP) addresses located in or originating from within the geographical jurisdiction of the United Kingdom.</value>
+  </data>
+  <data name="AffiliatesWillNotEarn" xml:space="preserve">
+    <value>8. Affiliates will not earn any commission from a member’s turnover or win/loss resulting from or connected with any horse racing and casino wagers using the Affiliate website.</value>
+  </data>
+  <data name="NonDeposit" xml:space="preserve">
+    <value>Non-deposited account only</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>Of</value>
+  </data>
+  <data name="HotNews" xml:space="preserve">
+    <value>Headlines</value>
+  </data>
+  <data name="BestView" xml:space="preserve">
+    <value>Best view in</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="PageSize" xml:space="preserve">
+    <value>Page Size</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="none" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Adjustment" xml:space="preserve">
+    <value>Adjustment</value>
+  </data>
+  <data name="PSP" xml:space="preserve">
+    <value>PSP</value>
+  </data>
+  <data name="Winlost" xml:space="preserve">
+    <value>Winlost</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="Deductions" xml:space="preserve">
+    <value>Deductions</value>
+  </data>
+  <data name="MaxAmt" xml:space="preserve">
+    <value>Max Amount</value>
+  </data>
+  <data name="MaxQM" xml:space="preserve">
+    <value>Max QM</value>
+  </data>
+  <data name="MinAmt" xml:space="preserve">
+    <value>Min Amount</value>
+  </data>
+  <data name="MinQM" xml:space="preserve">
+    <value>Min QM</value>
+  </data>
+  <data name="Tier" xml:space="preserve">
+    <value>Tier</value>
+  </data>
+  <data name="AddUrl" xml:space="preserve">
+    <value>Add Url</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="WebsiteUrli" xml:space="preserve">
+    <value>Please input Website URL {i}.</value>
+  </data>
+  <data name="CurrentCommissiSetting" xml:space="preserve">
+    <value>Current Commission Setting</value>
+  </data>
+  <data name="MaxAmt_explain" xml:space="preserve">
+    <value>Maximum total member's net lost</value>
+  </data>
+  <data name="MaxQM_explain" xml:space="preserve">
+    <value>Maximum Qualified members</value>
+  </data>
+  <data name="MinAmt_explain" xml:space="preserve">
+    <value>Minimum total member's net lost</value>
+  </data>
+  <data name="MinQM_explain" xml:space="preserve">
+    <value>Minimum Qualified members</value>
+  </data>
+  <data name="Turnover_explain" xml:space="preserve">
+    <value>Minimum turnover amount of a qualified member</value>
+  </data>
+  <data name="NetWinLoss" xml:space="preserve">
+    <value>COMPANY NET WIN FOR THE MONTH</value>
+  </data>
+  <data name="QualifyingMem" xml:space="preserve">
+    <value>Qualifying Members</value>
+  </data>
+  <data name="SpCommStruct" xml:space="preserve">
+    <value>SPORTSBOOK COMMISSION STRUCTURE</value>
+  </data>
+  <data name="Marketing" xml:space="preserve">
+    <value>Marketing</value>
+  </data>
+  <data name="Apr" xml:space="preserve">
+    <value>Apr</value>
+  </data>
+  <data name="Aug" xml:space="preserve">
+    <value>Aug</value>
+  </data>
+  <data name="Dec" xml:space="preserve">
+    <value>Dec</value>
+  </data>
+  <data name="Dontshowit" xml:space="preserve">
+    <value>Don't show it again.</value>
+  </data>
+  <data name="Feb" xml:space="preserve">
+    <value>Feb</value>
+  </data>
+  <data name="Jan" xml:space="preserve">
+    <value>Jan</value>
+  </data>
+  <data name="Jul" xml:space="preserve">
+    <value>Jul</value>
+  </data>
+  <data name="Jun" xml:space="preserve">
+    <value>Jun</value>
+  </data>
+  <data name="Mar" xml:space="preserve">
+    <value>Mar</value>
+  </data>
+  <data name="May_short" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="Nov" xml:space="preserve">
+    <value>Nov</value>
+  </data>
+  <data name="Oct" xml:space="preserve">
+    <value>Oct</value>
+  </data>
+  <data name="Sept" xml:space="preserve">
+    <value>Sept</value>
+  </data>
+  <data name="EmailFormat" xml:space="preserve">
+    <value>Email Format</value>
+  </data>
+  <data name="HtmlFormat" xml:space="preserve">
+    <value>Html Format</value>
+  </data>
+  <data name="PlainText" xml:space="preserve">
+    <value>Plain Text</value>
+  </data>
+  <data name="EnglishSupport" xml:space="preserve">
+    <value>English Support</value>
+  </data>
+  <data name="ChineseSupport" xml:space="preserve">
+    <value>Chinese Support</value>
+  </data>
+  <data name="ThaiSupport" xml:space="preserve">
+    <value>Thai Support</value>
+  </data>
+  <data name="Bet12Username" xml:space="preserve">
+    <value>Player Username</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="EnglishEU" xml:space="preserve">
+    <value>English_Euro</value>
+  </data>
+  <data name="ChineseTraditio" xml:space="preserve">
+    <value>繁體中文</value>
+  </data>
+  <data name="ChineseSimplifi" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="Thai" xml:space="preserve">
+    <value>ภาษาไทย</value>
+  </data>
+  <data name="Indonesian" xml:space="preserve">
+    <value>Indonesian</value>
+  </data>
+  <data name="Vietnamese" xml:space="preserve">
+    <value>Tiếng Việt</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value>Español</value>
+  </data>
+  <data name="AfterChargeback" xml:space="preserve">
+    <value>&lt;p&gt;“Affiliate Gross Win” is the total of all amounts bet by at least five (5) Active Wagering Members under your affiliate account in a calendar month, minus all amounts won by or paid to your Active Wagering Members. &lt;/p&gt;
+
+&lt;p&gt;“Charge-backs” are amounts deducted when a customer that is a credit card holder discovers irregular unauthorized charge-backs made on the customer’s Credit/Debit Card, and the credit card holder requests the bank to reverse these charges. Charge-backs may relate to, but are not limited to, fraudulent use by a third party of the credit card holder's card or card number.&lt;/p&gt;
+
+&lt;p&gt;Should the player process a charge back, the disputed or charged-back revenue will be forfeited and therefore deducted from the total balance due to you for the current month. Should this deduction of the accumulated revenue exceed your current amount due, your balance will then revert to a negative balance, and you will have to earn revenue to cover the charge-back before you can start earning revenue again. &lt;/p&gt;
+
+&lt;p&gt;A charge back will stay due until the revenue generated by your other players has covered the amount due. You acknowledge that Affiliate can only pay out a percentage of their actual profits, not fraudulent revenue. &lt;/p&gt;
+
+&lt;p&gt;“Bonuses” include complimentary money, free money offers, credits, sign-up bonuses, promotional amounts and other incentives credited to the account of customers. As customers have not actually purchased these amounts, Affiliate cannot pay commissions on the same. &lt;/p&gt;</value>
+  </data>
+  <data name="Nickname" xml:space="preserve">
+    <value>Nickname</value>
+  </data>
+  <data name="NicknameIsInvalid" xml:space="preserve">
+    <value>Nickname is invalid.</value>
+  </data>
+  <data name="NicknameIsRequired" xml:space="preserve">
+    <value>Nickname is required.</value>
+  </data>
+  <data name="Game" xml:space="preserve">
+    <value>Game</value>
+  </data>
+  <data name="LinkOptions" xml:space="preserve">
+    <value>Link options</value>
+  </data>
+  <data name="TargetPage" xml:space="preserve">
+    <value>Target page</value>
+  </data>
+  <data name="ErrAccClosed" xml:space="preserve">
+    <value>Player Account has been closed. Please &lt;a href='../ContactUs.aspx'&gt;Contact administrator&lt;/a&gt;.</value>
+  </data>
+  <data name="ErrAccIsNotExisted" xml:space="preserve">
+    <value>Player Account does not exist.</value>
+  </data>
+  <data name="ErrInvalidPlayerInfo" xml:space="preserve">
+    <value>Invalid Player Account information.</value>
+  </data>
+  <data name="FDM" xml:space="preserve">
+    <value>FDM</value>
+  </data>
+  <data name="LandingPages" xml:space="preserve">
+    <value>Landing Pages</value>
+  </data>
+  <data name="LinkTo" xml:space="preserve">
+    <value>Link To</value>
+  </data>
+  <data name="Referrals" xml:space="preserve">
+    <value>Referrals</value>
+  </data>
+  <data name="SubCategory" xml:space="preserve">
+    <value>Sub Category</value>
+  </data>
+  <data name="AvailableDomains" xml:space="preserve">
+    <value>Available domains</value>
+  </data>
+  <data name="NumberGame" xml:space="preserve">
+    <value>Number Game</value>
+  </data>
+  <data name="Racebook" xml:space="preserve">
+    <value>Racebook</value>
+  </data>
+  <data name="Sportbook" xml:space="preserve">
+    <value>Sportsbook</value>
+  </data>
+  <data name="Baccarat" xml:space="preserve">
+    <value>Baccarat</value>
+  </data>
+  <data name="Blackjack" xml:space="preserve">
+    <value>Blackjack</value>
+  </data>
+  <data name="CasinoBonus" xml:space="preserve">
+    <value>Casino Bonus</value>
+  </data>
+  <data name="Roulette" xml:space="preserve">
+    <value>Roulette</value>
+  </data>
+  <data name="SBBonus" xml:space="preserve">
+    <value>SB Bonus</value>
+  </data>
+  <data name="Sicbo" xml:space="preserve">
+    <value>Sic bo</value>
+  </data>
+  <data name="Slot" xml:space="preserve">
+    <value>Slot</value>
+  </data>
+  <data name="Soccer" xml:space="preserve">
+    <value>Soccer</value>
+  </data>
+  <data name="AffType" xml:space="preserve">
+    <value>Affiliate Type</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text Box</value>
+  </data>
+  <data name="ChineseSimplified" xml:space="preserve">
+    <value>Chinese Simplified</value>
+  </data>
+  <data name="ChineseTraditional" xml:space="preserve">
+    <value>Chinese Traditional</value>
+  </data>
+</root>

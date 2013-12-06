@@ -1,0 +1,27 @@
+﻿<form id="frmData" method="get">
+{paging-top}
+<div class="tbl-box">
+<table class="aff-table" cellspacing="1" cellpadding="1">
+    <tr class="tblheader">
+        <td style="width:15px;">&nbsp;</td>
+        <td style="width:100px;">{monthdate}</td>
+        <td style="width:100px;">{type}</td>
+        <td style="width:100px;">{amount}</td>
+        <td style="width:60px;">{status}</td>
+        <td>{description}</td>
+    </tr>
+    <!--content-->
+    <tr class="{style}" onmouseover="this.className=c;" onmouseout="this.className={style1};">
+        <td class="c">{no}</td>
+       <td class="b">{monthdate-val}</td>
+       <td>{bettype-val}</td>
+       <td class="r"><!--amount-block--><a class="lnknormal" href="DailyEarning.aspx?monthdate={month-val}">{amount-val}</a><!--/amount-block--></td>
+       <td class="c">{status-val}</td>
+       <td>{description-val}</td>
+    </tr>
+    <!--/content-->
+</table>
+</div>
+{paging-bottom}
+    <input type="hidden" id="page" name="page" value="{page}" />
+</form>

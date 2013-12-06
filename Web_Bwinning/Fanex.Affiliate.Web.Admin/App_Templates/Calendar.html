@@ -1,0 +1,22 @@
+{JS}
+<table cellpading="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+            <input id="{txtDate}" class="{TxtDateCls}" value="{currentDate}" type="text" size="13" name="{txtDate}" {readonly} />
+        </td>
+        <td>
+            <img alt="" id="{triggerId}" style="height:19px; width:19px;" onmouseover="this.style.background='red';" title="Date selector" style="margin: 0px" class="img-date-selector" onmouseout="this.style.background=''" src="../{themepath}/images/cal.gif" />
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+  Calendar.setup({
+  inputField     :    "{txtDate}",
+  ifFormat       :    "mm/dd/y",
+  button         :    "{triggerId}",
+  singleClick    :    {IsSingleClick},
+  showsTime      :		{ShowTime}
+  });
+</script>
+

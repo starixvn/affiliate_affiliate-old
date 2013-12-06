@@ -1,0 +1,30 @@
+﻿<div class="padl0">
+    <div id="errMsg" style="display:none; width:285px;">
+      <div id="error_item">
+        <ul>
+          <li>
+            <a class="err-msg" id="error_msg"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="pcontent">      
+      <div class="ContentBox" style="width:300px">
+        <TABLE width="100%">
+          <tr>
+            <td class="b" style="background-color: ff0000;">{content}</td>
+            <td>
+              <textarea style="width: 250px;" rows="3" name="txtNote" id="txtNote">{content-val}</textarea>
+            </td>
+          </tr>  
+        </TABLE>
+      </div>
+    </div>
+    <div class="bottombutton">
+    <!--add--><input type="button" onclick="addNote()" value="{add}" class="buttonlogin" />&nbsp;&nbsp;<!--/add-->
+    <!--update--><input type="button" onclick="updateNote()" value="{update}" class="buttonlogin" />&nbsp;&nbsp;<!--/update-->
+    <input name="btnCancel" id="btnCancel" type="button" onclick="parent.ibcWnd.close();" class="buttonlogin" value="{cancel}" />
+    </div>
+    <input type="hidden" id="noteid" name="noteid" value="{noteid-val}" />
+    <input type="hidden" id="custid" name="custid" value="{custid-val}" />
+</div>

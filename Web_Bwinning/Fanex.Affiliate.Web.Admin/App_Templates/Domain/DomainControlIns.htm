@@ -1,0 +1,49 @@
+﻿<div class="padl0">    
+    <div id="errMsg" class="done" style="display: none; width: 358px; margin: 3px 0;">
+        <div id="error_item">
+        </div>
+    </div>
+    <div id="divContent" class="pcontent" style="width: 408px;">
+        <table class="tblPass" width="100%" bordercolor="#d4d0c8">
+            <tr align="left">
+                <td style="width: 70px; padding-left: 20px;">
+                    {Market}
+                </td>
+                <td class="b">
+                    {slMarket}
+                </td>
+            </tr>
+            <tr align="left">
+                <td style="width: 70px; padding-left: 20px;">
+                    {AffDomain}
+                </td>
+                <td class="b">
+                    {slAffDomain}
+                </td>
+            </tr>
+            <tr align="left">
+                <td style="width: 100px; padding-left: 20px;">
+                    {RedirectDomain}
+                </td>
+                <td class="b">
+                    {slRedirectDomain}
+                </td>
+            </tr>
+            <tr align="left">
+                <td style="width: 70px; padding-left: 20px;">
+                    {Status}
+                </td>
+                <td class="b">
+                    <div id="chkStatus" class="chk ic-check">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="l" style="height: 20px; padding: 5px 0px 0px 0px">
+        <input type="button" class="buttonlogin" name="btnSubmit" value="{submit}" id="btnSubmit"
+            onclick="AddDomainControl()" style="cursor: pointer; width: 50px;" />&nbsp;
+        <input name="btnCancel" class="buttonlogin" id="btnCancel" type="button" style="cursor: pointer;
+            width: 50px;" value="{cancel}" onclick="parent.CloseDiv();" />
+    </div>
+</div>

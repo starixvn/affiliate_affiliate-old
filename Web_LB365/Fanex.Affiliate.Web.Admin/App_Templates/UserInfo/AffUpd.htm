@@ -1,0 +1,311 @@
+<style type="text/css">
+  .payment
+  {
+  width:150px;
+  }
+</style>
+<form id="Update_form" name="Update_form" action="../Handler/UpdateAcc.ashx?ischild={ischild}" method="post" target="frRegister" onsubmit="return submitForm();">
+  {submenu}
+  <div style="width: 800px;">
+    <div id="errMsg" style="display: none;">
+      <div id="error_item">
+        <ul>
+          <li>
+            <a class="err-msg" id="error_msg"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--Account information-->
+    <table cellspacing="0" cellpadding="2" width="100%" id="personal_info">
+      <tr>
+        <td>
+          <div class="fieldset">
+            <div class="legend">{personalinfo}</div>
+            <div class="clear"></div>
+            <table cellspacing="5px">
+              <tr>
+                <td class="b">
+                  {username}
+                </td>
+                <td class="cont12oe">
+                </td>
+                <td class="b">
+                  {username-val}
+                </td>
+              </tr>
+              <tr>
+                <td class="b">
+                  {fname}
+                </td>
+                <td class="cont12oe">
+                  *
+                </td>
+                <td>
+                  <input name="txtFName" class="inputbox" id="txtFName" value="{fname-val}" size="30" type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td class="b">
+                  {lname}
+                </td>
+                <td class="cont12oe">
+                  *
+                </td>
+                <td>
+                  <input name="txtLName" class="inputbox" id="txtLName" value="{lname-val}" size="30" type="text" />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  {gender}
+                </td>
+                <td class="cont12oe">
+                  *
+                </td>
+                <td>
+                  <input id="rdGender" class="noborder" {male-checked} type="radio" value="1" name="rdGender"/>
+                  {male}
+                  <input id="Radio1" class="noborder" {female-checked} type="radio" value="0" name="rdGender"/>
+                  {female}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {email}
+                </td>
+                <td class="cont12oe">
+                  *
+                </td>
+                <td>
+                  <input name="txtEmail" class="inputbox" id="txtEmail" value="{email-val}" size="30" type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {ContactNumber}
+                </td>
+                <td class="cont12oe">
+                  *
+                </td>
+                <td>
+                  <input name="txtNumber" id="txtNumber" class="inputbox" value="{number-val}" size="30" type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {mobile}
+                </td>
+                <td class="cont12oe">
+                  *
+                </td>
+                <td>
+                  <input name="txtMobile" id="txtMobile" class="inputbox" value="{mobile-val}" size="30" type="text" />
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+        <td>
+          <div class="fieldset">
+            <div class="legend">{additionalinfo}</div>
+            <div class="clear"></div>
+            <table cellspacing="5px">
+              <tr>
+                <td>
+                  {address}
+                </td>
+                <td class="cont12oe">
+                  *
+                </td>
+                <td>
+                  <input name="txtAddress" class="inputbox" id="txtAddress" value="{address-val}" size="30" type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {city}
+                </td>
+                <td class="cont12oe">
+                  *
+                </td>
+                <td>
+                  <input name="txtCity" class="inputbox" id="txtCity" value="{city-val}" size="30" type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {state}
+                </td>
+                <td class="cont12oe">
+                  *
+                </td>
+                <td>
+                  <input name="txtState" id="txtState" class="inputbox" value="{state-val}" size="30" type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {postal}
+                </td>
+                <td class="cont12oe">
+                  *
+                </td>
+                <td>
+                  <input name="txtPost" id="txtPost" class="inputbox" value="{post-val}" size="30" type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {country}
+                </td>
+                <td class="cont12oe">
+                  *
+                </td>
+                <td>
+                  {country-list}
+                  <script type="text/javascript">
+                    $("selCountry").value = "{country-val}";
+                  </script>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  {securequestion}
+                </td>
+                <td class="cont12oe">
+                  &nbsp;
+                </td>
+                <td>
+                  {securequestion_val}
+                  <br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {answer}
+                </td>
+                <td class="cont12oe">
+                  &nbsp;
+                </td>
+                <td>
+                  {answer_val}
+                  <br />
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <!-- Email format preference -->
+    <div class="fieldset">
+      <div class="legend">{preference}</div>
+      <div class="clear"></div>
+          <table>
+              <tr>
+                <td style="width: 87px;">
+                    {currency}
+                </td>
+                <td class="cont12oe">&nbsp;&nbsp;</td>
+                <td>
+                    {currencylist}
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                  <td>
+                    {emailformat}
+                  </td>
+                  <td class="cont12oe">&nbsp;&nbsp;</td>
+                  <td>
+                    <input name="rdFormat" id="rdFormat" class="noborder" value="1" size="30" type="radio" {plaintext-checked}/>
+                      {PlainText}
+                  </td>
+                  <td>
+                    <input name="rdFormat" id="Radio2" class="noborder" value="0" size="30" type="radio" {html-checked}/>
+                      {HtmlFormat}
+                  </td>
+              </tr>
+          </table>
+    </div>
+    <!--Website information-->
+    <div class="fieldset">
+      <div class="legend">{siteinfo}</div>
+      <div class="clear"></div>
+      <table id="siteUrl">
+        <tr>
+          <td style="width: 87px;">{siteurl}</td>
+          <td class="cont12oe">*</td>
+          <td>
+            <input name="txtSiteUrl" id="txtSiteUrl" class="sites" class="inputbox" value="{url-val}" size="30" type="text" />
+            &nbsp;<input type="button" class="buttonlogin" onclick="AddOneMoreURL();" value="{addurl}" />
+          </td>
+        </tr>
+        <!--sitecontent-->
+        <tr id="tr{i}">
+          <td>{siteurl} {i}</td>
+          <td class="cont12oe">*</td>
+          <td>
+            <input name="txtSiteUrl{i}" id="txtSiteUrl{i}" class="sites" class="inputbox" value="{moreurl-val}" size="30" type="text" />
+            &nbsp;<input type="button" onclick="DelUrl({i});" class="buttonlogin" value="Del" />
+          </td>
+        </tr>
+        <!--/sitecontent-->
+      </table>
+    </div>
+    <!--Payment information-->
+    <div class="fieldset">
+      <div class="legend">{paymentinfo}</div>
+      <div class="clear"></div>
+      <table cellspacing="5px" cellpadding="0" width="100%">
+        <tr>
+          <td class="payment" style="padding-left: 3px;">
+            {preferpayment}
+          </td>
+          <td style="padding-left: 12px;">
+            <select id="slPayment" name="slPayment">
+              <option value="Player">{BetAcc12}</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td valign="top">
+                  <div id="divPlayer">
+                    <table cellspacing="5px">
+                      <tr style="vertical-align:top;">
+                        <td style="vertical-align:top;" class="payment">
+                          {Bet12Username}
+                        </td>
+                        <td class="cont12oe">
+                          &nbsp;
+                        </td>
+                        <td>
+                          <input name="txtBet12UserName" class="inputbox" value="{12betusername-val}" id="txtBet12UserName" size="30" type="text" /><br />
+                          <!--<span class="cont12oe">{NonDepositAcc}</span>-->
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>  
+  <input name="btnSubmit" id="btnSubmit" class="buttonlogin bottombutton" value="{submit}" type="submit" />  
+  <input type="hidden" value="{method-val}" id="hdMethod" name="hdMethod" />
+  <input type="hidden" value="{custid-val}" id="hdCustid" name="hdCustid" />
+  <input type="hidden" value="" id="hdMoreurl" name="hdMoreurl" />
+  <input type="hidden" value="{username-val}" id="hdUsername" name="hdUsername" />  
+  <input type="hidden" value="{currency-val}" id="hdCurrency" name="hdCurrency" />  
+</form>
+<iframe id="frRegister" name="frRegister" class="hidden" style="height: 0px; width: 0px;"></iframe>

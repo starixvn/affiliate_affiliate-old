@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36278261-92B7-491E-BE0C-6DB7D89A4BA6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fanex.Afiliate.Core.Customer</RootNamespace>
+    <AssemblyName>Fanex.Afiliate.Core.Customer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DNAide">
+      <HintPath>..\Fanex.Affiliate.Dependencies\DNAide.dll</HintPath>
+    </Reference>
+    <Reference Include="LoadBalancer">
+      <HintPath>..\Fanex.Affiliate.Dependencies\LoadBalancer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\Fanex.Afiliate.Dependencies\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AffCommon.cs" />
+    <Compile Include="GenerateHTML\Banner.cs" />
+    <Compile Include="GenerateHTML\HotNews.cs" />
+    <Compile Include="GenerateHTML\PaymentRequest.cs" />
+    <Compile Include="GenerateHTML\TrackingSystem.cs" />
+    <Compile Include="HidePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RootPageLogIn.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AffSession.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fanex.Affiliate.Core\Fanex.Affiliate.Core.csproj">
+      <Project>{DC16D5A8-4B5D-41BC-AA2D-73FC0D4D20DD}</Project>
+      <Name>Fanex.Affiliate.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fanex.Affiliate.DataObjects\Fanex.Affiliate.DataObjects.csproj">
+      <Project>{19E7E5C6-C708-4523-9955-92D66277242D}</Project>
+      <Name>Fanex.Affiliate.DataObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fanex.Affiliate.Model\Fanex.Affiliate.Model.csproj">
+      <Project>{A5906117-3D22-425E-8CE0-FB4649A9BE83}</Project>
+      <Name>Fanex.Affiliate.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fanex.Affiliate.Resources\Fanex.Affiliate.Resources.csproj">
+      <Project>{791B3B16-82E3-43E7-A1F9-9EE3DD81C290}</Project>
+      <Name>Fanex.Affiliate.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fanex.Core\Fanex.Core.csproj">
+      <Project>{3ED9773E-7B3E-486F-831B-D8E31B0719B1}</Project>
+      <Name>Fanex.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

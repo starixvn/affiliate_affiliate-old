@@ -1,0 +1,56 @@
+<script type="text/javascript" src="App_Js/wz_tooltip.js"></script>
+<script type="text/javascript">
+  var paththeme = "{paththeme}";
+</script>
+
+<form id="frmChangePass" name="frmChangePass" action="Handler/ChangeAdminPass.ashx" method="post" target="frChangePass" onsubmit="return CheckForm();">
+  <div class="padl0">    
+    <div id="errMsg" style="display: none;width:322px">
+      <div id="error_item">
+      </div>
+    </div>
+    <table width="350px" border="0" align="left" cellpadding="0" cellspacing="0">
+      <tr style="margin-top:3px">
+        <td colspan="2" valign="top">
+          <div class="fieldset">
+            <div class="legend">{change-my-pwd}</div>
+            <div class="clear"></div>
+            <div class="padl0">
+              <table width="98%" border="0">
+                <tr>
+                  <td class="r" width="100" >{oldpass}</td>
+                  <td class="left">
+                    <input id="OldPass" type="password" name="OldPass" class="inputbox" style="width:200px;" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="r">{password}</td>
+                  <td class="left" id="td_pass">
+                    <input id="NewPassword" type="password" name="NewPassword" class="inputbox" style="width:200px;" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="r">{confirmpass}</td>
+                  <td class="left" id="td_confirm">
+                    <input id="ConfirmPassword" type="password" name="ConfirmPassword" class="inputbox" style="width:200px;" />
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div class="clear"></div>
+    <div style="height:20px;text-align:20px;padding:5px 0px 0px 0px;margin-top:5px">
+      <input type="submit" name="btnSubmit" value="{submit}" id="btnSubmit" class="buttonlogin" />&nbsp;
+      <input name="btnCancel" id="btnCancel" type="reset" class="buttonlogin" value="{cancel}" />
+    </div>
+  </div>
+  <input id="hdOldPass" name="hdOldPass" type="hidden" value="{oldrequire}"/>
+  <input id="hdPassRequire" name="hdPassRequire" type="hidden" value="{passrequire}"/>
+  <input id="hdPassConfirm" name="hdPassConfirm" type="hidden" value="{passconfirm}"/>
+  <input id="hdPassCheck" type="hidden" name="hdPassCheck" value="{passcheck}"/>
+  <iframe id="frChangePass" name="frChangePass" class="hidden" style="height: 0px; width: 0px;" />
+</form>

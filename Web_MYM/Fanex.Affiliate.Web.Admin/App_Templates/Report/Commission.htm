@@ -1,0 +1,93 @@
+﻿<div id="padl0">
+    {submenu}
+    <form id="frmSearch" name="frmSearch" method="get" style="margin: 7px 0;">
+    <div id="search_cont">
+        <table cellspacing="1" cellpadding="3" border="0">
+            <tr>
+                <td class="r">
+                    {Affiliate}
+                </td>
+                <td>
+                    <input type="text" name="affname" id="affname" size="13" value="{affname}" onfocus="Focus()" onblur="Blur()" class="txtdate-no-time" />
+                </td>
+                <td>
+                   <!-- <select name="slPreferLang" id="slPreferLang" >     
+                    </select>-->
+                    {listlang}
+                </td>
+                <td>
+                    {lscurrency}
+                </td>
+                <!--afftype-->
+                <td>
+                    {afftypelist}
+                </td>
+                <!--/afftype-->
+                <td class="r">
+                    {month}
+                </td>
+                <td>
+                   {slmonth}
+                </td>
+                <td class="r">
+                    {year}
+                </td>
+                <td>
+                    {slyear}
+                </td>
+                <td style="width: 100px">
+                <input  onclick="Search();" type="submit" value="{Submit}" id="btnSubmit" name="Submit" class="buttonlogin">
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    <input type="hidden" id="page" name="page" value="{page}" />    
+    <input type="submit" value="" class="hide" />  
+    <input type="hidden" id="hdLanguage" name="hdLanguage" value="{lang-val}" />
+    
+    <div id="divContent" class="ContentBox" style="width: 550px; overflow: visible;">
+        {paging-top}
+        <table class="aff-table" cellspacing="1" cellpadding="3" width="100%">
+            <!--header-->
+            <tr>  
+                <th>&nbsp;</th>              
+                <th style="width:100px;">{Affiliate}</th>
+                <!--afftype-->
+                <th style="width:100px;">{afftype}</th>
+                <!--/afftype-->
+                <th style="width:100px;">{currencys}</th>
+                <th>
+                    {Earning}
+                </th>
+            </tr>            
+            <!--/header-->
+            <!--nodata-->
+            <!--content-->
+            <tr class="nowrap r" bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'">
+                <td>{num-val}</td>
+                <td class="l" style="width: 55px;">
+                 <a href="../UserInfo/DailyEarning.aspx?custid={affid-val}&monthdate={monthdate_val}&user={aff-val}&isreport=1">   {aff-val} </a>                 
+                </td>
+                <!--afftype-->
+                <td class="l">
+                    {afftype-val}
+                </td>
+                <!--/afftype-->
+                <td class="l">
+                    {currency-val}
+                </td>
+                <td>
+                    {affcomm-val}
+                </td>
+            </tr>
+            <!--/content-->
+            <!--/nodata-->
+        </table>
+        {paging-bottom}
+    </div>
+    <input type="hidden" name="month" id="month" value="{month-val}"/>
+    <input type="hidden" name="year" id="year" value="{year-val}"/>
+    <input type="hidden" name="all" id="all" value="{all-val}"/>
+    </form>
+</div>

@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Fanex.Web.LiveBet365.Affiliate.Master" Codebehind="Master.master.cs" %>
+<%@ Register Src="~/Controls/Header.ascx" TagName="CHeader" TagPrefix="mod" %>
+<%@ Register Src="~/Controls/Footer.ascx" TagName="CFooter" TagPrefix="mod" %>
+<%@ Register Src="~/Controls/RightPanel.ascx" TagName="CRight" TagPrefix="mod" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type" />
+    <script type="text/javascript">var a = "bgwhite", b = "bgcgy", c = "bghover";</script>
+</head>
+<body>    
+    <div style="background-color:White">
+        <%=strScript.ToString()%>
+        
+        <style type="text/css">
+         .root-header{
+            width:800px;
+            padding-bottom:0px;
+        }
+        .root-left{
+            width:201px;         
+            float:left;   
+            margin-top:5px;         
+        }
+        .root-right{
+            width:595px;           
+            float:right;    
+            margin-top:5px;        
+        }
+        .root-footer
+        {
+            width:800px;
+        }
+        .clear{
+            clear:both;            
+        }
+        <%if(Fanex.Affiliate.Core.AppSession.Language == "zh-TW" || Fanex.Affiliate.Core.AppSession.Language == "zh-CN"){%>
+            body, select, input, span, div, td, a
+            {
+                font-weight:normal !important
+            }
+            <%}%>
+        
+    </style>
+    
+    </div>
+   <div id="container">        
+        <mod:CHeader runat="server" ID="Header1" />        
+        <div id="contents_page">
+            <div id="left_pane">                
+                <mod:CRight runat="server" ID="Right1" />
+            </div>
+            <div id="contents_main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="footer">
+            <mod:CFooter runat="server" ID="Footer1" />
+        </div>
+    </div>
+</body>
+</html>

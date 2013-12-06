@@ -1,0 +1,35 @@
+<div class="tbl-box" style="width:{width-val}px">
+<table class="aff-table" cellspacing="1" cellpadding="1" >
+    <tr class="tblheader">
+    <td style="width:120px">{date}</td>
+    <td>{deposit}</td>
+    <td>{turnover}</td>
+    <td>{winlost}</td>
+    <td>{bonus}</td>
+    <td>{adjustment}</td>
+</tr>
+
+<!--content-->
+<tr class="{style}" onmouseover="this.className=c;" onmouseout="this.className={style1};">
+    <td class="c">
+        <a href="DailyEarningDetail.aspx?monthdate={date-val}&slProduct={sporttype}">{date-val}</a>
+    </td>
+    <td class="r">{deposit-val}</td>
+    <td class="r">{turnover-val}</td>
+    <td class="r">{winlost-val}</td>
+    <td class="r">{bonus-val}</td>
+    <td class="r">{adjustment-val}</td>
+</tr>
+<!--/content-->
+<!--total-->
+<tr class="tblheader">
+    <td class="c b">{total}</td>
+    <td class="r b">{totaldeposit}</td>
+    <td class="r b">{totalturnover}</td>
+    <td class="r b">{totalwinlost}</td>
+    <td class="r b">{totalbonus}</td>
+    <td class="r b">{totaladjustment}</td>
+</tr>
+<!--/total-->
+</table>
+</div>

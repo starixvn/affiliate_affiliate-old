@@ -1,0 +1,427 @@
+﻿<script type="text/javascript">
+    var ctrInput = "{ServerDateTime}";
+    var minNo = {minNo};
+    var maxNo = {maxNo};
+    var curMsgID=-1;
+    var curNoID=-1;
+     var addEditTpl;
+    function ChangeSearchOption(obj){
+        if(obj.value>=0){
+            $('txtSearchText').style.display='';
+            $('txtSearchText').value='';
+             $('txtSearchText').blur();
+              $('txtSearchText').focus();
+        }
+        else{
+            $('txtSearchText').style.display='none';
+        }
+    }
+    function PreSearch(e) {
+        e = (e) ? e : window.event;
+        var key = (e.keyCode) ? e.keyCode : e.which;
+        if (key == 13) {
+            LoadMessageListData(1);
+        }
+    }
+    function EnableDisableSearchDate(chkbox) {
+        /*Enable search by date */
+        if (chkbox.hasClassName("ic-check")) {
+            $("hdchkDate").value = "on";
+            $("fdate").disabled = false;
+            $("tdate").disabled = false;
+            $("fdateTrigger").disabled = false;
+            $("tdateTrigger").disabled = false;
+
+            Calendar.setup({
+                inputField: "fdate",
+                ifFormat: "%m/%d/%Y",
+                button: "fdateTrigger",
+                singleClick: true,
+                showsTime: false,
+                showOthers : true,
+                step : 1
+            });
+
+            Calendar.setup({
+                inputField: "tdate",
+                ifFormat: "%m/%d/%Y",
+                button: "tdateTrigger",
+                singleClick: true,
+                showsTime: false,
+                showOthers : true,
+                step : 1
+            });
+       
+        }
+        else {
+            $("hdchkDate").value = "";
+            $("fdate").disabled = true;
+            $("tdate").disabled = true;
+            $("fdateTrigger").disabled = true;
+            $("tdateTrigger").disabled = true;
+            $("fdateTrigger").onclick = "";
+            $("tdateTrigger").onclick = "";            
+        }
+
+    }
+    function IsDate(str) {
+      try{
+         var myDate = new Date(dateString);
+         return true;
+      }catch(e)
+      {
+         return false;
+      }
+    }
+    function FixValidDate(obj) {
+        if (!IsDate(obj.value)) {
+            obj.value = ctrInput;
+        }
+    }
+    function NavigatePage(curPage) {
+        LoadMessageListData(curPage);
+    }
+    function LoadMessageListData(curPage) {
+    }
+    function ProcessResult(data) {
+        try {
+            var arr=data.split("$$$");
+            minNo=parseInt(arr[0]);
+            maxNo=parseInt(arr[1]);
+            var sXmlBody = "<table><tbody id='result'>" + arr[2] + "</tbody></table>";
+            var tempDiv = document.createElement("DIV");
+            tempDiv.innerHTML = sXmlBody;
+            $("tblResult").removeChild($("result"));
+            $("tblResult").appendChild(tempDiv.firstChild.firstChild);
+            if(maxNo==0){
+                $("spDelete").style.display="none";
+                $("Delete").style.display="none";
+            }
+            else{
+                $("spDelete").style.display="";
+            }
+            $("spDelete").disabled=true;
+            if($("hdTotalEmail").value!="0")
+                $("Delete").disabled=true;
+            if($('slSearchOption').value>=0){            
+                $('txtSearchText').blur();
+                $('txtSearchText').focus();
+            }
+            
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    function View(no,msgid){
+         try {
+            var params;
+            curNoID=no;            
+            params = "params=" + msgid;
+        
+            var ajax = new Ajax.Request("../Handler/GetEmailContent.ashx", {
+                method: 'post',
+                parameters: params,
+                onComplete: function(data) {
+                    ProcessResultView(data.responseText);
+                }
+            });
+
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    function HandlePopup(){
+        ClosePopup();        
+        if(typeof(addEditTpl)=='undefined'){                           
+            addEditTpl=$("msgInfo").innerHTML;
+            $("msgInfo").innerHTML="";
+        }            
+        ShowPopup(addEditTpl, '', 550, 300, 70, 50);
+    }
+    
+    function ProcessResultView(data){
+         try {           
+            if(data==""){
+                alert("Data has been changed by someone else.Please refresh data!");
+                return;
+            }
+            var arr=data.split("$$$");
+            HandlePopup();
+            $('tdSubject').innerHTML=arr[0];
+            $('tdFrom').innerHTML=arr[1] + "&nbsp;(<a href='mailto:" + arr[2] + "'>" + arr[2] + "</a>)";                   
+            $('tdSentDate').innerHTML=arr[3];
+            $('txtContent').value=arr[4];
+            $("msgID").innerHTML="&nbsp;(#=" + curNoID + ")";
+            curMsgID=parseInt(arr[5]);                   
+            if($('slSearchOption').value>=0){            
+                $('txtSearchText').blur();
+                $('txtSearchText').focus();
+            }
+        }
+        catch (e) {
+            alert(data);
+        }
+    }    
+   
+    function DeleteSelectedMessage(){
+        var listChk = $$("div .chk");
+        var listAffID = "";
+        var messageChecked = false;
+        var j=0;
+        for(j=0;j<listChk.length;j++)
+        {
+            if(listChk[j].hasClassName("ic-check") &&  listChk[j].id.isNumber()){
+                messageChecked = true;
+                listAffID += listChk[j].id + ",";
+                /*break;*/
+            }
+        }
+        if(!messageChecked)
+        {
+            alert("{NoEmailSelected}");
+            return;
+        }
+        else{  
+            if(confirm("{ConfirmDeleteEmail}")){
+                var params="";
+                var i = 0;
+                params = listAffID;
+                DeleteMessage(params);
+            }
+        }
+    }
+    function DeleteMessage(msgList){
+         try {
+            var params;
+                        
+            params = "params=" + msgList;
+        
+            var ajax = new Ajax.Request("../Handler/DeleteMailList.ashx", {
+                method: 'post',
+                parameters: params,
+                onComplete: function(data) {
+                    if(data.responseText!=""){
+                        alert(data.responseText);
+                    }
+                    else
+                    {
+                        if($("page").value!=null){
+                            LoadData($("page").value);                       
+                         }
+                        else{
+                            LoadData(1);                       
+                        }
+                    }
+                     ClosePopup();
+                }
+            });
+
+        }
+        catch (e) {
+            alert(e);
+        }
+        
+    }
+    function DeleteCurrentMessage(){
+        if(confirm("{ConfirmDeleteEmail}")){
+            DeleteMessage(curMsgID + ",");
+            
+        }
+    }   
+</script>
+
+<div class="padl0">
+    <form id="frmSearch" method="get">
+    {submenu}
+    <div id="search_cont">
+        <table cellspacing="0" cellpadding="3" border="0" width="100%">
+            <tr>
+                <td width="200px" style="padding-left: 15px;">
+                    {SearchBy} &nbsp;
+                    <select id="slSearchOption" name="slSearchOption" onchange="ChangeSearchOption(this);">
+                        <option selected="selected" value="-1">{All}</option>
+                        <option value="0">{Sender}</option>
+                        <option value="1">{Email}</option>
+                        <option value="2">{Affiliate}</option>
+                        <option value="-2">{UnknownAffiliate}</option>
+                    </select>
+                </td>
+                <td style="padding-right: 5px; width: 10px;">
+                    <div id="searchSpecific" style="margin-left: 20px;">
+                        <input type="text" id="txtSearchText" name="txtSearchText" size="40" value="" style="display: none;"
+                            onkeypress="PreSearch(event);" />
+                    </div>
+                </td>
+                <td class="r" width="20">
+                    <div class="chk ic-uncheck" id="chkDate">&nbsp;</div>
+                </td>
+                <td class="r" width="36">
+                    {From}&nbsp;&nbsp;
+                </td>
+                <td class="r" width="76">
+                    <input type="text" id="fdate" name="fdate" size="13" value="{ServerDateTime}" disabled="disabled"
+                        onblur="FixValidDate(this);" />
+                </td>
+                <td width="38">
+                    <img hspace="3" height="16" border="0" width="16" src="../{themepath}/images/cal.gif"
+                        id="fdateTrigger" disabled="disabled" class="img-date-selector hand" />
+                </td>
+                <td width="19">
+                    {To}
+                </td>
+                <td width="75">
+                    <input type="text" id="tdate" name="tdate" size="13" value="{ServerDateTime}" disabled="disabled"
+                        onblur="FixValidDate(this);" />
+                </td>
+                <td width="29">
+                    <img hspace="3" height="16" border="0" width="16" src="../{themepath}/images/cal.gif"
+                        id="tdateTrigger" disabled="disabled" class="img-date-selector hand" />
+                    </script>
+                </td>
+                <td width="57">
+                    <input type="submit" value="{Submit}" id="btnSubmit" name="{Submit}" class="buttonlogin"
+                        onclick="LoadData(1);" />
+                </td>
+                <td class="r">
+                    <span id="spTime" style="vertical-align: middle; padding: 3px 10px 0 0;"></span>
+                    <span id="icontime" onclick="showRefreshTime(true);" align="right">&nbsp;</span>
+                    <span style="display: none;" id="divTime" align="right">
+                        <select id="slTime" name="slTime" onchange="UpdateTime();" onblur="hideRefreshTime(false);">
+                            <option value="0">Never</option>
+                            <option value="300">5 mins</option>
+                            <option value="900">15 mins</option>
+                            <option value="1800">30 mins</option>
+                            <option value="3600">60 mins</option>
+                        </select>
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <input type="hidden" id="page" name="page" value="{page}" />
+    <input type="hidden" id="pagesize" name="pagesize" value="{pagesize}" />
+    <input type="hidden" id="hdSearchOption" name="hdSearchOption" value="{hdSearchOption-val}" />
+    <input type="hidden" id="hdSearchText" name="hdSearchText" value="{hdSearchText-val}" />
+    <input type="hidden" id="hdchkDate" name="hdchkDate" value="{hdchkDate-val}" />
+    <input type="hidden" id="hdfDate" name="hdfDate" value="{hdfDate-val}" />
+    <input type="hidden" id="hdtDate" name="hdtDate" value="{hdtDate-val}" />
+    <input type="hidden" id="hdTotalEmail" name="hdTotalEmail" value="{hdTotalEmail-val}" />
+    <input type="hidden" id="timer" name="timer" value="{timer-val}" />
+    <div style="height: 5px;">
+        &nbsp;</div>
+    </form>
+    {paging-top}
+    <table class="aff-table" cellspacing="1" cellpadding="3" width="1020px" id="tblResult">
+        <tr>
+            <th style="width:16px;">&nbsp;</th>
+            <th style="width:20px;">&nbsp;</th>
+            <th style="display: none;">
+                {ID}
+            </th>
+            <th>
+                {Sender}
+            </th>
+            <th>
+                {Affiliate}
+            </th>
+            <th>
+                {Subject}
+            </th>
+            <th>
+                {Email}
+            </th>
+            <th style="width: 130px;">
+                {SentDate}
+            </th>
+        </tr>
+        <tbody id="result">
+            <!--Content-->
+            <tr bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'">
+                <td class="c">
+                    <!--<input type="checkbox" name="checkbox" onclick="CheckUnCheck(this);" id="chk{No-val}"
+                        style="border: 0px;" />-->
+                    <div class="chk ic-uncheck" id="{ID-val}">
+                </td>
+                <td class="c">
+                    {No-val}
+                </td>
+                <td class="c" id="td{No-val}" style="display: none">
+                    {ID-val}
+                </td>
+                <td class="l">
+                    {Sender-val}
+                </td>
+                <td class="l">
+                    {Affiliate-val}
+                </td>
+                <td class="l" style="color: Blue;" title="{ViewDetail}">
+                    <span class="popup hand" onclick="DoCal('ViewEmailDetails.aspx?mid={ID-val}')">{Subject-val}</span>
+                </td>
+                <td class="l hand">
+                    <a href="javascript:openMailLink('mailto:{From-val}')">{From-val}</a>
+                </td>
+                <td class="c">
+                    {SentDate-val}
+                </td>
+            </tr>
+            <!--/Content-->
+        </tbody>
+    </table>
+    {paging-bottom}
+    <div style="height: 20px; padding:5px 0px 0px 0px;">
+        <a class="abutton" id="btnDelBottom" href="javascript:DeleteSelectedMessage();"><span
+            id="spDelete">Delete</span></a>
+    </div>
+    <div id="msgInfo" class="pd10" style="display: none;">
+        <fieldset class="pcontent">
+            <legend>{EmailDetail}<span id="msgID"></span></legend>
+            <table cellspacing="5" cellpadding="0" width="100%">
+                <tr>
+                    <td>
+                        {Subject}:
+                    </td>
+                    <td id="tdSubject" style="font-weight: bold;">
+                        {Subject-val}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {From}:
+                    </td>
+                    <td id="tdFrom">
+                        {Sender-val}&nbsp;(<a href="javascript:openMailLink('mailto:{Email-val}')">{Email-val}</a>)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {Sent}:
+                    </td>
+                    <td id="tdSentDate">
+                        {Sent-val}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {Content}:
+                    </td>
+                    <td align="left">
+                        <textarea style="width: 458px; height: 128px;" id="txtContent" readonly="readonly"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <div style="margin-top: 3px; margin-left: 3px;">
+            <input type="button" class="buttonlogin" id="btnDeleteCur" value="{Delete}" onclick="DeleteCurrentMessage();" />
+            &nbsp;
+            <input type="button" id="btnClose" class="buttonlogin" value="{Cancel}" onclick="ClosePopup();" />
+        </div>
+    </div>
+    
+</div>

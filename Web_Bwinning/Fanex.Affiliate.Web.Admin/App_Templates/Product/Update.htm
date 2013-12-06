@@ -1,0 +1,84 @@
+﻿    <style type="text/css">
+
+        #addsetting
+        {
+            margin-left:10px;
+        }
+        .vrow
+        {
+            margin-bottom:10px;
+        }
+        .vrow .label
+        {
+            margin-bottom:4px;
+        }
+        textarea, .input input
+        {
+            width:550px;
+        }
+        #key, #type
+        {
+            height:24px;
+        }
+        #rvalue
+        {
+            height:300px;
+        }
+        #description
+        {
+            height:40px;
+        }
+    </style>
+    <form id="addsetting">                    
+         <input id="id" type="hidden" disabled="disabled" value="{ProductID-val}" />            
+        <div class="vrow">
+            <div class="label">{Name}</div>
+            <div class="input">
+                <input id="productname" type="text" value="{ProductName-val}" />
+            </div>
+        </div>
+        <div class="vrow">        
+            <div class="label">{Description}</div>
+            <div class="input">
+                <textarea id="description">{Description-val}</textarea>
+            </div>
+        </div>               
+         <div class="vrow">
+            <label class="label">{BettypeList}</label>     
+            <div class="input">       
+                <textarea id="bettypelist">{BettypeList-val}</textarea>
+            </div>
+        </div>   
+        <div class="vrow">
+            <a class="abutton" href="javascript:;" onclick="updateProduct();"><span id="submitText">{Action}</span></a>
+            <a class="abutton" href="javascript:;" onclick="ClosePopupNoReload();"><span id="Span1">{Cancel}</span></a>
+        </div>
+    </form>
+
+<script type="text/javascript">   
+    function updateProduct() 
+    {
+        var data = {
+            action: $F("id") ? "update" : "add",
+            id: $F('id'),
+            name: $F('productname'),
+            description: $F('description'),
+            bettypelist: $F('bettypelist')
+        };      
+
+        var ajax = new Ajax.Request("../Handler/ProductHandler.ashx", {
+            method: 'post',
+            parameters: data,
+            onComplete: function(data) {
+                if(data.responseText == 'True')
+                {
+                    ClosePopup();
+                }
+                else
+                {
+                    alert(data.responseText);
+                }
+            }
+        });
+    }
+</script>

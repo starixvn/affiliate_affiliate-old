@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00A35552-9C99-4F8E-9602-5F738FD8111A}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AffiliateAdminTemplate</RootNamespace>
+    <AssemblyName>AffiliateAdminTemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Aoncash\UnderMaintenance.aspx.cs">
+      <DependentUpon>UnderMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aoncash\UnderMaintenance.aspx.designer.cs">
+      <DependentUpon>UnderMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Athena000\UnderMaintenance.aspx.cs">
+      <DependentUpon>UnderMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Athena000\UnderMaintenance.aspx.designer.cs">
+      <DependentUpon>UnderMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Aoncash\App_Themes\Aff.ico" />
+    <Content Include="Aoncash\App_Themes\Aff.png" />
+    <Content Include="Aoncash\App_Themes\DefaultV2\Images\admin_login_button-hover.png" />
+    <Content Include="Aoncash\App_Themes\DefaultV2\Images\admin_login_button.png" />
+    <Content Include="Aoncash\App_Themes\DefaultV2\Images\banner_top.png" />
+    <Content Include="Aoncash\App_Themes\DefaultV2\Images\body_bg.png" />
+    <Content Include="Aoncash\App_Themes\DefaultV2\Images\loginform.png" />
+    <Content Include="Aoncash\App_Themes\DefaultV2\Images\logo.png" />
+    <Content Include="Aoncash\App_Themes\DefaultV2\login\login.css" />
+    <Content Include="Aoncash\App_Themes\DefaultV2\undermaintenance\images\bg.png" />
+    <Content Include="Aoncash\App_Themes\DefaultV2\undermaintenance\images\icon.png" />
+    <Content Include="Aoncash\App_Themes\DefaultV2\undermaintenance\images\logo.png" />
+    <Content Include="Aoncash\App_Themes\DefaultV2\undermaintenance\images\sry.png" />
+    <Content Include="Aoncash\App_Themes\DefaultV2\undermaintenance\style.css" />
+    <Content Include="Aoncash\App_Themes\Default\Common.css" />
+    <Content Include="Aoncash\App_Themes\Default\Customer.css" />
+    <Content Include="Aoncash\App_Themes\Default\ImageEmail\bg.png" />
+    <Content Include="Aoncash\App_Themes\Default\ImageEmail\top.jpg" />
+    <Content Include="Aoncash\Default.aspx" />
+    <Content Include="Aoncash\SignIn.aspx" />
+    <Content Include="Aoncash\UnderMaintenance.aspx" />
+    <Content Include="Athena000\App_Themes\Aff.ico" />
+    <Content Include="Athena000\App_Themes\Aff.png" />
+    <Content Include="Athena000\App_Themes\DefaultV2\error\images\header_bg.png" />
+    <Content Include="Athena000\App_Themes\DefaultV2\error\images\logo.jpg" />
+    <Content Include="Athena000\App_Themes\DefaultV2\error\images\umicon.png" />
+    <Content Include="Athena000\App_Themes\DefaultV2\error\style.css" />
+    <Content Include="Athena000\App_Themes\DefaultV2\Images\banner_top.png" />
+    <Content Include="Athena000\App_Themes\DefaultV2\Images\loader3.gif" />
+    <Content Include="Athena000\App_Themes\DefaultV2\undermaintenance\images\header_bg.png" />
+    <Content Include="Athena000\App_Themes\DefaultV2\undermaintenance\images\logo.jpg" />
+    <Content Include="Athena000\App_Themes\DefaultV2\undermaintenance\images\umicon.png" />
+    <Content Include="Athena000\App_Themes\DefaultV2\undermaintenance\style.css" />
+    <Content Include="Athena000\App_Themes\Default\Common.css" />
+    <Content Include="Athena000\App_Themes\Default\Customer.css" />
+    <Content Include="Athena000\App_Themes\Default\ImageEmail\bg.png" />
+    <Content Include="Athena000\App_Themes\Default\ImageEmail\top.jpg" />
+    <Content Include="Athena000\App_Themes\Default\Images\bodybg.jpg" />
+    <Content Include="Athena000\App_Themes\Default\Images\btbg.png" />
+    <Content Include="Athena000\App_Themes\Default\Images\headerbg.jpg" />
+    <Content Include="Athena000\App_Themes\Default\Images\logo.jpg" />
+    <Content Include="Athena000\App_Themes\Default\Images\panel.png" />
+    <Content Include="Athena000\App_Themes\Default\login.css" />
+    <Content Include="Athena000\Default.aspx" />
+    <Content Include="Athena000\Error.aspx" />
+    <Content Include="Athena000\SignIn.aspx" />
+    <Content Include="Athena000\UnderMaintenance.aspx" />
+    <Content Include="Bwinning\App_Themes\Aff.ico" />
+    <Content Include="Bwinning\App_Themes\Aff.png" />
+    <Content Include="Bwinning\App_Themes\DefaultV2\Images\admin_login_button-hover.png" />
+    <Content Include="Bwinning\App_Themes\DefaultV2\Images\admin_login_button.png" />
+    <Content Include="Bwinning\App_Themes\DefaultV2\Images\banner_top.png" />
+    <Content Include="Bwinning\App_Themes\DefaultV2\Images\body_bg.png" />
+    <Content Include="Bwinning\App_Themes\DefaultV2\Images\loginform.png" />
+    <Content Include="Bwinning\App_Themes\DefaultV2\Images\logo.png" />
+    <Content Include="Bwinning\App_Themes\DefaultV2\Images\note_01.png" />
+    <Content Include="Bwinning\App_Themes\DefaultV2\login\login.css" />
+    <Content Include="Bwinning\App_Themes\DefaultV2\undermaintenance\images\bg.png" />
+    <Content Include="Bwinning\App_Themes\DefaultV2\undermaintenance\images\icon.png" />
+    <Content Include="Bwinning\App_Themes\DefaultV2\undermaintenance\images\logo.png" />
+    <Content Include="Bwinning\App_Themes\DefaultV2\undermaintenance\images\sry.png" />
+    <Content Include="Bwinning\App_Themes\DefaultV2\undermaintenance\style.css" />
+    <Content Include="Bwinning\App_Themes\Default\Common.css" />
+    <Content Include="Bwinning\App_Themes\Default\Customer.css" />
+    <Content Include="Bwinning\App_Themes\Default\ImageEmail\bg.png" />
+    <Content Include="Bwinning\App_Themes\Default\ImageEmail\top.jpg" />
+    <Content Include="Bwinning\Default.aspx" />
+    <Content Include="Bwinning\SignIn.aspx" />
+    <Content Include="Bwinning\UnderMaintenance.aspx" />
+    <Content Include="i668bet\App_Themes\Aff.ico" />
+    <Content Include="i668bet\App_Themes\Aff.png" />
+    <Content Include="i668bet\App_Themes\DefaultV2\Images\admin_login_button-hover.png" />
+    <Content Include="i668bet\App_Themes\DefaultV2\Images\admin_login_button.png" />
+    <Content Include="i668bet\App_Themes\DefaultV2\Images\banner_top.png" />
+    <Content Include="i668bet\App_Themes\DefaultV2\Images\login-background.jpg" />
+    <Content Include="i668bet\App_Themes\DefaultV2\Images\login_page.png" />
+    <Content Include="i668bet\App_Themes\DefaultV2\Images\logo.png" />
+    <Content Include="i668bet\App_Themes\DefaultV2\Images\note_01.png" />
+    <Content Include="i668bet\App_Themes\DefaultV2\login\Images\arrowdown.png" />
+    <Content Include="i668bet\App_Themes\DefaultV2\login\login.css" />
+    <Content Include="i668bet\App_Themes\DefaultV2\undermaintenance\images\1361200159_Under-construction.png" />
+    <Content Include="i668bet\App_Themes\DefaultV2\undermaintenance\images\bg-Main.png" />
+    <Content Include="i668bet\App_Themes\DefaultV2\undermaintenance\images\icon.png" />
+    <Content Include="i668bet\App_Themes\DefaultV2\undermaintenance\images\icon2.png" />
+    <Content Include="i668bet\App_Themes\DefaultV2\undermaintenance\images\logo-e.png" />
+    <Content Include="i668bet\App_Themes\DefaultV2\undermaintenance\images\text.png" />
+    <Content Include="i668bet\App_Themes\DefaultV2\undermaintenance\style.css" />
+    <Content Include="i668bet\App_Themes\Default\Common.css" />
+    <Content Include="i668bet\App_Themes\Default\Customer.css" />
+    <Content Include="i668bet\App_Themes\Default\ImageEmail\bg.png" />
+    <Content Include="i668bet\App_Themes\Default\ImageEmail\top.jpg" />
+    <Content Include="i668bet\Default.aspx" />
+    <Content Include="i668bet\SignIn.aspx" />
+    <Content Include="i668bet\UnderMaintenance.aspx" />
+    <Content Include="ItcBet\App_Themes\Aff.ico" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\Images\banner_top.png" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\Images\keybox.png" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\Images\login_bg.jpg" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\Images\login_box.png" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\Images\login_butt.png" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\Images\logo.png" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\Images\top.jpg" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\Images\userbox.png" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\login\login.css" />
+    <Content Include="ItcBet\App_Themes\Default\Common.css" />
+    <Content Include="ItcBet\App_Themes\Default\Customer.css" />
+    <Content Include="ItcBet\App_Themes\Default\ImageEmail\bg.png" />
+    <Content Include="ItcBet\App_Themes\Default\ImageEmail\top.jpg" />
+    <Content Include="ItcBet\App_Themes\error2.png" />
+    <Content Include="ItcBet\Default.aspx" />
+    <Content Include="ItcBet\SignIn.aspx" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\undermaintenance\images\bgMain.jpg" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\undermaintenance\images\icon.png" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\undermaintenance\images\logo.png" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\undermaintenance\images\text.png" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\undermaintenance\images\top.jpg" />
+    <Content Include="ItcBet\App_Themes\DefaultV2\undermaintenance\style.css" />
+    <Content Include="ItcBet\UnderMaintenance.aspx" />
+    <Content Include="LiveBet365\App_Themes\Aff.ico" />
+    <Content Include="LiveBet365\App_Themes\Aff.png" />
+    <Content Include="LiveBet365\App_Themes\DefaultV2\Images\banner_top.jpg" />
+    <Content Include="LiveBet365\App_Themes\DefaultV2\Images\bg_box1.png" />
+    <Content Include="LiveBet365\App_Themes\DefaultV2\Images\btLg.png" />
+    <Content Include="LiveBet365\App_Themes\DefaultV2\Images\FF.png" />
+    <Content Include="LiveBet365\App_Themes\DefaultV2\Images\icAlert.png" />
+    <Content Include="LiveBet365\App_Themes\DefaultV2\Images\icPass.png" />
+    <Content Include="LiveBet365\App_Themes\DefaultV2\Images\icUser.jpg" />
+    <Content Include="LiveBet365\App_Themes\DefaultV2\Images\IE.png" />
+    <Content Include="LiveBet365\App_Themes\DefaultV2\Images\lgLogo.jpg" />
+    <Content Include="LiveBet365\App_Themes\DefaultV2\Images\logo.png" />
+    <Content Include="LiveBet365\App_Themes\DefaultV2\login.css" />
+    <Content Include="LiveBet365\App_Themes\Default\Common.css" />
+    <Content Include="LiveBet365\App_Themes\Default\Customer.css" />
+    <Content Include="LiveBet365\App_Themes\Default\ImageEmail\bg.png" />
+    <Content Include="LiveBet365\App_Themes\Default\ImageEmail\top.jpg" />
+    <Content Include="LiveBet365\App_Themes\DefaultV2\header.css" />
+    <Content Include="LiveBet365\Default.aspx" />
+    <Content Include="LiveBet365\SignIn.aspx" />
+    <Content Include="LiveBet365\UnderMaintenance.aspx" />
+    <Content Include="MacauBet\App_Themes\Aff.ico" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\Images\banner_top.png" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\Images\login_bg.png" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\Images\login_box.png" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\Images\login_butt.png" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\Images\login_butt_hover.png" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\Images\login_line.png" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\Images\login_text.png" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\Images\logo.png" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\Images\note_01.png" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\Images\top.png" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\login\login.css" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\undermaintenance\images\bg-repeat.jpg" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\undermaintenance\images\bg-top.png" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\undermaintenance\images\icon.png" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\undermaintenance\images\logo-e.png" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\undermaintenance\images\text.png" />
+    <Content Include="MacauBet\App_Themes\DefaultV2\undermaintenance\style.css" />
+    <Content Include="MacauBet\App_Themes\Default\Common.css" />
+    <Content Include="MacauBet\App_Themes\Default\Customer.css" />
+    <Content Include="MacauBet\App_Themes\Default\ImageEmail\bg.png" />
+    <Content Include="MacauBet\App_Themes\Default\ImageEmail\top.jpg" />
+    <Content Include="MacauBet\Default.aspx" />
+    <Content Include="MacauBet\SignIn.aspx" />
+    <Content Include="MacauBet\UnderMaintenance.aspx" />
+    <Content Include="Mymbet\App_Themes\Aff.ico" />
+    <Content Include="Mymbet\App_Themes\Aff.png" />
+    <Content Include="Mymbet\App_Themes\DefaultV2\Images\admin_login_button-hover.png" />
+    <Content Include="Mymbet\App_Themes\DefaultV2\Images\admin_login_button.png" />
+    <Content Include="Mymbet\App_Themes\DefaultV2\Images\banner_top.png" />
+    <Content Include="Mymbet\App_Themes\DefaultV2\Images\login_page.png" />
+    <Content Include="Mymbet\App_Themes\DefaultV2\Images\logo.png" />
+    <Content Include="Mymbet\App_Themes\DefaultV2\login\login.css" />
+    <Content Include="Mymbet\App_Themes\DefaultV2\undermaintenance\images\1361200159_Under-construction.png" />
+    <Content Include="Mymbet\App_Themes\DefaultV2\undermaintenance\images\bg-Main.png" />
+    <Content Include="Mymbet\App_Themes\DefaultV2\undermaintenance\images\icon.png" />
+    <Content Include="Mymbet\App_Themes\DefaultV2\undermaintenance\images\logo-e.png" />
+    <Content Include="Mymbet\App_Themes\DefaultV2\undermaintenance\images\text.png" />
+    <Content Include="Mymbet\App_Themes\DefaultV2\undermaintenance\style.css" />
+    <Content Include="Mymbet\App_Themes\Default\Common.css" />
+    <Content Include="Mymbet\App_Themes\Default\Customer.css" />
+    <Content Include="Mymbet\App_Themes\Default\ImageEmail\bg.png" />
+    <Content Include="Mymbet\App_Themes\Default\ImageEmail\top.jpg" />
+    <Content Include="Mymbet\Default.aspx" />
+    <Content Include="Mymbet\SignIn.aspx" />
+    <Content Include="Mymbet\UnderMaintenance.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13509</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

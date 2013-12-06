@@ -1,0 +1,101 @@
+﻿<script type="text/javascript">
+    function NewWindow(HtmlName, WinName, ToolOptions) {
+        window.open(HtmlName, WinName, ToolOptions);
+    }
+</script>
+
+<form id="frmSearch" name="frmSearch" method="get">
+<div class="{pagepadd}">
+    <div id="errMsg" style="display:none;" class="styleErrAddbanner">
+			<div id="error_item">
+				<ul>
+					<li id="errmsg">
+						<a class="err-msg" id="error_msg"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+    {submenu}    
+        <!--search form-->
+        <div id="search_cont">
+            <div id="header_search">
+                Affiliate User Name&nbsp;&nbsp;<input type="text" id="txtAffUsername" name="txtAffUsername"                
+                 value="{affusername-val}" onkeypress="PreSearch(event);" />&nbsp;&nbsp;
+                User Name&nbsp;&nbsp;<input type="text" value="{username-val}"                  
+                 style="width: 150px;" onkeypress="PreSearch(event);"
+                    id="txtUsername" name="txtUsername" />&nbsp;&nbsp;      
+                    <!--afftype-->
+                {AffType}&nbsp;&nbsp;{afftypelist}      
+                <!--/afftype-->
+                <span id="divsearch" onclick="LoadData(1);">
+                    &nbsp;</span>
+            </div>
+            <div id="search_icon">
+                <span id="icontime" onclick="showRefreshTime(true);">&nbsp;</span> <span style="display: none;"
+                    id="divTime">
+                    <select id="slTime" name="slTime" onchange="UpdateTime();" onblur="hideRefreshTime(false);">
+                        <option value="0">Never</option>
+                        <option value="300">5 mins</option>
+                        <option value="900">15 mins</option>
+                        <option value="1800">30 mins</option>
+                        <option value="3600">60 mins</option>
+                    </select>
+                </span>
+            </div>
+            <div id="spTime" style="float: right; vertical-align: middle; padding: 3px 10px 0 0;">
+            </div>
+        </div>
+        <!--/search form-->
+        
+        {paging-top}
+        <table class="aff-table" cellspacing="1" cellpadding="3" width="{width}px">
+            <!--header-->
+            <tr style="white-space: nowrap;">
+                <th>&nbsp;</th>
+                <th>{username}</th>
+                <th>{fname}</th>
+                <th>{lname}</th>
+                <!-- <th style="width: 140px">{CurrentBalanceMem}</th>-->
+                <th style="width: 110px">{RegisteredDate}</th>
+                <th style="width: 110px">{CreateDate}</th>
+                <!--aff--><th>{affiliate}</th><!--/aff-->
+                <th>Currency</th>
+                <!--afftype-->
+                <th>{AffType}</th>
+                <!--/afftype-->
+                <!--Remove1--><th>{remove}</th><!--/Remove1-->
+            </tr>
+            <!--/header-->
+            <!--content-->
+            <tr bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'"
+                class="nowrap">
+                <td class="c">{number}</td>
+                <td>{username-val}</td>
+                <td>&nbsp;{fname-val}</td>
+                <td>&nbsp;{lname-val}</td>
+                <!--  <td class="r">{CurrentBalanceMem-val}</td>-->
+                <td class="c">{RegisteredDate-val}</td>
+                <td class="c">{CreateDate-val}</td>
+                <!--aff--><td class="l">{affiliate-val}</td><!--/aff-->
+                <td>{currency-val}</td>
+                <!--afftype-->
+                <td>{afftype-val}</td>
+                <!--/afftype-->
+                <!--Remove2--><td class="c"><span class="icdel" onclick="DeleteMember('{username-val}')">&nbsp;</span></td><!--/Remove2-->
+            </tr>
+            <!--/content-->
+        </table>
+        {paging-bottom}
+    <div style="margin-top: 5px; height: 20px;" >
+        <a href="javascript:DoCal('AddMemberToAffiliate.aspx')" class="abutton" id="btnDelete">
+            <span>{AssignMemToAff}</span>
+        </a>       
+    </div>
+</div>
+<input type="hidden" id="page" name="page" value="{page}" />
+<input type="hidden" id="pagesize" name="pagesize" value="{pagesize}" />
+<input type="hidden" id="us" name="us" value="{username}" />
+<input type="hidden" id="id" name="id" value="{id-text}" />
+<input type="hidden" id="user" name="user" value="{user-val}" />
+<input type="hidden" id="timer" name="timer" value="{timer-val}" />
+</form>

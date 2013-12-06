@@ -1,0 +1,117 @@
+/* CSS Document */
+body
+{
+    background:url(images/bgMain.jpg) repeat-x scroll center top #000000;
+    color: #333333;
+    font-family:"Myriad Pro", Tahoma, REZ, Arial;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    color: #eec110 !important;
+}
+#top
+{
+	width:960px;
+	height:60px;
+	margin:auto;
+	background:url(images/logo_e.png) top left no-repeat;
+	margin-bottom: 30px;
+}
+
+#center
+{
+	width:850px;
+	height: 400px;
+	margin:auto;
+}
+
+#title
+{
+	background:url(images/sry.png) right no-repeat;
+	width:620px;
+	height:44px;
+	margin:auto;
+}
+
+#titlenf
+{
+	background:url(images/srynf.png) right no-repeat;
+	width:620px;
+	height:44px;
+	margin:auto;
+}
+
+#titleum
+{
+	background:url(images/sryum.png) right no-repeat;
+	width:620px;
+	height:44px;
+	margin:auto;
+}
+#seperator
+{
+	border-top: 1px solid #FF9900;
+	border-bottom: 1px solid #460e0f;
+	width: 780px;
+	height:1px;
+	margin:auto;
+}
+#botcenter
+{
+	width: 850px;
+	height: 318px;
+}
+#icon
+{
+	background:url(images/icon.png) left bottom no-repeat;
+	width:303px;
+	height: 310px;
+	float:left;
+}
+#iconnf
+{
+	background:url(images/iconnf.png) left bottom no-repeat;
+	width:304px;
+	height: 270px;
+	float:left;
+}
+#iconum
+{
+	background:url(images/iconum.png) left bottom no-repeat;
+	width:260px;
+	height: 270px;
+	float:left;
+}
+#content
+{
+	font-size:14px;
+	color:#FFF;
+	float:left;
+}
+
+#contentum
+{
+	font-size:15px;
+	color:#FFF;
+	float:left;
+	width: 560px;
+}
+.cont
+{
+	padding-left: 25px;
+}
+.cont li
+{
+	border-bottom: #fff dotted 1px;
+	list-style-type: none;
+	padding:10px;
+		
+}
+.cont li.end
+{
+		border: 0;
+}
+

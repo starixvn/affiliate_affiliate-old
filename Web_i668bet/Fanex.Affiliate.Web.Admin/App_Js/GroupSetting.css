@@ -1,0 +1,101 @@
+﻿   .ProductOdd
+    {
+        background-color:#ECF3DD;
+    }
+    .ProductEven
+    {
+        background-color:#E3E5F6;
+        
+     }
+     .QM
+     {
+         color:#077190;
+      /*   font-weight:bold;         */
+     }
+     .AM
+     {
+         color:#8A6245;
+         /*font-weight:bold;         */
+     }
+     #icontime
+    {
+	    background: url(../App_Themes/DefaultV2/images/dho.jpg) no-repeat left center;
+	    width: 9px;
+	    height: 9px;
+	    padding: 8px 5px 9px 1px;
+	    cursor: pointer;	  
+    }
+
+     .calendar1
+     {
+        background-image:url(../App_Themes/DefaultV2/images/cal.gif);
+        display:inline;
+        height:16px;
+        width:16px; 
+        padding: 0 8px 0 5px;        
+        cursor:pointer;
+     }
+     .calendar_:hover {
+        background:transparent url(../App_Themes/DefaultV2/images/calen_OV.png) no-repeat scroll 0 0;
+        /*cursor:pointer;*/
+      }
+
+    .calendar_ {
+        background:transparent url(../App_Themes/DefaultV2/images/calen_n.png) no-repeat scroll 0 0;
+        display:inline;
+        height:19px;
+        padding: 2px 10px 2px 10px;  
+        width:18px;
+        cursor:pointer;
+    }    
+     .icedit
+     {
+        background-image:transparent url(../App_Themes/DefaultV2/images/icon_edit.png) no-repeat scroll left center;
+        display:inline;
+         height:16px;
+        padding: 0 8px;
+        width:16px; cursor:pointer;
+     }
+     .icdelete {
+        background:transparent url(../App_Themes/DefaultV2/images/icon_delete.png) no-repeat scroll left center;
+        cursor:pointer;
+        height:16px;
+        padding:0 8px;
+        width:16px;
+}
+     .icdelete1 {
+            background:transparent url(../App_Themes/DefaultV2/images/icon_disable.png) no-repeat scroll left center;          
+            height:16px;
+            padding:0 8px;
+            width:16px;
+ }
+
+     
+     .btnSearch1
+     {
+        background-image:url(../App_Themes/DefaultV2/images/b_search.jpg);
+        display:inline;
+         height:19px;
+        padding: 3px 50px 2px 15px;
+        width:68px;
+         cursor:pointer;     
+     }
+     .chkbox-on
+     {
+        padding: 0 8px 0 5px;        
+        background:transparent url(../App_Themes/DefaultV2/images/checkbox02.jpg) no-repeat scroll 0 0;
+        cursor:pointer;
+        display :inline;
+        height:12px;
+        width:12px;
+     }
+     .chkbox-off
+     {
+        padding: 0 8px 0 5px;        
+        background:transparent url(../App_Themes/DefaultV2/images/checkbox01.jpg) no-repeat scroll 0 0;
+        cursor:pointer;
+        display :inline;
+        height:12px;
+        width:12px;
+     }
+   

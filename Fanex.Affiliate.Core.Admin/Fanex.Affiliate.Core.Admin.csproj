@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBB9E4D6-5367-476D-B6B3-4A2CCBBA390D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fanex.Affiliate.Core.Admin</RootNamespace>
+    <AssemblyName>Fanex.Affiliate.Core.Admin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DNAide">
+      <HintPath>..\Fanex.Affiliate.Dependencies\DNAide.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelUtil">
+      <HintPath>..\Fanex.Affiliate.Dependencies\ExcelUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="ISessionValidator">
+      <HintPath>..\Fanex.Affiliate.Dependencies\ISessionValidator.dll</HintPath>
+    </Reference>
+    <Reference Include="LoadBalancer">
+      <HintPath>..\Fanex.Affiliate.Dependencies\LoadBalancer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
+      <HintPath>..\Fanex.Affiliate.Dependencies\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\Fanex.Affiliate.Dependencies\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
+      <HintPath>..\Fanex.Affiliate.Dependencies\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\Fanex.Affiliate.Dependencies\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Fanex.Affiliate.Dependencies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SharedCache.WinServiceCommon">
+      <HintPath>..\Fanex.Affiliate.Dependencies\SharedCache.WinServiceCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminSettings.cs" />
+    <Compile Include="AdminCommon.cs" />
+    <Compile Include="DTFormatType.cs" />
+    <Compile Include="GenerateHTML\AffiliateList.cs" />
+    <Compile Include="GenerateHTML\Banner.cs" />
+    <Compile Include="GenerateHTML\Domain.cs" />
+    <Compile Include="GenerateHTML\EmailHistory.cs" />
+    <Compile Include="GenerateHTML\GroupSetting.cs" />
+    <Compile Include="GenerateHTML\HotNews.cs" />
+    <Compile Include="GenerateHTML\Note.cs" />
+    <Compile Include="GenerateHTML\OnlineList.cs" />
+    <Compile Include="GenerateHTML\Settings.cs" />
+    <Compile Include="GenerateHTML\Resource.cs" />
+    <Compile Include="GenerateHTML\TrackingSystem.cs" />
+    <Compile Include="GenerateHTML\UserLog.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AdminSession.cs" />
+    <Compile Include="SubMenu.cs" />
+    <Compile Include="SwfInfo.cs" />
+    <Compile Include="UI\CheckboxStatus.cs" />
+    <Compile Include="UI\IconAddTier.cs" />
+    <Compile Include="UI\IconDelete.cs" />
+    <Compile Include="UI\IconEdit.cs" />
+    <Compile Include="UI\IconSave.cs" />
+    <Compile Include="UI\IconSportStatus.cs" />
+    <Compile Include="UI\SportStatusColor.cs" />
+    <Compile Include="UI\SportTabSwitch.cs" />
+    <Compile Include="UI\SportTabSwitchIcon.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fanex.Affiliate.DataObjects\Fanex.Affiliate.DataObjects.csproj">
+      <Project>{19E7E5C6-C708-4523-9955-92D66277242D}</Project>
+      <Name>Fanex.Affiliate.DataObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fanex.Affiliate.Model\Fanex.Affiliate.Model.csproj">
+      <Project>{A5906117-3D22-425E-8CE0-FB4649A9BE83}</Project>
+      <Name>Fanex.Affiliate.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fanex.Affiliate.Resources\Fanex.Affiliate.Resources.csproj">
+      <Project>{791B3B16-82E3-43E7-A1F9-9EE3DD81C290}</Project>
+      <Name>Fanex.Affiliate.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fanex.Core\Fanex.Core.csproj">
+      <Project>{3ED9773E-7B3E-486F-831B-D8E31B0719B1}</Project>
+      <Name>Fanex.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fanex.Affiliate.Core\Fanex.Affiliate.Core.csproj">
+      <Project>{0859E787-58FC-4163-BB6E-27DFBFFB4B92}</Project>
+      <Name>Fanex.Affiliate.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

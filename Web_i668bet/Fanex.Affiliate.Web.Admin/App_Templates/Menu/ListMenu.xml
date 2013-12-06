@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <MenuItem Link="Home/Home.aspx" Text="Home" Function="[AffReport]" />
+  <MenuItem Link="Customer/AffDefault.aspx" Text="AffiliateInfo" Function="[Affiliate]" />
+  <MenuItem Link="UserInfo/AffiliateList.aspx?favor=1&amp;isclk=0,UserInfo/MemberListAll.aspx" Text="AffList" Function="[Affiliate]" />
+  <MenuItem Link="Payment/PaymentRequest.aspx" Text="Payment" Function="[Payment]" />
+  <MenuItem Link="GroupSetting/GroupSetting.aspx" Text="CommissionGroup" Function="[CommissionGroup]" />
+  <MenuItem Link="Report/MemberReport.aspx" Text="Report" Function="[AffReport]" />
+  <MenuItem Link="Media/Listbanner.aspx" Text="MarketingTools" Function="[Media]" />
+  <MenuItem Link="Others/Message.aspx" Text="Messages" Function="[HotNews]" />
+  <MenuItem Link="Exchange/AffRate.aspx" Text="ExchangeRate" Function="[AffEx.Rate]" />
+  <MenuItem Link="Settings/Default.aspx" Text="Configurations" Function="[SystemSettings]" />
+  <MenuItem Link="Resources/Default.aspx" Text="Translations" Function="[Resources]" />
+  <MenuItem Link="Domain/AffiliateDomain.aspx" Text="Domain" Function="[Domain]" />
+  <MenuItem Link="UserControl/ListUser.aspx" Text="UserManagement" Function="[UserControl]" />
+</root>

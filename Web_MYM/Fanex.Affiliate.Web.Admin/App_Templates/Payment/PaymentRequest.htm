@@ -1,0 +1,123 @@
+<form id="frmSearch" name="frmSearch" method="get" onsubmit="return ValidateForm();">
+    <div class="padl0">
+       <div id="errMsg" style="display: none; width:300px;">
+			  <div id="error_item">
+			      <ul>
+					    <li>
+						    <a class="err-msg" id="error_msg"></a>
+					    </li>
+				    </ul>
+			  </div>
+             <br />
+		</div>
+		{submenu}
+        <!--Search form-->
+		<div id="search_cont">
+            <div id="header_search">
+                {searchby}&nbsp;&nbsp;
+                <select id="slSearch" name="slSearch" onchange="SearchBy();">
+                    <option value="0">{username}</option>
+                    <option value="1">{others}</option>
+                </select>&nbsp;&nbsp;
+                
+                <span id="tdUsername">
+                 {Currency}:   {lscurrency}&nbsp;&nbsp;
+                {username} <input type="text" id="txtUsername" name="txtUsername" size="25" value="{username-val}" /></span>
+                <span id="tdOthers">
+                    {status} &nbsp;&nbsp;
+                    <select id="slStatus" name="slStatus">
+                        <option value="">{all}</option>
+                        <option value="Pending">{processing}</option>
+                        <option value="Approved">{approved}</option>
+                        <option value="Rejected">{rejected}</option>
+                        <option value="Cancelled">{cancelled}</option>
+                    </select>
+                    {From}&nbsp;&nbsp;<input type="text" id="fdate" name="fdate" size="13" value="{fdate}" class="txtdate-no-time" />&nbsp;
+                    <img width="16" height="16" src="../App_themes/Default/images/cal.gif" class="img-date-selector hand" style="margin-bottom:-3px;" title="Date selector" id="fdateTrigger" />
+                    <script type="text/javascript">
+                            Calendar.setup({
+                                inputField: "fdate",
+                                ifFormat: "%m/%d/%Y",
+                                button: "fdateTrigger",
+                                singleClick: true,
+                                showsTime: false,
+                                showOthers : true,
+                                step : 1
+                            });
+                    </script>&nbsp;&nbsp;
+                    {To}&nbsp;&nbsp;<input type="text" id="tdate" name="tdate" size="13" value="{tdate}" class="txtdate-no-time" />&nbsp;
+                    <img width="16" height="16" src="../App_themes/Default/images/cal.gif" class="img-date-selector hand" style="margin-bottom:-3px;" title="Date selector" id="tdateTrigger" />
+                    <script type="text/javascript">
+                            Calendar.setup({
+                            inputField: "tdate",
+                                
+                                ifFormat: "%m/%d/%Y",
+                                button: "tdateTrigger",
+                                singleClick: true,
+                                showsTime: false,
+                                showOthers : true,
+                                step : 1
+                            });
+                    </script>&nbsp;&nbsp;
+                    {getall}&nbsp;<input type="checkbox" id="chkGetAll" name="chkGetAll" {isgetall} onclick="GetAllClick();" />
+                </span>&nbsp;&nbsp;
+                                
+                <input type="submit" onclick="LoadData(1);" class="buttonlogin" name="Submit" id="btnSubmit" value="{Submit}">
+                 <!--<span id="divsearch" onclick="ValidateForm();">&nbsp;</span>-->
+            </div>
+            <div id="search_icon">
+                <span id="icontime" onclick="showRefreshTime(true);">&nbsp;</span>
+                <span style="display: none;" id="divTime">
+	                <select id="slTime" name="slTime" onchange="UpdateTime();" onblur="hideRefreshTime(false);">
+	                    <option value="0">Never</option>
+	                    <option value="300">5 mins</option>
+	                    <option value="900">15 mins</option>
+	                    <option value="1800">30 mins</option>
+	                    <option value="3600">60 mins</option>
+	                </select>
+                </span>
+            </div>
+            <div id="spTime" style="float:right; vertical-align:middle; padding: 3px 10px 0 0;"></div>
+        </div>
+        <!--/Search form-->
+        
+        {paging-top}
+        <table class="aff-table" cellspacing="1" cellpadding="2" style="width:800px;">
+            <tr style="white-space:nowrap;">
+                <th style="width: 10px;">&nbsp;</th>
+                <th style="width: 50px">{transid}</th>
+                <th style="width: 110px;">{DateRequest}</th>
+                <th style="width: 110px;">{Username}</th>   
+                <th style="width: 110px;">{Currency}</th>   
+                <th style="width: 70px;">{Amount}</th>
+                <th style="width: 50px;">{status}</th>
+                <!--CreatorCompletedDate-->                                
+                <th style="width: 110px;">{completeddate}</th>
+                <th style="width: 110px;">{creator}</th>                                
+                <!--/CreatorCompleteDate-->
+            </tr>
+            <!--content-->
+            <tr bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'" class="nowrap">
+                <td class="c">{no}</td>
+                <td><a href="javascript:TransDetail('PaymentUpdate.aspx?transid={transid-val}', '{transid} {transid-val}');">{transid-val}</a></td>
+                <td>{transdate-val}</td>
+                <td>{uname-val}</td>    
+                <td class="l" >{currency-val}</td>                           
+                <td class="r">{amt-val}</td>
+                <td>{status-val}</td>
+                <!--CreatorCompletedDate-->                                
+                <td>{completeddate-val}</td>
+                <td>{creator-val}</td>                                
+                <!--/CreatorCompleteDate-->
+            </tr>
+            <!--/content-->
+        </table>
+        {paging-bottom}
+        <input type="hidden" id="hdSearch" name="hdSearch" value="{search-val}" />
+        <input type="hidden" id="hdStatus" name="hdStatus" value="{curStatus}" />
+        <input type="hidden" id="DateErr" name="DateErr" value="{dateerr}" />
+        <input type="hidden" id="page" name="page" value="{page}" />
+        <input type="hidden" id="timer" name="timer" value="{timer-val}" />
+        <input type="hidden" id="pagesize" name="pagesize" value="{pagesize}" />
+    </div>
+</form>

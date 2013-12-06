@@ -1,0 +1,299 @@
+﻿<div id="padl0">
+    {submenu}
+    <form id="frmSearch" name="frmSearch" onsubmit="return Search();" method="get" style="margin: 7px 0;">
+    <div id="search_cont">
+        <table cellspacing="1" cellpadding="3" border="0">
+            <tr>
+                <td class="r">
+                    {aff-txt}
+                </td>
+                <td>
+                    <input type="text" name="affname" id="affname" size="13" value="{affname}" class="txtdate-no-time" />
+                </td>
+                <td class="r">
+                    {fdate-txt}
+                </td>
+                <td>
+                    <input type="text" readonly name="fdate" size="13" value="{fdate}" class="txtdate-no-time"
+                        id="fdate" />&nbsp;
+                    <img width="16" height="16" src="../{themepath}/images/cal.gif" class="img-date-selector hand"
+                        style="margin-bottom: -3px;" title="Date selector" id="fdateTrigger" />
+
+                    <script type="text/javascript">
+                        Calendar.setup({
+                            inputField: "fdate",
+                            ifFormat: "%m/%d/%Y",
+                            button: "fdateTrigger",
+                            singleClick: true,
+                            showsTime: false,
+                            showOthers : true,
+                            step : 1
+                        });
+                    </script>
+
+                </td>
+                <td class="r">
+                    {tdate-txt}
+                </td>
+                <td>
+                    <input type="text" readonly name="tdate" size="13" value="{tdate}" class="txtdate-no-time"
+                        id="tdate" />&nbsp;
+                    <img width="16" height="16" src="../{themepath}/images/cal.gif" class="img-date-selector hand"
+                        style="margin-bottom: -3px;" title="Date selector" id="tdateTrigger" />
+
+                    <script type="text/javascript">
+                        Calendar.setup({
+                            inputField: "tdate",
+                            ifFormat: "%m/%d/%Y",
+                            button: "tdateTrigger",
+                            singleClick: true,
+                            showsTime: false,
+                            showOthers : true,
+                            step : 1
+                        });
+                    </script>
+
+                </td>
+               <td class="nowrap">
+                    {GetAll}&nbsp;&nbsp;<span onclick="chkOnclick();" id="chkDate" class="{cssgetall}">&nbsp;</span>
+                    <input type="hidden" id="isGetAll" name="isGetAll" value="{cssgetall}" />
+                </td>
+                <td style="width: 100px">
+                    <span id="divsearch" onclick="$('btnSubmit').click();">&nbsp;</span>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" id="btnSubmit" name="btnSubmit" class="hide" />
+    </div>
+    </form>
+    <div id="errMsg" style="display: {err-display};">
+      <div id="error_item">
+        <ul>
+          <li>
+            <a class="err-msg" id="err-msg">{err-msg}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="divContent" class="ContentBox" style="width: 1150px; overflow: visible;">
+        <table class="aff-table" cellspacing="1" cellpadding="3" width="100%">
+            <!--header-->
+            <tr>
+                <th rowspan="3">{date}</th>
+                <th rowspan="3">{currency}</th>
+                <th rowspan="3">{units}</th>
+                <th colspan="14">{MemberStatistics}</th>
+                <th colspan="6">{AffiliateStatistics}</th>                
+            </tr>
+            <tr>                
+                <th colspan="2">{deposit}</th>
+                <th colspan="2">
+                    {Withdrawal}
+                </th>
+                <th colspan="2">
+                    {Turnover}
+                </th>
+                <th colspan="2">
+                    {Winlost}
+                </th>
+                <th colspan="2">
+                    {Bonus}
+                </th>
+                <th colspan="2">
+                    {PSP}
+                </th>
+                <th colspan="2">
+                    {Adjustment}
+                </th>
+                <th colspan="2">
+                    {affbf}
+                </th>
+                <th colspan="2">
+                    {Withdrawal}
+                </th>
+                <th colspan="2">
+                    {Adjustment}
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    {Original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {Original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {Original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {Original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {Original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {Original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {Original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {Original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {Original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+                <th>
+                    {Original}
+                </th>
+                <th>
+                    {usdeqv}
+                </th>
+            </tr>
+            <!--/header-->
+            <!--nodata-->
+            <!--content-->
+            <tr class="nowrap" bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'">
+                <!--date-->
+                <td rowspan="{numrow}" class="l b" style="width: 55px;">
+                    {date-val}
+                </td>
+                <!--/date-->
+                <td>
+                    {currency-val}
+                </td>
+                <td class="r">
+                    {units-val}
+                </td>
+                <td class="r">
+                    {deposit-val}
+                </td>
+                <td class="r">
+                    {depositeqv-val}
+                </td>
+                <td class="r">
+                    {withdrawal-val}
+                </td>
+                <td class="r">
+                    {withdrawaleqv-val}
+                </td>
+                <td class="r">
+                    {turnover-val}
+                </td>
+                <td class="r">
+                    {turnovereqv-val}
+                </td>
+                <td class="r">
+                    {memwinloss-val}
+                </td>
+                <td class="r">
+                    {memwinlosseqv-val}
+                </td>
+                <td class="r">
+                    {bonus-val}
+                </td>
+                <td class="r">
+                    {bonuseqv-val}
+                </td>
+                <td class="r">
+                    {psp-val}
+                </td>
+                <td class="r">
+                    {pspeqv-val}
+                </td>
+                <td class="r">
+                    {adjustment-val}
+                </td>
+                <td class="r">
+                    {adjustmenteqv-val}
+                </td>
+                <td class="r">
+                    {affbf-val}
+                </td>
+                <td class="r">
+                    {affbfeqv-val}
+                </td>
+                <td class="r">
+                    {affwithdrawal-val}
+                </td>
+                <td class="r">
+                    {affwithdrawaleqv-val}
+                </td>
+                <td class="r">
+                    {affadjustment-val}
+                </td>
+                <td class="r">
+                    {affadjustmenteqv-val}
+                </td>
+                <!--/currency-->
+            </tr>
+            <!--/content-->
+            <!--total-->
+            <tr>
+                <th colspan="3" class="c" style="text-transform: uppercase;">
+                    {total}
+                </th>
+                <th colspan="2" class="r">
+                    {deposit-total}
+                </th>
+                <th colspan="2" class="r">
+                    {withdrawal-total}
+                </th>
+                <th colspan="2" class="r">
+                    {turnover-total}
+                </th>
+                <th colspan="2" class="r">
+                    {memwinloss-total}
+                </th>
+                <th colspan="2" class="r">
+                    {bonus-total}
+                </th>
+                <th colspan="2" class="r">
+                    {psp-total}
+                </th>
+                <th colspan="2" class="r">
+                    {adjustment-total}
+                </th>
+                <th colspan="2" class="r">
+                    {affbf-total}
+                </th>
+                <th colspan="2" class="r">
+                    {affwithdrawal-total}
+                </th>
+                <th colspan="2" class="r">
+                    {affadjustment-total}
+                </th>
+            </tr>
+            <!--/total-->
+            <!--/nodata-->
+        </table>
+    </div>
+    <input type="hidden" id="page" name="page" value="{page}" />
+</div>

@@ -1,0 +1,38 @@
+﻿<div class="padl0">
+    <div id="errMsg" style="display: none; width: 264px; margin: 3px 0;">
+        <div id="error_item">
+            <ul>
+                <li><a class="err-msg" id="error_msg"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content" class="pcontent">
+        <table cellspacing="5" cellpadding="0" width="100%">
+          <tr>
+            <td style="width: 120px;" class="r">
+              {Important}
+            </td>
+            <td>
+              <div class="chk ic-uncheck"/>
+            </td>
+          </tr>
+          {Language-rows}
+        </table>
+    </div>
+    <div class="l" style="margin-top:5px;">
+      <input type="button" id="btnAdd" class="buttonlogin" value="{Add}" onclick="AddNewMessage()"/>
+            <input type="button" id="btnEdit" class="buttonlogin" value="{Edit}" onclick="SetEditMode();" />
+            <input type="button" id="btnUpdate" class="buttonlogin" style="display:none;" value="{Update}" onclick="UpdateMessage();" />
+            &nbsp;
+            <input type="button" id="btnDeleteCur" class="buttonlogin" value="{Delete}" onclick="DeleteCurrentMessage();" />
+            &nbsp;
+            <input type="button" id="btnClose" class="buttonlogin" value="{Cancel}" onclick="javascript:parent.ibcWnd.close();" />
+      </div>
+    <input id="mid" name="mid" type="hidden" value="{MsgID-val}" />
+    <input id="hdImportant" name="hdImportant" type="hidden" value="{hdImportant-val}"/>
+    <input id="hdMode" name="hdMode" type="hidden" value="{hdMode-val}"/>
+    <input id="ConfirmDeleteMess" name="ConfirmDeleteMess" type="hidden" value="{ConfirmDeleteMessage}" />
+    <input id="ConfirmUpdateMess" name="ConfirmUpdateMess" type="hidden" value="{ConfirmUpdateMessage}" />
+    <input id="AddEmptyMessError" name="AddEmptyMessError" type="hidden" value="{AddEmptyMessError}"/>
+    
+</div>

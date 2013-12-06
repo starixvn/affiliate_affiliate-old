@@ -1,0 +1,2005 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8DEB11A9-B5F0-415A-9FE1-FDA48D92CC63}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fanex.Web.Aoncash.Admin</RootNamespace>
+    <AssemblyName>Fanex.Web.Aoncash.Admin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DNAide, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Fanex.Affiliate.Dependencies\DNAide.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelUtil, Version=29.3.0.1000, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Fanex.Affiliate.Dependencies\ExcelUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="IBCFile">
+      <HintPath>..\..\Fanex.Affiliate.Dependencies\IBCFile.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Fanex.Affiliate.Dependencies\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\Fanex.IndoPaul.Dependencies\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\Fanex.IndoPaul.Dependencies\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\Fanex.IndoPaul.Dependencies\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetGear">
+      <HintPath>..\..\Fanex.Affiliate.Dependencies\SpreadsheetGear.dll</HintPath>
+    </Reference>
+    <Reference Include="Sunplus.Agent.Utilities, Version=1.0.4913.21484, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Fanex.Affiliate.Dependencies\Sunplus.Agent.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abc.ashx.cs">
+      <DependentUpon>Abc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.designer.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alert.aspx.cs">
+      <DependentUpon>Alert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alert.aspx.designer.cs">
+      <DependentUpon>Alert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Templates\UserInfo\Master3.master.cs">
+      <DependentUpon>Master3.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\ReCheckIn.ashx.cs">
+      <DependentUpon>ReCheckIn.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\ProcessLogin.ashx.cs">
+      <DependentUpon>ProcessLogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeAdminPass.aspx.cs">
+      <DependentUpon>ChangeAdminPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeAdminPass.aspx.designer.cs">
+      <DependentUpon>ChangeAdminPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePass.aspx.cs">
+      <DependentUpon>ChangePass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePass.aspx.designer.cs">
+      <DependentUpon>ChangePass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\AffDefault.aspx.cs">
+      <DependentUpon>AffDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\AffDefault.aspx.designer.cs">
+      <DependentUpon>AffDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\AffiliateInfo.aspx.cs">
+      <DependentUpon>AffiliateInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\AffiliateInfo.aspx.designer.cs">
+      <DependentUpon>AffiliateInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Statistics.aspx.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Statistics.aspx.designer.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\MemberDomain.aspx.cs">
+      <DependentUpon>MemberDomain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Domain\Add12BetDomain.aspx.cs">
+      <DependentUpon>Add12BetDomain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Domain\AddAffiliateDomain.aspx.cs">
+      <DependentUpon>AddAffiliateDomain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Domain\AffiliateDomain.aspx.cs">
+      <DependentUpon>AffiliateDomain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Domain\DomainControl.aspx.cs">
+      <DependentUpon>DomainControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Domain\DomainControlIns.aspx.cs">
+      <DependentUpon>DomainControlIns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Domain\DomainControlUpd.aspx.cs">
+      <DependentUpon>DomainControlUpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Domain\Edit12BetDomain.aspx.cs">
+      <DependentUpon>Edit12BetDomain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Domain\EditAffiliateDomain.aspx.cs">
+      <DependentUpon>EditAffiliateDomain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exchange\AddExchanges.aspx.cs">
+      <DependentUpon>AddExchanges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exchange\AddExchanges.aspx.designer.cs">
+      <DependentUpon>AddExchanges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exchange\AffEditRate.aspx.cs">
+      <DependentUpon>AffEditRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exchange\AffEditRate.aspx.designer.cs">
+      <DependentUpon>AffEditRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exchange\AffRate.aspx.cs">
+      <DependentUpon>AffRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exchange\AffRate.aspx.designer.cs">
+      <DependentUpon>AffRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exchange\AddAffCurrencies.aspx.cs">
+      <DependentUpon>AddAffCurrencies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exchange\AddAffCurrencies.aspx.designer.cs">
+      <DependentUpon>AddAffCurrencies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footer.aspx.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footer.aspx.designer.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupSetting\AddGroup.aspx.cs">
+      <DependentUpon>AddGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupSetting\AddGroup.aspx.designer.cs">
+      <DependentUpon>AddGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupSetting\AssignGroup.aspx.cs">
+      <DependentUpon>AssignGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupSetting\AssignGroup.aspx.designer.cs">
+      <DependentUpon>AssignGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupSetting\EditGroup.aspx.cs">
+      <DependentUpon>EditGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupSetting\EditGroup.aspx.designer.cs">
+      <DependentUpon>EditGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupSetting\GroupSetting.aspx.cs">
+      <DependentUpon>GroupSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupSetting\GroupSetting.aspx.designer.cs">
+      <DependentUpon>GroupSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\AccountPolicy.ashx.cs">
+      <DependentUpon>AccountPolicy.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\AddMemberToAffiliate.ashx.cs">
+      <DependentUpon>AddMemberToAffiliate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\AddMessage.ashx.cs">
+      <DependentUpon>AddMessage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\AddNewBannerV2.ashx.cs">
+      <DependentUpon>AddNewBannerV2.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\AddUser.ashx.cs">
+      <DependentUpon>AddUser.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\Adjustment.ashx.cs">
+      <DependentUpon>Adjustment.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ChangeAdminPass.ashx.cs">
+      <DependentUpon>ChangeAdminPass.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ChangePass.ashx.cs">
+      <DependentUpon>ChangePass.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\CommGroupAssign.ashx.cs">
+      <DependentUpon>CommGroupAssign.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\CommGroupDel.ashx.cs">
+      <DependentUpon>CommGroupDel.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\CommGroupUpd.ashx.cs">
+      <DependentUpon>CommGroupUpd.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\AddNewBannerText.ashx.cs">
+      <DependentUpon>AddNewBannerText.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\AffTypeHandler.ashx.cs">
+      <DependentUpon>AffTypeHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\AddExchanges.ashx.cs">
+      <DependentUpon>AddExchanges.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\AddAffCurrencies.ashx.cs">
+      <DependentUpon>AddAffCurrencies.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetCurrencyMultipliedByNotification.ashx.cs">
+      <DependentUpon>GetCurrencyMultipliedByNotification.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\SetLanguage.ashx.cs">
+      <DependentUpon>SetLanguage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\UpdateAffType.ashx.cs">
+      <DependentUpon>UpdateAffType.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\UpdateMediaBanner.ashx.cs">
+      <DependentUpon>UpdateMediaBanner.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetSubCategory.ashx.cs">
+      <DependentUpon>GetSubCategory.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetDataBannerText.ashx.cs">
+      <DependentUpon>GetDataBannerText.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\DelBannerText.ashx.cs">
+      <DependentUpon>DelBannerText.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\UpdateBannerText.ashx.cs">
+      <DependentUpon>UpdateBannerText.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\LanguageHandler.ashx.cs">
+      <DependentUpon>LanguageHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ProductHandler.ashx.cs">
+      <DependentUpon>ProductHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\CountryHandler.ashx.cs">
+      <DependentUpon>CountryHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetStatisticsDetail_New.ashx.cs">
+      <DependentUpon>GetStatisticsDetail_New.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\UpdateStatus.ashx.cs">
+      <DependentUpon>UpdateStatus.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\UpdatePolicy.ashx.cs">
+      <DependentUpon>UpdatePolicy.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\UpdateDepartment.ashx.cs">
+      <DependentUpon>UpdateDepartment.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\UpdateAcc.ashx.cs">
+      <DependentUpon>UpdateAcc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\UpdAffInfo.ashx.cs">
+      <DependentUpon>UpdAffInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ToggleLockedOut.ashx.cs">
+      <DependentUpon>ToggleLockedOut.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\SettingHandler.ashx.cs">
+      <DependentUpon>SettingHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ToggleAutoUpdateRate.ashx.cs">
+      <DependentUpon>ToggleAutoUpdateRate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\UpdateUser.ashx.cs">
+      <DependentUpon>UpdateUser.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ResourceHandler.ashx.cs">
+      <DependentUpon>ResourceHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\PaymentUpdate.ashx.cs">
+      <DependentUpon>PaymentUpdate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\Note.ashx.cs">
+      <DependentUpon>Note.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\Logout.ashx.cs">
+      <DependentUpon>Logout.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ListUser.ashx.cs">
+      <DependentUpon>ListUser.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GroupPolicy.ashx.cs">
+      <DependentUpon>GroupPolicy.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetViewedBanner.ashx.cs">
+      <DependentUpon>GetViewedBanner.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetStatisticsListDetail.ashx.cs">
+      <DependentUpon>GetStatisticsListDetail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetOnlineList.ashx.cs">
+      <DependentUpon>GetOnlineList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetMessageList.ashx.cs">
+      <DependentUpon>GetMessageList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetMessage.ashx.cs">
+      <DependentUpon>GetMessage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetEmailHistoryList.ashx.cs">
+      <DependentUpon>GetEmailHistoryList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetEmailContent.ashx.cs">
+      <DependentUpon>GetEmailContent.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetEditedBanner.ashx.cs">
+      <DependentUpon>GetEditedBanner.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetDataBanner.ashx.cs">
+      <DependentUpon>GetDataBanner.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\CopyRate.ashx.cs">
+      <DependentUpon>CopyRate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\DelBanner.ashx.cs">
+      <DependentUpon>DelBanner.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\DeleteMailList.ashx.cs">
+      <DependentUpon>DeleteMailList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\DeleteMember.ashx.cs">
+      <DependentUpon>DeleteMember.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\DeleteMessageList.ashx.cs">
+      <DependentUpon>DeleteMessageList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\EditRate.ashx.cs">
+      <DependentUpon>EditRate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\Favorite.ashx.cs">
+      <DependentUpon>Favorite.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetAffiliateList.ashx.cs">
+      <DependentUpon>GetAffiliateList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GetClickStatisticsList.ashx.cs">
+      <DependentUpon>GetClickStatisticsList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\UploadExcel.ashx.cs">
+      <DependentUpon>UploadExcel.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Header.aspx.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Header.aspx.designer.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Media\AddText.aspx.cs">
+      <DependentUpon>AddText.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Media\AddText.aspx.designer.cs">
+      <DependentUpon>AddText.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Media\BannerDetail.aspx.cs">
+      <DependentUpon>BannerDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Media\BannerDetail.aspx.designer.cs">
+      <DependentUpon>BannerDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Media\AddMediaBanner.aspx.cs">
+      <DependentUpon>AddMediaBanner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Media\AddMediaBanner.aspx.designer.cs">
+      <DependentUpon>AddMediaBanner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Media\EditMediaBanner.aspx.cs">
+      <DependentUpon>EditMediaBanner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Media\EditMediaBanner.aspx.designer.cs">
+      <DependentUpon>EditMediaBanner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Media\Listtext.aspx.cs">
+      <DependentUpon>Listtext.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Media\Listtext.aspx.designer.cs">
+      <DependentUpon>Listtext.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Media\Listbanner.aspx.cs">
+      <DependentUpon>Listbanner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Media\Listbanner.aspx.designer.cs">
+      <DependentUpon>Listbanner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Others\EmailHistory.aspx.cs">
+      <DependentUpon>EmailHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Others\EmailHistory.aspx.designer.cs">
+      <DependentUpon>EmailHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Message.aspx.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Others\Message.aspx.designer.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Others\ViewEmailDetails.aspx.cs">
+      <DependentUpon>ViewEmailDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Others\ViewEmailDetails.aspx.designer.cs">
+      <DependentUpon>ViewEmailDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Others\ViewMessDetails.aspx.cs">
+      <DependentUpon>ViewMessDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Others\ViewMessDetails.aspx.designer.cs">
+      <DependentUpon>ViewMessDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\PaymentRequest.aspx.cs">
+      <DependentUpon>PaymentRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\PaymentRequest.aspx.designer.cs">
+      <DependentUpon>PaymentRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\PaymentUpdate.aspx.cs">
+      <DependentUpon>PaymentUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\PaymentUpdate.aspx.designer.cs">
+      <DependentUpon>PaymentUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\AffiliateQMReport.aspx.cs">
+      <DependentUpon>AffiliateQMReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\AffiliateQMReport.aspx.designer.cs">
+      <DependentUpon>AffiliateQMReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\AffiliateQMReportDetail.aspx.cs">
+      <DependentUpon>AffiliateQMReportDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\AffiliateQMReportDetail.aspx.designer.cs">
+      <DependentUpon>AffiliateQMReportDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\AffiliateReport.aspx.cs">
+      <DependentUpon>AffiliateReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\AffiliateReport.aspx.designer.cs">
+      <DependentUpon>AffiliateReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\AffiliateReportDetail.aspx.cs">
+      <DependentUpon>AffiliateReportDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\AffiliateReportDetail.aspx.designer.cs">
+      <DependentUpon>AffiliateReportDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Commission.aspx.cs">
+      <DependentUpon>Commission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Commission.aspx.designer.cs">
+      <DependentUpon>Commission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MemberReport.aspx.cs">
+      <DependentUpon>MemberReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\MemberReport.aspx.designer.cs">
+      <DependentUpon>MemberReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MemberStatisticsReport.aspx.cs">
+      <DependentUpon>MemberStatisticsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\MemberStatisticsReport.aspx.designer.cs">
+      <DependentUpon>MemberStatisticsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MemberStatisticsReportDetail.aspx.cs">
+      <DependentUpon>MemberStatisticsReportDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\MemberStatisticsReportDetail.aspx.designer.cs">
+      <DependentUpon>MemberStatisticsReportDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SignUpActive.aspx.cs">
+      <DependentUpon>SignUpActive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\SignUpActive.aspx.designer.cs">
+      <DependentUpon>SignUpActive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Excel.aspx.cs">
+      <DependentUpon>Excel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources\Excel.aspx.designer.cs">
+      <DependentUpon>Excel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UploadExcel.aspx.cs">
+      <DependentUpon>UploadExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources\UploadExcel.aspx.designer.cs">
+      <DependentUpon>UploadExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\AffType.aspx.cs">
+      <DependentUpon>AffType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings\AffType.aspx.designer.cs">
+      <DependentUpon>AffType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\AffTypeUpdate.aspx.cs">
+      <DependentUpon>AffTypeUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings\AffTypeUpdate.aspx.designer.cs">
+      <DependentUpon>AffTypeUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\LanguageUpdate.aspx.cs">
+      <DependentUpon>LanguageUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings\LanguageUpdate.aspx.designer.cs">
+      <DependentUpon>LanguageUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Language.aspx.cs">
+      <DependentUpon>Language.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings\Language.aspx.designer.cs">
+      <DependentUpon>Language.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ProductUpdate.aspx.cs">
+      <DependentUpon>ProductUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings\ProductUpdate.aspx.designer.cs">
+      <DependentUpon>ProductUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings\Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\CountryUpdate.aspx.cs">
+      <DependentUpon>CountryUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings\CountryUpdate.aspx.designer.cs">
+      <DependentUpon>CountryUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Country.aspx.cs">
+      <DependentUpon>Country.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings\Country.aspx.designer.cs">
+      <DependentUpon>Country.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\BuilSpConfigXmlFile.aspx.cs">
+      <DependentUpon>BuilSpConfigXmlFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\BuilSpConfigXmlFile.aspx.designer.cs">
+      <DependentUpon>BuilSpConfigXmlFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\DepMemberDetailUpd.aspx.cs">
+      <DependentUpon>DepMemberDetailUpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\DepMemberDetailUpd.aspx.designer.cs">
+      <DependentUpon>DepMemberDetailUpd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\Resources.aspx.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\Resources.aspx.designer.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\ServiceApi.aspx.cs">
+      <DependentUpon>ServiceApi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\ServiceApi.aspx.designer.cs">
+      <DependentUpon>ServiceApi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\TestInternalLogin.aspx.cs">
+      <DependentUpon>TestInternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\TestInternalLogin.aspx.designer.cs">
+      <DependentUpon>TestInternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnderMaintenance.aspx.cs">
+      <DependentUpon>UnderMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnderMaintenance.aspx.designer.cs">
+      <DependentUpon>UnderMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\AddDepartment.aspx.cs">
+      <DependentUpon>AddDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\AddDepartment.aspx.designer.cs">
+      <DependentUpon>AddDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\AddUserExist.aspx.cs">
+      <DependentUpon>AddUserExist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\AddUserExist.aspx.designer.cs">
+      <DependentUpon>AddUserExist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\EditAdminPolicy.aspx.cs">
+      <DependentUpon>EditAdminPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\EditAdminPolicy.aspx.designer.cs">
+      <DependentUpon>EditAdminPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\EditDepartment.aspx.cs">
+      <DependentUpon>EditDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\EditDepartment.aspx.designer.cs">
+      <DependentUpon>EditDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\EditGroupPolicy.aspx.cs">
+      <DependentUpon>EditGroupPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\EditGroupPolicy.aspx.designer.cs">
+      <DependentUpon>EditGroupPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ListDepartment.aspx.cs">
+      <DependentUpon>ListDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ListDepartment.aspx.designer.cs">
+      <DependentUpon>ListDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ListUser.aspx.cs">
+      <DependentUpon>ListUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ListUser.aspx.designer.cs">
+      <DependentUpon>ListUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ListUserInDept.aspx.cs">
+      <DependentUpon>ListUserInDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ListUserInDept.aspx.designer.cs">
+      <DependentUpon>ListUserInDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UpdateMultiAdmins.aspx.cs">
+      <DependentUpon>UpdateMultiAdmins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\UpdateMultiAdmins.aspx.designer.cs">
+      <DependentUpon>UpdateMultiAdmins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\AddMemberToAffiliate.aspx.cs">
+      <DependentUpon>AddMemberToAffiliate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\AddMemberToAffiliate.aspx.designer.cs">
+      <DependentUpon>AddMemberToAffiliate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\AddNote.aspx.cs">
+      <DependentUpon>AddNote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\AddNote.aspx.designer.cs">
+      <DependentUpon>AddNote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\Adjustment.aspx.cs">
+      <DependentUpon>Adjustment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\Adjustment.aspx.designer.cs">
+      <DependentUpon>Adjustment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\AffiliateList.aspx.cs">
+      <DependentUpon>AffiliateList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\AffiliateList.aspx.designer.cs">
+      <DependentUpon>AffiliateList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\AffiliateUpd.aspx.cs">
+      <DependentUpon>AffiliateUpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\AffiliateUpd.aspx.designer.cs">
+      <DependentUpon>AffiliateUpd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\DailyEarning.aspx.cs">
+      <DependentUpon>DailyEarning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\DailyEarning.aspx.designer.cs">
+      <DependentUpon>DailyEarning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\DailyEarningDetail.aspx.cs">
+      <DependentUpon>DailyEarningDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\DailyEarningDetail.aspx.designer.cs">
+      <DependentUpon>DailyEarningDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\EarningsHistory.aspx.cs">
+      <DependentUpon>EarningsHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\EarningsHistory.aspx.designer.cs">
+      <DependentUpon>EarningsHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\MediaStatistics.aspx.cs">
+      <DependentUpon>MediaStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\MediaStatistics.aspx.designer.cs">
+      <DependentUpon>MediaStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\MediaStatistics_LandingPage.aspx.cs">
+      <DependentUpon>MediaStatistics_LandingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\MediaStatistics_New.aspx.cs">
+      <DependentUpon>MediaStatistics_New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\MemberList.aspx.cs">
+      <DependentUpon>MemberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\MemberList.aspx.designer.cs">
+      <DependentUpon>MemberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\MemberListAll.aspx.cs">
+      <DependentUpon>MemberListAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\MemberListAll.aspx.designer.cs">
+      <DependentUpon>MemberListAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\Note.aspx.cs">
+      <DependentUpon>Note.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\Note.aspx.designer.cs">
+      <DependentUpon>Note.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\PlayersDetail.aspx.cs">
+      <DependentUpon>PlayersDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\PlayersDetail.aspx.designer.cs">
+      <DependentUpon>PlayersDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\UserLog.aspx.cs">
+      <DependentUpon>UserLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo\UserLog.aspx.designer.cs">
+      <DependentUpon>UserLog.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccessDenied.aspx" />
+    <Content Include="Alert.aspx" />
+    <Content Include="App_js\AutoComplete\autocomplete.js" />
+    <Content Include="App_js\AutoComplete\shadow.png" />
+    <Content Include="App_js\AutoComplete\styles.css" />
+    <Content Include="App_js\Calendar2\calendar-control.js" />
+    <Content Include="App_js\Calendar2\calendar-normal.js" />
+    <Content Include="App_js\Calendar2\calendar-setup.js" />
+    <Content Include="App_js\Calendar2\date.js" />
+    <Content Include="App_js\Calendar2\Lang\calendar-CS.js" />
+    <Content Include="App_js\Calendar2\Lang\calendar-CT.js" />
+    <Content Include="App_js\Calendar2\Lang\calendar-E.js" />
+    <Content Include="App_js\Calendar2\Lang\calendar-ES.js" />
+    <Content Include="App_js\Calendar2\Lang\calendar-J.js" />
+    <Content Include="App_js\Calendar2\Lang\calendar-TH.js" />
+    <Content Include="App_js\Calendar2\Skin\calendar-blue.css" />
+    <Content Include="App_js\Calendar2\Skin\calendar-system.css" />
+    <Content Include="App_js\Calendar2\Skin\Images\bg_bg.gif" />
+    <Content Include="App_js\Calendar\calendar-blue.css" />
+    <Content Include="App_js\Calendar\calendar-en.js" />
+    <Content Include="App_js\Calendar\calendar-setup.js" />
+    <Content Include="App_js\Calendar\calendar.js" />
+    <Content Include="App_js\Calendar\Images\bg_bg.gif" />
+    <Content Include="App_js\CheckDate.js" />
+    <Content Include="App_js\Common.js" />
+    <Content Include="App_js\jquery-1.8.3.min.js" />
+    <Content Include="App_js\ListMediaBanner.js" />
+    <Content Include="App_js\dhtmlwindow\bird.jpg" />
+    <Content Include="App_js\dhtmlwindow\border-10.gif" />
+    <Content Include="App_js\dhtmlwindow\close.gif" />
+    <Content Include="App_js\dhtmlwindow\dhtmlwindow.css" />
+    <Content Include="App_js\dhtmlwindow\dhtmlwindow.js" />
+    <Content Include="App_js\dhtmlwindow\dog.jpg" />
+    <Content Include="App_js\dhtmlwindow\max.gif" />
+    <Content Include="App_js\dhtmlwindow\min.gif" />
+    <Content Include="App_js\dhtmlwindow\resize.gif" />
+    <Content Include="App_js\dhtmlwindow\restore.gif" />
+    <Content Include="App_js\dhtmlwindow\x.jpg" />
+    <Content Include="App_js\GroupSetting.css" />
+    <Content Include="App_js\GroupSetting.js" />
+    <Content Include="App_js\GroupSettingEdit.js" />
+    <Content Include="App_js\Header.js" />
+    <Content Include="App_js\IBCWnd\blank.html" />
+    <Content Include="App_js\IBCWnd\IBCWnd.css" />
+    <Content Include="App_js\IBCWnd\IBCWnd.js" />
+    <Content Include="App_js\IBCWnd\icon_close.png" />
+    <Content Include="App_js\IBCWnd\icon_closeOV.png" />
+    <Content Include="App_js\IBCWnd\icon_head.png" />
+    <Content Include="App_js\IBCWnd\pop_footer.jpg" />
+    <Content Include="App_js\IBCWnd\pop_g01.jpg" />
+    <Content Include="App_js\IBCWnd\pop_gtop.jpg" />
+    <Content Include="App_js\IBCWnd\pop_left.jpg" />
+    <Content Include="App_js\IBCWnd\pop_lineR.jpg" />
+    <Content Include="App_js\IBCWnd\pop_top.jpg" />
+    <Content Include="App_js\IBCWnd\x.jpg" />
+    <Content Include="App_js\interface.js" />
+    <Content Include="App_js\jquery\jquery-1.4.2.min.js" />
+    <Content Include="App_js\KickedOut.js" />
+    <Content Include="App_js\ListBanner.js" />
+    <Content Include="App_js\ListText.js" />
+    <Content Include="App_js\login.js" />
+    <Content Include="App_js\NoScroll.js" />
+    <Content Include="App_js\placeholder_fixer.js" />
+    <Content Include="App_js\popup.css" />
+    <Content Include="App_js\prototype-full.js" />
+    <Content Include="App_js\prototype.js" />
+    <Content Include="App_js\RefreshTime.js" />
+    <Content Include="App_js\RSH0.6\blank.html" />
+    <Content Include="App_js\RSH0.6\json2007.js" />
+    <Content Include="App_js\RSH0.6\rsh.js" />
+    <Content Include="App_js\swfobject.js" />
+    <Content Include="App_js\tiny_mce\langs\en.js" />
+    <Content Include="App_js\tiny_mce\license.txt" />
+    <Content Include="App_js\tiny_mce\plugins\advhr\css\advhr.css" />
+    <Content Include="App_js\tiny_mce\plugins\advhr\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\advhr\js\rule.js" />
+    <Content Include="App_js\tiny_mce\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="App_js\tiny_mce\plugins\advhr\rule.htm" />
+    <Content Include="App_js\tiny_mce\plugins\advimage\css\advimage.css" />
+    <Content Include="App_js\tiny_mce\plugins\advimage\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\advimage\image.htm" />
+    <Content Include="App_js\tiny_mce\plugins\advimage\img\sample.gif" />
+    <Content Include="App_js\tiny_mce\plugins\advimage\js\image.js" />
+    <Content Include="App_js\tiny_mce\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="App_js\tiny_mce\plugins\advlink\css\advlink.css" />
+    <Content Include="App_js\tiny_mce\plugins\advlink\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\advlink\js\advlink.js" />
+    <Content Include="App_js\tiny_mce\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="App_js\tiny_mce\plugins\advlink\link.htm" />
+    <Content Include="App_js\tiny_mce\plugins\advlist\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\advlist\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\autoresize\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\autoresize\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\autosave\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\autosave\langs\en.js" />
+    <Content Include="App_js\tiny_mce\plugins\bbcode\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\directionality\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\emotions.htm" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\js\emotions.js" />
+    <Content Include="App_js\tiny_mce\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="App_js\tiny_mce\plugins\example\dialog.htm" />
+    <Content Include="App_js\tiny_mce\plugins\example\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\example\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\example\img\example.gif" />
+    <Content Include="App_js\tiny_mce\plugins\example\js\dialog.js" />
+    <Content Include="App_js\tiny_mce\plugins\example\langs\en.js" />
+    <Content Include="App_js\tiny_mce\plugins\example\langs\en_dlg.js" />
+    <Content Include="App_js\tiny_mce\plugins\fullpage\css\fullpage.css" />
+    <Content Include="App_js\tiny_mce\plugins\fullpage\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\fullpage\fullpage.htm" />
+    <Content Include="App_js\tiny_mce\plugins\fullpage\js\fullpage.js" />
+    <Content Include="App_js\tiny_mce\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="App_js\tiny_mce\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="App_js\tiny_mce\plugins\iespell\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="App_js\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="App_js\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="App_js\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="App_js\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="App_js\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="App_js\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="App_js\tiny_mce\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="App_js\tiny_mce\plugins\inlinepopups\template.htm" />
+    <Content Include="App_js\tiny_mce\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\layer\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\layer\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\legacyoutput\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\legacyoutput\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\media\css\content.css" />
+    <Content Include="App_js\tiny_mce\plugins\media\css\media.css" />
+    <Content Include="App_js\tiny_mce\plugins\media\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\media\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\media\img\flash.gif" />
+    <Content Include="App_js\tiny_mce\plugins\media\img\flv_player.swf" />
+    <Content Include="App_js\tiny_mce\plugins\media\img\quicktime.gif" />
+    <Content Include="App_js\tiny_mce\plugins\media\img\realmedia.gif" />
+    <Content Include="App_js\tiny_mce\plugins\media\img\shockwave.gif" />
+    <Content Include="App_js\tiny_mce\plugins\media\img\trans.gif" />
+    <Content Include="App_js\tiny_mce\plugins\media\img\windowsmedia.gif" />
+    <Content Include="App_js\tiny_mce\plugins\media\js\embed.js" />
+    <Content Include="App_js\tiny_mce\plugins\media\js\media.js" />
+    <Content Include="App_js\tiny_mce\plugins\media\langs\en_dlg.js" />
+    <Content Include="App_js\tiny_mce\plugins\media\media.htm" />
+    <Content Include="App_js\tiny_mce\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\noneditable\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\pagebreak\css\content.css" />
+    <Content Include="App_js\tiny_mce\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\pagebreak\img\pagebreak.gif" />
+    <Content Include="App_js\tiny_mce\plugins\pagebreak\img\trans.gif" />
+    <Content Include="App_js\tiny_mce\plugins\paste\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\paste\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\paste\js\pastetext.js" />
+    <Content Include="App_js\tiny_mce\plugins\paste\js\pasteword.js" />
+    <Content Include="App_js\tiny_mce\plugins\paste\langs\en_dlg.js" />
+    <Content Include="App_js\tiny_mce\plugins\paste\pastetext.htm" />
+    <Content Include="App_js\tiny_mce\plugins\paste\pasteword.htm" />
+    <Content Include="App_js\tiny_mce\plugins\preview\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\preview\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\preview\example.html" />
+    <Content Include="App_js\tiny_mce\plugins\preview\jscripts\embed.js" />
+    <Content Include="App_js\tiny_mce\plugins\preview\preview.html" />
+    <Content Include="App_js\tiny_mce\plugins\print\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\print\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\save\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\save\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="App_js\tiny_mce\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="App_js\tiny_mce\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="App_js\tiny_mce\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="App_js\tiny_mce\plugins\spellchecker\css\content.css" />
+    <Content Include="App_js\tiny_mce\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\spellchecker\img\wline.gif" />
+    <Content Include="App_js\tiny_mce\plugins\style\css\props.css" />
+    <Content Include="App_js\tiny_mce\plugins\style\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\style\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\style\js\props.js" />
+    <Content Include="App_js\tiny_mce\plugins\style\langs\en_dlg.js" />
+    <Content Include="App_js\tiny_mce\plugins\style\props.htm" />
+    <Content Include="App_js\tiny_mce\plugins\tabfocus\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\tabfocus\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\table\cell.htm" />
+    <Content Include="App_js\tiny_mce\plugins\table\css\cell.css" />
+    <Content Include="App_js\tiny_mce\plugins\table\css\row.css" />
+    <Content Include="App_js\tiny_mce\plugins\table\css\table.css" />
+    <Content Include="App_js\tiny_mce\plugins\table\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\table\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\table\js\cell.js" />
+    <Content Include="App_js\tiny_mce\plugins\table\js\merge_cells.js" />
+    <Content Include="App_js\tiny_mce\plugins\table\js\row.js" />
+    <Content Include="App_js\tiny_mce\plugins\table\js\table.js" />
+    <Content Include="App_js\tiny_mce\plugins\table\langs\en_dlg.js" />
+    <Content Include="App_js\tiny_mce\plugins\table\merge_cells.htm" />
+    <Content Include="App_js\tiny_mce\plugins\table\row.htm" />
+    <Content Include="App_js\tiny_mce\plugins\table\table.htm" />
+    <Content Include="App_js\tiny_mce\plugins\template\blank.htm" />
+    <Content Include="App_js\tiny_mce\plugins\template\css\template.css" />
+    <Content Include="App_js\tiny_mce\plugins\template\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\template\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\template\js\template.js" />
+    <Content Include="App_js\tiny_mce\plugins\template\langs\en_dlg.js" />
+    <Content Include="App_js\tiny_mce\plugins\template\template.htm" />
+    <Content Include="App_js\tiny_mce\plugins\visualchars\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\wordcount\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\wordcount\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\del.htm" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="App_js\tiny_mce\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="App_js\tiny_mce\themes\advanced\about.htm" />
+    <Content Include="App_js\tiny_mce\themes\advanced\anchor.htm" />
+    <Content Include="App_js\tiny_mce\themes\advanced\charmap.htm" />
+    <Content Include="App_js\tiny_mce\themes\advanced\color_picker.htm" />
+    <Content Include="App_js\tiny_mce\themes\advanced\editor_template.js" />
+    <Content Include="App_js\tiny_mce\themes\advanced\editor_template_src.js" />
+    <Content Include="App_js\tiny_mce\themes\advanced\image.htm" />
+    <Content Include="App_js\tiny_mce\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="App_js\tiny_mce\themes\advanced\img\icons.gif" />
+    <Content Include="App_js\tiny_mce\themes\advanced\js\about.js" />
+    <Content Include="App_js\tiny_mce\themes\advanced\js\anchor.js" />
+    <Content Include="App_js\tiny_mce\themes\advanced\js\charmap.js" />
+    <Content Include="App_js\tiny_mce\themes\advanced\js\color_picker.js" />
+    <Content Include="App_js\tiny_mce\themes\advanced\js\image.js" />
+    <Content Include="App_js\tiny_mce\themes\advanced\js\link.js" />
+    <Content Include="App_js\tiny_mce\themes\advanced\js\source_editor.js" />
+    <Content Include="App_js\tiny_mce\themes\advanced\langs\en.js" />
+    <Content Include="App_js\tiny_mce\themes\advanced\langs\en_dlg.js" />
+    <Content Include="App_js\tiny_mce\themes\advanced\link.htm" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\default\content.css" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\default\dialog.css" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\default\ui.css" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="App_js\tiny_mce\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="App_js\tiny_mce\themes\advanced\source_editor.htm" />
+    <Content Include="App_js\tiny_mce\themes\simple\editor_template.js" />
+    <Content Include="App_js\tiny_mce\themes\simple\editor_template_src.js" />
+    <Content Include="App_js\tiny_mce\themes\simple\img\icons.gif" />
+    <Content Include="App_js\tiny_mce\themes\simple\langs\en.js" />
+    <Content Include="App_js\tiny_mce\themes\simple\skins\default\content.css" />
+    <Content Include="App_js\tiny_mce\themes\simple\skins\default\ui.css" />
+    <Content Include="App_js\tiny_mce\themes\simple\skins\o2k7\content.css" />
+    <Content Include="App_js\tiny_mce\themes\simple\skins\o2k7\img\button_bg.png" />
+    <Content Include="App_js\tiny_mce\themes\simple\skins\o2k7\ui.css" />
+    <Content Include="App_js\tiny_mce\tiny_mce.js" />
+    <Content Include="App_js\tiny_mce\tiny_mce_popup.js" />
+    <Content Include="App_js\tiny_mce\tiny_mce_src.js" />
+    <Content Include="App_js\tiny_mce\utils\editable_selects.js" />
+    <Content Include="App_js\tiny_mce\utils\form_utils.js" />
+    <Content Include="App_js\tiny_mce\utils\mctabs.js" />
+    <Content Include="App_js\tiny_mce\utils\validate.js" />
+    <Content Include="App_js\UserControl.js" />
+    <Content Include="App_js\wz_tooltip.js" />
+    <Content Include="App_Templates\AccessDenied.html" />
+    <Content Include="App_Templates\AffType\Update.htm" />
+    <Content Include="App_Templates\Alert.htm" />
+    <Content Include="App_Templates\Calendar.html" />
+    <Content Include="App_Templates\CalendarJs.html" />
+    <Content Include="App_Templates\ChangeAdminPass.htm" />
+    <Content Include="App_Templates\ChangePass.htm" />
+    <Content Include="App_Templates\AffType\Index.htm" />
+    <Content Include="App_Templates\Email\AffApprove\ApprovalEmail_en-US.htm" />
+    <Content Include="App_Templates\Email\AffApprove\ApprovalEmail_en-US_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\ApprovalEmail_id-ID.htm" />
+    <Content Include="App_Templates\Email\AffApprove\ApprovalEmail_id-ID_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\ApprovalEmail_th-TH.htm" />
+    <Content Include="App_Templates\Email\AffApprove\ApprovalEmail_th-TH_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\ApprovalEmail_vi-VN.htm" />
+    <Content Include="App_Templates\Email\AffApprove\ApprovalEmail_vi-VN_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\ApprovalEmail_zh-CN.htm" />
+    <Content Include="App_Templates\Email\AffApprove\ApprovalEmail_zh-CN_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\ApprovalEmail_zh-TW.htm" />
+    <Content Include="App_Templates\Email\AffApprove\ApprovalEmail_zh-TW_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\Approved_en-US.htm" />
+    <Content Include="App_Templates\Email\AffApprove\Approved_en-US_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\Approved_id-ID.htm" />
+    <Content Include="App_Templates\Email\AffApprove\Approved_id-ID_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\Approved_th-TH.htm" />
+    <Content Include="App_Templates\Email\AffApprove\Approved_th-TH_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\Approved_vi-VN.htm" />
+    <Content Include="App_Templates\Email\AffApprove\Approved_vi-VN_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\Approved_zh-CN.htm" />
+    <Content Include="App_Templates\Email\AffApprove\Approved_zh-CN_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\Approved_zh-TW.htm" />
+    <Content Include="App_Templates\Email\AffApprove\Approved_zh-TW_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\WithdrawalEmail_en-US.htm" />
+    <Content Include="App_Templates\Email\AffApprove\WithdrawalEmail_en-US_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\WithdrawalEmail_id-ID.htm" />
+    <Content Include="App_Templates\Email\AffApprove\WithdrawalEmail_id-ID_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\WithdrawalEmail_th-TH.htm" />
+    <Content Include="App_Templates\Email\AffApprove\WithdrawalEmail_th-TH_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\WithdrawalEmail_vi-VN.htm" />
+    <Content Include="App_Templates\Email\AffApprove\WithdrawalEmail_vi-VN_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\WithdrawalEmail_zh-CN.htm" />
+    <Content Include="App_Templates\Email\AffApprove\WithdrawalEmail_zh-CN_html.htm" />
+    <Content Include="App_Templates\Email\AffApprove\WithdrawalEmail_zh-TW.htm" />
+    <Content Include="App_Templates\Email\AffApprove\WithdrawalEmail_zh-TW_html.htm" />
+    <Content Include="App_Templates\Email\AffDisapprove\Disapproved_en-US.htm" />
+    <Content Include="App_Templates\Email\AffDisapprove\Disapproved_en-US_html.htm" />
+    <Content Include="App_Templates\Email\AffDisapprove\Disapproved_id-ID.htm" />
+    <Content Include="App_Templates\Email\AffDisapprove\Disapproved_id-ID_html.htm" />
+    <Content Include="App_Templates\Email\AffDisapprove\Disapproved_th-TH.htm" />
+    <Content Include="App_Templates\Email\AffDisapprove\Disapproved_th-TH_html.htm" />
+    <Content Include="App_Templates\Email\AffDisapprove\Disapproved_vi-VN.htm" />
+    <Content Include="App_Templates\Email\AffDisapprove\Disapproved_vi-VN_html.htm" />
+    <Content Include="App_Templates\Email\AffDisapprove\Disapproved_zh-CN.htm" />
+    <Content Include="App_Templates\Email\AffDisapprove\Disapproved_zh-CN_html.htm" />
+    <Content Include="App_Templates\Email\AffDisapprove\Disapproved_zh-TW.htm" />
+    <Content Include="App_Templates\Email\AffDisapprove\Disapproved_zh-TW_html.htm" />
+    <Content Include="App_Templates\Email\PaymentApp\PaymentAppEmail_en-US.htm" />
+    <Content Include="App_Templates\Email\PaymentApp\PaymentAppEmail_en-US_html.htm" />
+    <Content Include="App_Templates\Email\PaymentApp\PaymentAppEmail_id-ID.htm" />
+    <Content Include="App_Templates\Email\PaymentApp\PaymentAppEmail_id-ID_html.htm" />
+    <Content Include="App_Templates\Email\PaymentApp\PaymentAppEmail_th-TH.htm" />
+    <Content Include="App_Templates\Email\PaymentApp\PaymentAppEmail_th-TH_html.htm" />
+    <Content Include="App_Templates\Email\PaymentApp\PaymentAppEmail_vi-VN.htm" />
+    <Content Include="App_Templates\Email\PaymentApp\PaymentAppEmail_vi-VN_html.htm" />
+    <Content Include="App_Templates\Email\PaymentApp\PaymentAppEmail_zh-CN.htm" />
+    <Content Include="App_Templates\Email\PaymentApp\PaymentAppEmail_zh-CN_html.htm" />
+    <Content Include="App_Templates\Email\PaymentApp\PaymentAppEmail_zh-TW.htm" />
+    <Content Include="App_Templates\Email\PaymentApp\PaymentAppEmail_zh-TW_html.htm" />
+    <Content Include="App_Templates\Email\PaymentCan\PaymentCanEmail_en-US.htm" />
+    <Content Include="App_Templates\Email\PaymentCan\PaymentCanEmail_en-US_html.htm" />
+    <Content Include="App_Templates\Email\PaymentCan\PaymentCanEmail_id-ID.htm" />
+    <Content Include="App_Templates\Email\PaymentCan\PaymentCanEmail_id-ID_html.htm" />
+    <Content Include="App_Templates\Email\PaymentCan\PaymentCanEmail_th-TH.htm" />
+    <Content Include="App_Templates\Email\PaymentCan\PaymentCanEmail_th-TH_html.htm" />
+    <Content Include="App_Templates\Email\PaymentCan\PaymentCanEmail_vi-VN.htm" />
+    <Content Include="App_Templates\Email\PaymentCan\PaymentCanEmail_vi-VN_html.htm" />
+    <Content Include="App_Templates\Email\PaymentCan\PaymentCanEmail_zh-CN.htm" />
+    <Content Include="App_Templates\Email\PaymentCan\PaymentCanEmail_zh-CN_html.htm" />
+    <Content Include="App_Templates\Email\PaymentCan\PaymentCanEmail_zh-TW.htm" />
+    <Content Include="App_Templates\Email\PaymentCan\PaymentCanEmail_zh-TW_html.htm" />
+    <Content Include="App_Templates\Exchange\AddExchanges.htm" />
+    <Content Include="App_Templates\Exchange\AddAffCurrencies.htm" />
+    <Content Include="App_Templates\Language\Index.htm" />
+    <Content Include="App_Templates\Language\Update.htm" />
+    <Content Include="App_Templates\Media\BannerDetail.htm" />
+    <Content Include="App_Templates\Media\MainAddMediaBanner.htm" />
+    <Content Include="App_Templates\Media\MainAddText.htm" />
+    <Content Include="App_Templates\Media\MainListBanner.htm" />
+    <Content Include="App_Templates\Media\MainListMediaBanner.htm" />
+    <Content Include="App_Templates\Media\MainListText.htm" />
+    <Content Include="App_Templates\Product\Index.htm" />
+    <Content Include="App_Templates\Product\Update.htm" />
+    <Content Include="App_Templates\Customer\AffiliateInfo.htm" />
+    <Content Include="App_Templates\Customer\Statistics.htm" />
+    <Content Include="App_Templates\DateRangeSelect.html" />
+    <Content Include="App_Templates\Domain\12BetDomain.html" />
+    <Content Include="App_Templates\Domain\Add12BetDomain.html" />
+    <Content Include="App_Templates\Domain\AddAffiliateDomain.html" />
+    <Content Include="App_Templates\Domain\AffiliateDomain.html" />
+    <Content Include="App_Templates\Domain\DomainControl.htm" />
+    <Content Include="App_Templates\Domain\DomainControlIns.htm" />
+    <Content Include="App_Templates\Domain\DomainControlUpd.htm" />
+    <Content Include="App_Templates\Domain\Edit12BetDomain.html" />
+    <Content Include="App_Templates\Domain\EditAffiliateDomain.html" />
+    <Content Include="App_Templates\Exchange\AffEditRate.htm" />
+    <Content Include="App_Templates\Exchange\ExchangeRate.htm" />
+    <Content Include="App_Templates\GotoPage.html" />
+    <Content Include="App_Templates\GroupSetting\GroupAssignment.htm" />
+    <Content Include="App_Templates\GroupSetting\GroupSetting.htm" />
+    <Content Include="App_Templates\GroupSetting\GroupSettingEdit.htm" />
+    <Content Include="App_Templates\Header.htm" />
+    <Content Include="App_Templates\Home.htm" />
+    <Content Include="App_Templates\Login.htm" />
+    <Content Include="App_Templates\Menu\ListMenu.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Templates\NoInfo.htm" />
+    <Content Include="App_Templates\NoInfo1.htm" />
+    <Content Include="App_Templates\NoInformation.htm" />
+    <Content Include="App_Templates\Option.htm" />
+    <Content Include="App_Templates\Option1.htm" />
+    <Content Include="App_Templates\Option2.htm" />
+    <Content Include="App_Templates\Others\EmailHistory.htm" />
+    <Content Include="App_Templates\Others\Message.htm" />
+    <Content Include="App_Templates\Others\ViewEmail.htm" />
+    <Content Include="App_Templates\Others\ViewMess.htm" />
+    <Content Include="App_Templates\PageIndex.html" />
+    <Content Include="App_Templates\Paging.htm" />
+    <Content Include="App_Templates\Paging.html" />
+    <Content Include="App_Templates\Payment\PaymentRequest.htm" />
+    <Content Include="App_Templates\Payment\PaymentUpdate.htm" />
+    <Content Include="App_Templates\Report\AffiliateQMReport.htm" />
+    <Content Include="App_Templates\Report\AffiliateQMReportDetail.htm" />
+    <Content Include="App_Templates\Report\AffiliateReport.htm" />
+    <Content Include="App_Templates\Report\AffiliateReportDetail.htm" />
+    <Content Include="App_Templates\Report\Commission.htm" />
+    <Content Include="App_Templates\Report\MemberReport.htm" />
+    <Content Include="App_Templates\Report\MemberStatisticsReport.htm" />
+    <Content Include="App_Templates\Report\MemberStatisticsReportDetail.htm" />
+    <Content Include="App_Templates\Report\SignUpActiveReport.htm" />
+    <Content Include="App_Templates\Resources\Add.htm" />
+    <Content Include="App_Templates\Resources\Resources.htm" />
+    <Content Include="App_Templates\Resources\Update.htm" />
+    <Content Include="App_Templates\Resources\UploadExcel.htm" />
+    <Content Include="App_Templates\Settings\Add.htm" />
+    <Content Include="App_Templates\Country\Update.htm" />
+    <Content Include="App_Templates\Country\Default.htm" />
+    <Content Include="App_Templates\Settings\Settings.htm" />
+    <Content Include="App_Templates\Settings\Update.htm" />
+    <Content Include="App_Templates\SubMenu.htm" />
+    <Content Include="App_Templates\SubMenu1.htm" />
+    <Content Include="App_Templates\SubPage.htm" />
+    <Content Include="App_Templates\UserControl\AddDepartment.html" />
+    <Content Include="App_Templates\UserControl\AddUser.html" />
+    <Content Include="App_Templates\UserControl\AddUserExist.html" />
+    <Content Include="App_Templates\UserControl\EditDepartment.html" />
+    <Content Include="App_Templates\UserControl\EditUser.html" />
+    <Content Include="App_Templates\UserControl\ListDepartment.html" />
+    <Content Include="App_Templates\UserControl\ListUser.html" />
+    <Content Include="App_Templates\UserControl\ListUserContent.html" />
+    <Content Include="App_Templates\UserControl\ListUserInDept.htm" />
+    <Content Include="App_Templates\UserControl\PolicyContent.html" />
+    <Content Include="App_Templates\UserControl\PolicyHeader.html" />
+    <Content Include="App_Templates\UserInfo\AddMemberToAffiliate.htm" />
+    <Content Include="App_Templates\UserInfo\AddNote.htm" />
+    <Content Include="App_Templates\UserInfo\Adjustment.htm" />
+    <Content Include="App_Templates\UserInfo\AffList.htm" />
+    <Content Include="App_Templates\UserInfo\AffUpd.htm" />
+    <Content Include="App_Templates\UserInfo\EarningsHistory.htm" />
+    <Content Include="App_Templates\UserInfo\MediaStatistics.htm" />
+    <Content Include="App_Templates\UserInfo\MediaStatistics_LandingPage.htm" />
+    <Content Include="App_Templates\UserInfo\MediaStatistics_New.htm" />
+    <Content Include="App_Templates\UserInfo\MemberList.htm" />
+    <Content Include="App_Templates\UserInfo\MemList.htm" />
+    <Content Include="App_Templates\UserInfo\MemListAll.htm" />
+    <Content Include="App_Templates\UserInfo\NoteList.htm" />
+    <Content Include="App_Templates\UserInfo\PlayersDetail.htm" />
+    <Content Include="App_Templates\UserInfo\UserLog.htm" />
+    <Content Include="App_Templates\UserInfo\ViewDaily.htm" />
+    <Content Include="App_Templates\UserInfo\ViewDailyDetail.htm" />
+    <Content Include="App_Themes\Aff.png" />
+    <Content Include="App_Themes\DefaultV2\common.css" />
+    <Content Include="App_Themes\DefaultV2\content.css" />
+    <Content Include="App_Themes\DefaultV2\error\images\bg.png" />
+    <Content Include="App_Themes\DefaultV2\error\images\icon.png" />
+    <Content Include="App_Themes\DefaultV2\error\images\logo.png" />
+    <Content Include="App_Themes\DefaultV2\error\images\text.png" />
+    <Content Include="App_Themes\DefaultV2\error\style.css" />
+    <Content Include="App_Themes\DefaultV2\footer.css" />
+    <Content Include="App_Themes\DefaultV2\header.css" />
+    <Content Include="App_Themes\DefaultV2\header\images\arrUpDown.png" />
+    <Content Include="App_Themes\DefaultV2\header\images\btDown.png" />
+    <Content Include="App_Themes\DefaultV2\header\images\ComboBox.png" />
+    <Content Include="App_Themes\DefaultV2\header\images\fChinese.png" />
+    <Content Include="App_Themes\DefaultV2\header\images\fEnglish.png" />
+    <Content Include="App_Themes\DefaultV2\header\images\fIndonesian.png" />
+    <Content Include="App_Themes\DefaultV2\header\images\flag_E.png" />
+    <Content Include="App_Themes\DefaultV2\header\images\listBt.png" />
+    <Content Include="App_Themes\DefaultV2\header\images\listRp.png" />
+    <Content Include="App_Themes\DefaultV2\header\images\listTop.png" />
+    <Content Include="App_Themes\DefaultV2\header\style.css" />
+    <Content Include="App_Themes\DefaultV2\Images\admin_login_button-hover.png" />
+    <Content Include="App_Themes\DefaultV2\Images\admin_login_button.png" />
+    <Content Include="App_Themes\DefaultV2\Images\arrow_left.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\arrow_left_out.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\a_bg.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\banner_top.png" />
+    <Content Include="App_Themes\DefaultV2\Images\banner_top2.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\bgMain.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_box1.png" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_box2.png" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_box_tab.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_button2.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_footer.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_header01.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_header_06.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_home_top.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_input_check.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_left.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_leftbottom.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_lefttop.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_menu.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_search01.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\bg_top.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\body_bg.png" />
+    <Content Include="App_Themes\DefaultV2\Images\btLg.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\btLg.png" />
+    <Content Include="App_Themes\DefaultV2\Images\btLg2.png" />
+    <Content Include="App_Themes\DefaultV2\Images\b_01.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\b_02.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\b_022.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\b_04.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\b_add01.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\b_add01_dis.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\b_next1.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\b_next2.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\b_prev1.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\b_prev2.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\b_search.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\cal.gif" />
+    <Content Include="App_Themes\DefaultV2\Images\calen_n.png" />
+    <Content Include="App_Themes\DefaultV2\Images\calen_OV.png" />
+    <Content Include="App_Themes\DefaultV2\Images\check.gif" />
+    <Content Include="App_Themes\DefaultV2\Images\checkbox01.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\checkbox02.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\checkbox03.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\checkbox04.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\clock.gif" />
+    <Content Include="App_Themes\DefaultV2\Images\icon.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_disableProduct.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_enableProduct.png" />
+    <Content Include="App_Themes\DefaultV2\Images\delete.png" />
+    <Content Include="App_Themes\DefaultV2\Images\dho.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\done.png" />
+    <Content Include="App_Themes\DefaultV2\Images\excel.gif" />
+    <Content Include="App_Themes\DefaultV2\Images\ex_excel.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\FF.png" />
+    <Content Include="App_Themes\DefaultV2\Images\g_01.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\g_02.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\g_menuleft.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\g_menuright.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\htab.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\htab_l.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\icAlert.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icFF.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icIE.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icon-affiliateslist-big.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icon13.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icon_closeOV.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icon_delete.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icon_disable.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icon_edit.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icon_header.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icon_home01.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icon_home02.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icon_refresh.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icon_report.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icon_search.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icon_tb01.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\icon_tb02.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\icon_top.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icon_view.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icPass.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\icPass.png" />
+    <Content Include="App_Themes\DefaultV2\Images\icUser.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\icUser.png" />
+    <Content Include="App_Themes\DefaultV2\Images\ic_arr.gif" />
+    <Content Include="App_Themes\DefaultV2\Images\IE.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_admin.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_affiliateslist.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_commg.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_customer.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_disableSport.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_domain.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\i_email_history.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_enableSport.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_ex_rate.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_home.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_media1.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_member.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_message.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_pay_re.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_report.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_settings.png" />
+    <Content Include="App_Themes\DefaultV2\Images\i_tran.png" />
+    <Content Include="App_Themes\DefaultV2\Images\left_btleft.gif" />
+    <Content Include="App_Themes\DefaultV2\Images\left_button.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\lgBg.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\lgBg1.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\lgFtleft.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\lgFtright.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\lgFtrp.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\lgLeft.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\lgLogo.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\lgRight.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\lgRp.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\line_left02.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\line_left03.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\line_popup.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\loader3.gif" />
+    <Content Include="App_Themes\DefaultV2\Images\loading.gif" />
+    <Content Include="App_Themes\DefaultV2\Images\login-background.png" />
+    <Content Include="App_Themes\DefaultV2\Images\loginform.png" />
+    <Content Include="App_Themes\DefaultV2\Images\login_bgcenter.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\login_bgmain.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\login_butt.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\login_icon01.png" />
+    <Content Include="App_Themes\DefaultV2\Images\login_icon02.png" />
+    <Content Include="App_Themes\DefaultV2\Images\login_logo.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\login_welc.png" />
+    <Content Include="App_Themes\DefaultV2\Images\logo.png" />
+    <Content Include="App_Themes\DefaultV2\Images\main_left.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\main_right.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\note_01.png" />
+    <Content Include="App_Themes\DefaultV2\Images\Panel_bg.png" />
+    <Content Include="App_Themes\DefaultV2\Images\popup_01.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\popup_menu01.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\popup_menu02.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\pop_bgcenter.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\right_btleft.gif" />
+    <Content Include="App_Themes\DefaultV2\Images\right_btleft.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\right_button.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\sry.png" />
+    <Content Include="App_Themes\DefaultV2\Images\table_left.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\TabsLeftKtHeader.gif" />
+    <Content Include="App_Themes\DefaultV2\Images\task.png" />
+    <Content Include="App_Themes\DefaultV2\Images\tbl_icon01.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\tbl_icon02.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\tbl_m.jpg" />
+    <Content Include="App_Themes\DefaultV2\Images\uncheck.gif" />
+    <Content Include="App_Themes\DefaultV2\left.css" />
+    <Content Include="App_Themes\DefaultV2\login\login.css" />
+    <Content Include="App_Themes\DefaultV2\undermaintenance\images\bg.png" />
+    <Content Include="App_Themes\DefaultV2\undermaintenance\images\icon.png" />
+    <Content Include="App_Themes\DefaultV2\undermaintenance\images\logo.png" />
+    <Content Include="App_Themes\DefaultV2\undermaintenance\images\sry.png" />
+    <Content Include="App_Themes\DefaultV2\undermaintenance\style.css" />
+    <Content Include="App_Themes\Default\Common.css" />
+    <Content Include="App_Themes\Default\Customer.css" />
+    <Content Include="App_Themes\Default\ImageEmail\bg.png" />
+    <Content Include="App_Themes\Default\ImageEmail\top.jpg" />
+    <Content Include="App_Themes\Default\Images\18up.gif" />
+    <Content Include="App_Themes\Default\Images\1x1.gif" />
+    <Content Include="App_Themes\Default\Images\banner_img.jpg" />
+    <Content Include="App_Themes\Default\Images\banner_join.jpg" />
+    <Content Include="App_Themes\Default\Images\banner_live2.jpg" />
+    <Content Include="App_Themes\Default\Images\bg_button.gif" />
+    <Content Include="App_Themes\Default\Images\bg_center.gif" />
+    <Content Include="App_Themes\Default\Images\bg_footer.gif" />
+    <Content Include="App_Themes\Default\Images\bg_info.gif" />
+    <Content Include="App_Themes\Default\Images\bg_left.gif" />
+    <Content Include="App_Themes\Default\Images\bg_left.jpg" />
+    <Content Include="App_Themes\Default\Images\bg_leftbottom.jpg" />
+    <Content Include="App_Themes\Default\Images\bg_lefttop.jpg" />
+    <Content Include="App_Themes\Default\Images\bg_top.gif" />
+    <Content Include="App_Themes\Default\Images\box_bg.gif" />
+    <Content Include="App_Themes\Default\Images\bt.jpg" />
+    <Content Include="App_Themes\Default\Images\btn_icon.gif" />
+    <Content Include="App_Themes\Default\Images\btn_icon2.gif" />
+    <Content Include="App_Themes\Default\Images\button.gif" />
+    <Content Include="App_Themes\Default\Images\button_over.gif" />
+    <Content Include="App_Themes\Default\Images\b_01.jpg" />
+    <Content Include="App_Themes\Default\Images\b_022.jpg" />
+    <Content Include="App_Themes\Default\Images\cal.gif" />
+    <Content Include="App_Themes\Default\Images\conts_box002.gif" />
+    <Content Include="App_Themes\Default\Images\conts_box01.gif" />
+    <Content Include="App_Themes\Default\Images\conts_box02.gif" />
+    <Content Include="App_Themes\Default\Images\delete.gif" />
+    <Content Include="App_Themes\Default\Images\edit.gif" />
+    <Content Include="App_Themes\Default\Images\emsg_1_1.jpg" />
+    <Content Include="App_Themes\Default\Images\emsg_1_2.jpg" />
+    <Content Include="App_Themes\Default\Images\emsg_1_3.jpg" />
+    <Content Include="App_Themes\Default\Images\emsg_2_1.jpg" />
+    <Content Include="App_Themes\Default\Images\emsg_2_2.jpg" />
+    <Content Include="App_Themes\Default\Images\emsg_3_1.jpg" />
+    <Content Include="App_Themes\Default\Images\emsg_3_2.jpg" />
+    <Content Include="App_Themes\Default\Images\emsg_3_3.jpg" />
+    <Content Include="App_Themes\Default\Images\excel.gif" />
+    <Content Include="App_Themes\Default\Images\FC_logo.gif" />
+    <Content Include="App_Themes\Default\Images\footer_bg.gif" />
+    <Content Include="App_Themes\Default\Images\frbg58.gif" />
+    <Content Include="App_Themes\Default\Images\frbg581.gif" />
+    <Content Include="App_Themes\Default\Images\frbg582_1.gif" />
+    <Content Include="App_Themes\Default\Images\global_bg.gif" />
+    <Content Include="App_Themes\Default\Images\gradient_panel.gif" />
+    <Content Include="App_Themes\Default\Images\gradient_panelsurround.gif" />
+    <Content Include="App_Themes\Default\Images\gradient_tcat.gif" />
+    <Content Include="App_Themes\Default\Images\g_01.jpg" />
+    <Content Include="App_Themes\Default\Images\g_02.jpg" />
+    <Content Include="App_Themes\Default\Images\hd_bg.gif" />
+    <Content Include="App_Themes\Default\Images\hot_news.gif" />
+    <Content Include="App_Themes\Default\Images\icon_01.jpg" />
+    <Content Include="App_Themes\Default\Images\icon_02.jpg" />
+    <Content Include="App_Themes\Default\Images\icon_03.jpg" />
+    <Content Include="App_Themes\Default\Images\icon_dotbu.gif" />
+    <Content Include="App_Themes\Default\Images\icon_h1arrow.gif" />
+    <Content Include="App_Themes\Default\Images\icon_h1rbg.gif" />
+    <Content Include="App_Themes\Default\Images\ic_arr.gif" />
+    <Content Include="App_Themes\Default\Images\ic_close.jpg" />
+    <Content Include="App_Themes\Default\Images\ic_close_over.jpg" />
+    <Content Include="App_Themes\Default\Images\ic_del.jpg" />
+    <Content Include="App_Themes\Default\Images\ic_del.png" />
+    <Content Include="App_Themes\Default\Images\ic_error_msg.gif" />
+    <Content Include="App_Themes\Default\Images\ic_lock.gif" />
+    <Content Include="App_Themes\Default\Images\ic_lock.jpg" />
+    <Content Include="App_Themes\Default\Images\ic_lock.png" />
+    <Content Include="App_Themes\Default\Images\ic_lock1.jpg" />
+    <Content Include="App_Themes\Default\Images\ic_reset.gif" />
+    <Content Include="App_Themes\Default\Images\ic_reset.png" />
+    <Content Include="App_Themes\Default\Images\ic_warning.gif" />
+    <Content Include="App_Themes\Default\Images\left_btleft.gif" />
+    <Content Include="App_Themes\Default\Images\line_left02.jpg" />
+    <Content Include="App_Themes\Default\Images\line_left03.jpg" />
+    <Content Include="App_Themes\Default\Images\loader3.gif" />
+    <Content Include="App_Themes\Default\Images\login_code.jpg" />
+    <Content Include="App_Themes\Default\Images\logo.gif" />
+    <Content Include="App_Themes\Default\Images\more.gif" />
+    <Content Include="App_Themes\Default\Images\navbg.gif" />
+    <Content Include="App_Themes\Default\Images\navbg2.gif" />
+    <Content Include="App_Themes\Default\Images\navbg3.gif" />
+    <Content Include="App_Themes\Default\Images\navbg_new.gif" />
+    <Content Include="App_Themes\Default\Images\right_btleft.gif" />
+    <Content Include="App_Themes\Default\Images\sitenav.gif" />
+    <Content Include="App_Themes\Default\Images\sitenav1.gif" />
+    <Content Include="App_Themes\Default\Images\spacer.gif" />
+    <Content Include="App_Themes\Default\Images\subnav_foot.gif" />
+    <Content Include="App_Themes\Default\Images\subnav_footer.gif" />
+    <Content Include="App_Themes\Default\Images\t1.gif" />
+    <Content Include="App_Themes\Default\Images\TabsCenter.gif" />
+    <Content Include="App_Themes\Default\Images\TabsCenter3.gif" />
+    <Content Include="App_Themes\Default\Images\TabsLeft.gif" />
+    <Content Include="App_Themes\Default\Images\TabsLeft1.gif" />
+    <Content Include="App_Themes\Default\Images\TabsLeft3.gif" />
+    <Content Include="App_Themes\Default\Images\TabsLeftKtHeader.gif" />
+    <Content Include="App_Themes\Default\Images\TabsRight.gif" />
+    <Content Include="App_Themes\Default\Images\TabsRight1.gif" />
+    <Content Include="App_Themes\Default\Images\TabsRight2.gif" />
+    <Content Include="App_Themes\Default\Images\TabsRight3.gif" />
+    <Content Include="App_Themes\Default\Images\TabsRightKtHeader.gif" />
+    <Content Include="App_Themes\Default\Images\tab_th03.gif" />
+    <Content Include="App_Themes\Default\Images\tab_th03_1.gif" />
+    <Content Include="App_Themes\Default\Images\timelyinfobg.gif" />
+    <Content Include="App_Themes\Default\Images\tool_icon.jpg" />
+    <Content Include="App_Themes\Default\Images\TreeViewImg.gif" />
+    <Content Include="App_Themes\Default\Images\UnderMaintenance.gif" />
+    <Content Include="App_Themes\Default\Images\warning.gif" />
+    <Content Include="App_Themes\Default\Images\x5.gif" />
+    <Content Include="App_Themes\error2.png" />
+    <Content Include="App_Themes\Aff.ico" />
+    <Content Include="Auth\Error.aspx" />
+    <Content Include="Banner\Basketball\ePBKu41Ywy.png" />
+    <Content Include="Banner\Basketball\lO2wy7fqEA.png" />
+    <Content Include="Banner\Basketball\QDml13dAie.png" />
+    <Content Include="Banner\Basketball\sar1B4uJUW.png" />
+    <Content Include="Banner\Basketball\WCxt06gwQP.png" />
+    <Content Include="Banner\Bonus\3.jpg" />
+    <Content Include="Banner\Error.aspx" />
+    <Content Include="Banner\index.html" />
+    <Content Include="Banner\SwfVersDetection.js" />
+    <Content Include="bin\Fanex.Web.Aoncash.Admin.dll" />
+    <Content Include="bin\Fanex.Web.Aoncash.Admin.pdb" />
+    <Content Include="ChangeAdminPass.aspx" />
+    <Content Include="ChangePass.aspx" />
+    <Content Include="Customer\AffDefault.aspx" />
+    <Content Include="Customer\AffiliateInfo.aspx" />
+    <Content Include="Customer\blank.html" />
+    <Content Include="Customer\Statistics.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Domain\MemberDomain.aspx" />
+    <Content Include="Domain\Add12BetDomain.aspx" />
+    <Content Include="Domain\AddAffiliateDomain.aspx" />
+    <Content Include="Domain\AffiliateDomain.aspx" />
+    <Content Include="Domain\DomainControl.aspx" />
+    <Content Include="Domain\DomainControlIns.aspx" />
+    <Content Include="Domain\DomainControlUpd.aspx" />
+    <Content Include="Domain\Edit12BetDomain.aspx" />
+    <Content Include="Domain\EditAffiliateDomain.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Exchange\AddExchanges.aspx" />
+    <Content Include="Exchange\AffEditRate.aspx" />
+    <Content Include="Exchange\AffRate.aspx" />
+    <Content Include="Exchange\AddAffCurrencies.aspx" />
+    <Content Include="Footer.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="GroupSetting\AddGroup.aspx" />
+    <Content Include="GroupSetting\AssignGroup.aspx" />
+    <Content Include="GroupSetting\EditGroup.aspx" />
+    <Content Include="GroupSetting\GroupSetting.aspx" />
+    <Content Include="Header.aspx" />
+    <Content Include="Home\Home.aspx" />
+    <Content Include="Media\AddText.aspx" />
+    <Content Include="Media\BannerDetail.aspx" />
+    <Content Include="Media\AddMediaBanner.aspx" />
+    <Content Include="Media\EditMediaBanner.aspx" />
+    <Content Include="Media\Listtext.aspx" />
+    <Content Include="Media\Listbanner.aspx" />
+    <Content Include="Others\EmailHistory.aspx" />
+    <Content Include="Others\Message.aspx" />
+    <Content Include="Others\ViewEmailDetails.aspx" />
+    <Content Include="Others\ViewMessDetails.aspx" />
+    <Content Include="Payment\PaymentRequest.aspx" />
+    <Content Include="Payment\PaymentUpdate.aspx" />
+    <Content Include="Report\AffiliateQMReport.aspx" />
+    <Content Include="Report\AffiliateQMReportDetail.aspx" />
+    <Content Include="Report\AffiliateReport.aspx" />
+    <Content Include="Report\AffiliateReportDetail.aspx" />
+    <Content Include="Report\Commission.aspx" />
+    <Content Include="Report\MemberReport.aspx" />
+    <Content Include="Report\MemberStatisticsReport.aspx" />
+    <Content Include="Report\MemberStatisticsReportDetail.aspx" />
+    <Content Include="Report\SignUpActive.aspx" />
+    <Content Include="Resources\Add.aspx" />
+    <Content Include="Resources\Default.aspx" />
+    <Content Include="Resources\Excel.aspx" />
+    <Content Include="Resources\Update.aspx" />
+    <Content Include="Resources\UploadExcel.aspx" />
+    <Content Include="Settings\Add.aspx" />
+    <Content Include="Settings\AffType.aspx" />
+    <Content Include="Settings\AffTypeUpdate.aspx" />
+    <Content Include="Settings\LanguageUpdate.aspx" />
+    <Content Include="Settings\Language.aspx" />
+    <Content Include="Settings\ProductUpdate.aspx" />
+    <Content Include="Settings\Product.aspx" />
+    <Content Include="Settings\CountryUpdate.aspx" />
+    <Content Include="Settings\Country.aspx" />
+    <Content Include="Settings\Default.aspx" />
+    <Content Include="Settings\Update.aspx" />
+    <Content Include="SignIn.aspx" />
+    <Content Include="SpName.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Test\BuilSpConfigXmlFile.aspx" />
+    <Content Include="Test\DepMemberDetailUpd.aspx" />
+    <Content Include="Test\Login2.jpg" />
+    <Content Include="Test\Resources.aspx" />
+    <Content Include="Test\ServiceApi.aspx" />
+    <Content Include="Test\test.aspx" />
+    <Content Include="Test\TestInternalLogin.aspx" />
+    <Content Include="UnderMaintenance.aspx" />
+    <Content Include="UserControl\AddDepartment.aspx" />
+    <Content Include="UserControl\AddUser.aspx" />
+    <Content Include="UserControl\AddUserExist.aspx" />
+    <Content Include="UserControl\EditAdminPolicy.aspx" />
+    <Content Include="UserControl\EditDepartment.aspx" />
+    <Content Include="UserControl\EditGroupPolicy.aspx" />
+    <Content Include="UserControl\EditUser.aspx" />
+    <Content Include="UserControl\ListDepartment.aspx" />
+    <Content Include="UserControl\ListUser.aspx" />
+    <Content Include="UserControl\ListUserInDept.aspx" />
+    <Content Include="UserControl\UpdateMultiAdmins.aspx" />
+    <Content Include="UserInfo\AddMemberToAffiliate.aspx" />
+    <Content Include="UserInfo\AddNote.aspx" />
+    <Content Include="UserInfo\Adjustment.aspx" />
+    <Content Include="UserInfo\AffiliateList.aspx" />
+    <Content Include="UserInfo\AffiliateUpd.aspx" />
+    <Content Include="UserInfo\DailyEarning.aspx" />
+    <Content Include="UserInfo\DailyEarningDetail.aspx" />
+    <Content Include="UserInfo\EarningsHistory.aspx" />
+    <Content Include="UserInfo\MediaStatistics.aspx" />
+    <Content Include="UserInfo\MediaStatistics_LandingPage.aspx" />
+    <Content Include="UserInfo\MediaStatistics_New.aspx" />
+    <Content Include="UserInfo\MemberList.aspx" />
+    <Content Include="UserInfo\MemberListAll.aspx" />
+    <Content Include="UserInfo\Note.aspx" />
+    <Content Include="UserInfo\PlayersDetail.aspx" />
+    <Content Include="UserInfo\UserLog.aspx" />
+    <Content Include="WhoamI.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Banner\web.config" />
+    <Content Include="Auth\ProcessLogin.ashx" />
+    <Content Include="Auth\ReCheckIn.ashx" />
+    <Content Include="Abc.ashx" />
+    <Content Include="App_Templates\UserInfo\Master3.master" />
+    <None Include="ExcelFiles\Translations.xls" />
+    <Content Include="Handler\AccountPolicy.ashx" />
+    <Content Include="Handler\AddMemberToAffiliate.ashx" />
+    <Content Include="Handler\AddMessage.ashx" />
+    <Content Include="Handler\UploadExcel.ashx" />
+    <Content Include="Handler\GetClickStatisticsList.ashx" />
+    <Content Include="Handler\CopyRate.ashx" />
+    <Content Include="Handler\DelBanner.ashx" />
+    <Content Include="Handler\DeleteMailList.ashx" />
+    <Content Include="Handler\DeleteMember.ashx" />
+    <Content Include="Handler\DeleteMessageList.ashx" />
+    <Content Include="Handler\EditRate.ashx" />
+    <Content Include="Handler\Favorite.ashx" />
+    <Content Include="Handler\GetAffiliateList.ashx" />
+    <Content Include="Handler\AddNewBannerV2.ashx" />
+    <Content Include="Handler\AddUser.ashx" />
+    <Content Include="Handler\Adjustment.ashx" />
+    <Content Include="Handler\ChangeAdminPass.ashx" />
+    <Content Include="Handler\ChangePass.ashx" />
+    <Content Include="Handler\CommGroupAssign.ashx" />
+    <Content Include="Handler\CommGroupDel.ashx" />
+    <Content Include="Handler\CommGroupUpd.ashx" />
+    <Content Include="Handler\GetDataBanner.ashx" />
+    <Content Include="Handler\GetViewedBanner.ashx" />
+    <Content Include="Handler\GetStatisticsListDetail.ashx" />
+    <Content Include="Handler\GetOnlineList.ashx" />
+    <Content Include="Handler\GetMessageList.ashx" />
+    <Content Include="Handler\GetMessage.ashx" />
+    <Content Include="Handler\GetEmailHistoryList.ashx" />
+    <Content Include="Handler\GetEmailContent.ashx" />
+    <Content Include="Handler\GetEditedBanner.ashx" />
+    <Content Include="Handler\ResourceHandler.ashx" />
+    <Content Include="Handler\PaymentUpdate.ashx" />
+    <Content Include="Handler\Note.ashx" />
+    <Content Include="Handler\Logout.ashx" />
+    <Content Include="Handler\ListUser.ashx" />
+    <Content Include="Handler\GroupPolicy.ashx" />
+    <Content Include="Handler\UpdateUser.ashx" />
+    <Content Include="Handler\UpdateDepartment.ashx" />
+    <Content Include="Handler\UpdateAcc.ashx" />
+    <Content Include="Handler\UpdAffInfo.ashx" />
+    <Content Include="Handler\ToggleLockedOut.ashx" />
+    <Content Include="Handler\SettingHandler.ashx" />
+    <Content Include="Handler\ToggleAutoUpdateRate.ashx" />
+    <Content Include="Handler\UpdateStatus.ashx" />
+    <Content Include="Handler\UpdatePolicy.ashx" />
+    <Content Include="Handler\GetStatisticsDetail_New.ashx" />
+    <Content Include="Handler\UpdateMemberDomain.ashx" />
+    <Content Include="Handler\UpdateAffDomain.ashx" />
+    <Content Include="Handler\CountryHandler.ashx" />
+    <Content Include="Handler\ProductHandler.ashx" />
+    <Content Include="Handler\LanguageHandler.ashx" />
+    <Content Include="Handler\AddNewBannerText.ashx" />
+    <Content Include="Handler\UpdateBannerText.ashx" />
+    <Content Include="Handler\DelBannerText.ashx" />
+    <Content Include="Handler\GetDataBannerText.ashx" />
+    <Content Include="Handler\GetSubCategory.ashx" />
+    <Content Include="Handler\UpdateMediaBanner.ashx" />
+    <Content Include="Handler\DomainControl.ashx" />
+    <Content Include="Handler\AffTypeHandler.ashx" />
+    <Content Include="Handler\AddExchanges.ashx" />
+    <Content Include="Handler\AddAffCurrencies.ashx" />
+    <Content Include="Handler\UpdateAffType.ashx" />
+    <Content Include="Handler\SetLanguage.ashx" />
+    <Content Include="Handler\GetCurrencyMultipliedByNotification.ashx" />
+    <None Include="Logs\trace.log" />
+    <None Include="Web.info" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Fanex.Affiliate.Core.Admin\Fanex.Affiliate.Core.Admin.csproj">
+      <Project>{DBB9E4D6-5367-476D-B6B3-4A2CCBBA390D}</Project>
+      <Name>Fanex.Affiliate.Core.Admin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fanex.Affiliate.Core\Fanex.Affiliate.Core.csproj">
+      <Project>{DC16D5A8-4B5D-41BC-AA2D-73FC0D4D20DD}</Project>
+      <Name>Fanex.Affiliate.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fanex.Affiliate.DataObjects\Fanex.Affiliate.DataObjects.csproj">
+      <Project>{19E7E5C6-C708-4523-9955-92D66277242D}</Project>
+      <Name>Fanex.Affiliate.DataObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fanex.Affiliate.Model\Fanex.Affiliate.Model.csproj">
+      <Project>{A5906117-3D22-425E-8CE0-FB4649A9BE83}</Project>
+      <Name>Fanex.Affiliate.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fanex.Affiliate.Resources\Fanex.Affiliate.Resources.csproj">
+      <Project>{791B3B16-82E3-43E7-A1F9-9EE3DD81C290}</Project>
+      <Name>Fanex.Affiliate.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fanex.Core\Fanex.Core.csproj">
+      <Project>{3ED9773E-7B3E-486F-831B-D8E31B0719B1}</Project>
+      <Name>Fanex.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64693</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

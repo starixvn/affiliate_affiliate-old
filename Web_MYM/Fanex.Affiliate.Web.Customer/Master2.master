@@ -1,0 +1,58 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="Fanex.Web.MYM.Customer.Master2" Codebehind="Master2.master.cs" %>
+<%@ Register Src="~/Controls/Header.ascx" TagName="CHeader" TagPrefix="mod" %>
+<%@ Register Src="~/Controls/Footer.ascx" TagName="CFooter" TagPrefix="mod" %>
+<%@ Import Namespace="Fanex.Affiliate.Core" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+	<title>mymbet Affiliates Program</title>
+	<script type="text/javascript">AC_FL_RunContent = 0;</script>
+	<script src="<%=AppSettings.FullDomainName%>/App_Js/AC_RunActiveContent.js?version=<%=AppSettings.JsVersion%>" type="text/javascript"></script>
+</head>
+<body>
+	<div style="background-color:White;">       
+		<style type="text/css">
+			.root-left{
+				width:200px;
+				float:left;
+				margin-top:5px
+			}
+			.root-main
+			{
+				height: auto;
+				width:930px;
+				float:left;
+				margin:5px;            
+			}
+			.clear{
+				clear:both;
+			}
+			<%if(Fanex.Affiliate.Core.AppSession.Language == "zh-TW" || Fanex.Affiliate.Core.AppSession.Language == "zh-CN"){%>
+			body, select, input, span, div, td, a
+			{
+				font-weight:normal !important
+			}
+			<%}%>
+		</style>
+		<script language="javascript" type="text/javascript" src="<%=AppSettings.FullDomainName%>/App_Js/prototype.js?version=<%=AppSettings.JsVersion%>"></script>
+		<script language="javascript" type="text/javascript" src="<%=AppSettings.FullDomainName%>/App_Js/Common.js??version=<%=AppSettings.JsVersion%>"></script>
+		<script language="javascript" type="text/javascript" src="<%=AppSettings.FullDomainName%>/App_Js/login.js??version=<%=AppSettings.JsVersion%>"></script>
+	</div>
+   <div id="container">        
+		<%--<mod:CHeader runat="server" ID="Header1" />       --%> 
+		<div class="root-main">
+			<asp:ContentPlaceHolder ID="MainContent" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+		<div class="clear"></div>
+		<div id="footer">
+			<mod:CFooter runat="server" ID="Footer1" />
+		</div>
+		<div class="red_line"></div>
+	</div>
+
+</body>
+</html>

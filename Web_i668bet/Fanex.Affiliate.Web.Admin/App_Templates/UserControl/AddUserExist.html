@@ -1,0 +1,38 @@
+<div class="padl0">
+	<div id="errMsg" style="display:none; width:200px; margin-bottom:10px;">
+		<div id="error_item">
+			<ul>
+				<li>
+					<a class="err-msg" id="error_msg"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+    <div id="divContent" class="pcontent" style="width: 250px;">
+        <table border="0" cellpadding="0" cellspacing="3">
+            <tr align="left">
+                <td style="width: 70px; padding-left:20px;">
+                {username}
+                </td>
+                <td>
+                    <input type="text" id="username" name="username" onkeypress="EnterExecUser(event);" />
+                </td>
+                </tr>
+                <tr align="left">
+                <td style="width: 70px; padding-left:20px;">
+                {department}
+                </td>
+                <td>
+                    <select id="dep" name="dep">
+                        {option}
+                    </select>
+                    </td>
+            </tr>
+        </table>
+	</div>
+	<div style="margin-top:5px;">
+	    <input type="button" value="{Add}" class="buttonlogin" id="btnadd" name="btnadd" style="cursor:pointer;width:50px;" onclick="Exec_NewUser(1);" />&nbsp;
+                    <input type="button" value="{Cancel}" class="buttonlogin" id="btncancel" name="btncancel" style="cursor:pointer;width:50px;" onclick="Reset();" />
+	</div>
+</div>
+

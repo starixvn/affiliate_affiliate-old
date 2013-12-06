@@ -1,0 +1,41 @@
+<script type="text/javascript">
+    var paththeme = "{paththeme}";
+</script>
+
+<div class="padl0">
+    <div id="errMsg" style="display: none; margin: 3px 0; width:254px">
+        <div id="error_item">
+            <ul>
+                <li><a class="err-msg" id="error_msg"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="pcontent">
+        <table class="tblPass" bordercolor="#d4d0c8" width="100%">
+            <tr>
+                <td class="right">
+                    {Department}
+                </td>
+                <td class="left" id="td_pass">
+                    <input id="txtdep" type="text" name="txtdep" class="textbox" value="{DepartmentName}"
+                        onkeypress="return PreExec(event,{depid});" />
+                </td>
+            </tr>
+            <tr>
+                <td class="right">
+                    {Description}
+                </td>
+                <td class="left" id="td_confirm">
+                    <input id="txtdesc" type="text" name="txtdesc" class="textbox" value="{DesciptionName}"
+                        onkeypress="PreExec(event,{depid})" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="l" style="height:20px; padding:3px 0px 0px 0px;">
+        <input type="button" name="btnSubmit" value="{submit}" id="btnSubmit" class="buttonlogin"
+            onclick="EditDepartment({depid})" />&nbsp;
+        <input name="btnCancel" id="btnCancel" type="button" onclick="parent.CloseDiv();"
+            class="buttonlogin" value="{cancel}" />
+    </div>
+</div>

@@ -1,0 +1,68 @@
+﻿<!--subject-->Hội viên {systemname} - Chi tiết đăng nhập của bạn<!--/subject-->
+<table width="100%">    
+    <tr>
+        <td valign="top" align="center" background="{rooturl}/App_Themes/Default/ImageEmail/bg.png">
+            <table width="588" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td height="77" background="{rooturl}/App_Themes/Default/ImageEmail/top.jpg"></td>
+                </tr>
+                <tr height="3">
+                    <td height="3"></td>
+                </tr>
+                <tr height="25">
+                    <td bgcolor="#ff9933">
+                        &nbsp;&nbsp;
+                        <strong style="color: rgb(0, 0, 0);">
+                            <font style="font-size: 11px; font-family: Verdana,Arial,Helvetica,sans-serif; text-transform: uppercase;">
+                                Chi tiết đăng nhập của bạn
+                            </font>
+                        </strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff"> 
+                        <br />
+                        <table style="text-align:left" width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="15">&nbsp;</td>
+                                <td>
+                                    <font style="font-size: 12px; font-family: Verdana,Arial,Helvetica,sans-serif; line-height: 22px;">
+                                        <strong>Kính gửi {fname},</strong><br /><br />
+
+                                        Bạn đã yêu cầu chúng tôi phục hồi tên tài khoản và mật mã của bạn. Xin hãy nhấp vào liên kết dưới đây, mật mã mới sẽ được gửi đến cho bạn trong thời gian sớm nhất.<br />
+                                        <a href='{url}?uid={idcust}&vid={code}'>{url}?uid={idcust}&vid={code}</a><br /><br />
+
+                                        Xin lưu ý:<br />
+                                        *Tên tài khoản là: {username}<br />
+                                        *Vì lý do an toàn, chúng tôi phải cung cấp cho bạn mật mã mới (bạn có thể đổi mật mã bất cứ khi nào).<br />
+                                        *Liên kết trên sẽ hết hạn và vô hiệu trong vòng 24 tiếng.<br /><br />
+
+                                        Xin chân thành cám ơn.<br /><br />
+
+                                        Bộ phận liên kết {systemname}<br />
+                                        <a href="mailto:{mailadd}">{mailadd}</a>
+                                    </font>
+                                </td>
+                                <td width="15">&nbsp;</td>
+                            </tr>
+                        </table>     <br />  
+                    </td>
+                </tr>  
+                <tr>
+                    <td align="right" bgcolor="#d7d7d7" height="25">
+                        <font style="font-size: 11px; color: #333333; font-family: Verdana,Arial,Helvetica,sans-serif;">
+                            copyright © <a href="www.{systemname}.com">www.{systemname}.com</a>
+                        </font>
+                    </td>
+                </tr>  
+                <tr height="40">
+                    <td align="center" bgcolor="#ff9933">
+                        <font style="font-size: 12px; color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif;">
+                            Đây là lá thư tự động do hệ thống gửi, xin vui lòng không trả lời trực tiếp lá thư này.
+                        </font>
+                    </td>
+                </tr>            
+            </table>
+        </td>
+    </tr>    
+</table>

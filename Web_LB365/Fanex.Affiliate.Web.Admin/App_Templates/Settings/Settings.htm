@@ -1,0 +1,392 @@
+﻿<style type="text/css">
+    .text_hotnews
+    {
+        color: #0079FF;
+        font-family: Verdana,Geneva,sans-serif;
+        font-size: 11px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    .text_hotnews_important
+    {
+        color: Red; /* #0099FF;*/
+        font-family: Verdana,Geneva,sans-serif;
+        font-size: 11px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    .link_hotnews
+    {
+        vertical-align: top;
+        display: block;
+        text-decoration: none;
+    }
+</style>
+
+<script type="text/javascript">
+    var curMsgID=-1;
+    window.onload = Init;
+    var addEditTpl;
+    var listChk;
+    function Init() {   
+        listChk = $$("div .chk");
+        for(var i = 0; i < listChk.length; i++)
+        {
+            listChk[i].observe('click', chkOnclick);
+        } 
+    }
+    function chkOnclick(event)
+    {
+        var element = Event.element(event);
+        if(element.hasClassName("ic-check"))
+            element.className = "chk ic-uncheck";
+        else
+            element.className = "chk ic-check";
+    }
+    
+    function checkAll(isCheckAll) {
+        listChk = $$("div .chk");
+        var i = 0;
+        if (isCheckAll)
+            for (i = 0; i < listChk.length; i++) {
+                if (listChk[i].id != "chkDate")
+                    listChk[i].className = "chk ic-check";
+            }
+        else
+            for (i = 0; i < listChk.length; i++) {
+                if (listChk[i].id != "chkDate")
+                    listChk[i].className = "chk ic-uncheck";
+            }
+    }
+    
+    function EnableDisableSearchDate(chkbox) {
+        /*Enable search by date */
+        if (chkbox.checked) {
+            
+            $("fdate").disabled = false;
+            $("tdate").disabled = false;
+            $("fdateTrigger").disabled = false;
+            $("tdateTrigger").disabled = false;
+
+            Calendar.setup({
+                inputField: "fdate",
+                ifFormat: "%m/%d/%Y",
+                button: "fdateTrigger",
+                singleClick: true,
+                showsTime: false,
+                showOthers : true,
+                step : 1
+            });
+
+            Calendar.setup({
+                inputField: "tdate",
+                ifFormat: "%m/%d/%Y",
+                button: "tdateTrigger",
+                singleClick: true,
+                showsTime: false,
+                showOthers : true,
+                step : 1
+            });
+       
+        }
+        else {/*Disable search by date */
+            $("fdate").disabled = true;
+            $("tdate").disabled = true;
+            $("fdateTrigger").disabled = true;
+            $("tdateTrigger").disabled = true;
+            $("fdateTrigger").onclick = "";
+            $("tdateTrigger").onclick = "";            
+        }
+
+    }
+    function IsDate(str) {
+      try{
+         var myDate = new Date(dateString);
+         return true;
+      }catch(e)
+      {
+         return false;
+      }
+    }
+    function FixValidDate(obj) {
+        if (!IsDate(obj.value)) {
+            obj.value = ctrInput;
+        }
+    }
+    function NavigatePage(curPage) {
+        LoadMessageListData(curPage);
+    }
+    function LoadMessageListData(curPage) {
+        try {
+            var page = parseInt(curPage);
+         
+            var params, important, fromdate, todate;
+            important = $("slSearchOption").value;
+            fromdate = "";
+            todate = "";
+
+            if ($("chkDate").checked) {
+                fromdate = $("fdate").value;
+                todate = $("tdate").value; 
+            }
+            
+            params = "params=" + important + ";" + fromdate + ";" + todate + ";" + curPage;
+        
+            var ajax = new Ajax.Request("../Handler/GetMessageList.ashx", {
+                method: 'post',
+                parameters: params,
+                onComplete: function(data) {
+                    ProcessResult(data.responseText);
+                }
+            });
+        }
+        catch (e) {
+            alert(e);
+        }
+       
+
+    }
+    function ProcessResult(data) {
+        try {
+            var arr=data.split("$$$");
+            minNo=parseInt(arr[0]);
+            maxNo=parseInt(arr[1]);
+            var sXmlBody = "<table><tbody id='result'>" + arr[2] + "</tbody></table>";
+            var tempDiv = document.createElement("DIV");
+            tempDiv.innerHTML = sXmlBody;
+            $("tblResult").removeChild($("result"));
+            $("tblResult").appendChild(tempDiv.firstChild.firstChild);
+            /*$("chkAll").checked=false;*/
+            if(maxNo==0){
+                $("btnDelBottom").style.display="none";
+            }
+            else{
+                $("btnDelBottom").style.display="";
+            }
+            $("btnDelBottom").disabled=true;
+            Init();/*Initialize the state of all controls*/
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    function View(msgid){
+         try {
+            var params;
+            params = "params=" + msgid;
+            var ajax = new Ajax.Request("../Handler/GetMessage.ashx", {
+                method: 'post',
+                parameters: params,
+                onComplete: function(data) {
+                    ProcessResultView(data.responseText);
+                }
+            });
+
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    function HandlePopup(){
+        ClosePopup();        
+        if(typeof(addEditTpl)=='undefined'){                           
+            addEditTpl=$("msgInfo").innerHTML;
+            $("msgInfo").innerHTML="";
+        }            
+        ShowPopup(addEditTpl, '', 570, 410, 70, 50);
+    }
+    function ProcessResultView(data){
+         try {
+            if(data==""){
+                alert("Data has been changed by someone else.Please refresh data!");
+                return;
+            }
+            var arr=data.split("$$$");
+           HandlePopup();
+           if(arr[0]=="true"){
+                $("chkImportant").checked= true;
+            }
+            else
+            {
+                $("chkImportant").checked= false;
+            }             
+            $("txtMessageEn").value=arr[1];
+            $("txtMessageCn").value=arr[2];
+            $("txtMessageTw").value=arr[3];
+            $("txtMessageTh").value=arr[4];            
+            $("txtMessageEs").value=arr[5];            
+            $("msgID").innerHTML="&nbsp;({ID}=" + arr[6] + ")";
+            curMsgID=parseInt(arr[6]);
+            SetViewMode();
+        }
+        catch (e) {
+            alert(data);
+        }
+    }
+    
+    function DeleteSelectedMessage(){
+        var listChk = $$("div .chk");
+        var messageChecked = false;
+        var j=0;
+        for(j=0;j<listChk.length;j++)
+        {
+            if(listChk[j].hasClassName("ic-check")){
+                messageChecked = true;
+                break;
+            }
+        }
+        if(!messageChecked)
+        {
+            alert("{NoEmailSelected}");
+            return;
+        }
+        else{  
+            if(confirm("{ConfirmDeleteMessage}")){
+                var params="";
+                var i = 0;
+                var listAffID = "";
+                for(i = 0; i < listChk.length; i++)
+                {
+                    if(listChk[i].hasClassName("ic-check"))
+                        listAffID += listChk[i].id + ",";
+                }
+                params = listAffID;
+                DeleteMessage(params);
+                
+            }
+        }
+    }
+    function deleteConfigurations()
+    {
+        listChk = $$("div .chk");
+        var i = 0;
+        var settingList = new Array();
+        for(i = 0; i < listChk.length; i++)
+        {
+            if (listChk[i].hasClassName("ic-check")) {
+                settingList.push(listChk[i].id);
+            }
+        }
+        if(settingList.length > 0)
+        {
+            var answer = confirm("Are you sure you want to delete selected configuration(s)?");
+            if(answer)
+            {
+                
+                var ajax = new Ajax.Request("../Handler/SettingHandler.ashx", {
+                    method: 'post',
+                    parameters: "action=delete&key=" + settingList,
+                    onComplete: function(data) {
+                        if(data.responseText == 'True')
+                        {
+                            window.location.reload();
+                        }
+                        else
+                        {
+                            alert(data.responseText);
+                        }
+                    }
+                });
+                
+            }
+            else
+            {
+                return;
+            }
+        }
+        else
+        {
+            alert('Please select configuration(s) first!');
+        }
+        
+    }
+</script>
+
+<div class="padl0">
+    {submenu}
+    <!-- Search -->
+    <form id="frmSearch" method="get">
+    <div id="search_cont">
+        <table cellspacing="0" cellpadding="3" border="0">
+            <tr>
+                <td>
+                    Search by Key &nbsp;
+                    <input type="text" id="query" name="query" size="13" value="{query}" />
+                </td>
+                <td>
+                    {Value} &nbsp;
+                    <input type="text" id="value" name="value" size="13" value="{value}" />
+                </td>
+                <td>
+                    {type} &nbsp;
+                    <select id="type" name="type">
+                        {Types}
+                    </select>
+                </td>
+                <td >
+                    <input type="submit" value="{Submit}" id="btnSubmit" name="{Submit}" class="buttonlogin"
+                        onclick="LoadData(1);" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <input type="hidden" id="timer" name="timer" value="{timer-val}" />
+    <input type="hidden" id="page" name="page" value="{page}" />
+    <input type="hidden" id="pagesize" name="pagesize" value="{pagesize}" />
+    </form>
+    <!-- /Search -->
+    {paging-top}
+    <table class="aff-table" cellspacing="1" cellpadding="3" width="1100px" id="tblResult">
+        <tr>
+            <th style="width:16px;">&nbsp;</th>
+            <th style="width:20px;">&nbsp;</th>
+            <th>
+                Key
+            </th>
+            <th>
+                {type}
+            </th>
+            <th>
+                {Value}
+            </th>
+            <th>
+                {Description}
+            </th>
+            <th>
+                {Update}
+            </th>
+        </tr>
+        <tbody id="result">
+            <!--Content-->
+            <tr bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'">
+                <td class="c">
+                    <div id="{ID-val}" class="chk ic-uncheck"/>
+                </td>
+                <td class="c">
+                    {No-val}
+                </td>
+                <td class="l">
+                    {SName-val}
+                </td>
+                <td class="l">
+                    {SType-val}
+                </td>
+                <td class="l">
+                    {SValue-val}
+                </td>
+                <td class="l">
+                    {SDescription-val}
+                </td>
+                <td class="c">
+                    <span class="icedit" onclick="DoCal('Update.aspx?id={ID-val}','Update configuration', 630, 600);" title="{Update}"></span>
+                </td>
+            </tr>
+            <!--/Content-->
+        </tbody>
+    </table>
+    {paging-bottom}
+    <div style="margin-top:5px; height:20px;">
+        <a class="abutton" href="javascript:;" onclick="javascript:deleteConfigurations();"><span>{Delete}</span></a>
+        <a class="abutton" href="javascript:;" onclick="javascript:DoCal('Add.aspx','Add new configuration', 630, 600)"><span>{Add}</span></a>
+    </div>
+</div>

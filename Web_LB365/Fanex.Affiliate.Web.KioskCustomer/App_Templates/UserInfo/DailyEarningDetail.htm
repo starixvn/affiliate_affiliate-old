@@ -1,0 +1,67 @@
+﻿<form id="frmData" method="get">
+<div id="contents">
+    <div id="box_insite">
+        <div class="header_in">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tr>                     
+                    <td width="144" class="in_top">{DailyEarningDetail}</td>
+                    <td class="in_right">&nbsp;</td>
+                </tr>   
+            </table>
+        </div>
+        <div class="in_conts">
+            <div style="height: 5px;">
+                &nbsp;</div>
+            <table cellpadding="3" cellspacing="3">
+                <tr valign="top">
+                    <td>{slSports}</td>
+                    <td>{selectdate}</td>
+                    <td><input type="text" id="monthdate" name="monthdate" size="13" value="{monthdate}" readonly /></td>
+                    <td><img hspace="3" height="20" border="0" width="18" src="../App_Themes/Default/Images/cal.gif"
+                                id="fdateTrigger" /></td>
+                    <td> <input type="button" value="{Submit}" onclick="LoadData(1);" id="btnSubmit" name="{Submit}" class="button" /></td>
+                </tr>
+            </table>
+            <div style="height: 5px;">
+                &nbsp;</div>
+            <div class="tbl-box">
+                <table class="aff-table" cellspacing="1" cellpadding="1">
+                    <!--header-->
+                    <tr class="tblheader">
+                        <th style="width: 15px;">&nbsp;</th>
+                        <th>{username}</th>
+                        <th>{deposit}</th>
+                        <th>{turnover}</th>
+                        <th>{winlost}</th>
+                         <th>{bonus}</th>
+                        <th>{adjustment}</th>
+                    </tr>
+                    <!--/header-->
+                    <!--content-->
+                    <tr class="{style}" onmouseover="this.className=c;" onmouseout="this.className={style1};">
+                        <td class="c">{no}</td>
+                        <td class="l">{username-val}</td>
+                        <td class="r">{deposit-val}</td>
+                        <td class="r">{turnover-val}</td>
+                        <td class="r">{winlost-val}</td>
+                        <td class="r">{bonus-val}</td>
+                        <td class="r">{adjustment-val}</td>
+                    </tr>
+                    <!--/content-->
+                    <!--total-->
+                    <tr class="tblheader">
+                        <th class="c" colspan="2">{total}</th>
+                        <th class="r">{totaldeposit}</th>
+                        <th class="r">{totalturnover}</th>
+                        <th class="r">{totalwinlost}</th>
+                        <th class="r">{totalbonus}</th>
+                        <th class="r">{totaladjustment}</th>
+                    </tr>
+                    <!--/total-->
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+

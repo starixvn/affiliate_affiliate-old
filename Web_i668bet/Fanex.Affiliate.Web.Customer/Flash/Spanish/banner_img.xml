@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rotator isRandom="false">
+  <bannerTime>7600</bannerTime>
+  <numberOfBanners>4</numberOfBanners>
+  <banners showHeader="true">
+    <banner>
+      <name>1</name>
+      <body>nnt</body>
+      <imagePath>flash/Spanish/img/1.swf</imagePath>
+      <link>#</link>
+      <bannerTime>7700</bannerTime>
+    </banner>
+    <banner>
+      <name>2</name>
+      <body>nnt</body>
+      <imagePath>flash/Spanish/img/2.swf</imagePath>
+      <link>#</link>
+      <bannerTime>7600</bannerTime>
+    </banner>
+    <banner>
+      <name>3</name>
+      <body>nnt</body>
+      <imagePath>flash/Spanish/img/3.swf</imagePath>
+      <link>#</link>
+      <bannerTime>7600</bannerTime>
+    </banner>
+    <banner>
+      <name>4</name>
+      <body>nnt</body>
+      <imagePath>flash/Spanish/img/4.swf</imagePath>
+      <link>#</link>
+      <bannerTime>16500</bannerTime>
+    </banner>
+  </banners>
+</rotator>

@@ -1,0 +1,124 @@
+<script type="text/javascript">
+    function NewWindow(HtmlName, WinName, ToolOptions) {
+        window.open(HtmlName, WinName, ToolOptions);
+    }
+</script>
+
+<div class="padl0">
+    <div id="errMsg" style="display: none;" class="styleErrAddbanner">
+        <div id="error_item">
+            <ul>
+                <li><a class="err-msg" id="error_msg"></a></li>
+            </ul>
+        </div>
+    </div>
+    {submenu}
+    <div style="margin: 10px 0px 0px 1px">
+        <a href="javascript:DoCal('AddDepartment.aspx', 'Add Group',340, 190);" class="abutton">
+            <span>{AddDepartment}</span> </a>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="divContent" class="ContentBox" style="width: 860px;">
+        <table width="100%" border="0" cellpadding="0" cellspacing="2">
+            <tr>
+                <td>
+                    <div id="listuser" style="float: left;">
+                        <table class="aff-table" cellspacing="1" cellpadding="3" border="0" style="width: 700px">
+                            <tr>
+                                <th style="width: 20px">
+                                    &nbsp;
+                                </th>
+                                <th>
+                                    {Department}
+                                </th>
+                                <th style="width: 70px">
+                                    {NoOfUser}
+                                </th>
+                                <th>
+                                    {Description}
+                                </th>
+                                <th>
+                                    {RolePolicy}
+                                </th>
+                                <th>
+                                    {Edit}
+                                </th>
+                                <th>
+                                    {Del}
+                                </th>
+                            </tr>
+                            <!--content-->
+                            <tr bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'">
+                                <td class="c">
+                                    {No_Value}
+                                </td>
+                                <td>
+                                    {Department_Value}
+                                </td>
+                                <td>
+                                    <!--lmt-nouser-->
+                                    <a href="#" onclick="javascript:DoCal('ListUserInDept.aspx?depid={depid}&depname={Department_Value}', '{Department_Value}', 897, 600);">
+                                        {NoOfUser_Value}</a>
+                                    <!--/lmt-nouser-->
+                                </td>
+                                <td>
+                                    {Description_Value}
+                                </td>
+                                <td class="c">
+                                    <!--lmt-DepNone-->
+                                    <a href="#" onclick="javascript:DoCal('EditGroupPolicy.aspx?depid={depid}&depname={Department_Value}', 'Edit Policy: {Department_Value}', 445, 320);">
+                                        {RolePolicy_Value}</a>
+                                    <!--/lmt-DepNone-->
+                                </td>
+                                <td style="text-align: center;">
+                                    &nbsp;
+                                    <!--lmt-DepNone-->
+                                    <a class="icedit" href="javascript:DoCal('EditDepartment.aspx?depid={depid}', 'Edit',340, 190);"
+                                        style="cursor: pointer;" />
+                                    <!--/lmt-DepNone-->
+                                </td>
+                                <td style="text-align: center;">
+                                    <!--lmt-DepNone-->
+                                    <img border="0" src="../{themepath}/Images/delete.png" alt="Del" onclick="DelDepartment({depid},'{Department_Value}');"
+                                        style="cursor: pointer; text-align: center;" />
+                                    <!--/lmt-DepNone-->
+                                </td>
+                            </tr>
+                            <!--/content-->
+                        </table>
+                        <div style="margin: 3px 0px 0px 1px">
+                            <a href="javascript:DoCal('AddDepartment.aspx', 'Add Group',340, 190);" class="abutton">
+                                <span>{AddDepartment}</span> </a>
+                        </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="errMsg" style="display: none; margin-top: 10px; margin-bottom: -5px; width: 410px"
+                        class="styleErrAddbanner">
+                        <div id="error_item">
+                            <ul>
+                                <li><a class="err-msg" id="error_msg"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="listPolicy" style="float: left; margin-top: 5px;">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+<div style="display: none;" id="divEditDepartment" class="ChangePassBox">
+    <iframe frameborder="0" src="" id="ifrEditDepartment" name="ifrEditDepartment" class="ChangePassContent"
+        scrolling="no"></iframe>
+</div>
+<div style="display: none;" id="divChangeUser" class="ChangeUserBox">
+    <iframe frameborder="0" src="" id="ifrChangeUser" name="ifrChangeUser" class="ChangeUserContent"
+        scrolling="no"></iframe>
+</div>
+<input type="hidden" id="cfmchoose" name="cfmchoose" value="{ConfirmDelete}" />
+<input type="hidden" id="chooseAtLeast" name="chooseAtLeast" value="{ChooseAtLeast}" />
+<input type="hidden" id="AltStatusSucc" name="AltStatusSucc" value="{UpdateStaSucc}" />

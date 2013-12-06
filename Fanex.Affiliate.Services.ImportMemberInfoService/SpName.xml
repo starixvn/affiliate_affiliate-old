@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Functions>
+  <Function Name="Service">
+    <Setting Key="Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="affiliate" TimeOut="1200" />
+    <Setting Key="Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="affiliate" />
+    <Setting Key="Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="affiliate" />
+  </Function>
+  <Function Name="Common">
+    
+    <Setting Key="Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="affiliate" />
+    <Setting Key="Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="affiliate" />
+    <Setting Key="Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="affiliate" />
+    <Setting Key="Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="affiliate" />
+    <Setting Key="Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="affiliate" />
+    <Setting Key="Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="affiliate" />
+    <Setting Key="Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="affiliate" />
+    <Setting Key="Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="affiliate" />
+    <Setting Key="Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="affiliate" />
+    <Setting Key="Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="affiliate" />
+    <Setting Key="Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="affiliate" />
+    <Setting Key="Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="affiliate" />
+    <Setting Key="Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="affiliate" />
+    
+  </Function>
+</Functions>
+

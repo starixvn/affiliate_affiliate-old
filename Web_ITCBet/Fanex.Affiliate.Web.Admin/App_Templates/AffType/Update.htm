@@ -1,0 +1,65 @@
+﻿    <style type="text/css">   
+        #addsetting
+        {
+            margin-left:10px;
+        }
+        .vrow
+        {
+            margin-bottom:10px;
+        }
+        .vrow .label
+        {
+            margin-bottom:4px;
+        }
+        textarea, .input input
+        {
+            width:550px;
+        }       
+    </style>
+    <form id="addsetting">                    
+         <input id="id" type="hidden" disabled="disabled" value="{TypeID}" />            
+        <div class="vrow">
+            <div class="label">{Name}</div>
+            <div class="input">
+                <input id="name" type="text" value="{Name-val}" />
+            </div>
+        </div>                  
+         <div class="vrow">
+            <label class="label">{Description}</label>     
+            <div class="input">       
+                  <input id="description" type="text" value="{Description-val}" />
+            </div>
+        </div>   
+        <div class="vrow">
+            <a class="abutton" href="javascript:;" onclick="updateAffType();"><span id="submitText">{Action}</span></a>
+            <a class="abutton" href="javascript:;" onclick="ClosePopupNoReload();"><span id="Span1">{Cancel}</span></a>
+        </div>
+    </form>
+
+<script type="text/javascript">
+  
+    function updateAffType() 
+    {
+        var data = {
+            action: $("id").value!="" ? "update" : "add",
+            id: $F('id'),
+            name: $F('name'),
+            description: $F('description'),            
+        };      
+        
+        var ajax = new Ajax.Request("../Handler/AffTypeHandler.ashx", {
+            method: 'post',
+            parameters: data,
+            onComplete: function(data) {
+                if(data.responseText == 'True')
+                {
+                    ClosePopup();
+                }
+                else
+                {
+                    alert(data.responseText);
+                }
+            }
+        });
+    }
+</script>

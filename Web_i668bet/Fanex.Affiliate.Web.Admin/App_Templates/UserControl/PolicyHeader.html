@@ -1,0 +1,59 @@
+<form name="fUpdatePolicy" method="post" action="../Handler/UpdatePolicy.ashx">
+<input type="hidden" name="arrFuncId" id="arrFuncId" value="{funcid}" />
+<input type="hidden" name="groupId" id="groupId" value="{groupid}" />
+<input type="hidden" name="custId" id="custId" value="{custid}" />
+<input type="hidden" name="user" id="user" value="{arruser}" />
+<input type="hidden" name="dept" id="dept" value="{deptname}" />
+<input type="hidden" name="deptid" id="deptid" value="{deptid}" />
+<input type="hidden" name="islistuser" id="islistuser" value="{islistuser}" />
+<div class="padl0">
+    <div id="errMsg" style="display: none;" class="styleErrAddbanner">
+        <div id="error_item">
+            <ul>
+                <li><a class="err-msg" id="error_msg"></a></li>
+            </ul>
+        </div>
+    </div>
+    <table class="aff-table" cellpadding="3" cellspacing="1" border="0" style="width: 400px;
+        margin: 5px 0px 0px 5px;">
+        <tr class="report-header">
+            <th rowspan="2">
+                {Function}
+            </th>
+            <!--individual-->
+            <th colspan="2">
+                {IndividualPermission}
+            </th>
+            <!--/individual-->
+            <th colspan="2">
+                {GroupPermission}
+            </th>
+        </tr>
+        <tr class="report-header">
+            <th>
+                {Read}
+            </th>
+            <th>
+                {Host}
+            </th>
+            <!--individual-->
+            <th>
+                {Read}
+            </th>
+            <th>
+                {Host}
+            </th>
+            <!--/individual-->
+        </tr>
+        {content}
+    </table>
+    <!--no-update-->
+    <div class="l" style="height: 20px; padding: 5px 0px 0px 5px">
+        <input type="button" class="buttonlogin" onclick="GetCheck();" style="cursor: pointer;
+            margin-right: 10px" name="btnUpdate" id="btnUpdate" value="{Update}" />&nbsp;
+        <input type="button" class="buttonlogin" onclick="CancelUpd();" style="cursor: pointer;"
+            name="btnCancel" id="btnCancel" value="{Cancel}" />
+    </div>
+</div>
+<!--/no-update-->
+</form>

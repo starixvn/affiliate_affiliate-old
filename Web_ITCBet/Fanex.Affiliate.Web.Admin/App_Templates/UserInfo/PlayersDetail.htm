@@ -1,0 +1,49 @@
+﻿<form id="frmSearch" name="frmSearch" method="get">
+      {submenu}
+    <div  style="padding-right: 5px;">
+        <div id="search_cont">
+            <div id="header_search">
+                {ProductType}&nbsp;&nbsp;{slProducts}
+            </div>
+        </div>
+    </div>
+    
+    <div class="clear"></div>
+    {paging-top}      
+    <table class="aff-table" width="{width}px" cellspacing="1" cellpadding="3">
+        <tr class="title">
+            <th style="width: 20px;">&nbsp;</th>
+            <th style="width: 130px;">{username}</th>
+            <th>{turnover}</th>
+            <th>{winlost}</th>
+            <th>{withdrawal}</th>
+            <!--sportsbook-->
+            <th>{deposit}</th>
+            <th>{bonus}</th>
+            <th>{Adjustment}</th>
+            <th>{PSP}</th>
+            <th>{description}</th>
+            <!--/sportsbook-->
+        </tr>
+        <!--content-->
+        <tr bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'">
+            <td class="c">{no-val}</td>
+            <td>{username-val}</td>
+            <td class="r">{turnover-val}</td>
+            <td class="r">{winlost-val}</td>
+            <td class="r">{withdrawal-val}</td>
+            <!--sportsbook-->
+            <td class="r">{deposit-val}</td>
+            <td class="r">{bonus-val}</td>
+            <td class="r">{adjustment-val}</td>
+            <td class="r">{psp-val}</td>
+            <td class="r">{description-val}</td>
+            <!--/sportsbook-->
+        </tr>
+        <!--/content-->
+    </table>
+    {paging-bottom}
+<input type="hidden" id="page" name="page" value="{page-val}" />
+<input type="hidden" id="month" name="month" value="{month-val}" />
+<input type="hidden" name="pagesize" id="pagesize" value="{pagesize}" />
+</form>

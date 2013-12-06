@@ -1,0 +1,35 @@
+<div class="padl0">
+    <div id="errMsg" style="display: none; width: 255px; margin-bottom: 10px;">
+        <div id="error_item">
+            <ul>
+                <li><a class="err-msg" id="error_msg"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="divContent" class="pcontent">
+        <table border="0" cellpadding="0" cellspacing="3" width="100%">
+            <tr align="left">
+                <td style="width: 70px; padding-left: 20px;">
+                    {Department}
+                </td>
+                <td>
+                    <input id="txtdep" type="text" name="txtdep" class="textbox" onkeypress="return PreExec1(event);" />
+                </td>
+            </tr>
+            <tr align="left">
+                <td style="width: 70px; padding-left: 20px;">
+                    {Description}
+                </td>
+                <td>
+                    <input id="txtdesc" type="text" name="txtdesc" class="textbox" onkeypress="PreExec(event);" />
+                </td>
+            </tr>
+        </table>        
+    </div>
+    <div class="l" style="height:20px; padding:5px 0px 0px 0px" >
+            <input type="button" class="buttonlogin" name="btnSubmit" value="{submit}" id="btnSubmit"
+                onclick="AddDepartment()" style="cursor: pointer; width: 50px;" />&nbsp;
+            <input name="btnCancel" class="buttonlogin" id="btnCancel" type="button" style="cursor: pointer;
+                width: 50px;" value="{cancel}" onclick="parent.CloseDiv();" />
+        </div>
+</div>

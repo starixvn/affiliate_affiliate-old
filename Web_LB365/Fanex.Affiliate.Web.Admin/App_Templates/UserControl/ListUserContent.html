@@ -1,0 +1,82 @@
+   <table class="aff-table" cellspacing="1" cellpadding="3" border="0" style="width:860px;">  
+      <!--lmt_chk-->
+      <tr style="background-color:#f8f8f8;">
+        <td colspan="10" style="text-align:left;">
+          <a href="ListUser.aspx">{ViewAllAccount}</a> - <span style="font-weight:bold"> {Department} :</span> <font color="#6678e0"><b> {Dep_value}</b></font>
+        </td>       
+      </tr>  
+      <tr style="background-color:#f8f8f8;">
+        <td colspan="10" style="text-align:left;">
+            <table width="100%" border="0" cellpadding="2" cellspacing="2">
+			    <!--lmt-search-->
+			    <tr>
+			        <td style="width:10%; text-align:left; vertical-align:middle; border-bottom:0">
+			        {keyword}									
+			        </td>
+			        <td style="text-align:left; vertical-align:middle; border-bottom:0">
+			            <input type="text" id="keyword" onkeypress="PreSearch(event);" onfocus="ResetKeyWord();" onblur="ResetKeyWord();" name="keyword" style="width:150px;" value="{_Value}" />									
+			        </td>
+        	        
+			    </tr>	
+			     <tr>
+			        <td style="width:10%; text-align:left; vertical-align:middle; border-bottom:0">
+			        {firstletter}									
+			        </td>
+			        <td style="text-align:left; vertical-align:middle; border-bottom:0">
+			           <select id="alp" name="alp">{alphabet}</select>	
+			           <input type="button" id="btnsearch" name="btnsearch" value="{search}" onclick="SearchUser({DeptId_value},'{Dep_value}');" style="margin-left:5px;cursor:pointer;width:50px;" />	 							
+			        </td>								                
+			    </tr>								                					
+			    <!--/lmt-search-->
+			</table>    
+		</td>
+		
+      </tr>
+      <tr>
+        <td colspan="{numcol}" style="text-align:left;">            
+		</td>
+		<td>
+		    <input type="button" {disabled} style="cursor:pointer;" value="Update" onclick="OpenUpdateMult({DeptId_value},'{Dep_value}',false);" id="Button3" name="btnupdate" />
+		</td>
+		<td>
+		
+		</td>
+      </tr>
+      <!--/lmt_chk-->
+     <tr>
+       <th>{No}</th>
+       <th>{UserName}</th>
+       <th>{FirstName}</th>
+       <th>{LastName}</th>
+       <th style="width:70px;">{Status}</th>
+       <th>{Creator}</th>
+       <th style="width:110px;">{CreatedDate}</th>    
+       <th>{Policy}</th>      
+       <!--lmt_chk-->
+       <th style="width:50px"><input type="checkbox" style="border:0;" id="chkAll" name="chkAll" onclick="ChkAll();" /></th>
+       <!--/lmt_chk-->
+       <th style="width:70px;">{Reset}</th>
+     </tr>
+     <!--content-->
+    <tr class="nowrap" bgcolor="{color}" onmouseout="bgColor='{color}'" onmouseover="bgColor='{over}'">
+       <td>{No_Value}</td>
+       <td><a href="#" onclick="DoCal('EditUser.aspx?custid={custid}&us={UserName_Value}&depid={Depid}&isdep=1&deptname={Dep_value}');">{UserName_Value}</a></td>
+       <td>{FirstName_Value}</td>
+       <td>{LastName_Value}</td>                                                
+       <td>{Status_Value}&nbsp;<input type="checkbox" class="noborder" {checked} name="{custid}" id="{custid}" onclick="UpdateStatus('{custid}','{status}','{Depid}','{Dep_value}')" /></td>
+       <td>{Creator_Value}</td>
+       <td>{CreatedDate_Value}</td>    
+       <td><a href="#" onclick="ListPolicyUser({custid},'{Dep_value}',{Depid},false);">{Policy_Value}</a></td>     
+       <!--lmt_chk-->
+       <td><input type="checkbox" style="border:0;" id="{custid}_{UserName_Value}" name="chkItem" onclick="chkItem();" /> </td>
+       <!--/lmt_chk-->
+       <td>
+       <!--reset-->
+           <span class="popup" onclick="DoCal('../ChangePass.aspx?custid={custid}&username={UserName_Value}&isAdmin={isAdmin}');">{Reset_Value}</span>
+       <!--/reset-->
+       </td>
+     </tr>
+     <!--/content-->
+     </table> 
+   
+    

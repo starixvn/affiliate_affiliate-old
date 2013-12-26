@@ -1,0 +1,107 @@
+﻿body
+{
+    background: url(images/bodybg.jpg);
+    margin: auto;
+}
+
+#header
+{
+    background: url(images/headerbg.jpg) repeat-x;
+    height: 320px;
+    width: 100%;
+    margin: auto;
+}
+
+.logo
+{
+    background: url(images/logo.jpg) no-repeat;
+    width: 652px;
+    height: 320px;
+    margin: auto;
+}
+
+.seperator
+{
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px solid #8DA4C9;
+}
+
+.panel
+{
+    background: url(images/panel.png) no-repeat;
+    width: 400px;
+    height: 240px;
+    margin: auto;
+    margin-top: -120px;
+}
+
+input
+{
+    background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    padding-top: 5px;
+    padding-left: 10px;
+    outline: none;
+    display: block;
+    top: 20px;
+}
+
+.user
+{
+    padding-top: 38px;
+    padding-left: 30px;
+}
+
+.pass
+{
+    padding-top: 47px;
+    padding-left: 30px;
+}
+
+#submit-div
+{
+    float: left;
+    position: relative;
+    padding: 0;
+    margin-top: 45px;
+    margin-left: 23px;
+    width: 100px;
+    height: 40px;
+    border: 0;
+}
+.submit-button
+{
+    width: 100px;
+    height: 40px;
+    background: url(images/btbg.png) no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0px;
+    text-shadow: 1px 1px 2px rgba(40, 57, 98, 0.75);
+}
+.submit-button:hover
+{
+    background: url(images/btbg.png) 0px -42px no-repeat;
+}
+input[type=text], input[type=password]
+{
+    font-family: helvetica, sans-serif;
+    font-size: 14px;
+    width: 295px;
+}
+#error_msg
+{
+    font-family: arial, tahoma, verdana, helvetica, sans-serif;
+    font-size: 11px;
+    color: rgb(199, 0, 0);
+    font-weight: bold;
+    position: absolute;
+    top: 450px;
+    width: 400px;
+}

@@ -137,7 +137,6 @@
     <Content Include="HboBet\App_Themes\Default\Customer.css" />
     <Content Include="HboBet\App_Themes\Default\Images\bodybg.jpg" />
     <Content Include="HboBet\App_Themes\Default\Images\btbg.png" />
-    <Content Include="HboBet\App_Themes\Default\Images\button.png" />
     <Content Include="HboBet\App_Themes\Default\Images\headerbg.jpg" />
     <Content Include="HboBet\App_Themes\Default\Images\headerbg.png" />
     <Content Include="HboBet\App_Themes\Default\Images\logo.jpg" />
@@ -258,7 +257,6 @@
     <Content Include="Mgm88\App_Themes\Default\Customer.css" />
     <Content Include="Mgm88\App_Themes\Default\Images\bodybg.jpg" />
     <Content Include="Mgm88\App_Themes\Default\Images\btbg.png" />
-    <Content Include="Mgm88\App_Themes\Default\Images\button.png" />
     <Content Include="Mgm88\App_Themes\Default\Images\headerbg.jpg" />
     <Content Include="Mgm88\App_Themes\Default\Images\logo.jpg" />
     <Content Include="Mgm88\App_Themes\Default\Images\panel.png" />
@@ -305,7 +303,6 @@
     <Content Include="Winner99\App_Themes\Default\Images\bgheader.jpg" />
     <Content Include="Winner99\App_Themes\Default\Images\bodybg.jpg" />
     <Content Include="Winner99\App_Themes\Default\Images\btbg.png" />
-    <Content Include="Winner99\App_Themes\Default\Images\button.png" />
     <Content Include="Winner99\App_Themes\Default\Images\headerbg.jpg" />
     <Content Include="Winner99\App_Themes\Default\Images\headerbg.png" />
     <Content Include="Winner99\App_Themes\Default\Images\logo.jpg" />

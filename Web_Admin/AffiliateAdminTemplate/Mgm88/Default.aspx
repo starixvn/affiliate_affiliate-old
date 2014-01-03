@@ -1,12 +1,11 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="_Default" Codebehind="Default.aspx.cs" %>
+<%@ Page Language="C#" AutoEventWireup="false" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Mgm88 Affiliate Admin</title>
-    <link runat="server" id="IconICO" rel="shortcut icon"/>
+    <link type="image/x-icon" href="/App_Themes/favicon.jpg" rel="shortcut icon" />
 </head>
-
 <frameset rows="60, *, 25" frameborder="no" framespacing="0">
     <frame id="fMenu" name="fMenu" frameborder="0" noresize="noresize" scrolling="no" src="Header.aspx" height="60px" />
     <frame id="fMain" name="fMain" noresize="noresize" frameborder="0" scrolling="auto" />        

@@ -5,10 +5,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Mgm88 Affiliate Login</title>
-    <link runat="server" id="IconICO" rel="shortcut icon" />
-    <![if ! IE]>
-    <link runat="server" id="IconPNG" rel="shortcut icon" />
-    <![endif]>
+    <link type="image/x-icon" href="/App_Themes/favicon.jpg" rel="shortcut icon" />
     <link href="App_Themes/Default/login.css" type="text/css" rel="stylesheet" />
     <script src="App_Js/prototype.js" language="javascript" type="text/javascript"></script>
     <script src="App_Js/login.js" language="javascript" type="text/javascript"></script>

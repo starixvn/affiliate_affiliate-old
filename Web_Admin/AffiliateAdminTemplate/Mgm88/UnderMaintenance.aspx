@@ -20,14 +20,10 @@
     	<div class="icon"></div><!-- end .icon-->
         <div class="content">
         	<ul class="text">
-            	<li>
+            	<li class="end">
                     We are having server maintenance,<br />
 				    website will be unavailable until <%= UMTime_To%> (HK Time GMT +8).<br />
 				    <br />Sorry for the inconveniences caused!
-                </li>
-                <li class="end">
-                    本公司正進行伺服器維護，時間至 <%= UMTime_To%> (HK Time GMT +8).
-				    <br />所有網頁將無法登入，不便之處 有請見諒 
                 </li>
             </ul>    
         </div><!-- end .content-->

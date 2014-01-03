@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Winner99 Affiliate Admin</title>
-    <link runat="server" id="IconICO" rel="shortcut icon"/>
+    <link type="image/x-icon" href="/App_Themes/favicon.jpg" rel="shortcut icon" />
 </head>
 
 <frameset rows="60, *, 25" frameborder="no" framespacing="0">

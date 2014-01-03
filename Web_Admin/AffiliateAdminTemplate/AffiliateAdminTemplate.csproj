@@ -121,8 +121,6 @@
     <Content Include="Bwinning\Default.aspx" />
     <Content Include="Bwinning\SignIn.aspx" />
     <Content Include="Bwinning\UnderMaintenance.aspx" />
-    <Content Include="HboBet\App_Themes\Aff.ico" />
-    <Content Include="HboBet\App_Themes\Aff.png" />
     <Content Include="HboBet\App_Themes\DefaultV2\error\images\header_bg.png" />
     <Content Include="HboBet\App_Themes\DefaultV2\error\images\logo.jpg" />
     <Content Include="HboBet\App_Themes\DefaultV2\error\images\umicon.png" />
@@ -142,6 +140,7 @@
     <Content Include="HboBet\App_Themes\Default\Images\logo.jpg" />
     <Content Include="HboBet\App_Themes\Default\Images\panel.png" />
     <Content Include="HboBet\App_Themes\Default\login.css" />
+    <Content Include="HboBet\App_Themes\favicon.jpg" />
     <Content Include="HboBet\Default.aspx" />
     <Content Include="HboBet\Error.aspx" />
     <Content Include="HboBet\SignIn.aspx" />
@@ -241,8 +240,6 @@
     <Content Include="MacauBet\Default.aspx" />
     <Content Include="MacauBet\SignIn.aspx" />
     <Content Include="MacauBet\UnderMaintenance.aspx" />
-    <Content Include="Mgm88\App_Themes\Aff.ico" />
-    <Content Include="Mgm88\App_Themes\Aff.png" />
     <Content Include="Mgm88\App_Themes\DefaultV2\error\images\header_bg.png" />
     <Content Include="Mgm88\App_Themes\DefaultV2\error\images\logo.jpg" />
     <Content Include="Mgm88\App_Themes\DefaultV2\error\images\umicon.png" />
@@ -261,6 +258,7 @@
     <Content Include="Mgm88\App_Themes\Default\Images\logo.jpg" />
     <Content Include="Mgm88\App_Themes\Default\Images\panel.png" />
     <Content Include="Mgm88\App_Themes\Default\login.css" />
+    <Content Include="Mgm88\App_Themes\favicon.jpg" />
     <Content Include="Mgm88\Default.aspx" />
     <Content Include="Mgm88\Error.aspx" />
     <Content Include="Mgm88\SignIn.aspx" />
@@ -286,8 +284,6 @@
     <Content Include="Mymbet\Default.aspx" />
     <Content Include="Mymbet\SignIn.aspx" />
     <Content Include="Mymbet\UnderMaintenance.aspx" />
-    <Content Include="Winner99\App_Themes\Aff.ico" />
-    <Content Include="Winner99\App_Themes\Aff.png" />
     <Content Include="Winner99\App_Themes\DefaultV2\error\images\header_bg.png" />
     <Content Include="Winner99\App_Themes\DefaultV2\error\images\logo.jpg" />
     <Content Include="Winner99\App_Themes\DefaultV2\error\images\umicon.png" />
@@ -304,10 +300,10 @@
     <Content Include="Winner99\App_Themes\Default\Images\bodybg.jpg" />
     <Content Include="Winner99\App_Themes\Default\Images\btbg.png" />
     <Content Include="Winner99\App_Themes\Default\Images\headerbg.jpg" />
-    <Content Include="Winner99\App_Themes\Default\Images\headerbg.png" />
     <Content Include="Winner99\App_Themes\Default\Images\logo.jpg" />
     <Content Include="Winner99\App_Themes\Default\Images\panel.png" />
     <Content Include="Winner99\App_Themes\Default\login.css" />
+    <Content Include="Winner99\App_Themes\favicon.jpg" />
     <Content Include="Winner99\Default.aspx" />
     <Content Include="Winner99\Error.aspx" />
     <Content Include="Winner99\SignIn.aspx" />

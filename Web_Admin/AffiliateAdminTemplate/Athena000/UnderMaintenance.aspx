@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Under Maintenance</title>
+    <link type="image/x-icon" href="/App_Themes/aff.png" rel="shortcut icon" />
     <meta http-equiv="refresh" content="180">   
     <link href="App_Themes/DefaultV2/undermaintenance/style.css" rel="stylesheet" type="text/css" />
 </head>

@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Functions>
-  <Function Name="MemberDailyImportData">
-    <Setting Key="Aff_TaskLogIns" SpName="dbo.Aff_TaskLogIns" DbName="Affiliate"></Setting>
-    <Setting Key="Aff_TaskLogUpdStatus" SpName="dbo.Aff_TaskLogUpdStatus" DbName="Affiliate"></Setting>   
-  </Function>
-</Functions>
-

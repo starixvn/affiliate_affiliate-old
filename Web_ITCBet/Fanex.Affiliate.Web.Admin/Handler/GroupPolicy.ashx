@@ -1,1 +1,0 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="GroupPolicy.ashx.cs" Class="Fanex.Web.ITCBet.Admin.Handler.GroupPolicy" %>

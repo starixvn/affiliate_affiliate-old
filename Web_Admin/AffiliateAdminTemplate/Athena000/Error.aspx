@@ -3,6 +3,7 @@
 <html>
 <head id="head1" runat="server">
     <title>Error</title>    
+    <link type="image/x-icon" href="/App_Themes/aff.png" rel="shortcut icon" />
     <link href="App_Themes/DefaultV2/error/style.css" rel="stylesheet" type="text/css" />    
 </head>
 

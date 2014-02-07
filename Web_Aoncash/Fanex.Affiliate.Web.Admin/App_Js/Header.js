@@ -125,7 +125,6 @@ function ActiveMenuHead(id) {
 
     }
     catch (o) {
-        console.log(o);
     }
 }
 function ActiveMenu(id) {

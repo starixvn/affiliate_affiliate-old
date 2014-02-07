@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0; padding:0};
+
+body {
+	
+	background-color: #fff repeat;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+}
+
+ul {
+	list-style: none;
+}
+
+#top {
+	width: 100%;
+	height: 180px;
+	background: url(images/header_bg.png) repeat-x;
+		
+}
+
+
+
+#top .logo {
+	background: url(images/logo.jpg) no-repeat center ;
+	height: 180px;
+	text-align: center;
+	font-family: 'Oswald', sans-serif, Arial;
+	line-height: 310px;
+	color:#DB3646;
+	font-size: 28px;
+	
+	
+}
+
+
+#top .seperator {
+	width: 100%;
+	border-bottom: #8ca4c9 solid 2px;
+	height: 2px;
+	
+}
+
+#center {
+	width: 690px;
+	height: 300px;
+	margin: auto;
+	padding-top: 40px;
+	
+}
+
+#center .icon {
+	width: 230px;
+	height: 210px;
+	background: url(images/umicon.png) no-repeat;
+	float: left;
+	
+}
+
+#center .content {
+	float: left;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	padding-left: 30px;	
+	color: #4d6489;
+}
+
+ul.text li {
+	border-bottom: #006600 dotted 1px;
+	list-style-type: none;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+ul.text li.end {
+	border: none;
+}
